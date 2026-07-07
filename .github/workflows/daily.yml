@@ -33,12 +33,15 @@ jobs:
           BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
         run: |
           {
-            echo "# TT Elite — actionable bets (sweet spot: min 25 H2H, flag ≥75%)"
+            echo "# TT Elite — actionable bets"
             echo
             echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
             echo
+            echo "Rows sorted by historical hit rate. **Highest confidence = n≥25 meetings AND hit≥75%**"
+            echo "(the validated sweet spot, ~73% out-of-sample). Lower n / hit are weaker but still +EV."
+            echo
             echo '```'
-            python check_today.py --line 74.5 --min 25 --pct 0.75 2>&1 || echo "(no token / no fixtures right now)"
+            python check_today.py --line 74.5 --min 15 --pct 0.70 2>&1 || echo "(no token / no fixtures right now)"
             echo '```'
           } > today.md
       - name: commit
