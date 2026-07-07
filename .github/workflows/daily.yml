@@ -1,0 +1,51 @@
+name: tt-elite-daily
+# Runs on GitHub's free compute. Each run: (1) append recent TT Elite results to tt.sqlite
+# (keeps the H2H flags fresh), (2) regenerate today.md — the actionable bet list.
+# Needs a BETSAPI_TOKEN repo secret. Steps are fault-tolerant so a lapsed token / empty
+# slate never breaks the commit; the historical data stays safe regardless.
+on:
+  schedule:
+    - cron: "0 7,11,15,20 * * *"    # spread across the Polish playing day (UTC)
+  workflow_dispatch: {}
+
+concurrency:
+  group: tt-elite-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: refresh results (keep H2H flags current)
+        env:
+          BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
+        run: python ingest_betsapi.py --leagues "TT Elite" --days 3 || echo "collect skipped"
+      - name: build today's actionable bets
+        env:
+          BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
+        run: |
+          {
+            echo "# TT Elite — actionable bets (sweet spot: min 25 H2H, flag ≥75%)"
+            echo
+            echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
+            echo
+            echo '```'
+            python check_today.py --line 74.5 --min 25 --pct 0.75 2>&1 || echo "(no token / no fixtures right now)"
+            echo '```'
+          } > today.md
+      - name: commit
+        run: |
+          git config user.name "tt-bot"
+          git config user.email "tt-bot@users.noreply.github.com"
+          git add -f tt.sqlite today.md
+          git commit -m "daily update [skip ci]" || { echo "no change"; exit 0; }
+          git pull --rebase --autostash -X theirs || true
+          git push
