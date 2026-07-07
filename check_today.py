@@ -13,9 +13,30 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+from pathlib import Path
 
 from betsapi_client import get, mode
 from h2h import h2h_records, load, pair_key
+
+HERE = Path(__file__).resolve().parent
+
+
+def write_alerts(bets, line):
+    """Write alert.txt with only NEW flagged bets (deduped via notified.txt) so the phone
+    push fires once per bet, not every run. Returns the new-alert lines."""
+    notif = HERE / "notified.txt"
+    seen = set(notif.read_text().splitlines()) if notif.exists() else set()
+    new = []
+    for b in bets:
+        a, c = pair_key(b["p1"], b["p2"])
+        key = f"{b['when']}|{a}|{c}|{b['side']}"
+        if key not in seen:
+            seen.add(key)
+            new.append(f"{b['side'].upper()} {line} — {b['p1']} vs {b['p2']} "
+                       f"({b['hit']*100:.0f}%, n{b['n']}, {b['when']})")
+    (HERE / "alert.txt").write_text("\n".join(new))
+    notif.write_text("\n".join(sorted(seen)[-2000:]))    # cap history
+    return new
 
 
 def fixtures_betsapi(league_id=29128):
@@ -61,8 +82,9 @@ def main():
     rows = load(league=args.league)
     fx = fixtures_betsapi()
     bets = actionable(fx, rows, args.line, args.min, args.pct)
+    new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
     print(f"\n{len(fx)} upcoming {args.league} fixtures · {len(rows):,} historical matches · "
-          f"line {args.line} · flag ≥{args.pct*100:.0f}% over ≥{args.min} H2H\n")
+          f"line {args.line} · flag ≥{args.pct*100:.0f}% over ≥{args.min} H2H · {len(new)} new alert(s)\n")
     if not bets:
         print("  no flagged pairs among the upcoming fixtures right now — check back closer "
               "to the slate (fixtures post a few hours ahead).\n")

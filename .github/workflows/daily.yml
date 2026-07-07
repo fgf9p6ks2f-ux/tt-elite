@@ -44,11 +44,21 @@ jobs:
             python check_today.py --line 74.5 --min 15 --pct 0.70 2>&1 || echo "(no token / no fixtures right now)"
             echo '```'
           } > today.md
+      - name: push new bets to phone (ntfy)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
+            curl -s -H "Title: TT Elite bets" -H "Priority: high" -H "Tags: ping_pong" \
+                 -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
+          else
+            echo "no new bets to push (or NTFY_TOPIC unset)"
+          fi
       - name: commit
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          git add -f tt.sqlite today.md
+          git add -f tt.sqlite today.md notified.txt
           git commit -m "daily update [skip ci]" || { echo "no change"; exit 0; }
           git pull --rebase --autostash -X theirs || true
           git push
