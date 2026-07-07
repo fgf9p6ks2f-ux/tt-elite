@@ -41,7 +41,8 @@ def actionable(fixtures, rows, line, min_h2h, pct):
         side, hit = ("over", po) if po >= 1 - po else ("under", 1 - po)
         if hit >= pct:
             avg = sum(t for _, t, _ in meets) / n
-            when = dt.datetime.utcfromtimestamp(int(ts)).strftime("%m-%d %H:%M") if ts else "?"
+            when = (dt.datetime.fromtimestamp(int(ts), dt.timezone.utc).strftime("%m-%d %H:%M")
+                    if ts else "?")
             bets.append({"hit": hit, "n": n, "side": side, "p1": p1, "p2": p2,
                          "avg": avg, "when": when})
     return sorted(bets, key=lambda b: -b["hit"])
