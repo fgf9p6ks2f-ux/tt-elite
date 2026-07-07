@@ -114,8 +114,9 @@ def main():
     ap.add_argument("--line", type=float, default=74.5)
     ap.add_argument("--min", type=int, default=10)
     ap.add_argument("--pct", type=float, default=0.70)
+    ap.add_argument("--league", default=None, help="restrict to one league")
     args = ap.parse_args()
-    report(load(), args.line, args.min, args.pct)
+    report(load(league=args.league), args.line, args.min, args.pct)
 
 
 if __name__ == "__main__":
