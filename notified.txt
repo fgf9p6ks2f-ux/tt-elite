@@ -1,8 +1,15 @@
+Andrii Romanenko|Ihor Sukovatyi|over|1783456200
+Andrii Romanenko|Oleksandr Pohonov|over|1783468800
 Dawid Michna|Martin Olejnik|over|1783428900
+Dmytro Derevynskyi|Roman Gnoevoy|over|1783466700
 Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
+Kamil Delikatny|Zbigniew Nocun|under|1783458300
+Krzysztof Kapik|Szymon Sporek|over|1783454700
 Maksymilian Rus|Rafal Gajda|over|1783426800
 Martin Huk|Radim Urbaniec|over|1783440000
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
+Orest Hura|Valerii Vlasenko|over|1783464300
 Radomir Revay|Tadeas Zika|over|1783423800
+Roman Gnoevoy|Spartak Abalmaz|over|1783463100
