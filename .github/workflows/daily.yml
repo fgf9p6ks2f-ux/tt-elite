@@ -27,7 +27,7 @@ jobs:
       - name: refresh results (keep H2H flags current)
         env:
           BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
-        run: python ingest_betsapi.py --leagues "TT Elite" --days 3 || echo "collect skipped"
+        run: python ingest_betsapi.py --ids "29128,22307,29097,22742" --days 3 || echo "collect skipped"
       - name: build today's actionable bets
         env:
           BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
@@ -53,6 +53,18 @@ jobs:
                  -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
           else
             echo "no new bets to push (or NTFY_TOPIC unset)"
+          fi
+      - name: schedule 5-min-before reminders (ntfy At)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -n "$NTFY_TOPIC" ] && [ -s reminders.txt ]; then
+            while IFS=$'\t' read -r at msg; do
+              [ -n "$at" ] && curl -s -H "Title: TT Elite starts soon" -H "At: $at" \
+                -H "Priority: high" -H "Tags: alarm_clock" -d "$msg" \
+                "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
+            done < reminders.txt
+            echo "scheduled $(wc -l < reminders.txt) reminder(s)"
           fi
       - name: commit
         run: |

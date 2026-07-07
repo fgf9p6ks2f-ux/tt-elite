@@ -82,15 +82,19 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=4000)
     ap.add_argument("--leagues", default=DEFAULT_LEAGUES,
-                    help="comma-separated name substrings to include")
+                    help="comma-separated name substrings to include (uses discovery)")
+    ap.add_argument("--ids", help="comma-separated league ids (skips discovery; exact)")
     args = ap.parse_args()
     if not mode():
         sys.exit("set BETSAPI_TOKEN (direct) or BETSAPI_RAPIDAPI_KEY (rapidapi)")
 
-    leagues = discover_leagues(args.leagues.split(","))
+    if args.ids:
+        leagues = {i.strip(): i.strip() for i in args.ids.split(",")}   # name from events
+    else:
+        leagues = discover_leagues(args.leagues.split(","))
     if not leagues:
-        sys.exit("no matching TT leagues found — check --leagues names or the token.")
-    print("pulling leagues:", ", ".join(f"{n}({i})" for i, n in leagues.items()))
+        sys.exit("no matching TT leagues found — check --leagues/--ids or the token.")
+    print("pulling leagues:", ", ".join(leagues))
 
     con = sqlite3.connect(DB)
     con.execute("""CREATE TABLE IF NOT EXISTS matches (
@@ -109,7 +113,8 @@ def main():
                 total, p1p, p2p, ss = tp
                 d = dt.datetime.utcfromtimestamp(int(ev.get("time", 0))).date().isoformat() \
                     if ev.get("time") else day
-                rows.append((str(ev.get("id")), lname, d,
+                league = (ev.get("league") or {}).get("name") or lname
+                rows.append((str(ev.get("id")), league, d,
                              (ev.get("home") or {}).get("name") or "?",
                              (ev.get("away") or {}).get("name") or "?",
                              total, ss, ",".join(f"{h}-{a}" for h, a in zip(p1p, p2p))))
