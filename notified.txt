@@ -1,3 +1,8 @@
 Dawid Michna|Martin Olejnik|over|1783428900
+Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
 Jiri Ruzicka|Martin Huk|over|1783438200
+Jiri Ruzicka|Michal Zahradka|over|1783420200
+Maksymilian Rus|Rafal Gajda|over|1783426800
+Martin Huk|Radim Urbaniec|over|1783440000
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
+Radomir Revay|Tadeas Zika|over|1783423800
