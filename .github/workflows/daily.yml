@@ -37,6 +37,7 @@ jobs:
             echo "Each league uses its own validated flag rule (holdout-tested 2026-07-08):"
             echo "Elite = shrunk posterior ≥67.5% (73.6% OOS) · Setka = shrunk ≥65% (60.6% OOS, weakest)"
             echo "· LigaPro raw ≥70%/n15 (67% OOS) · TTCup raw ≥70%/n12 (68% OOS). 'conf' = rule confidence."
+            echo "Setka rows are tagged ·VOL (volume tier): real edge but thinnest margin — optional."
             echo
             echo '```'
             python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"

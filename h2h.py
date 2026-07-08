@@ -29,7 +29,11 @@ DB = HERE / "tt.sqlite"
 # each ingest (recompute deliberately, not implicitly).
 LEAGUE_CFG = {
     "TT Elite Series": {"rule": "shrunk", "k": 16.0, "thr": 0.675, "min": 12, "base": 0.512},
-    "Setka Cup":       {"rule": "shrunk", "k": 8.0,  "thr": 0.65,  "min": 8,  "base": 0.515},
+    # Setka = VOLUME tier: the edge is real (z=+3.0, ~+18% ROI) but per-bet margin is the
+    # thinnest (~62% vs 52.4% break-even) at the highest volume (~12 bets/day) — take
+    # these only when you want volume; skip freely. The other leagues are quality tier.
+    "Setka Cup":       {"rule": "shrunk", "k": 8.0,  "thr": 0.65,  "min": 8,  "base": 0.515,
+                        "tier": "volume"},
     "Czech Liga Pro":  {"rule": "raw",    "pct": 0.70, "min": 15},
     "TT Cup":          {"rule": "raw",    "pct": 0.70, "min": 12},
 }

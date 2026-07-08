@@ -11,12 +11,14 @@ Dmitro Kuzmenko|Dmytro Prylepa|under|1783497600
 Dmitro Kuzmenko|Oleh Kurylenko|under|1783510200
 Dmytro Derevynskyi|Roman Gnoevoy|over|1783524300
 Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
+Erik Precek|Radek Benes|under|1783496400
 Grzegorz Adamiak|Grzegorz Felkel|under|1783481100
 Grzegorz Felkel|Maciej Nowalinski|under|1783495200
 Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Ihor Torhachov|Serhii Priadko|over|1783522800
+Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jiri Ruzicka|Martin Huk|over|1783438200

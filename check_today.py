@@ -52,7 +52,10 @@ def write_alerts(bets, line):
         if key in seen:
             continue
         seen.add(key)
-        msg = (f"[{TAG.get(b['league'], b['league'])}] {b['side'].upper()} {line} — "
+        tag = TAG.get(b["league"], b["league"])
+        if b.get("tier") == "volume":
+            tag += "·VOL"                               # thin-margin volume tier — optional
+        msg = (f"[{tag}] {b['side'].upper()} {line} — "
                f"{b['p1']} vs {b['p2']} ({b['hit']*100:.0f}%, n{b['n']}, {b['when']})")
         new.append(msg)
         remind_at = b["ts"] - 300                        # 5 min before tip
@@ -98,7 +101,8 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             avg = sum(t for _, t, _ in meets) / n
             bets.append({"hit": strength, "raw": raw, "n": n, "side": side,
                          "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
-                         "ts": int(ts) if ts else 0, "league": league})
+                         "ts": int(ts) if ts else 0, "league": league,
+                         "tier": LEAGUE_CFG.get(league, {}).get("tier")})
     return sorted(bets, key=lambda b: -b["hit"])
 
 
@@ -127,15 +131,18 @@ def main():
               "to the slate (fixtures post a few hours ahead).\n")
         return
     print(f"=== {len(bets)} ACTIONABLE BETS TODAY ===")
-    print(f"  {'when':<16}{'league':<9}{'matchup':<42}{'bet':>6}{'conf':>6}{'raw':>6}"
+    print(f"  {'when':<16}{'league':<12}{'matchup':<42}{'bet':>6}{'conf':>6}{'raw':>6}"
           f"{'n':>5}{'avg':>7}")
     for b in bets:
-        print(f"  {b['when']:<16}{TAG.get(b['league'], b['league']):<9}"
+        tag = TAG.get(b["league"], b["league"]) + ("·VOL" if b.get("tier") == "volume" else "")
+        print(f"  {b['when']:<16}{tag:<12}"
               f"{b['p1']+' vs '+b['p2']:<42}{b['side'].upper():>6}"
               f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
     print(f"\nBet the total on the shown side at your book (league tag = competition). "
           f"'conf' = the league rule's confidence (shrunk posterior for Elite/Setka, raw "
-          f"H2H rate for LigaPro/TTCup); 'raw' = unshrunk H2H rate; 'avg' = average total.\n")
+          f"H2H rate for LigaPro/TTCup); 'raw' = unshrunk H2H rate; 'avg' = average total.\n"
+          f"·VOL = volume tier (Setka): real but thinnest per-bet edge (~62% vs 52.4% "
+          f"break-even) at ~12 bets/day — take only when you want volume; skip freely.\n")
 
 
 if __name__ == "__main__":
