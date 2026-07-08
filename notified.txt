@@ -42,6 +42,7 @@ Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Chalupa|Zbynek Pagac|over|1783506600
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
+Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Orest Hura|Valerii Vlasenko|over|1783464300
 Pavel Wawrosz|Radovan Polasek|over|1783492200

@@ -1,6 +1,6 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-08 09:35 UTC_
+_updated 2026-07-08 09:51 UTC_
 
 Each league uses its own validated flag rule (holdout-tested 2026-07-08):
 Elite = shrunk posterior ≥67.5% (73.6% OOS) · Setka = shrunk ≥65% (60.6% OOS, weakest)
@@ -9,14 +9,15 @@ Setka rows are tagged ·VOL (volume tier): real edge but thinnest margin — opt
 
 ```
 
-496 upcoming fixtures (all leagues) · 193,446 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
+494 upcoming fixtures (all leagues) · 193,470 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
 
-=== 19 ACTIONABLE BETS TODAY ===
+=== 20 ACTIONABLE BETS TODAY ===
   when            league      matchup                                      bet  conf   raw    n    avg
   Wed 4:00AM MT   LigaPro     Martin Huk vs Radim Urbaniec                OVER   78%   78%   18   82.3
   Wed 4:30AM MT   LigaPro     Michal Zahradka vs Jiri Ruzicka             OVER   74%   74%   23   82.2
   Wed 4:30AM MT   LigaPro     Zbynek Pagac vs Michal Chalupa              OVER   70%   70%   27   82.3
   Wed 10:55AM MT  Setka·VOL   Mykhailo Potapov vs Ivan Fashchevskyi       OVER   70%   80%   15   84.1
+  Wed 5:55PM MT   Setka·VOL   Serhii Chelpanov vs Oleksandr V Kovalchuk   OVER   70%   88%    8   83.8
   Wed 12:25PM MT  Setka·VOL   Oleksandr Melashenko vs Dmytro Derevynskyi  OVER   69%   82%   11   87.2
   Wed 6:05AM MT   Setka·VOL   Bohdan Chaikovskyi vs Ihor Sukovatyi       UNDER   69%   80%   15   67.9
   Wed 5:30AM MT   Setka·VOL   Oleh Kurylenko vs Dmitro Kuzmenko          UNDER   69%   78%   18   63.9
