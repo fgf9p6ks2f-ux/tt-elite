@@ -52,6 +52,29 @@ LEAGUE_CFG = {
 DEFAULT_CFG = {"rule": "raw", "pct": 0.70, "min": 15}
 
 
+def kelly_units(p, dec_odds=1.9091, bankroll_u=None, frac=0.25, cred=0.45,
+                cap=3.0, floor=0.5):
+    """Recommended stake in units (1u = $100) — fractional Kelly, made honest:
+
+    f* = (p·b − q)/b is optimal ONLY if p is exact. Ours are threshold-selected
+    estimates, so raw Kelly overbets. Three standard corrections:
+      · credibility shrink: p' = BE + cred·(p − BE)  (45% credibility — tuned so sizes
+        SPREAD across the 62-90% confidence range instead of saturating the cap —
+        absorbs selection bias and estimation error)
+      · quarter Kelly (frac=0.25) — the practitioner default for noisy edges
+      · cap at 3u (void/limit risk on these markets) and floor at 0.5u
+    Bankroll defaults to 50u ($5,000); override with env BANKROLL_UNITS."""
+    import os
+    bankroll_u = bankroll_u or float(os.environ.get("BANKROLL_UNITS", 50))
+    b = dec_odds - 1.0
+    be = 1.0 / dec_odds
+    p_adj = be + cred * (p - be)
+    f = (p_adj * b - (1 - p_adj)) / b
+    if f <= 0:
+        return floor
+    return max(floor, min(cap, round(frac * f * bankroll_u * 2) / 2))
+
+
 def decide(meets, cfg):
     if cfg.get("rule") == "off":               # league is collect-only, never flags
         return None

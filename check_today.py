@@ -18,7 +18,8 @@ import sqlite3
 from pathlib import Path
 
 import source_24live as src
-from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, decide, h2h_records, load, pair_key
+from h2h import (DB, DEFAULT_CFG, LEAGUE_CFG, decide, h2h_records, kelly_units,
+                 load, pair_key)
 
 HERE = Path(__file__).resolve().parent
 
@@ -58,8 +59,10 @@ def write_alerts(bets, line):
         if b.get("tier") == "volume":
             tag += "·VOL"                               # thin-margin volume tier — optional
         w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
+        u = kelly_units(b["hit"])                       # sized off rule confidence @-110
         msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
-               f"{b['side'][0].upper()}{line:g} · {w}-{b['n']-w} ({b['raw']*100:.0f}%)")
+               f"{b['side'][0].upper()}{line:g} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) "
+               f"· {u:g}u")
         new.append(msg)
         remind_at = b["ts"] - 300                        # 5 min before tip
         if remind_at > now + 30:                         # only schedule future reminders
