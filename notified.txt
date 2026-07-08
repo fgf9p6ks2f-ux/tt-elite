@@ -39,6 +39,7 @@ Maksymilian Rus|Rafal Gajda|over|1783426800
 Martin Huk|Radim Urbaniec|over|1783440000
 Martin Huk|Radim Urbaniec|over|1783504800
 Mateusz Burkacki|Szymon Radlo|over|1783488600
+Michal Chalupa|Zbynek Pagac|over|1783506600
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
