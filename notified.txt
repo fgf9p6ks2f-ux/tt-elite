@@ -28,12 +28,15 @@ Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Skvrna|Radek Benes|over|1783509000
+Jan Szotkowski|Tadeas Zika|over|1783596600
+Jan Szotkowski|Tadeas Zika|over|1783607400
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
+Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Szymon Sporek|over|1783521300
@@ -57,6 +60,7 @@ Pavel Wawrosz|Radovan Polasek|over|1783492200
 Radek Benes|Tomas Krenek|over|1783510800
 Radomir Revay|Tadeas Zika|over|1783423800
 Radomir Revay|Tadeas Zika|over|1783490400
+Radomir Revay|Tadeas Zika|over|1783600200
 Roman Boklah|Serhii Priadko|over|1783526400
 Roman Gnoevoy|Spartak Abalmaz|over|1783463100
 Roman Gnoevoy|Spartak Abalmaz|over|1783536900

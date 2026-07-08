@@ -61,8 +61,7 @@ def write_alerts(bets, line):
         w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
         u = kelly_units(b["hit"])                       # sized off rule confidence @-110
         msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
-               f"{b['side'][0].upper()}{line:g} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) "
-               f"· {u:g}u")
+               f"{b['zone']} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) · {u:g}u")
         new.append(msg)
         remind_at = b["ts"] - 300                        # 5 min before tip
         if remind_at > now + 30:                         # only schedule future reminders
@@ -112,8 +111,24 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             bets.append({"hit": strength, "raw": raw, "n": n, "side": side,
                          "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
                          "ts": int(ts) if ts else 0, "league": league, "mid": mid,
+                         "zone": line_zone(meets, side, cfg, line),
                          "tier": LEAGUE_CFG.get(league, {}).get("tier")})
     return sorted(bets, key=lambda b: -b["hit"])
+
+
+def line_zone(meets, side, cfg, flag_line, spread=3.0):
+    """Books post TT totals anywhere from ~71.5 to ~77.5, not just 74.5. This gives
+    the bettable RANGE for the flagged side: 'O≤76.5' = take the Over at any posted
+    line up to 76.5; 'U≥72.5' = take the Under at any line from 72.5 up. A line
+    qualifies when the pair's historical side rate AT THAT LINE still clears the
+    league rule's own bar. The flagged line always qualifies by construction."""
+    bar = cfg.get("thr") or cfg.get("pct") or 0.70
+    n = len(meets)
+    grid = [flag_line + i for i in range(-int(spread), int(spread) + 1)]
+    ok = [L for L in grid
+          if (sum(1 for _, t, _ in meets if (t > L) == (side == "over")) / n) >= bar]
+    ok.append(flag_line)
+    return f"O≤{max(ok):g}" if side == "over" else f"U≥{min(ok):g}"
 
 
 def main():
@@ -144,18 +159,17 @@ def main():
               "to the slate (fixtures post a few hours ahead).\n")
         return
     print(f"=== {len(bets)} ACTIONABLE BETS TODAY ===")
-    print(f"  {'when':<16}{'league':<12}{'matchup':<42}{'bet':>6}{'conf':>6}{'raw':>6}"
+    print(f"  {'when':<16}{'league':<12}{'matchup':<42}{'zone':>8}{'conf':>6}{'raw':>6}"
           f"{'n':>5}{'avg':>7}")
     for b in bets:
         tag = TAG.get(b["league"], b["league"]) + ("·VOL" if b.get("tier") == "volume" else "")
         print(f"  {b['when']:<16}{tag:<12}"
-              f"{b['p1']+' vs '+b['p2']:<42}{b['side'].upper():>6}"
+              f"{b['p1']+' vs '+b['p2']:<42}{b['zone']:>8}"
               f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
-    print(f"\nBet the total on the shown side at your book (league tag = competition). "
-          f"'conf' = the league rule's confidence (shrunk posterior for Elite/Setka, raw "
-          f"H2H rate for LigaPro/TTCup); 'raw' = unshrunk H2H rate; 'avg' = average total.\n"
-          f"·VOL = volume tier (Setka): real but thinnest per-bet edge (~62% vs 52.4% "
-          f"break-even) at ~12 bets/day — take only when you want volume; skip freely.\n")
+    print(f"\n'zone' = bettable line range: O≤X take the Over at any posted total up to X; "
+          f"U≥Y take the Under at any total from Y up; posted line outside the zone = skip. "
+          f"'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average "
+          f"total.\n·VOL = volume tier (Setka): real but thinnest per-bet edge — optional.\n")
 
 
 if __name__ == "__main__":
