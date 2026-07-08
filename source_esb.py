@@ -56,6 +56,34 @@ def day_tournaments(base, day):
         page += 1
 
 
+def day_fixtures(sport, day, sleep=0.12):
+    """Upcoming matches for a UTC day: [(p1, p2, start_ts, league, match_id)].
+    A match is upcoming while its participants have no score yet."""
+    import datetime as dt
+    base, league, prefix = SPORTS[sport]
+    now = dt.datetime.now(dt.timezone.utc).timestamp()
+    out = []
+    for tid in day_tournaments(base, day):
+        try:
+            ms = _get(f"{base}/api/tournaments/{tid}/matches")
+        except RuntimeError:
+            continue
+        for m in ms:
+            p1, p2 = m.get("participant1") or {}, m.get("participant2") or {}
+            n1, n2 = p1.get("nickname"), p2.get("nickname")
+            if p1.get("score") is not None or not n1 or not n2:
+                continue
+            try:
+                ts = int(dt.datetime.fromisoformat(
+                    str(m.get("date")).replace("Z", "+00:00")).timestamp())
+            except ValueError:
+                continue
+            if ts > now - 300:
+                out.append((n1, n2, ts, league, f"{prefix}_{m['id']}"))
+        time.sleep(sleep)
+    return out
+
+
 def day_results(sport, day, sleep=0.12):
     """Finished matches for a UTC day as tt.sqlite rows:
     (match_id, league, date, p1, p2, total_points, sets, scores)."""

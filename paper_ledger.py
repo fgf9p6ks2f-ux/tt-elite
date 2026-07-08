@@ -33,8 +33,9 @@ def _now():
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat()
 
 
-def log_flags(bets, line):
-    """Record each flagged bet once (PK = its 24live match id)."""
+def log_flags(bets, line=None):
+    """Record each flagged bet once (PK = its source match id). `line` is the default;
+    a bet may carry its own (the ESB line-conditional flags bet pair-specific lines)."""
     con = sqlite3.connect(DB)
     con.execute(DDL)
     ts = _now()
@@ -44,8 +45,9 @@ def log_flags(bets, line):
             continue
         cur = con.execute(
             "INSERT OR IGNORE INTO paper_bets VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-            (b["mid"], b["league"], b["p1"], b["p2"], b["side"], line, b["hit"],
-             b["raw"], b["n"], b["ts"], ts, None, None, None, None))
+            (b["mid"], b["league"], b["p1"], b["p2"], b["side"],
+             b.get("line", line), b["hit"], b["raw"], b["n"], b["ts"], ts,
+             None, None, None, None))
         added += cur.rowcount
     con.commit()
     con.close()

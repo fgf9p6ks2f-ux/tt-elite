@@ -45,6 +45,20 @@ jobs:
             python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"
             echo '```'
           } > today.md
+      - name: esoccer/ebasketball line-conditional flags
+        run: python check_esb.py || echo "esb flags skipped"
+      - name: push esoccer/ebasketball flags to phone (ntfy)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ -n "$NTFY_TOPIC" ] && [ -s esb_alert.txt ]; then
+            curl -s -H "Title: Esoccer/Ebasketball bets (check posted line!)" \
+                 -H "Priority: high" -H "Tags: video_game" \
+                 -d "$(cat esb_alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" \
+              && echo "pushed $(wc -l < esb_alert.txt) esb alert(s)"
+          else
+            echo "no new esb flags"
+          fi
       - name: grade paper ledger (live flag track record)
         run: python paper_ledger.py || echo "paper ledger skipped"
       - name: push new bets to phone (ntfy)
@@ -73,7 +87,7 @@ jobs:
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          git add -f tt.sqlite today.md notified.txt paper.md
+          git add -f tt.sqlite today.md notified.txt paper.md esb_today.md esb_notified.txt
           git commit -m "daily update [skip ci]" || { echo "no change"; exit 0; }
           git pull --rebase --autostash -X theirs || true
           git push
