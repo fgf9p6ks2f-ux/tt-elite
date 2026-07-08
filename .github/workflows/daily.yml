@@ -1,9 +1,9 @@
 name: tt-elite-daily
-# Runs on GitHub's free compute. Each run: (1) append recent TT Elite results to tt.sqlite
-# via 24live (FREE, no token — keeps the H2H flags fresh), (2) optionally top up the other
-# leagues from BetsAPI if a token secret exists, (3) regenerate today.md — the actionable
-# bet list — and push phone alerts. TT Elite needs NO secret. Steps are fault-tolerant so a
-# lapsed token / empty slate never breaks the commit; the historical data stays safe.
+# Runs on GitHub's free compute, 100% token-free. Each run: (1) append recent results for
+# ALL FOUR leagues (TT Elite, Setka Cup, Czech Liga Pro, TT Cup) to tt.sqlite via 24live
+# (keeps the H2H flags fresh), (2) regenerate today.md — the actionable bet list — and
+# push phone alerts with league tags. No BetsAPI secret needed anywhere. Steps are
+# fault-tolerant so a flaky source / empty slate never breaks the commit.
 on:
   schedule:
     - cron: "0 7,11,15,20 * * *"    # spread across the Polish playing day (UTC)
@@ -25,18 +25,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: refresh TT Elite results — FREE via 24live (no token)
+      - name: refresh all four leagues — FREE via 24live (no token)
         run: python ingest_24live.py --limit 500 || echo "24live collect skipped"
-      - name: top up other leagues from BetsAPI (only if a token secret is set)
-        env:
-          BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
-        run: python ingest_betsapi.py --ids "22307,29097,22742" --days 3 || echo "betsapi skipped (no/expired token)"
       - name: build today's actionable bets
-        env:
-          BETSAPI_TOKEN: ${{ secrets.BETSAPI_TOKEN }}
         run: |
           {
-            echo "# TT Elite — actionable bets"
+            echo "# Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)"
             echo
             echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
             echo
@@ -52,7 +46,7 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
-            curl -s -H "Title: TT Elite bets" -H "Priority: high" -H "Tags: ping_pong" \
+            curl -s -H "Title: Table tennis bets" -H "Priority: high" -H "Tags: ping_pong" \
                  -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
           else
             echo "no new bets to push (or NTFY_TOPIC unset)"
@@ -63,7 +57,7 @@ jobs:
         run: |
           if [ -n "$NTFY_TOPIC" ] && [ -s reminders.txt ]; then
             while IFS=$'\t' read -r at msg; do
-              [ -n "$at" ] && curl -s -H "Title: TT Elite starts soon" -H "At: $at" \
+              [ -n "$at" ] && curl -s -H "Title: TT match starts soon" -H "At: $at" \
                 -H "Priority: high" -H "Tags: alarm_clock" -d "$msg" \
                 "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
             done < reminders.txt

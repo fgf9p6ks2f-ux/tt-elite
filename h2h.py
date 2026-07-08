@@ -19,9 +19,10 @@ HERE = Path(__file__).resolve().parent
 DB = HERE / "tt.sqlite"
 
 
-def load(db=DB, league=None):
+def load(db=DB, league=None, with_league=False):
     con = sqlite3.connect(db)
-    q = "SELECT date, p1, p2, total_points FROM matches WHERE total_points IS NOT NULL"
+    cols = "date, p1, p2, total_points" + (", league" if with_league else "")
+    q = f"SELECT {cols} FROM matches WHERE total_points IS NOT NULL"
     args = []
     if league:
         q += " AND league LIKE ?"
@@ -30,7 +31,7 @@ def load(db=DB, league=None):
         rows = con.execute(q + " ORDER BY date", args).fetchall()
     finally:
         con.close()
-    return rows                                   # [(date, p1, p2, total)]
+    return rows                    # [(date, p1, p2, total)] (+ league if with_league)
 
 
 def pair_key(a, b):
@@ -38,9 +39,10 @@ def pair_key(a, b):
 
 
 def h2h_records(rows, line):
-    """{pair: [(date, total, over_bool)]} chronological."""
+    """{pair: [(date, total, over_bool)]} chronological. Rows may carry extra
+    trailing columns (e.g. league) — only the first four are used."""
     rec = defaultdict(list)
-    for date, p1, p2, tot in rows:
+    for date, p1, p2, tot, *_ in rows:
         rec[pair_key(p1, p2)].append((date, tot, tot > line))
     return rec
 

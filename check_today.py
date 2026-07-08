@@ -1,24 +1,24 @@
-"""Today's actionable TT Elite bets.
+"""Today's actionable table-tennis bets — all four leagues, token-free.
 
 Cross-references upcoming fixtures against the flagged H2H over/under pairs already in
 tt.sqlite (built from history). The flags are stable, so this needs only today's FIXTURES
-(who's playing) — not fresh results. Prints exactly which matches to bet and which side.
+(who's playing) — not fresh results. Prints exactly which matches to bet and which side,
+with the league each match is in.
 
-    python check_today.py --min 12 --pct 0.70            # free: 24live fixtures, no token
-    BETSAPI_TOKEN=xxx python check_today.py               # also pulls the BetsAPI leagues
+    python check_today.py --min 12 --pct 0.70      # free: 24live fixtures, no token
 
-TT Elite fixtures come free from 24live (no token, runs on GitHub Actions). The other
-covered leagues (Setka/Liga Pro/TT Cup) are added only when a BetsAPI token is present.
+Fixtures come free from 24live for TT Elite, Setka Cup, Czech Liga Pro, and TT Cup —
+no BetsAPI token anywhere in the pipeline.
 """
 from __future__ import annotations
 
 import argparse
 import datetime as dt
+import sqlite3
 from pathlib import Path
 
 import source_24live as src
-from betsapi_client import get, mode
-from h2h import h2h_records, load, pair_key
+from h2h import DB, h2h_records, load, pair_key
 
 HERE = Path(__file__).resolve().parent
 
@@ -27,6 +27,10 @@ try:
     MT = ZoneInfo("America/Denver")
 except Exception:                        # fallback: fixed MDT offset
     MT = dt.timezone(dt.timedelta(hours=-6))
+
+# short league tags for phone alerts / table rows
+TAG = {"TT Elite Series": "Elite", "Setka Cup": "Setka",
+       "Czech Liga Pro": "LigaPro", "TT Cup": "TTCup"}
 
 
 def mt_time(ts):
@@ -48,8 +52,8 @@ def write_alerts(bets, line):
         if key in seen:
             continue
         seen.add(key)
-        msg = (f"{b['side'].upper()} {line} — {b['p1']} vs {b['p2']} "
-               f"({b['hit']*100:.0f}%, n{b['n']}, {b['when']})")
+        msg = (f"[{TAG.get(b['league'], b['league'])}] {b['side'].upper()} {line} — "
+               f"{b['p1']} vs {b['p2']} ({b['hit']*100:.0f}%, n{b['n']}, {b['when']})")
         new.append(msg)
         remind_at = b["ts"] - 300                        # 5 min before tip
         if remind_at > now + 30:                         # only schedule future reminders
@@ -60,44 +64,30 @@ def write_alerts(bets, line):
     return new
 
 
-# current persistent BetsAPI league ids for the high-frequency leagues we cover
-LEAGUE_IDS = {29128: "TT Elite Series", 22307: "Setka Cup", 29097: "TT Cup",
-              22742: "Czech Liga Pro"}
-
-
-def fixtures_24live():
-    """TT Elite upcoming fixtures, free (no token): [(p1, p2, start_ts)]."""
-    return src.fixtures()
-
-
-def fixtures_betsapi(league_ids=(22307, 29097, 22742)):
-    """Upcoming fixtures for the BetsAPI-only leagues (Setka/TT Cup/Liga Pro):
-    [(p1, p2, start_ts)]. TT Elite is intentionally excluded — 24live covers it free."""
-    out = []
-    for lid in league_ids:
-        j = get("/v3/events/upcoming", sport_id=92, league_id=lid)
-        for ev in (j.get("results") or []):
-            out.append(((ev.get("home") or {}).get("name") or "?",
-                        (ev.get("away") or {}).get("name") or "?", ev.get("time")))
-    return out
-
-
 def all_fixtures():
-    """TT Elite free via 24live, plus the BetsAPI leagues when a token is available."""
-    fx = list(fixtures_24live())
-    if mode():
+    """Upcoming fixtures from all four leagues, free via 24live:
+    [(p1, p2, start_ts, league)]. A flaky league degrades, never blocks the rest."""
+    con = sqlite3.connect(DB)
+    fx = []
+    for tid, league in src.LEAGUES.items():
         try:
-            fx += fixtures_betsapi()
-        except Exception as e:                       # token lapsed / rate-capped — degrade
-            print(f"  (BetsAPI leagues skipped: {e})")
+            roster = src.league_roster(con, league)
+            fx += src.fixtures(tid, roster=roster)
+        except RuntimeError as e:
+            print(f"  ({league} fixtures skipped: {e})")
+    con.close()
     return fx
 
 
 def actionable(fixtures, rows, line, min_h2h, pct):
-    rec = h2h_records(rows, line)
+    """H2H records are per-league (same pair in two leagues = different dynamics)."""
+    rec_by_league = {}
     bets = []
-    for p1, p2, ts in fixtures:
-        meets = rec.get(pair_key(p1, p2), [])
+    for p1, p2, ts, league in fixtures:
+        if league not in rec_by_league:
+            rec_by_league[league] = h2h_records(
+                [r for r in rows if r[4] == league], line)
+        meets = rec_by_league[league].get(pair_key(p1, p2), [])
         n = len(meets)
         if n < min_h2h:
             continue
@@ -107,7 +97,8 @@ def actionable(fixtures, rows, line, min_h2h, pct):
         if hit >= pct:
             avg = sum(t for _, t, _ in meets) / n
             bets.append({"hit": hit, "n": n, "side": side, "p1": p1, "p2": p2,
-                         "avg": avg, "when": mt_time(ts), "ts": int(ts) if ts else 0})
+                         "avg": avg, "when": mt_time(ts), "ts": int(ts) if ts else 0,
+                         "league": league})
     return sorted(bets, key=lambda b: -b["hit"])
 
 
@@ -119,8 +110,10 @@ def main():
     ap.add_argument("--league", default=None, help="restrict to one league (default: all)")
     args = ap.parse_args()
 
-    rows = load(league=args.league)
+    rows = load(league=args.league, with_league=True)
     fx = all_fixtures()
+    if args.league:
+        fx = [f for f in fx if args.league.lower() in f[3].lower()]
     bets = actionable(fx, rows, args.line, args.min, args.pct)
     new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
     print(f"\n{len(fx)} upcoming fixtures ({args.league or 'all leagues'}) · {len(rows):,} "
@@ -131,12 +124,13 @@ def main():
               "to the slate (fixtures post a few hours ahead).\n")
         return
     print(f"=== {len(bets)} ACTIONABLE BETS TODAY ===")
-    print(f"  {'when':<12}{'matchup':<40}{'bet':>6}{'hit':>6}{'n':>5}{'avg':>7}")
+    print(f"  {'when':<16}{'league':<9}{'matchup':<42}{'bet':>6}{'hit':>6}{'n':>5}{'avg':>7}")
     for b in bets:
-        print(f"  {b['when']:<12}{b['p1']+' vs '+b['p2']:<40}"
+        print(f"  {b['when']:<16}{TAG.get(b['league'], b['league']):<9}"
+              f"{b['p1']+' vs '+b['p2']:<42}"
               f"{b['side'].upper():>6}{b['hit']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
-    print(f"\nBet {args.line} on the shown side at your book. 'hit' = historical H2H hit rate "
-          f"on that side; 'avg' = their average total points.\n")
+    print(f"\nBet 74.5-style total on the shown side at your book (league tag shows which "
+          f"competition). 'hit' = historical H2H hit rate on that side; 'avg' = average total.\n")
 
 
 if __name__ == "__main__":
