@@ -7,6 +7,7 @@ name: tt-elite-daily
 on:
   schedule:
     - cron: "0 7,11,15,20 * * *"    # spread across the Polish playing day (UTC)
+    - cron: "45 5,6 * * *"          # ~11:45pm MT (DST-proof pair) for the nightly TT digest
   workflow_dispatch: {}
 
 concurrency:
@@ -58,6 +59,10 @@ jobs:
         run: python slate_push.py || echo "slate push skipped"
       - name: grade paper ledger (live flag track record)
         run: python paper_ledger.py || echo "paper ledger skipped"
+      - name: nightly TT results digest (self-gated to ~11:45pm MT)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python tt_digest.py || echo "tt digest skipped"
       - name: push new bets to phone (ntfy)
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}

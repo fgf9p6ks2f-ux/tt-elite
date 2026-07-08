@@ -1,0 +1,33 @@
+name: nightly-tt-digest
+# ~11:40pm-MT table-tennis results digest: per-league daily record + all-time units
+# from the paper ledger. Dual cron + in-script clock guard = DST-proof; dedupe via
+# the tt_digests.md day header.
+on:
+  schedule:
+    - cron: "40 5 * * *"     # 23:40 MDT (summer)
+    - cron: "40 6 * * *"     # 23:40 MST (winter)
+  workflow_dispatch: {}
+
+concurrency:
+  group: nightly-tt-digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: grade any remaining paper bets first
+        run: |
+          python ingest_24live.py --limit 500 || echo "ingest skipped"
+          python ingest_esb.py --days 1 || echo "esb skipped"
+          python paper_ledger.py || echo "paper skipped"
+      - name: build + push TT digest
+        env:
