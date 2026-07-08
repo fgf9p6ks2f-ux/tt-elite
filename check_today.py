@@ -4,10 +4,11 @@ Cross-references upcoming fixtures against the flagged H2H over/under pairs alre
 tt.sqlite (built from history). The flags are stable, so this needs only today's FIXTURES
 (who's playing) — not fresh results. Prints exactly which matches to bet and which side.
 
-    BETSAPI_TOKEN=xxx python check_today.py --min 12 --pct 0.70
+    python check_today.py --min 12 --pct 0.70            # free: 24live fixtures, no token
+    BETSAPI_TOKEN=xxx python check_today.py               # also pulls the BetsAPI leagues
 
-The fixtures source is pluggable (`fixtures()`); today it uses BetsAPI (works while you
-have a token). See README for the free-source options for running this on GitHub Actions.
+TT Elite fixtures come free from 24live (no token, runs on GitHub Actions). The other
+covered leagues (Setka/Liga Pro/TT Cup) are added only when a BetsAPI token is present.
 """
 from __future__ import annotations
 
@@ -15,6 +16,7 @@ import argparse
 import datetime as dt
 from pathlib import Path
 
+import source_24live as src
 from betsapi_client import get, mode
 from h2h import h2h_records, load, pair_key
 
@@ -63,8 +65,14 @@ LEAGUE_IDS = {29128: "TT Elite Series", 22307: "Setka Cup", 29097: "TT Cup",
               22742: "Czech Liga Pro"}
 
 
-def fixtures_betsapi(league_ids=tuple(LEAGUE_IDS)):
-    """Upcoming fixtures across the covered leagues via BetsAPI: [(p1, p2, start_ts)]."""
+def fixtures_24live():
+    """TT Elite upcoming fixtures, free (no token): [(p1, p2, start_ts)]."""
+    return src.fixtures()
+
+
+def fixtures_betsapi(league_ids=(22307, 29097, 22742)):
+    """Upcoming fixtures for the BetsAPI-only leagues (Setka/TT Cup/Liga Pro):
+    [(p1, p2, start_ts)]. TT Elite is intentionally excluded — 24live covers it free."""
     out = []
     for lid in league_ids:
         j = get("/v3/events/upcoming", sport_id=92, league_id=lid)
@@ -72,6 +80,17 @@ def fixtures_betsapi(league_ids=tuple(LEAGUE_IDS)):
             out.append(((ev.get("home") or {}).get("name") or "?",
                         (ev.get("away") or {}).get("name") or "?", ev.get("time")))
     return out
+
+
+def all_fixtures():
+    """TT Elite free via 24live, plus the BetsAPI leagues when a token is available."""
+    fx = list(fixtures_24live())
+    if mode():
+        try:
+            fx += fixtures_betsapi()
+        except Exception as e:                       # token lapsed / rate-capped — degrade
+            print(f"  (BetsAPI leagues skipped: {e})")
+    return fx
 
 
 def actionable(fixtures, rows, line, min_h2h, pct):
@@ -99,11 +118,9 @@ def main():
     ap.add_argument("--pct", type=float, default=0.70)
     ap.add_argument("--league", default=None, help="restrict to one league (default: all)")
     args = ap.parse_args()
-    if not mode():
-        raise SystemExit("set BETSAPI_TOKEN (fixtures source) — see README for free options")
 
     rows = load(league=args.league)
-    fx = fixtures_betsapi()
+    fx = all_fixtures()
     bets = actionable(fx, rows, args.line, args.min, args.pct)
     new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
     print(f"\n{len(fx)} upcoming fixtures ({args.league or 'all leagues'}) · {len(rows):,} "
