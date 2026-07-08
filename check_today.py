@@ -93,8 +93,9 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             rec_by_league[league] = h2h_records(
                 [r for r in rows if r[4] == league], line)
         meets = rec_by_league[league].get(pair_key(p1, p2), [])
-        cfg = ({"rule": "raw", "pct": pct, "min": min_h2h} if (min_h2h and pct)
-               else LEAGUE_CFG.get(league, DEFAULT_CFG))
+        # either flag alone triggers the manual raw override (missing one gets a default)
+        cfg = ({"rule": "raw", "pct": pct or 0.70, "min": min_h2h or 10}
+               if (min_h2h or pct) else LEAGUE_CFG.get(league, DEFAULT_CFG))
         hit = decide(meets, cfg)
         if hit:
             side, strength, n, raw = hit
@@ -122,8 +123,8 @@ def main():
         fx = [f for f in fx if args.league.lower() in f[3].lower()]
     bets = actionable(fx, rows, args.line, args.min, args.pct)
     new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
-    mode = (f"raw ≥{args.pct*100:.0f}% over ≥{args.min} H2H" if (args.min and args.pct)
-            else "per-league validated rules")
+    mode = (f"raw ≥{(args.pct or 0.70)*100:.0f}% over ≥{args.min or 10} H2H"
+            if (args.min or args.pct) else "per-league validated rules")
     print(f"\n{len(fx)} upcoming fixtures ({args.league or 'all leagues'}) · {len(rows):,} "
           f"historical matches · line {args.line} · {mode} · {len(new)} new alert(s)\n")
     if not bets:
