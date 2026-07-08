@@ -1,44 +1,45 @@
 # TT paper ledger — live flag track record
 
-_2026-07-08T12:12:54 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-08T20:16:56 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 39-21  ·  **P&L:** +14.45u ($+1,445)  ·  **hit 65.0%** (break-even 52.4%)  ·  **Open:** 394
+- **Record:** 119-62  ·  **P&L:** +46.18u ($+4,618)  ·  **hit 65.7%** (break-even 52.4%)  ·  **Open:** 385
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 3 | 2-1 | 67% | +0.82 |
-| Ebasketball Battle | 8 | 6-2 | 75% | +3.45 |
-| Esoccer Battle | 44 | 29-15 | 66% | +11.36 |
-| Setka Cup | 2 | 1-1 | 50% | -0.09 |
+| Ebasketball Battle | 38 | 20-18 | 53% | +0.18 |
+| Esoccer Battle | 120 | 87-33 | 72% | +46.09 |
+| Setka Cup | 15 | 8-7 | 53% | +0.27 |
 | TT Cup | 3 | 1-2 | 33% | -1.09 |
+| TT Elite Series | 2 | 1-1 | 50% | -0.09 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
-| 2026-07-08 | Esoccer Battle | kirman vs Mers | under 8.5 | 4 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | borees vs Hyper | under 8.5 | 6 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | Ganger_29 vs KaLuBa | over 4.5 | 3 | L | -1.00 |
-| 2026-07-08 | Ebasketball Battle | Xnax vs Knez | under 140.5 | 80 | W | +0.91 |
-| 2026-07-08 | Ebasketball Battle | Luxi vs Losmi | under 152.5 | 103 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | hrk vs Kril | over 4.5 | 5 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | Mers vs vladl3n | under 10.5 | 10 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | Jekunam vs BlackStar98 | under 6.5 | 8 | L | -1.00 |
-| 2026-07-08 | Esoccer Battle | mko1919 vs Bomb1to | under 8.5 | 11 | L | -1.00 |
-| 2026-07-08 | Esoccer Battle | Wboy vs LaikingDast | under 8.5 | 13 | L | -1.00 |
-| 2026-07-08 | Esoccer Battle | Hyper vs Ganger_29 | over 4.5 | 6 | W | +0.91 |
-| 2026-07-08 | Ebasketball Battle | Bobkata vs Erik | under 136.5 | 128 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | BlackStar98 vs Revange | under 6.5 | 5 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | Bomb1to vs Wboy | under 8.5 | 12 | L | -1.00 |
-| 2026-07-08 | Ebasketball Battle | Barmaley vs lucker | under 154.5 | 161 | L | -1.00 |
-| 2026-07-08 | Ebasketball Battle | Lalkoff vs faLcOn | over 120.5 | 124 | W | +0.91 |
-| 2026-07-08 | Setka Cup | Oleh Kurylenko vs Dmitro Kuzmenko | under 74.5 | 58 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | vladl3n vs Kril | over 4.5 | 11 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | kirman vs hrk | under 8.5 | 4 | W | +0.91 |
-| 2026-07-08 | Ebasketball Battle | Luxi vs Knez | under 144.5 | 145 | L | -1.00 |
-| 2026-07-08 | Ebasketball Battle | Xnax vs Chime | under 134.5 | 129 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | BlackStar98 vs dm1trena | over 4.5 | 3 | L | -1.00 |
-| 2026-07-08 | Esoccer Battle | Mers vs kirman | under 8.5 | 5 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | Hyper vs Sef | over 4.5 | 8 | W | +0.91 |
-| 2026-07-08 | Esoccer Battle | KaLuBa vs borees | under 6.5 | 3 | W | +0.91 |
+| 2026-07-08 | Ebasketball Battle | Bazuka vs Lucashin | under 142.5 | 45 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | Maki vs hit | under 8.5 | 6 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | fantazer vs Sheva | over 2.5 | 5 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | hit vs Kivu17 | over 2.5 | 4 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | Animal vs Linox | under 6.5 | 6 | W | +0.91 |
+| 2026-07-08 | Ebasketball Battle | Sakaido vs Polub | under 138.5 | 132 | W | +0.91 |
+| 2026-07-08 | Ebasketball Battle | Jovke vs Pakapaka | under 140.5 | 124 | W | +0.91 |
+| 2026-07-08 | Ebasketball Battle | Djoks vs Bazuka | under 124.5 | 121 | W | +0.91 |
+| 2026-07-08 | Setka Cup | Kostiantyn Hrynenko vs Oleksandr Melashenko | over 74.5 | 71 | L | -1.00 |
+| 2026-07-08 | Esoccer Battle | Glumac vs Uchihax | over 8.5 | 9 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | Hristian05 vs Decade | under 8.5 | 6 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | SpeciAL vs Duka | over 4.5 | 4 | L | -1.00 |
+| 2026-07-08 | Ebasketball Battle | Malenkiy vs Erik | under 146.5 | 160 | L | -1.00 |
+| 2026-07-08 | Esoccer Battle | Linox vs Kivu17 | over 2.5 | 4 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | pikalicaaa vs Sena | over 4.5 | 6 | W | +0.91 |
+| 2026-07-08 | Setka Cup | Andrii Romanenko vs Oleksandr Pohonov | over 74.5 | 68 | L | -1.00 |
+| 2026-07-08 | Esoccer Battle | hit vs Maki | under 8.5 | 4 | W | +0.91 |
+| 2026-07-08 | Setka Cup | Spartak Abalmaz vs Roman Gnoevoy | over 74.5 | 68 | L | -1.00 |
+| 2026-07-08 | Esoccer Battle | Profik vs Kolesya | over 2.5 | 2 | L | -1.00 |
+| 2026-07-08 | Esoccer Battle | Kivu17 vs hit | over 2.5 | 4 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | Linox vs Animal | under 6.5 | 4 | W | +0.91 |
+| 2026-07-08 | Ebasketball Battle | Erik vs Tomstar | under 160.5 | 161 | L | -1.00 |
+| 2026-07-08 | Ebasketball Battle | McLovin vs HunkY | under 154.5 | 146 | W | +0.91 |
+| 2026-07-08 | Setka Cup | Oleksandr Melashenko vs Dmytro Derevynskyi | over 74.5 | 99 | W | +0.91 |
+| 2026-07-08 | Esoccer Battle | Decade vs Hristian05 | under 8.5 | 6 | W | +0.91 |
 
