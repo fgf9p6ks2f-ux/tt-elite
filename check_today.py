@@ -18,7 +18,7 @@ import sqlite3
 from pathlib import Path
 
 import source_24live as src
-from h2h import DB, h2h_records, load, pair_key
+from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, decide, h2h_records, load, pair_key
 
 HERE = Path(__file__).resolve().parent
 
@@ -79,8 +79,10 @@ def all_fixtures():
     return fx
 
 
-def actionable(fixtures, rows, line, min_h2h, pct):
-    """H2H records are per-league (same pair in two leagues = different dynamics)."""
+def actionable(fixtures, rows, line, min_h2h=None, pct=None):
+    """H2H records are per-league (same pair in two leagues = different dynamics).
+    Each league is flagged by its own validated rule (LEAGUE_CFG); --min/--pct
+    override the rule with the plain raw threshold when given."""
     rec_by_league = {}
     bets = []
     for p1, p2, ts, league in fixtures:
@@ -88,25 +90,25 @@ def actionable(fixtures, rows, line, min_h2h, pct):
             rec_by_league[league] = h2h_records(
                 [r for r in rows if r[4] == league], line)
         meets = rec_by_league[league].get(pair_key(p1, p2), [])
-        n = len(meets)
-        if n < min_h2h:
-            continue
-        overs = sum(o for _, _, o in meets)
-        po = overs / n
-        side, hit = ("over", po) if po >= 1 - po else ("under", 1 - po)
-        if hit >= pct:
+        cfg = ({"rule": "raw", "pct": pct, "min": min_h2h} if (min_h2h and pct)
+               else LEAGUE_CFG.get(league, DEFAULT_CFG))
+        hit = decide(meets, cfg)
+        if hit:
+            side, strength, n, raw = hit
             avg = sum(t for _, t, _ in meets) / n
-            bets.append({"hit": hit, "n": n, "side": side, "p1": p1, "p2": p2,
-                         "avg": avg, "when": mt_time(ts), "ts": int(ts) if ts else 0,
-                         "league": league})
+            bets.append({"hit": strength, "raw": raw, "n": n, "side": side,
+                         "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
+                         "ts": int(ts) if ts else 0, "league": league})
     return sorted(bets, key=lambda b: -b["hit"])
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--line", type=float, default=74.5)
-    ap.add_argument("--min", type=int, default=12)
-    ap.add_argument("--pct", type=float, default=0.70)
+    ap.add_argument("--min", type=int, default=None,
+                    help="override: raw rule with this min n (else per-league LEAGUE_CFG)")
+    ap.add_argument("--pct", type=float, default=None,
+                    help="override: raw rule with this threshold (else per-league LEAGUE_CFG)")
     ap.add_argument("--league", default=None, help="restrict to one league (default: all)")
     args = ap.parse_args()
 
@@ -116,21 +118,24 @@ def main():
         fx = [f for f in fx if args.league.lower() in f[3].lower()]
     bets = actionable(fx, rows, args.line, args.min, args.pct)
     new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
+    mode = (f"raw ≥{args.pct*100:.0f}% over ≥{args.min} H2H" if (args.min and args.pct)
+            else "per-league validated rules")
     print(f"\n{len(fx)} upcoming fixtures ({args.league or 'all leagues'}) · {len(rows):,} "
-          f"historical matches · line {args.line} · flag ≥{args.pct*100:.0f}% over ≥{args.min} "
-          f"H2H · {len(new)} new alert(s)\n")
+          f"historical matches · line {args.line} · {mode} · {len(new)} new alert(s)\n")
     if not bets:
         print("  no flagged pairs among the upcoming fixtures right now — check back closer "
               "to the slate (fixtures post a few hours ahead).\n")
         return
     print(f"=== {len(bets)} ACTIONABLE BETS TODAY ===")
-    print(f"  {'when':<16}{'league':<9}{'matchup':<42}{'bet':>6}{'hit':>6}{'n':>5}{'avg':>7}")
+    print(f"  {'when':<16}{'league':<9}{'matchup':<42}{'bet':>6}{'conf':>6}{'raw':>6}"
+          f"{'n':>5}{'avg':>7}")
     for b in bets:
         print(f"  {b['when']:<16}{TAG.get(b['league'], b['league']):<9}"
-              f"{b['p1']+' vs '+b['p2']:<42}"
-              f"{b['side'].upper():>6}{b['hit']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
-    print(f"\nBet 74.5-style total on the shown side at your book (league tag shows which "
-          f"competition). 'hit' = historical H2H hit rate on that side; 'avg' = average total.\n")
+              f"{b['p1']+' vs '+b['p2']:<42}{b['side'].upper():>6}"
+              f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
+    print(f"\nBet the total on the shown side at your book (league tag = competition). "
+          f"'conf' = the league rule's confidence (shrunk posterior for Elite/Setka, raw "
+          f"H2H rate for LigaPro/TTCup); 'raw' = unshrunk H2H rate; 'avg' = average total.\n")
 
 
 if __name__ == "__main__":

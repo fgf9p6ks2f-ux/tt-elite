@@ -18,6 +18,42 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 DB = HERE / "tt.sqlite"
 
+# Per-league flag rules — chosen by walk-forward tuning on the first 70% of each
+# league's history and CONFIRMED on the held-out last 30% (2026-07-08 sweep):
+#   TT Elite  beta-shrunk posterior (k=16 toward league base, thr .675, n>=12)
+#             -> holdout 73.6% on 526 bets (+40.5% ROI) vs 65.1% for the raw rule.
+#   Setka     lighter shrink (k=8, thr .65, n>=8) -> 60.6% on 198 (raw was 59.7%/67).
+#   Liga Pro  raw rule n>=15 — every shrunk config DEGRADED in its holdout (overfit).
+#   TT Cup    raw rule n>=12 — shrinkage hurt here too.
+# 'base' = league base over-rate at line 74.5, pinned so live flags don't drift with
+# each ingest (recompute deliberately, not implicitly).
+LEAGUE_CFG = {
+    "TT Elite Series": {"rule": "shrunk", "k": 16.0, "thr": 0.675, "min": 12, "base": 0.512},
+    "Setka Cup":       {"rule": "shrunk", "k": 8.0,  "thr": 0.65,  "min": 8,  "base": 0.515},
+    "Czech Liga Pro":  {"rule": "raw",    "pct": 0.70, "min": 15},
+    "TT Cup":          {"rule": "raw",    "pct": 0.70, "min": 12},
+}
+DEFAULT_CFG = {"rule": "raw", "pct": 0.70, "min": 15}
+
+
+def decide(meets, cfg):
+    """Apply a league's flag rule to a pair's chronological meetings.
+    Returns (side, strength, n, raw_side_rate) or None. 'strength' is the rule's own
+    confidence (posterior prob for shrunk, raw rate for raw); raw_side_rate is the
+    unshrunk H2H hit rate of the CHOSEN side (both numbers read the same way)."""
+    n = len(meets)
+    if n < cfg["min"]:
+        return None
+    overs = sum(o for _, _, o in meets)
+    raw = overs / n
+    if cfg["rule"] == "shrunk":
+        po = (overs + cfg["k"] * cfg["base"]) / (n + cfg["k"])
+        side, s = ("over", po) if po >= 0.5 else ("under", 1 - po)
+        rside = raw if side == "over" else 1 - raw
+        return (side, s, n, rside) if s >= cfg["thr"] else None
+    side, s = ("over", raw) if raw >= 0.5 else ("under", 1 - raw)
+    return (side, s, n, s) if s >= cfg["pct"] else None
+
 
 def load(db=DB, league=None, with_league=False):
     con = sqlite3.connect(db)

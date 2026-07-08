@@ -34,11 +34,12 @@ jobs:
             echo
             echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
             echo
-            echo "Rows sorted by historical hit rate. **Highest confidence = n≥25 meetings AND hit≥75%**"
-            echo "(the validated sweet spot, ~73% out-of-sample). Lower n / hit are weaker but still +EV."
+            echo "Each league uses its own validated flag rule (holdout-tested 2026-07-08):"
+            echo "Elite = shrunk posterior ≥67.5% (73.6% OOS) · Setka = shrunk ≥65% (60.6% OOS, weakest)"
+            echo "· LigaPro raw ≥70%/n15 (67% OOS) · TTCup raw ≥70%/n12 (68% OOS). 'conf' = rule confidence."
             echo
             echo '```'
-            python check_today.py --line 74.5 --min 15 --pct 0.70 2>&1 || echo "(no token / no fixtures right now)"
+            python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"
             echo '```'
           } > today.md
       - name: push new bets to phone (ntfy)
