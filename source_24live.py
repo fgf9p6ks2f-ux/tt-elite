@@ -38,9 +38,13 @@ HEADERS = {
 }
 URL = "https://24live.com/api/tournament/{tid}?lang=en&section=all&short=0&limit={limit}"
 
-# 24live tournament id -> league name (as stored in tt.sqlite)
+# 24live tournament id -> league name (as stored in tt.sqlite). "Setka Women" is
+# deliberately NOT "Setka Cup Women": every LIKE '%Setka Cup%' query in the pipeline
+# would silently mix the two leagues' rows.
 LEAGUES = {22357: "TT Elite Series", 22353: "Setka Cup",
-           22338: "Czech Liga Pro", 22339: "TT Cup"}
+           22338: "Czech Liga Pro", 22339: "TT Cup",
+           22364: "Setka Women",                    # validated 2026-07-08, volume tier
+           22341: "TT Challenger Series"}           # collect-only (see LEAGUE_CFG)
 
 _SUFFIX = re.compile(r"^(jr\.?|jnr|sr\.?|snr|19\d\d)$", re.I)
 
@@ -171,7 +175,9 @@ def results(tid: int, limit: int = 500, roster=None):
 
 
 def fixtures(tid: int, limit: int = 200, roster=None):
-    """Upcoming fixtures as (p1, p2, start_ts, league) — feeds check_today."""
+    """Upcoming fixtures as (p1, p2, start_ts, league, match_id) — feeds check_today.
+    match_id matches the '24l_<id>' key results land under, so a flagged bet can later
+    be graded against exactly its own match (same-day rematches are common)."""
     league = LEAGUES.get(tid, str(tid))
     out = []
     for m in _fetch(tid, limit).get("not_started") or []:
@@ -183,7 +189,7 @@ def fixtures(tid: int, limit: int = 200, roster=None):
             ts = int(dt.datetime.fromisoformat(sd).timestamp()) if sd else 0
         except ValueError:
             ts = 0
-        out.append((pair[0], pair[1], ts, league))
+        out.append((pair[0], pair[1], ts, league, f"24l_{m['id']}"))
     return out
 
 

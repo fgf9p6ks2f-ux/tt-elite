@@ -36,11 +36,24 @@ LEAGUE_CFG = {
                         "tier": "volume"},
     "Czech Liga Pro":  {"rule": "raw",    "pct": 0.70, "min": 15},
     "TT Cup":          {"rule": "raw",    "pct": 0.70, "min": 12},
+    # Setka Women: volume tier like Setka main. Walk-forward on 24live history
+    # (Jan-Jul 2026, 2,266 matches): 143/232 = 61.6% (z=+2.8, +17.7% ROI) at raw .70/n10.
+    "Setka Women":     {"rule": "raw",    "pct": 0.70, "min": 10, "tier": "volume"},
+    # TT Challenger: COLLECT-ONLY. Too young to validate (1 pair with >=10 meetings),
+    # and its base over-74.5 rate is 36.5% — books post much lower totals here, so the
+    # fixed-74.5 flag would be nonsense. Revisit ~Oct 2026 with a league-specific line.
+    "TT Challenger Series": {"rule": "off"},
 }
 DEFAULT_CFG = {"rule": "raw", "pct": 0.70, "min": 15}
 
 
 def decide(meets, cfg):
+    if cfg.get("rule") == "off":               # league is collect-only, never flags
+        return None
+    return _decide(meets, cfg)
+
+
+def _decide(meets, cfg):
     """Apply a league's flag rule to a pair's chronological meetings.
     Returns (side, strength, n, raw_side_rate) or None. 'strength' is the rule's own
     confidence (posterior prob for shrunk, raw rate for raw); raw_side_rate is the

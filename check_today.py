@@ -30,7 +30,8 @@ except Exception:                        # fallback: fixed MDT offset
 
 # short league tags for phone alerts / table rows
 TAG = {"TT Elite Series": "Elite", "Setka Cup": "Setka",
-       "Czech Liga Pro": "LigaPro", "TT Cup": "TTCup"}
+       "Czech Liga Pro": "LigaPro", "TT Cup": "TTCup",
+       "Setka Women": "SetkaW", "TT Challenger Series": "Chall"}
 
 
 def mt_time(ts):
@@ -85,10 +86,13 @@ def all_fixtures():
 def actionable(fixtures, rows, line, min_h2h=None, pct=None):
     """H2H records are per-league (same pair in two leagues = different dynamics).
     Each league is flagged by its own validated rule (LEAGUE_CFG); --min/--pct
-    override the rule with the plain raw threshold when given."""
+    override the rule with the plain raw threshold when given. Collect-only
+    leagues (rule 'off') never flag, even under a manual override."""
     rec_by_league = {}
     bets = []
-    for p1, p2, ts, league in fixtures:
+    for p1, p2, ts, league, mid in fixtures:
+        if LEAGUE_CFG.get(league, {}).get("rule") == "off":
+            continue
         if league not in rec_by_league:
             rec_by_league[league] = h2h_records(
                 [r for r in rows if r[4] == league], line)
@@ -102,7 +106,7 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             avg = sum(t for _, t, _ in meets) / n
             bets.append({"hit": strength, "raw": raw, "n": n, "side": side,
                          "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
-                         "ts": int(ts) if ts else 0, "league": league,
+                         "ts": int(ts) if ts else 0, "league": league, "mid": mid,
                          "tier": LEAGUE_CFG.get(league, {}).get("tier")})
     return sorted(bets, key=lambda b: -b["hit"])
 
@@ -123,6 +127,9 @@ def main():
         fx = [f for f in fx if args.league.lower() in f[3].lower()]
     bets = actionable(fx, rows, args.line, args.min, args.pct)
     new = write_alerts(bets, args.line)     # alert.txt = new bets for the phone push
+    if not (args.min or args.pct):          # paper-track only the real (league-rule) flags
+        import paper_ledger
+        paper_ledger.log_flags(bets, args.line)
     mode = (f"raw ≥{(args.pct or 0.70)*100:.0f}% over ≥{args.min or 10} H2H"
             if (args.min or args.pct) else "per-league validated rules")
     print(f"\n{len(fx)} upcoming fixtures ({args.league or 'all leagues'}) · {len(rows):,} "
