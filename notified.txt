@@ -9,11 +9,13 @@ Dawid Michna|Martin Olejnik|over|1783428900
 Dawid Pyrek|Kamil Delikatny|under|1783534800
 Dawid Stapor|Michal Lysakowski|under|1783490400
 Dawid Stapor|Pawel Gola|over|1783486800
+Dmitriy Kim|Yaroslav Stepanchuk|over|1783548300
 Dmitro Kuzmenko|Dmytro Prylepa|under|1783497600
 Dmitro Kuzmenko|Oleh Kurylenko|under|1783510200
 Dmytro Derevynskyi|Oleksandr Melashenko|over|1783535100
 Dmytro Derevynskyi|Roman Gnoevoy|over|1783524300
 Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
+Eduard Rubtsov|Oleksandr V Kovalchuk|over|1783562100
 Erik Precek|Radek Benes|under|1783496400
 Grzegorz Adamiak|Grzegorz Felkel|under|1783481100
 Grzegorz Felkel|Maciej Nowalinski|under|1783495200
@@ -24,10 +26,12 @@ Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
+Jan Skvrna|Radek Benes|over|1783509000
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
 Kacper Adamus|Rafal Gajda|over|1783488600
+Kacper Adamus|Rafal Gajda|over|1783516200
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
@@ -43,6 +47,8 @@ Michal Chalupa|Zbynek Pagac|over|1783506600
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
+Oleksandr V Kovalchuk|Serhii Skachenko|over|1783558500
+Oleksii Mitla|Valerii Vlasenko|over|1783556100
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Orest Hura|Valerii Vlasenko|over|1783464300
 Pavel Wawrosz|Radovan Polasek|over|1783492200
