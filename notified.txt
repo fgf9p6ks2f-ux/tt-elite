@@ -26,6 +26,7 @@ Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
+Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Skvrna|Radek Benes|over|1783509000
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
@@ -44,6 +45,7 @@ Martin Huk|Radim Urbaniec|over|1783440000
 Martin Huk|Radim Urbaniec|over|1783504800
 Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Chalupa|Zbynek Pagac|over|1783506600
+Myroslav Loboda|Viktor Slozka|over|1783564200
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
@@ -52,6 +54,7 @@ Oleksii Mitla|Valerii Vlasenko|over|1783556100
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Orest Hura|Valerii Vlasenko|over|1783464300
 Pavel Wawrosz|Radovan Polasek|over|1783492200
+Radek Benes|Tomas Krenek|over|1783510800
 Radomir Revay|Tadeas Zika|over|1783423800
 Radomir Revay|Tadeas Zika|over|1783490400
 Roman Boklah|Serhii Priadko|over|1783526400
