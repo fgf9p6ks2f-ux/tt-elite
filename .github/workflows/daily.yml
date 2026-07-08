@@ -47,18 +47,11 @@ jobs:
           } > today.md
       - name: esoccer/ebasketball line-conditional flags
         run: python check_esb.py || echo "esb flags skipped"
-      - name: push esoccer/ebasketball flags to phone (ntfy)
-        env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: |
-          if [ -n "$NTFY_TOPIC" ] && [ -s esb_alert.txt ]; then
-            curl -s -H "Title: Esoc/Ebball totals — Over if line ≤O#, Under if ≥U#" \
-                 -H "Priority: high" -H "Tags: video_game" \
-                 -d "$(cat esb_alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" \
-              && echo "pushed $(wc -l < esb_alert.txt) esb alert(s)"
-          else
-            echo "no new esb flags"
-          fi
+      # ESB (bet365's Esoccer/Ebasketball Battle) phone push is OFF: the user bets
+      # FanDuel, which carries H2H GG League instead — those alerts come from the
+      # tennis-odds-collector repo with FD's actual posted line + price. ESB zones
+      # stay in esb_today.md + the paper ledger; re-add this push if bet365 access
+      # ever materializes (see git history for the step).
       - name: grade paper ledger (live flag track record)
         run: python paper_ledger.py || echo "paper ledger skipped"
       - name: push new bets to phone (ntfy)
