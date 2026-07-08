@@ -1,6 +1,7 @@
 Andrii Hrabskyi|Oleksandr Ivchuk|over|1783436400
 Andrii Romanenko|Bohdan Chaikovskyi|over|1783523100
 Andrii Romanenko|Ihor Sukovatyi|over|1783519500
+Andrii Romanenko|Oleksandr Pohonov|over|1783537500
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
 Bohdan Chaikovskyi|Serhii Maksymiv|over|1783533900
 Dawid Jadam|Krystian Kolodziej|under|1783535400
@@ -28,6 +29,7 @@ Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
+Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
@@ -46,3 +48,4 @@ Radomir Revay|Tadeas Zika|over|1783423800
 Radomir Revay|Tadeas Zika|over|1783490400
 Roman Boklah|Serhii Priadko|over|1783526400
 Roman Gnoevoy|Spartak Abalmaz|over|1783463100
+Roman Gnoevoy|Spartak Abalmaz|over|1783536900

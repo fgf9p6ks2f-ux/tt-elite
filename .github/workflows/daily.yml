@@ -25,8 +25,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: refresh all four leagues — FREE via 24live (no token)
+      - name: refresh TT leagues — FREE via 24live (no token)
         run: python ingest_24live.py --limit 500 || echo "24live collect skipped"
+      - name: refresh esoccer + ebasketball — FREE via ESportsBattle API
+        run: python ingest_esb.py --days 2 || echo "esb collect skipped"
       - name: build today's actionable bets
         run: |
           {

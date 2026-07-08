@@ -43,6 +43,11 @@ LEAGUE_CFG = {
     # and its base over-74.5 rate is 36.5% — books post much lower totals here, so the
     # fixed-74.5 flag would be nonsense. Revisit ~Oct 2026 with a league-specific line.
     "TT Challenger Series": {"rule": "off"},
+    # ESportsBattle esoccer/ebasketball: COLLECT-ONLY. Books post DYNAMIC per-match
+    # totals here (not a lazy fixed line like TT's 74.5), so flags require the posted
+    # line as an input. Collected free via source_esb; validation in validate_esb.py.
+    "Esoccer Battle":     {"rule": "off"},
+    "Ebasketball Battle": {"rule": "off"},
 }
 DEFAULT_CFG = {"rule": "raw", "pct": 0.70, "min": 15}
 

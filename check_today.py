@@ -31,7 +31,8 @@ except Exception:                        # fallback: fixed MDT offset
 # short league tags for phone alerts / table rows
 TAG = {"TT Elite Series": "Elite", "Setka Cup": "Setka",
        "Czech Liga Pro": "LigaPro", "TT Cup": "TTCup",
-       "Setka Women": "SetkaW", "TT Challenger Series": "Chall"}
+       "Setka Women": "SetkaW", "TT Challenger Series": "Chall",
+       "Esoccer Battle": "Esoc", "Ebasketball Battle": "Ebball"}
 
 
 def mt_time(ts):
