@@ -52,7 +52,7 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           if [ -n "$NTFY_TOPIC" ] && [ -s esb_alert.txt ]; then
-            curl -s -H "Title: Esoccer/Ebasketball bets (check posted line!)" \
+            curl -s -H "Title: Esoc/Ebball totals — Over if line ≤O#, Under if ≥U#" \
                  -H "Priority: high" -H "Tags: video_game" \
                  -d "$(cat esb_alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" \
               && echo "pushed $(wc -l < esb_alert.txt) esb alert(s)"

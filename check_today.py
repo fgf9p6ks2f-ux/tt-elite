@@ -57,12 +57,13 @@ def write_alerts(bets, line):
         tag = TAG.get(b["league"], b["league"])
         if b.get("tier") == "volume":
             tag += "·VOL"                               # thin-margin volume tier — optional
-        msg = (f"[{tag}] {b['side'].upper()} {line} — "
-               f"{b['p1']} vs {b['p2']} ({b['hit']*100:.0f}%, n{b['n']}, {b['when']})")
+        w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
+        msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
+               f"{b['side'][0].upper()}{line:g} · {w}-{b['n']-w} ({b['raw']*100:.0f}%)")
         new.append(msg)
         remind_at = b["ts"] - 300                        # 5 min before tip
         if remind_at > now + 30:                         # only schedule future reminders
-            reminders.append(f"{remind_at}\tSTARTS SOON — {msg}")
+            reminders.append(f"{remind_at}\t5MIN — {msg}")
     (HERE / "alert.txt").write_text("\n".join(new))
     (HERE / "reminders.txt").write_text("\n".join(reminders))
     notif.write_text("\n".join(sorted(seen)[-3000:]))    # cap history

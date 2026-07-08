@@ -67,14 +67,28 @@ def histories(league):
     return h
 
 
-def ladder(h, line0, step, side):
-    """Side hit-rate at line0 and one step either side, e.g. 'u4.5 74% · u5.5 82%'."""
-    out = []
-    for L in (line0 - step, line0, line0 + step):
-        r = sum(1 for t in h if t > L) / len(h)
-        r = r if side == "over" else 1 - r
-        out.append(f"{side[0]}{L:g} {r*100:.0f}%")
-    return " · ".join(out)
+def zones(h, line0, step, thr=0.70):
+    """Bet zones vs WHATEVER line the book posts: 'O≤X | U≥Y' — Over hits >=thr
+    historically at any line up to X, Under hits >=thr at any line from Y up.
+    (Over-rate falls and under-rate rises monotonically in the line, so the two
+    thresholds fully describe the pair.) Grid = ±3 steps around the center line."""
+    n = len(h)
+    grid = [line0 + i * step for i in range(-3, 4)]
+    over_max = None
+    for L in grid:
+        if sum(1 for t in h if t > L) / n >= thr:
+            over_max = L
+    under_min = None
+    for L in grid:
+        if sum(1 for t in h if t < L) / n >= thr:
+            under_min = L
+            break
+    parts = []
+    if over_max is not None:
+        parts.append(f"O≤{over_max:g}")
+    if under_min is not None:
+        parts.append(f"U≥{under_min:g}")
+    return " | ".join(parts) if parts else "no zone"
 
 
 def flags():
@@ -101,8 +115,8 @@ def flags():
             out.append({"league": league, "tag": cfg["tag"], "p1": p1, "p2": p2,
                         "side": side, "line": line0, "hit": conf, "raw": conf,
                         "n": len(h), "ts": ts, "mid": mid,
-                        "push": conf >= cfg["push"],
-                        "ladder": ladder(h, line0, cfg["step"], side)})
+                        "push": conf >= cfg["push"], "avg": sum(h) / len(h),
+                        "zones": zones(h, line0, cfg["step"])})
     return sorted(out, key=lambda b: -b["hit"])
 
 
@@ -116,25 +130,26 @@ def write_outputs(bets, push_cap=35):
         if not b["push"] or b["mid"] in seen or len(new) >= push_cap:
             continue
         seen.add(b["mid"])
-        new.append(f"[{b['tag']}] {b['side'].upper()} {b['line']:g} — {b['p1']} vs {b['p2']} "
-                   f"({b['hit']*100:.0f}%, n{b['n']}, {mt_time(b['ts'])}) | {b['ladder']}")
+        new.append(f"[{b['tag']}] {b['p1']} v {b['p2']} · {mt_time(b['ts'])} · "
+                   f"{b['zones']} · avg {b['avg']:.1f} · {b['n']}g")
     (HERE / "esb_alert.txt").write_text("\n".join(new))
     notif.write_text("\n".join(sorted(seen)[-8000:]))
 
     # full report
-    lines = ["# Esoccer / Ebasketball — line-conditional flags", "",
-             f"_{dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC · line-CONDITIONAL: "
-             "the shown line is the pair's own center (trailing-10 median). Bet ONLY if "
-             "the book's posted line sits in a ≥70% zone of the ladder._", "",
-             "Validated walk-forward: esoccer 74.2% at ≥70% conf (80.9% at ≥80%) · "
-             "ebasketball 68.5% (73.9% at ≥80%). 📱 = pushed to phone.", ""]
+    lines = ["# Esoccer / Ebasketball — bet-zone flags", "",
+             f"_{dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%M} UTC · MARKET: match total "
+             "goals O/U (Esoccer Battle 8 mins) / match total points O/U incl. OT "
+             "(Ebasketball Battle 4x5 mins). Read the zone against the book's POSTED line: "
+             "bet Over if it's ≤ the O number, Under if ≥ the U number, skip between._", "",
+             "Validated walk-forward: esoccer 74-81% inside zones · ebasketball 69-74%. "
+             "📱 = pushed to phone.", ""]
     if bets:
-        lines += ["| when | league | matchup | bet | conf | n | ladder | |",
-                  "|---|---|---|---|---|---|---|---|"]
+        lines += ["| when | league | matchup | zones | avg | games | |",
+                  "|---|---|---|---|---|---|---|"]
         for b in bets:
             lines.append(f"| {mt_time(b['ts'])} | {b['tag']} | {b['p1']} vs {b['p2']} | "
-                         f"{b['side'].upper()} {b['line']:g} | {b['hit']*100:.0f}% | "
-                         f"{b['n']} | {b['ladder']} | {'📱' if b['push'] else ''} |")
+                         f"{b['zones']} | {b['avg']:.1f} | {b['n']} | "
+                         f"{'📱' if b['push'] else ''} |")
     else:
         lines.append("_no qualifying fixtures right now — slates roll all day, next run "
                      "will catch them._")
@@ -149,9 +164,9 @@ def main():
     print(f"esb: {len(bets)} flags (≥report) · {len(new)} new phone alert(s) · "
           f"{logged} paper-logged")
     for b in bets[:12]:
-        print(f"  {mt_time(b['ts']):<15} {b['tag']:<7} {b['p1']+' vs '+b['p2']:<32} "
-              f"{b['side'].upper():>5} {b['line']:g}  {b['hit']*100:.0f}% n{b['n']}  "
-              f"[{b['ladder']}]{' 📱' if b['push'] else ''}")
+        print(f"  {mt_time(b['ts']):<15} {b['tag']:<7} {b['p1']+' v '+b['p2']:<30} "
+              f"{b['zones']:<16} avg {b['avg']:>5.1f}  {b['n']}g"
+              f"{' 📱' if b['push'] else ''}")
 
 
 if __name__ == "__main__":
