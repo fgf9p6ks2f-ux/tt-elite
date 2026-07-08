@@ -40,6 +40,9 @@ def build(now_utc):
     rows = con.execute("SELECT league, result, pnl, graded_at FROM paper_bets "
                        "WHERE result IS NOT NULL").fetchall()
     con.close()
+    rows = [r for r in rows if r[0] in TAG]      # table-tennis leagues only (ESB esoccer/
+                                                 # ebasketball paper flags live in paper.md,
+                                                 # not this TT scoreboard)
 
     def agg(rs):
         w = sum(1 for r in rs if r[0] == "W"); l = sum(1 for r in rs if r[0] == "L")
