@@ -52,6 +52,10 @@ jobs:
       # tennis-odds-collector repo with FD's actual posted line + price. ESB zones
       # stay in esb_today.md + the paper ledger; re-add this push if bet365 access
       # ever materializes (see git history for the step).
+      - name: TT slate digest — time-ordered list, sent at the 15:00 & 20:00 UTC runs
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python slate_push.py || echo "slate push skipped"
       - name: grade paper ledger (live flag track record)
         run: python paper_ledger.py || echo "paper ledger skipped"
       - name: push new bets to phone (ntfy)
