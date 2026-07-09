@@ -169,7 +169,7 @@ def main():
     print(f"\n'zone' = bettable line range: O≤X take the Over at any posted total up to X; "
           f"U≥Y take the Under at any total from Y up; posted line outside the zone = skip. "
           f"'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average "
-          f"total.\n·VOL = volume tier (Setka): real but thinnest per-bet edge — optional.\n")
+          f"total.\n")
 
 
 if __name__ == "__main__":

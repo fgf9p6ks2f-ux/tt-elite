@@ -29,16 +29,18 @@ DB = HERE / "tt.sqlite"
 # each ingest (recompute deliberately, not implicitly).
 LEAGUE_CFG = {
     "TT Elite Series": {"rule": "shrunk", "k": 16.0, "thr": 0.675, "min": 12, "base": 0.512},
-    # Setka = VOLUME tier: the edge is real (z=+3.0, ~+18% ROI) but per-bet margin is the
-    # thinnest (~62% vs 52.4% break-even) at the highest volume (~12 bets/day) — take
-    # these only when you want volume; skip freely. The other leagues are quality tier.
-    "Setka Cup":       {"rule": "shrunk", "k": 8.0,  "thr": 0.65,  "min": 8,  "base": 0.515,
-                        "tier": "volume"},
-    "Czech Liga Pro":  {"rule": "raw",    "pct": 0.70, "min": 15},
-    "TT Cup":          {"rule": "raw",    "pct": 0.70, "min": 12},
-    # Setka Women: volume tier like Setka main. Walk-forward on 24live history
-    # (Jan-Jul 2026, 2,266 matches): 143/232 = 61.6% (z=+2.8, +17.7% ROI) at raw .70/n10.
-    "Setka Women":     {"rule": "raw",    "pct": 0.70, "min": 10, "tier": "volume"},
+    # Retuned 2026-07-09 on the DEEPENED Sofascore history (50k+ matches back to 2020),
+    # holdout-validated (tune on first 70% of the timeline, score last 30%). The shrunk
+    # rule + a higher bar filters to genuine signal now that samples are deep — every
+    # league jumped in win% and ROI vs the old shallow-window configs:
+    #   Setka  60.9%/+16% -> 70.2%/+34%   ·  TT Cup   63%/+21% -> 77.1%/+47%
+    #   LigaPro 58.6%/+12% -> 62.7%/+20%  ·  SetkaW   61.8%/+18% -> 67.2%/+28%
+    # Fewer, higher-conviction bets (Setka ~12/day -> a handful). No longer thin-margin,
+    # so the ·VOL volume tag is dropped.
+    "Setka Cup":       {"rule": "shrunk", "k": 10.0, "thr": 0.72, "min": 8, "base": 0.515},
+    "Czech Liga Pro":  {"rule": "shrunk", "k": 6.0,  "thr": 0.72, "min": 8, "base": 0.512},
+    "TT Cup":          {"rule": "shrunk", "k": 10.0, "thr": 0.68, "min": 8, "base": 0.536},
+    "Setka Women":     {"rule": "shrunk", "k": 10.0, "thr": 0.65, "min": 8, "base": 0.450},
     # TT Challenger: COLLECT-ONLY. Too young to validate (1 pair with >=10 meetings),
     # and its base over-74.5 rate is 36.5% — books post much lower totals here, so the
     # fixed-74.5 flag would be nonsense. Revisit ~Oct 2026 with a league-specific line.
