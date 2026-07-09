@@ -112,6 +112,7 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
                          "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
                          "ts": int(ts) if ts else 0, "league": league, "mid": mid,
                          "zone": line_zone(meets, side, cfg, line),
+                         "totals": [t for _, t, _ in meets],   # raw H2H totals -> per-line ladder
                          "tier": LEAGUE_CFG.get(league, {}).get("tier")})
     return sorted(bets, key=lambda b: -b["hit"])
 

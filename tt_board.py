@@ -20,6 +20,23 @@ from h2h import DB, kelly_units, load
 OUT = Path(__file__).resolve().parent / "tt_board.json"
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
+MODEL_LINE = 74.5                          # the line the flag rules are tuned at
+LADDER = [70.5 + i for i in range(11)]     # 70.5 .. 80.5 — one row per posted .5 line
+
+
+def ladder(totals):
+    """Raw H2H over/under hit rate at every line a book might post, so the user can read
+    the hit rate at THEIR exact line — not just the model's 74.5. Totals are integers and
+    lines are .5, so there's never a push: unders = n - overs exactly. Over% is monotone
+    decreasing down the ladder."""
+    n = len(totals)
+    if not n:
+        return []
+    out = []
+    for L in LADDER:
+        o = sum(1 for t in totals if t > L)
+        out.append({"line": round(L, 1), "o": o, "u": n - o, "op": round(o / n * 100)})
+    return out
 
 
 def tracker():
@@ -48,10 +65,11 @@ def build():
             "rec": f"{w}-{b['n'] - w}", "n": b["n"], "avg": round(b["avg"], 1),
             "ts": b["ts"], "u": round(kelly_units(b["hit"]), 1),
             "tier": b.get("tier") or "",
+            "ladder": ladder(b.get("totals", [])),
         })
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
-                               "bets": out, "tracker": trk}))
+                               "bets": out, "tracker": trk, "model_line": MODEL_LINE}))
     print(f"tt_board: {len(out)} actionable bets, tracker {trk['w']}-{trk['l']} "
           f"({trk['u']:+.1f}u) -> {OUT}")
 
