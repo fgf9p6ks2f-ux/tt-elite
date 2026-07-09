@@ -35,6 +35,11 @@ def _u(u):
     return f"{u:+.2f}u (${u*100:+,.0f})"
 
 
+# Fresh-start reset 2026-07-09: the record counts flags graded on/after this date (models
+# debugged); all paper_bets history is preserved, just not shown in the running total.
+EPOCH = "2026-07-09"
+
+
 def build(target_date):
     lo_dt = dt.datetime.combine(target_date, dt.time(0, 0), tzinfo=MT)
     hi_dt = lo_dt + dt.timedelta(days=1)
@@ -42,7 +47,7 @@ def build(target_date):
     hi = hi_dt.astimezone(dt.timezone.utc).replace(tzinfo=None).isoformat()
     con = sqlite3.connect(DB)
     rows = con.execute("SELECT league, result, pnl, graded_at FROM paper_bets "
-                       "WHERE result IS NOT NULL").fetchall()
+                       "WHERE result IS NOT NULL AND graded_at >= ?", (EPOCH,)).fetchall()
     con.close()
     rows = [r for r in rows if r[0] in TAG]      # table-tennis leagues only (ESB esoccer/
                                                  # ebasketball paper flags live in paper.md,
@@ -58,7 +63,7 @@ def build(target_date):
     aw, al, ap = agg([(r[1], r[2]) for r in rows])
     lines = [f"TT paper ledger - {target_date} (MT)",
              f"TODAY: {dw}-{dl}  {_u(dp)}" if day else "TODAY: no flags settled",
-             f"ALL-TIME: {aw}-{al}  {_u(ap)}", ""]
+             f"ALL-TIME (since 7/9): {aw}-{al}  {_u(ap)}", ""]
     for lg in sorted({r[0] for r in rows}):
         d = [(r[1], r[2]) for r in rows if r[0] == lg and in_day(r)]
         a = [(r[1], r[2]) for r in rows if r[0] == lg]

@@ -1,17 +1,20 @@
 name: tt-elite-daily
-# Runs on GitHub's free compute, 100% token-free. Each run: (1) append recent results for
-# ALL FOUR leagues (TT Elite, Setka Cup, Czech Liga Pro, TT Cup) to tt.sqlite via 24live
-# (keeps the H2H flags fresh), (2) regenerate today.md — the actionable bet list — and
-# push phone alerts with league tags. No BetsAPI secret needed anywhere. Steps are
-# fault-tolerant so a flaky source / empty slate never breaks the commit.
+# Resilient TT flagger. GitHub throttles/drops per CRON TICK, not per JOB, so instead of
+# 4x/day (a dropped run = a multi-hour gap) cron just STARTS one job every 30 min and the
+# job LOOPS the pipeline every ~9 min: refresh 24live -> rebuild today.md (check_today
+# writes alert.txt + reminders.txt, deduped via notified.txt) -> push new bets -> schedule
+# 5-min reminders -> grade paper ledger -> commit. cancel-in-progress hands off seamlessly;
+# a delayed next-start is covered because the old job keeps polling up to 60 min. Free
+# compute, token-free, no BetsAPI secret.
 on:
   schedule:
-    - cron: "0 7,11,15,20 * * *"    # spread across the Polish playing day (UTC)
+    - cron: "*/30 6-23 * * *"   # ~8am-1am Poland (CEST): the TT playing day
+    - cron: "*/30 0-1 * * *"    # tail of the late slate
   workflow_dispatch: {}
 
 concurrency:
   group: tt-elite-daily
-  cancel-in-progress: false
+  cancel-in-progress: true      # a fresh run supersedes the old -> continuous coverage
 
 permissions:
   contents: write
@@ -19,68 +22,52 @@ permissions:
 jobs:
   daily:
     runs-on: ubuntu-latest
+    timeout-minutes: 60         # keep polling until the next 30-min run supersedes us
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: refresh TT leagues — FREE via 24live (no token)
-        run: python ingest_24live.py --limit 500 || echo "24live collect skipped"
-      - name: build today's actionable bets
-        run: |
-          {
-            echo "# Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)"
-            echo
-            echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
-            echo
-            echo "Per-league shrunk-posterior rules, retuned on deep Sofascore history (2026-07-09,"
-            echo "holdout-validated). Walk-forward win% / ROI: Elite 72.7%/+39% · Setka 73.0%/+39%"
-            echo "· TTCup 64.4%/+23% · SetkaW 65.4%/+25% · LigaPro 61.4%/+17%. Fewer, sharper bets."
-            echo
-            echo '```'
-            python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"
-            echo '```'
-          } > today.md
-      # ESB (ESportsBattle "Esoccer/Ebasketball Battle") pipeline SCRAPPED 2026-07-09:
-      # bet365-only (user limited to $0 there) AND the real market is just O/U 2.5 @ ~-700
-      # (fair odds, no total to shop) — the signal is unbettable. FanDuel-bettable esports
-      # (eFootball/eBasketball H2H GG) live in the tennis-odds-collector repo instead.
-      - name: TT slate digest — time-ordered list, sent at the 15:00 & 20:00 UTC runs
+      - name: poll every ~9 min — refresh, flag, push, remind, grade, commit
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python slate_push.py || echo "slate push skipped"
-      - name: grade paper ledger (live flag track record)
-        run: python paper_ledger.py || echo "paper ledger skipped"
-      # nightly TT results digest now lives in its own workflow (nightly-tt-digest.yml):
-      # dedicated crons + catch-nets + dedupe log, so it survives GitHub's flaky cron.
-      - name: push new bets to phone (ntfy)
-        env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: |
-          if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
-            curl -s -H "Title: Table tennis bets" -H "Priority: high" -H "Tags: ping_pong" \
-                 -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
-          else
-            echo "no new bets to push (or NTFY_TOPIC unset)"
-          fi
-      - name: schedule 5-min-before reminders (ntfy At)
-        env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: |
-          if [ -n "$NTFY_TOPIC" ] && [ -s reminders.txt ]; then
-            while IFS=$'\t' read -r at msg; do
-              [ -n "$at" ] && curl -s -H "Title: TT match starts soon" -H "At: $at" \
-                -H "Priority: high" -H "Tags: alarm_clock" -d "$msg" \
-                "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
-            done < reminders.txt
-            echo "scheduled $(wc -l < reminders.txt) reminder(s)"
-          fi
-      - name: commit
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          git add -f tt.sqlite today.md notified.txt paper.md
-          git commit -m "daily update [skip ci]" || { echo "no change"; exit 0; }
-          git pull --rebase --autostash -X theirs || true
-          git push
+          python slate_push.py || echo "slate push skipped"   # self-gated to 15/20 UTC
+          for i in $(seq 1 6); do
+            python ingest_24live.py --limit 400 || echo "ingest skipped"
+            {
+              echo "# Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)"
+              echo
+              echo "_updated $(date -u +'%Y-%m-%d %H:%M UTC')_"
+              echo
+              echo "Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets."
+              echo
+              echo '```'
+              python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"
+              echo '```'
+            } > today.md
+            python paper_ledger.py || echo "paper ledger skipped"
+            if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
+              curl -s -H "Title: Table tennis bets" -H "Priority: high" -H "Tags: ping_pong" \
+                   -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
+            fi
+            if [ -n "$NTFY_TOPIC" ] && [ -s reminders.txt ]; then
+              while IFS=$'\t' read -r at msg; do
+                [ -n "$at" ] && curl -s -H "Title: TT match starts soon" -H "At: $at" \
+                  -H "Priority: high" -H "Tags: alarm_clock" -d "$msg" \
+                  "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
+              done < reminders.txt
+              echo "scheduled $(wc -l < reminders.txt) reminder(s)"
+            fi
+            if [ -n "$(git status --porcelain)" ]; then
+              git add -f tt.sqlite today.md notified.txt paper.md
+              if git commit -m "tt update [skip ci]" >/dev/null 2>&1; then
+                git pull --rebase --autostash -X theirs -q || true
+                git push -q || true
+              fi
+            fi
+            sleep 540
+          done
