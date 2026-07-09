@@ -35,6 +35,7 @@ Jan Szotkowski|Tadeas Zika|over|1783607400
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
+Kacper Adamus|Marian Lebek|under|1783634400
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
 Kamil Delikatny|Zbigniew Nocun|under|1783479900

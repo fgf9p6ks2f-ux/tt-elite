@@ -1,13 +1,13 @@
 # TT paper ledger — live flag track record
 
-_2026-07-09T06:34:23 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-09T09:19:01 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 15-16  ·  **P&L:** -2.36u ($-236)  ·  **hit 48.4%** (break-even 52.4%)  ·  **Open:** 7
+- **Record:** 16-16  ·  **P&L:** -1.45u ($-145)  ·  **hit 50.0%** (break-even 52.4%)  ·  **Open:** 7
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 3 | 2-1 | 67% | +0.82 |
-| Setka Cup | 21 | 10-11 | 48% | -1.91 |
+| Setka Cup | 22 | 11-11 | 50% | -1.00 |
 | TT Cup | 4 | 1-3 | 25% | -2.09 |
 | TT Elite Series | 3 | 2-1 | 67% | +0.82 |
 
@@ -15,6 +15,7 @@ _2026-07-09T06:34:23 UTC · every flag logged as 1u ($100) at -110 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-09 | Setka Cup | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 54 | W | +0.91 |
 | 2026-07-09 | TT Cup | Jan Masternak vs Bartlomiej Molka | over 74.5 | 64 | L | -1.00 |
 | 2026-07-09 | TT Elite Series | Milosz Piecowski vs Karol Sulkowski | over 74.5 | 88 | W | +0.91 |
 | 2026-07-09 | Setka Cup | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
@@ -39,5 +40,4 @@ _2026-07-09T06:34:23 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-08 | Setka Cup | Bohdan Chaikovskyi vs Ihor Sukovatyi | under 74.5 | 60 | W | +0.91 |
 | 2026-07-08 | Setka Cup | Oleh Kurylenko vs Dmitro Kuzmenko | under 74.5 | 58 | W | +0.91 |
 | 2026-07-08 | TT Cup | Jan Skvrna vs Radek Benes | over 74.5 | 92 | W | +0.91 |
-| 2026-07-08 | Setka Cup | Vladyslav Stukalov vs Oleksandr Ovsiienko | under 74.5 | 70 | W | +0.91 |
 
