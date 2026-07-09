@@ -32,10 +32,12 @@ jobs:
       - name: poll every ~9 min — refresh, flag, push, remind, grade, commit
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          PUBLIC_REPO_PAT: ${{ secrets.PUBLIC_REPO_PAT }}
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          python slate_push.py || echo "slate push skipped"   # self-gated to 15/20 UTC
+          # ntfy now fires ONLY for: new-bet alerts (below), 5-min reminders (below), and
+          # the nightly results digest (separate workflow). slate_push benched 2026-07-09.
           for i in $(seq 1 6); do
             python ingest_24live.py --limit 400 || echo "ingest skipped"
             {
@@ -50,6 +52,8 @@ jobs:
               echo '```'
             } > today.md
             python paper_ledger.py || echo "paper ledger skipped"
+            python tt_board.py || echo "tt board skipped"           # dashboard TT tab feed
+            python push_tt_board.py || echo "tt push skipped"       # -> public dashboard repo
             if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
               curl -s -H "Title: Table tennis bets" -H "Priority: high" -H "Tags: ping_pong" \
                    -d "$(cat alert.txt)" "https://ntfy.sh/$NTFY_TOPIC" && echo "pushed $(wc -l < alert.txt) alert(s)"
