@@ -1,20 +1,21 @@
 # TT paper ledger — live flag track record
 
-_2026-07-09T18:19:28 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-09T19:11:39 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 17-18  ·  **P&L:** -2.55u ($-255)  ·  **hit 48.6%** (break-even 52.4%)  ·  **Open:** 10
+- **Record:** 17-19  ·  **P&L:** -3.55u ($-355)  ·  **hit 47.2%** (break-even 52.4%)  ·  **Open:** 9
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 6 | 3-3 | 50% | -0.27 |
 | Setka Cup | 22 | 11-11 | 50% | -1.00 |
-| TT Cup | 4 | 1-3 | 25% | -2.09 |
+| TT Cup | 5 | 1-4 | 20% | -3.09 |
 | TT Elite Series | 3 | 2-1 | 67% | +0.82 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-09 | TT Cup | Blazej Gola vs Karol Guzy | under 74.5 | 82 | L | -1.00 |
 | 2026-07-09 | Czech Liga Pro | Jan Szotkowski vs Tadeas Zika | over 74.5 | 114 | W | +0.91 |
 | 2026-07-09 | Czech Liga Pro | Radomir Revay vs Tadeas Zika | over 74.5 | 72 | L | -1.00 |
 | 2026-07-09 | Czech Liga Pro | Tadeas Zika vs Jan Szotkowski | over 74.5 | 46 | L | -1.00 |
@@ -39,5 +40,4 @@ _2026-07-09T18:19:28 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-08 | Setka Cup | Bohdan Chaikovskyi vs Andrii Romanenko | over 74.5 | 89 | W | +0.91 |
 | 2026-07-08 | Setka Cup | Ihor Torhachov vs Serhii Priadko | over 74.5 | 98 | W | +0.91 |
 | 2026-07-08 | Setka Cup | Andrii Romanenko vs Ihor Sukovatyi | over 74.5 | 63 | L | -1.00 |
-| 2026-07-08 | TT Elite Series | Rafal Gajda vs Kacper Adamus | over 74.5 | 74 | L | -1.00 |
 
