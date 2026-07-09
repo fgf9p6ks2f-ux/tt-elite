@@ -28,8 +28,6 @@ jobs:
       - run: pip install requests
       - name: refresh TT leagues — FREE via 24live (no token)
         run: python ingest_24live.py --limit 500 || echo "24live collect skipped"
-      - name: refresh esoccer + ebasketball — FREE via ESportsBattle API
-        run: python ingest_esb.py --days 2 || echo "esb collect skipped"
       - name: build today's actionable bets
         run: |
           {
@@ -45,13 +43,10 @@ jobs:
             python check_today.py --line 74.5 2>&1 || echo "(no fixtures right now)"
             echo '```'
           } > today.md
-      - name: esoccer/ebasketball line-conditional flags
-        run: python check_esb.py || echo "esb flags skipped"
-      # ESB (bet365's Esoccer/Ebasketball Battle) phone push is OFF: the user bets
-      # FanDuel, which carries H2H GG League instead — those alerts come from the
-      # tennis-odds-collector repo with FD's actual posted line + price. ESB zones
-      # stay in esb_today.md + the paper ledger; re-add this push if bet365 access
-      # ever materializes (see git history for the step).
+      # ESB (ESportsBattle "Esoccer/Ebasketball Battle") pipeline SCRAPPED 2026-07-09:
+      # bet365-only (user limited to $0 there) AND the real market is just O/U 2.5 @ ~-700
+      # (fair odds, no total to shop) — the signal is unbettable. FanDuel-bettable esports
+      # (eFootball/eBasketball H2H GG) live in the tennis-odds-collector repo instead.
       - name: TT slate digest — time-ordered list, sent at the 15:00 & 20:00 UTC runs
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -88,7 +83,7 @@ jobs:
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          git add -f tt.sqlite today.md notified.txt paper.md esb_today.md esb_notified.txt
+          git add -f tt.sqlite today.md notified.txt paper.md
           git commit -m "daily update [skip ci]" || { echo "no change"; exit 0; }
           git pull --rebase --autostash -X theirs || true
           git push
