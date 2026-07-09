@@ -3,6 +3,7 @@ Andrii Romanenko|Bohdan Chaikovskyi|over|1783523100
 Andrii Romanenko|Ihor Sukovatyi|over|1783519500
 Andrii Romanenko|Oleksandr Pohonov|over|1783537500
 Bartlomiej Molka|Jan Masternak|over|1783573200
+Blazej Gola|Karol Guzy|under|1783620000
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
 Bohdan Chaikovskyi|Serhii Maksymiv|over|1783533900
 Dawid Jadam|Krystian Kolodziej|under|1783535400
@@ -29,6 +30,7 @@ Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jan Krupnik|Jan Skvrna|over|1783512600
+Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
 Jan Szotkowski|Tadeas Zika|over|1783596600
 Jan Szotkowski|Tadeas Zika|over|1783607400
@@ -47,10 +49,13 @@ Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
 Krzysztof Kapik|Szymon Sporek|over|1783533900
 Kuba Golaszewski|Michal Skorski|over|1783545600
+Lubos Forman|Milan Smesny|under|1783668600
 Maksymilian Rus|Rafal Gajda|over|1783426800
 Martin Huk|Radim Urbaniec|over|1783440000
 Martin Huk|Radim Urbaniec|over|1783504800
 Martin Huk|Radim Urbaniec|over|1783645200
+Martin Huk|Radim Urbaniec|over|1783679400
+Martin Huk|Radim Urbaniec|over|1783710000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Chalupa|Zbynek Pagac|over|1783506600
 Myroslav Loboda|Viktor Slozka|over|1783564200
