@@ -15,13 +15,30 @@ from pathlib import Path
 import sqlite3
 
 import check_today as CT
-from h2h import DB, kelly_units, load
+from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, kelly_units, load
 
 OUT = Path(__file__).resolve().parent / "tt_board.json"
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
 MODEL_LINE = 74.5                          # the line the flag rules are tuned at
 LADDER = [70.5 + i for i in range(11)]     # 70.5 .. 80.5 — one row per posted .5 line
+
+
+def play_to(lad, over_side, league):
+    """Furthest line the flagged side is still worth playing: the last ladder line whose raw
+    H2H hit rate clears the league's validated bar (the SAME bar the flag rule uses). Over%
+    falls / under% rises with the line, so the playable lines are contiguous — the max line
+    for an over, the min for an under. The 74.5 flag line always qualifies (mirrors
+    check_today.line_zone). Computed over the ladder's own range, so the dashboard's highlight
+    + dimming are self-consistent (dimmed = genuinely below the bar, not just off-grid)."""
+    cfg = LEAGUE_CFG.get(league, DEFAULT_CFG)
+    bar = (cfg.get("thr") or cfg.get("pct") or 0.70) * 100
+    ok = [MODEL_LINE]
+    for r in lad:
+        rate = r["op"] if over_side else 100 - r["op"]
+        if rate >= bar:
+            ok.append(r["line"])
+    return max(ok) if over_side else min(ok)
 
 
 def ladder(totals):
@@ -58,14 +75,19 @@ def build():
     out = []
     for b in bets:
         w = round(b["raw"] * b["n"])
+        lad = ladder(b.get("totals", []))
+        over_side = b["side"] == "over"
+        pt = play_to(lad, over_side, b["league"])
         out.append({
             "league": b["league"], "tag": CT.TAG.get(b["league"], b["league"]),
-            "p1": b["p1"], "p2": b["p2"], "side": b["zone"],
+            "p1": b["p1"], "p2": b["p2"],
+            "side": f"O≤{pt:g}" if over_side else f"U≥{pt:g}",   # card zone == dropdown cutoff
             "conf": round(b["hit"] * 100), "raw": round(b["raw"] * 100),
             "rec": f"{w}-{b['n'] - w}", "n": b["n"], "avg": round(b["avg"], 1),
             "ts": b["ts"], "u": round(kelly_units(b["hit"]), 1),
             "tier": b.get("tier") or "",
-            "ladder": ladder(b.get("totals", [])),
+            "ladder": lad,
+            "play_to": pt,
         })
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
