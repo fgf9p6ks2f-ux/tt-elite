@@ -1,14 +1,14 @@
 # TT paper ledger — live flag track record
 
-_2026-07-10T17:29:11 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-10T17:39:33 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 24-28  ·  **P&L:** -6.18u ($-618)  ·  **hit 46.2%** (break-even 52.4%)  ·  **Open:** 6
+- **Record:** 25-28  ·  **P&L:** -5.27u ($-527)  ·  **hit 47.2%** (break-even 52.4%)  ·  **Open:** 5
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 10 | 4-6 | 40% | -2.36 |
 | Setka Cup | 27 | 14-13 | 52% | -0.27 |
-| Setka Women | 3 | 1-2 | 33% | -1.09 |
+| Setka Women | 4 | 2-2 | 50% | -0.18 |
 | TT Cup | 6 | 1-5 | 17% | -4.09 |
 | TT Elite Series | 6 | 4-2 | 67% | +1.64 |
 
@@ -16,6 +16,7 @@ _2026-07-10T17:29:11 UTC · every flag logged as 1u ($100) at -110 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-10 | Setka Women | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.91 |
 | 2026-07-10 | Setka Women | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
 | 2026-07-10 | Setka Cup | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.91 |
 | 2026-07-10 | Czech Liga Pro | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
@@ -40,5 +41,4 @@ _2026-07-10T17:29:11 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-09 | TT Cup | Jan Masternak vs Bartlomiej Molka | over 74.5 | 64 | L | -1.00 |
 | 2026-07-09 | TT Elite Series | Milosz Piecowski vs Karol Sulkowski | over 74.5 | 88 | W | +0.91 |
 | 2026-07-09 | Setka Cup | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
-| 2026-07-09 | Setka Cup | Eduard Rubtsov vs Oleksandr V Kovalchuk | over 74.5 | 111 | W | +0.91 |
 
