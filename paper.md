@@ -1,8 +1,10 @@
 # TT paper ledger — live flag track record
 
-_2026-07-10T21:22:41 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-10T21:33:15 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
 - **Record:** 29-29  ·  **P&L:** -2.64u ($-264)  ·  **hit 50.0%** (break-even 52.4%)  ·  **Open:** 10
+
+- **Real-line record (Kambi):** 2-1  ·  +0.68u on 3 bets priced at the ACTUAL posted total + odds  ·  beats the price  (vs the flat 74.5 proxy above)
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
