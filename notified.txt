@@ -41,6 +41,7 @@ Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
 Jan Szotkowski|Tadeas Zika|over|1783596600
 Jan Szotkowski|Tadeas Zika|over|1783607400
+Jan Vidourek|Richard Vavricka|over|1783712100
 Jaroslav Sindler|Patrik Sturma|over|1783683600
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
@@ -58,6 +59,7 @@ Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
 Krzysztof Kapik|Szymon Sporek|over|1783533900
+Krzysztof Kotyl|Piotr Staniszewski|over|1783713900
 Ksenia Tymchenko|Olena Bondareva|under|1783703100
 Kuba Golaszewski|Michal Skorski|over|1783545600
 Ladislav Tuma|Oleh Plyska|over|1783670400
