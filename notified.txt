@@ -35,6 +35,7 @@ Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
+Jakub Volny|Michal Raska|over|1783714200
 Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
