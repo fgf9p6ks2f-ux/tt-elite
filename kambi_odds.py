@@ -24,9 +24,7 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-from curl_cffi import requests as cr
-
-from h2h import DB, pair_key
+from h2h import DB
 
 HERE = Path(__file__).resolve().parent
 BASE = "https://eu-offering-api.kambicdn.com/offering/v2018/kambi"
@@ -37,6 +35,7 @@ LEAGUE_MAP = {"TT Elite Series": "TT Elite Series", "Czech Liga Pro": "Czech Lig
 
 
 def _sess():
+    from curl_cffi import requests as cr      # lazy: matching helpers import w/o curl_cffi
     return cr.Session(impersonate="chrome")
 
 
