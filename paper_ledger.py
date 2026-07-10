@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import datetime as dt
 import sqlite3
+from collections import defaultdict
 from pathlib import Path
 
 from h2h import DB
@@ -77,6 +78,64 @@ def grade():
     return graded
 
 
+# A usable real line = one within the range the user's books actually post (they cap ~78.5).
+# Kambi's Czech Liga Pro market runs a higher-scoring format and posts totals in the 90s that
+# sit above those pairs' historical max — not a line the user can bet — so drop out-of-range.
+REAL_LINE_LO, REAL_LINE_HI = 65.0, 82.0
+
+
+def _slate_date(start_ts):
+    if not start_ts:
+        return None
+    return dt.datetime.utcfromtimestamp(start_ts).strftime("%Y-%m-%d")
+
+
+def grade_real():
+    """Attach the REAL posted book line + over/under odds (Kambi, `odds` table) to each graded
+    bet and compute the real-line result + P&L — the honest test vs the price actually offered,
+    not the flat 74.5/-110 proxy. Matched on canonical pair key + slate date (±1 day for the
+    UTC boundary); only in-range lines (what the user can actually bet) are used."""
+    import kambi_odds as K
+    con = sqlite3.connect(DB)
+    con.execute(DDL)
+    have = {r[1] for r in con.execute("PRAGMA table_info(paper_bets)")}
+    for col, typ in (("real_line", "REAL"), ("real_od", "REAL"),
+                     ("real_result", "TEXT"), ("real_pnl", "REAL")):
+        if col not in have:
+            con.execute(f"ALTER TABLE paper_bets ADD COLUMN {col} {typ}")
+    odds = defaultdict(list)                       # pair_key -> [(date, line, over_od, under_od)]
+    for pk, d, ln, oo, uo in con.execute(
+            "SELECT pair_key, date, line, over_od, under_od FROM odds").fetchall():
+        odds[pk].append((d, ln, oo, uo))
+    graded = 0
+    rows = con.execute("SELECT mid, side, p1, p2, total, start_ts FROM paper_bets "
+                       "WHERE result IS NOT NULL AND total IS NOT NULL "
+                       "AND real_result IS NULL").fetchall()
+    for mid, side, p1, p2, total, start_ts in rows:
+        cands = odds.get(K.npair(p1, p2))
+        if not cands:
+            continue
+        bd = _slate_date(start_ts)
+        best = min(cands, key=lambda c: abs((dt.date.fromisoformat(c[0])
+                   - dt.date.fromisoformat(bd)).days) if (c[0] and bd) else 99)
+        d, ln, oo, uo = best
+        if bd and d and abs((dt.date.fromisoformat(d) - dt.date.fromisoformat(bd)).days) > 1:
+            continue                              # no line near this match's date
+        if not (REAL_LINE_LO <= ln <= REAL_LINE_HI):
+            continue                              # out of the user's bettable range
+        od = oo if side == "over" else uo
+        if not od:
+            continue
+        won = (total > ln) == (side == "over")
+        con.execute("UPDATE paper_bets SET real_line=?, real_od=?, real_result=?, real_pnl=? "
+                    "WHERE mid=?",
+                    (ln, od, "W" if won else "L", round((od - 1.0) if won else -1.0, 3), mid))
+        graded += 1
+    con.commit()
+    con.close()
+    return graded
+
+
 def _agg(con, where="", args=()):
     g = con.execute(f"SELECT result, pnl FROM paper_bets WHERE result IS NOT NULL{where}",
                     args).fetchall()
@@ -99,6 +158,17 @@ def report():
              f"  ·  **P&L:** {pnl:+.2f}u (${pnl*UNIT_USD:+,.0f})"
              + (f"  ·  **hit {w/n*100:.1f}%** (break-even 52.4%)" if n else "")
              + f"  ·  **Open:** {open_n}", ""]
+    # real-line record: the same flags graded at the ACTUAL Kambi book total + odds (Elite +
+    # in-range Liga Pro) — the honest edge-vs-price, accumulating forward as lined matches settle
+    rr = con.execute("SELECT real_result, real_pnl FROM paper_bets "
+                     "WHERE real_result IS NOT NULL").fetchall()
+    if rr:
+        rw = sum(1 for r in rr if r[0] == "W")
+        rpnl = sum(r[1] or 0 for r in rr)
+        lines += [f"- **Real-line (Kambi) record:** {rw}-{len(rr) - rw}"
+                  f"  ·  {rpnl:+.2f}u on {len(rr)} bets priced at the ACTUAL posted total + odds"
+                  f"  ·  {'beats' if rpnl > 0 else 'below'} the price"
+                  f"  (vs the flat 74.5 proxy above)", ""]
     rows = con.execute(
         "SELECT league, COUNT(*), SUM(result='W'), SUM(result='L'), SUM(COALESCE(pnl,0)) "
         "FROM paper_bets WHERE result IS NOT NULL GROUP BY league ORDER BY league").fetchall()
@@ -126,8 +196,10 @@ def report():
 
 def main():
     g = grade()
+    gr = grade_real()
     w, l, pnl, open_n = report()
-    print(f"paper ledger: {g} newly graded · record {w}-{l} · {pnl:+.2f}u · {open_n} open")
+    print(f"paper ledger: {g} newly graded · record {w}-{l} · {pnl:+.2f}u · {open_n} open"
+          f" · {gr} priced at real Kambi lines")
 
 
 if __name__ == "__main__":
