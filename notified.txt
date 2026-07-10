@@ -1,9 +1,12 @@
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
+Anastasiia Volgina|Ksenia Tymchenko|under|1783692300
 Andrii Hrabskyi|Oleksandr Ivchuk|over|1783436400
 Andrii Romanenko|Bohdan Chaikovskyi|over|1783523100
 Andrii Romanenko|Ihor Sukovatyi|over|1783519500
 Andrii Romanenko|Oleksandr Pohonov|over|1783537500
+Anhelina Plashchynska|Olga Melnik|under|1783697400
+Artem Yurkov|Vladimir Voronenko|over|1783699800
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Blazej Gola|Karol Guzy|under|1783620000
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
@@ -37,6 +40,7 @@ Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
 Jan Szotkowski|Tadeas Zika|over|1783596600
 Jan Szotkowski|Tadeas Zika|over|1783607400
+Jaroslav Sindler|Patrik Sturma|over|1783683600
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
@@ -51,6 +55,7 @@ Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
 Krzysztof Kapik|Szymon Sporek|over|1783533900
+Ksenia Tymchenko|Olena Bondareva|under|1783703100
 Kuba Golaszewski|Michal Skorski|over|1783545600
 Ladislav Tuma|Oleh Plyska|over|1783670400
 Libor Smazik|Lukas Provaznik|over|1783694700
@@ -64,6 +69,7 @@ Martin Huk|Radim Urbaniec|over|1783710000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Chalupa|Zbynek Pagac|over|1783506600
 Myroslav Loboda|Viktor Slozka|over|1783564200
+Nadiia Harmash|Olga Melnik|over|1783701000
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
