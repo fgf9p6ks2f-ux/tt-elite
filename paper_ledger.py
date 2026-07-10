@@ -12,6 +12,7 @@ decays, it shows up here first.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
@@ -90,6 +91,37 @@ def _slate_date(start_ts):
     return dt.datetime.utcfromtimestamp(start_ts).strftime("%Y-%m-%d")
 
 
+FD_JSONL = HERE / "fanduel_odds.jsonl"
+ODDS_DDL = """CREATE TABLE IF NOT EXISTS odds(
+    collected_at TEXT, source TEXT, event_id TEXT, date TEXT, league TEXT,
+    p1 TEXT, p2 TEXT, pair_key TEXT, line REAL, over_od REAL, under_od REAL)"""
+
+
+def _ingest_fanduel_jsonl(con):
+    """Upsert FanDuel lines (fanduel_odds.jsonl, committed from the user's Alberta machine — CI
+    can't reach geo-locked FanDuel Canada) into the odds table, so grade_real can prefer them."""
+    if not FD_JSONL.exists():
+        return 0
+    con.execute(ODDS_DDL)
+    n = 0
+    for ln in FD_JSONL.read_text().splitlines():
+        try:
+            o = json.loads(ln)
+        except Exception:
+            continue
+        if o.get("source") != "fanduel" or not o.get("event_id"):
+            continue
+        con.execute("DELETE FROM odds WHERE source='fanduel' AND event_id=?", (str(o["event_id"]),))
+        con.execute("INSERT INTO odds(collected_at,source,event_id,date,league,p1,p2,pair_key,"
+                    "line,over_od,under_od) VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                    (o.get("collected_at"), "fanduel", str(o["event_id"]), o.get("date"),
+                     o.get("league"), o.get("p1"), o.get("p2"), o.get("pair_key"),
+                     o.get("line"), o.get("over_od"), o.get("under_od")))
+        n += 1
+    con.commit()
+    return n
+
+
 def grade_real():
     """Attach the REAL posted book line + over/under odds (Kambi, `odds` table) to each graded
     bet and compute the real-line result + P&L — the honest test vs the price actually offered,
@@ -98,15 +130,17 @@ def grade_real():
     import kambi_odds as K
     con = sqlite3.connect(DB)
     con.execute(DDL)
+    con.execute(ODDS_DDL)
+    _ingest_fanduel_jsonl(con)                     # pull in locally-collected FanDuel lines first
     have = {r[1] for r in con.execute("PRAGMA table_info(paper_bets)")}
-    for col, typ in (("real_line", "REAL"), ("real_od", "REAL"),
-                     ("real_result", "TEXT"), ("real_pnl", "REAL")):
+    for col, typ in (("real_line", "REAL"), ("real_od", "REAL"), ("real_result", "TEXT"),
+                     ("real_pnl", "REAL"), ("real_src", "TEXT")):
         if col not in have:
             con.execute(f"ALTER TABLE paper_bets ADD COLUMN {col} {typ}")
-    odds = defaultdict(list)                       # pair_key -> [(date, line, over_od, under_od)]
-    for pk, d, ln, oo, uo in con.execute(
-            "SELECT pair_key, date, line, over_od, under_od FROM odds").fetchall():
-        odds[pk].append((d, ln, oo, uo))
+    odds = defaultdict(list)                       # pair_key -> [(source, date, line, over, under)]
+    for src, pk, d, ln, oo, uo in con.execute(
+            "SELECT source, pair_key, date, line, over_od, under_od FROM odds").fetchall():
+        odds[pk].append((src, d, ln, oo, uo))
     graded = 0
     rows = con.execute("SELECT mid, side, p1, p2, total, start_ts FROM paper_bets "
                        "WHERE result IS NOT NULL AND total IS NOT NULL "
@@ -116,10 +150,14 @@ def grade_real():
         if not cands:
             continue
         bd = _slate_date(start_ts)
-        best = min(cands, key=lambda c: abs((dt.date.fromisoformat(c[0])
-                   - dt.date.fromisoformat(bd)).days) if (c[0] and bd) else 99)
-        d, ln, oo, uo = best
-        if bd and d and abs((dt.date.fromisoformat(d) - dt.date.fromisoformat(bd)).days) > 1:
+
+        def _daydiff(c):
+            return abs((dt.date.fromisoformat(c[1]) - dt.date.fromisoformat(bd)).days) \
+                if (c[1] and bd) else 99
+        # prefer the user's real book (FanDuel) over the Kambi proxy, then the closest-dated line
+        best = min(cands, key=lambda c: (0 if c[0] == "fanduel" else 1, _daydiff(c)))
+        src, d, ln, oo, uo = best
+        if bd and d and _daydiff(best) > 1:
             continue                              # no line near this match's date
         if not (REAL_LINE_LO <= ln <= REAL_LINE_HI):
             continue                              # out of the user's bettable range
@@ -127,9 +165,9 @@ def grade_real():
         if not od:
             continue
         won = (total > ln) == (side == "over")
-        con.execute("UPDATE paper_bets SET real_line=?, real_od=?, real_result=?, real_pnl=? "
-                    "WHERE mid=?",
-                    (ln, od, "W" if won else "L", round((od - 1.0) if won else -1.0, 3), mid))
+        con.execute("UPDATE paper_bets SET real_line=?, real_od=?, real_result=?, real_pnl=?, "
+                    "real_src=? WHERE mid=?",
+                    (ln, od, "W" if won else "L", round((od - 1.0) if won else -1.0, 3), src, mid))
         graded += 1
     con.commit()
     con.close()
@@ -160,12 +198,15 @@ def report():
              + f"  ·  **Open:** {open_n}", ""]
     # real-line record: the same flags graded at the ACTUAL Kambi book total + odds (Elite +
     # in-range Liga Pro) — the honest edge-vs-price, accumulating forward as lined matches settle
-    rr = con.execute("SELECT real_result, real_pnl FROM paper_bets "
-                     "WHERE real_result IS NOT NULL").fetchall()
+    have_real = "real_result" in {r[1] for r in con.execute("PRAGMA table_info(paper_bets)")}
+    rr = con.execute("SELECT real_result, real_pnl, COALESCE(real_src,'kambi') FROM paper_bets "
+                     "WHERE real_result IS NOT NULL").fetchall() if have_real else []
     if rr:
         rw = sum(1 for r in rr if r[0] == "W")
         rpnl = sum(r[1] or 0 for r in rr)
-        lines += [f"- **Real-line (Kambi) record:** {rw}-{len(rr) - rw}"
+        fd = sum(1 for r in rr if r[2] == "fanduel")
+        src = f"{fd} FanDuel, {len(rr) - fd} Kambi" if fd else "Kambi"
+        lines += [f"- **Real-line record ({src}):** {rw}-{len(rr) - rw}"
                   f"  ·  {rpnl:+.2f}u on {len(rr)} bets priced at the ACTUAL posted total + odds"
                   f"  ·  {'beats' if rpnl > 0 else 'below'} the price"
                   f"  (vs the flat 74.5 proxy above)", ""]
