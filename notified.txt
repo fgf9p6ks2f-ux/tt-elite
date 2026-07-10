@@ -11,6 +11,7 @@ Bartlomiej Molka|Jan Masternak|over|1783573200
 Blazej Gola|Karol Guzy|under|1783620000
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
 Bohdan Chaikovskyi|Serhii Maksymiv|over|1783533900
+Daniel Priesol|Radim Kvasnicka|over|1783792800
 Dawid Jadam|Krystian Kolodziej|under|1783535400
 Dawid Michna|Martin Olejnik|over|1783428900
 Dawid Pyrek|Kamil Delikatny|under|1783534800
@@ -72,15 +73,18 @@ Martin Huk|Radim Urbaniec|over|1783645200
 Martin Huk|Radim Urbaniec|over|1783679400
 Martin Huk|Radim Urbaniec|over|1783710000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
+Michal Cabis|Michal Vavrecka|over|1783769400
 Michal Chalupa|Zbynek Pagac|over|1783506600
 Myroslav Loboda|Viktor Slozka|over|1783564200
 Nadiia Harmash|Olga Melnik|over|1783701000
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
+Oleh Napirko|Serhii Berezynskyi|under|1783776900
 Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
 Oleksandr V Kovalchuk|Serhii Skachenko|over|1783558500
 Oleksii Mitla|Valerii Vlasenko|over|1783556100
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
+Ondrej Paril|Radomir Revay|over|1783753200
 Orest Hura|Valerii Vlasenko|over|1783464300
 Pavel Wawrosz|Radovan Polasek|over|1783492200
 Radek Benes|Tomas Krenek|over|1783510800
@@ -91,3 +95,4 @@ Roman Boklah|Serhii Priadko|over|1783526400
 Roman Gnoevoy|Spartak Abalmaz|over|1783463100
 Roman Gnoevoy|Spartak Abalmaz|over|1783536900
 Serhii Kushnirenko|Serhii Ponomarenko|under|1783666800
+Serhii Kushnirenko|Serhii Ponomarenko|under|1783773000
