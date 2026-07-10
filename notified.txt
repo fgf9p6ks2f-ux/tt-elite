@@ -49,6 +49,7 @@ Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Karol Guzy|Krzysztof Zapala|over|1783542600
+Karol Sulkowski|Michal Minda|over|1783742400
 Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300

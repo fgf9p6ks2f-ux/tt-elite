@@ -1,20 +1,21 @@
 # TT paper ledger — live flag track record
 
-_2026-07-10T11:58:22 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-10T12:08:46 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 21-23  ·  **P&L:** -3.91u ($-391)  ·  **hit 47.7%** (break-even 52.4%)  ·  **Open:** 12
+- **Record:** 21-24  ·  **P&L:** -4.91u ($-491)  ·  **hit 46.7%** (break-even 52.4%)  ·  **Open:** 12
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 9 | 4-5 | 44% | -1.36 |
 | Setka Cup | 24 | 12-12 | 50% | -1.09 |
-| TT Cup | 5 | 1-4 | 20% | -3.09 |
+| TT Cup | 6 | 1-5 | 17% | -4.09 |
 | TT Elite Series | 6 | 4-2 | 67% | +1.64 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-10 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 70 | L | -1.00 |
 | 2026-07-10 | Czech Liga Pro | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.91 |
 | 2026-07-10 | Setka Cup | Oleh Plyska vs Ladislav Tuma | over 74.5 | 95 | W | +0.91 |
 | 2026-07-10 | Czech Liga Pro | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
@@ -39,5 +40,4 @@ _2026-07-10T11:58:22 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-08 | Setka Cup | Kostiantyn Hrynenko vs Oleksandr Melashenko | over 74.5 | 71 | L | -1.00 |
 | 2026-07-08 | Setka Cup | Andrii Romanenko vs Oleksandr Pohonov | over 74.5 | 68 | L | -1.00 |
 | 2026-07-08 | Setka Cup | Spartak Abalmaz vs Roman Gnoevoy | over 74.5 | 68 | L | -1.00 |
-| 2026-07-08 | Setka Cup | Oleksandr Melashenko vs Dmytro Derevynskyi | over 74.5 | 99 | W | +0.91 |
 
