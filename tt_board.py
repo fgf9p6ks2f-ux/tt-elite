@@ -22,36 +22,35 @@ OUT = Path(__file__).resolve().parent / "tt_board.json"
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
 MODEL_LINE = 74.5                          # the line the flag rules are tuned at
-SPAN = 5                                    # ladder half-width (2*SPAN+1 = 11 rows)
+LADDER = [70.5 + i for i in range(11)]     # 70.5 .. 80.5 — one row per posted .5 line
 
 
 def play_to(lad, over_side, league):
     """Furthest line the flagged side is still worth playing: the last ladder line whose raw
     H2H hit rate clears the league's validated bar (the SAME bar the flag rule uses). Over%
-    falls / under% rises with the line, so playable lines are contiguous — max line for an
-    over, min for an under. Computed over the ladder's own range, so the dashboard's ◄
-    highlight + dimming are self-consistent (dimmed = genuinely below the bar)."""
+    falls / under% rises with the line, so the playable lines are contiguous — max line for an
+    over, min for an under. The 74.5 flag line always qualifies (mirrors line_zone). This is
+    the conservative, profitable cutoff — deliberately NOT stretched to the pair's high-scoring
+    tail, so the ◄ stays at the safe, tuned line."""
     cfg = LEAGUE_CFG.get(league, DEFAULT_CFG)
     bar = (cfg.get("thr") or cfg.get("pct") or 0.70) * 100
-    ok = [r["line"] for r in lad if (r["op"] if over_side else 100 - r["op"]) >= bar]
-    if not ok:                              # degenerate: nothing clears — fall back to center
-        return lad[len(lad) // 2]["line"] if lad else MODEL_LINE
+    ok = [MODEL_LINE]
+    for r in lad:
+        rate = r["op"] if over_side else 100 - r["op"]
+        if rate >= bar:
+            ok.append(r["line"])
     return max(ok) if over_side else min(ok)
 
 
 def ladder(totals):
-    """Raw H2H over/under hit rate at every line a book might post, CENTERED on where this
-    pair actually scores (round(avg) ± SPAN) — because the book's real line tracks the pair's
-    median, not a fixed 74.5, and these leagues run anywhere from ~68 to ~94. So the posted
-    line always lands on the ladder. Integer totals vs .5 lines ⇒ no pushes; over% is monotone
-    decreasing down the ladder."""
+    """Raw H2H over/under hit rate at every line a book might post (fixed 70.5–80.5), so the
+    user can read the hit rate at THEIR exact line. Totals are integers and lines are .5, so
+    there's never a push: unders = n - overs exactly. Over% is monotone decreasing down."""
     n = len(totals)
     if not n:
         return []
-    base = round(sum(totals) / n)
-    lines = [base - SPAN - 0.5 + i for i in range(2 * SPAN + 1)]   # base-5.5 .. base+4.5
     out = []
-    for L in lines:
+    for L in LADDER:
         o = sum(1 for t in totals if t > L)
         out.append({"line": round(L, 1), "o": o, "u": n - o, "op": round(o / n * 100)})
     return out
