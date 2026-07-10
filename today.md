@@ -1,6 +1,6 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-10 21:11 UTC_
+_updated 2026-07-10 21:21 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
@@ -13,6 +13,6 @@ Traceback (most recent call last):
   File "/home/runner/work/tt-elite/tt-elite/paper_ledger.py", line 48, in log_flags
     cur = con.execute(
           ^^^^^^^^^^^^
-sqlite3.OperationalError: table paper_bets has 19 columns but 15 values were supplied
+sqlite3.OperationalError: table paper_bets has 20 columns but 15 values were supplied
 (no fixtures right now)
 ```
