@@ -15,7 +15,6 @@ from pathlib import Path
 import sqlite3
 
 import check_today as CT
-import kambi_odds as KO
 from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, kelly_units, load
 
 OUT = Path(__file__).resolve().parent / "tt_board.json"
@@ -73,16 +72,12 @@ def build():
     rows = load(with_league=True)
     bets = CT.actionable(CT.all_fixtures(), rows, 74.5)
     out = []
-    con = sqlite3.connect(DB)                    # real posted lines (Kambi: Elite + Liga Pro)
-    book = KO.latest_lines(con)
-    con.close()
     for b in bets:
         w = round(b["raw"] * b["n"])
-        totals = b.get("totals", [])
-        lad = ladder(totals)
         over_side = b["side"] == "over"
+        lad = ladder(b.get("totals", []))
         pt = play_to(lad, over_side, b["league"])
-        entry = {
+        out.append({
             "league": b["league"], "tag": CT.TAG.get(b["league"], b["league"]),
             "p1": b["p1"], "p2": b["p2"],
             "side": f"O≤{pt:g}" if over_side else f"U≥{pt:g}",   # card zone == dropdown cutoff
@@ -92,16 +87,7 @@ def build():
             "tier": b.get("tier") or "",
             "ladder": lad,
             "play_to": pt,
-        }
-        bk = book.get(KO.npair(b["p1"], b["p2"]))
-        if bk and totals:                        # real book line found -> show it + its hit rate
-            n = len(totals)
-            o = sum(1 for t in totals if t > bk["line"])
-            hit = o if over_side else n - o
-            entry.update({"book_line": bk["line"], "book_over": bk["over_od"],
-                          "book_under": bk["under_od"], "book_hit": round(hit / n * 100),
-                          "book_rec": f"{hit}-{n - hit}"})
-        out.append(entry)
+        })
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
                                "bets": out, "tracker": trk, "model_line": MODEL_LINE}))

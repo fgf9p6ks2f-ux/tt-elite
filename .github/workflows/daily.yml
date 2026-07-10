@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests curl_cffi
+      - run: pip install requests
       - name: poll every ~9 min — refresh, flag, push, remind, grade, commit
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -52,7 +52,6 @@ jobs:
               echo '```'
             } > today.md
             python paper_ledger.py || echo "paper ledger skipped"
-            python kambi_odds.py || echo "kambi odds skipped"       # real posted lines (Elite+LigaPro)
             python tt_board.py || echo "tt board skipped"           # dashboard TT tab feed
             python push_tt_board.py || echo "tt push skipped"       # -> public dashboard repo
             if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
