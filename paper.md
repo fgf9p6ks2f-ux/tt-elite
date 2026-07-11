@@ -1,14 +1,14 @@
 # TT paper ledger — live flag track record
 
-_2026-07-11T18:19:17 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-11T18:29:57 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 33-30  ·  **P&L:** -0.00u ($-0)  ·  **hit 52.4%** (break-even 52.4%)  ·  **Open:** 5
+- **Record:** 34-30  ·  **P&L:** +0.91u ($+91)  ·  **hit 53.1%** (break-even 52.4%)  ·  **Open:** 4
 
 - **Real-line record (Kambi):** 3-2  ·  +0.48u on 5 bets priced at the ACTUAL posted total + odds  ·  beats the price  (vs the flat 74.5 proxy above)
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 13 | 6-7 | 46% | -1.55 |
+| Czech Liga Pro | 14 | 7-7 | 50% | -0.64 |
 | Setka Cup | 29 | 16-13 | 55% | +1.55 |
 | Setka Women | 4 | 2-2 | 50% | -0.18 |
 | TT Cup | 9 | 3-6 | 33% | -3.27 |
@@ -18,6 +18,7 @@ _2026-07-11T18:19:17 UTC · every flag logged as 1u ($100) at -110 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-11 | Czech Liga Pro | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.91 |
 | 2026-07-11 | Setka Cup | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.91 |
 | 2026-07-11 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.91 |
 | 2026-07-11 | Czech Liga Pro | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
@@ -42,5 +43,4 @@ _2026-07-11T18:19:17 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-10 | Czech Liga Pro | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
 | 2026-07-10 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
 | 2026-07-10 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 71 | L | -1.00 |
-| 2026-07-10 | TT Elite Series | Jaroslaw Rolak vs Adrian Fabis | over 74.5 | 87 | W | +0.91 |
 
