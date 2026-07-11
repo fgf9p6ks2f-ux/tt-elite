@@ -1,10 +1,10 @@
 # TT paper ledger — live flag track record
 
-_2026-07-10T22:29:37 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-11T06:27:58 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 29-29  ·  **P&L:** -2.64u ($-264)  ·  **hit 50.0%** (break-even 52.4%)  ·  **Open:** 10
+- **Record:** 30-29  ·  **P&L:** -1.73u ($-173)  ·  **hit 50.8%** (break-even 52.4%)  ·  **Open:** 9
 
-- **Real-line record (Kambi):** 2-1  ·  +0.68u on 3 bets priced at the ACTUAL posted total + odds  ·  beats the price  (vs the flat 74.5 proxy above)
+- **Real-line record (Kambi):** 3-1  ·  +1.48u on 4 bets priced at the ACTUAL posted total + odds  ·  beats the price  (vs the flat 74.5 proxy above)
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
@@ -12,12 +12,13 @@ _2026-07-10T22:29:37 UTC · every flag logged as 1u ($100) at -110 · this is th
 | Setka Cup | 27 | 14-13 | 52% | -0.27 |
 | Setka Women | 4 | 2-2 | 50% | -0.18 |
 | TT Cup | 9 | 3-6 | 33% | -3.27 |
-| TT Elite Series | 7 | 5-2 | 71% | +2.55 |
+| TT Elite Series | 8 | 6-2 | 75% | +3.45 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-11 | TT Elite Series | Karol Sulkowski vs Michal Minda | over 74.5 | 91 | W | +0.91 |
 | 2026-07-10 | TT Cup | Michal Raska vs Jakub Volny | over 74.5 | 94 | W | +0.91 |
 | 2026-07-10 | TT Cup | Michal Raska vs Jakub Volny | over 74.5 | 70 | L | -1.00 |
 | 2026-07-10 | TT Elite Series | Piotr Staniszewski vs Krzysztof Kotyl | over 74.5 | 95 | W | +0.91 |
@@ -42,5 +43,4 @@ _2026-07-10T22:29:37 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-09 | TT Elite Series | Jaroslaw Rolak vs Adrian Fabis | over 74.5 | 94 | W | +0.91 |
 | 2026-07-09 | TT Cup | Blazej Gola vs Karol Guzy | under 74.5 | 82 | L | -1.00 |
 | 2026-07-09 | Czech Liga Pro | Jan Szotkowski vs Tadeas Zika | over 74.5 | 114 | W | +0.91 |
-| 2026-07-09 | Czech Liga Pro | Radomir Revay vs Tadeas Zika | over 74.5 | 72 | L | -1.00 |
 

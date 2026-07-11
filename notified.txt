@@ -1,5 +1,6 @@
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
+Anastasiia Hordynska-Sheiko|Viktoria Shevchuk|under|1783789500
 Anastasiia Volgina|Ksenia Tymchenko|under|1783692300
 Andrii Hrabskyi|Oleksandr Ivchuk|over|1783436400
 Andrii Romanenko|Bohdan Chaikovskyi|over|1783523100
@@ -37,6 +38,7 @@ Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
+Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jan Krupnik|Jan Skvrna|over|1783512600
@@ -56,6 +58,7 @@ Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Karol Guzy|Krzysztof Zapala|over|1783542600
 Karol Guzy|Krzysztof Zapala|over|1783708200
 Karol Sulkowski|Michal Minda|over|1783742400
+Karol Sulkowski|Michal Minda|over|1783751100
 Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
