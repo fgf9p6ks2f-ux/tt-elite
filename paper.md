@@ -1,6 +1,6 @@
 # TT paper ledger — live flag track record
 
-_2026-07-11T11:29:42 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-11T11:40:45 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
 - **Record:** 31-29  ·  **P&L:** -0.82u ($-82)  ·  **hit 51.7%** (break-even 52.4%)  ·  **Open:** 8
 
