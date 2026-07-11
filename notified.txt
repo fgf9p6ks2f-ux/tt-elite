@@ -50,6 +50,7 @@ Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Krupnik|Tomas Kindl|over|1783793700
+Jan Krupnik|Tomas Kindl|over|1783804800
 Jan Krupnik|Tomas Krenek|over|1783782900
 Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
