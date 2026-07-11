@@ -50,6 +50,8 @@ def write_alerts(bets, line):
     now = int(dt.datetime.now(dt.timezone.utc).timestamp())
     new, reminders = [], []
     for b in bets:
+        if b.get("tier") == "shadow":                   # shadow leagues (TT Cup, Liga Pro, Setka W):
+            continue                                     # logged to the paper ledger, never pushed
         a, c = pair_key(b["p1"], b["p2"])
         key = f"{a}|{c}|{b['side']}|{b['ts']}"          # ts makes it per-match, stable
         if key in seen:
@@ -163,7 +165,7 @@ def main():
     print(f"  {'when':<16}{'league':<12}{'matchup':<42}{'zone':>8}{'conf':>6}{'raw':>6}"
           f"{'n':>5}{'avg':>7}")
     for b in bets:
-        tag = TAG.get(b["league"], b["league"]) + ("·VOL" if b.get("tier") == "volume" else "")
+        tag = TAG.get(b["league"], b["league"]) + ("·shadow" if b.get("tier") == "shadow" else "")
         print(f"  {b['when']:<16}{tag:<12}"
               f"{b['p1']+' vs '+b['p2']:<42}{b['zone']:>8}"
               f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")

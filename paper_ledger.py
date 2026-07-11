@@ -46,7 +46,9 @@ def log_flags(bets, line=None):
         if not b.get("mid"):
             continue
         cur = con.execute(
-            "INSERT OR IGNORE INTO paper_bets VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            "INSERT OR IGNORE INTO paper_bets "
+            "(mid, league, p1, p2, side, line, conf, raw, n, start_ts, flagged_at, "
+            " total, result, pnl, graded_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (b["mid"], b["league"], b["p1"], b["p2"], b["side"],
              b.get("line", line), b["hit"], b["raw"], b["n"], b["ts"], ts,
              None, None, None, None))
@@ -186,16 +188,35 @@ def _agg(con, where="", args=()):
 def report():
     con = sqlite3.connect(DB)
     con.execute(DDL)
-    w, l, pnl = _agg(con)
-    n = w + l
-    open_n = con.execute("SELECT COUNT(*) FROM paper_bets WHERE result IS NULL").fetchone()[0]
+    # split the headline: the BETTABLE record (active leagues we actually push) vs SHADOW leagues
+    # (still logged + graded here to keep validating the cut, but not bet). Shadow set = LEAGUE_CFG.
+    from h2h import LEAGUE_CFG
+    shadow = sorted(lg for lg, c in LEAGUE_CFG.items() if c.get("tier") == "shadow")
+    ph = ",".join("?" * len(shadow)) if shadow else "''"
+
+    def rec(op):
+        r = con.execute(f"SELECT COALESCE(SUM(result='W'),0), COALESCE(SUM(result='L'),0), "
+                        f"COALESCE(SUM(pnl),0) FROM paper_bets WHERE result IS NOT NULL "
+                        f"AND league {op} ({ph})", tuple(shadow)).fetchone()
+        return r[0], r[1], r[2]
+
+    aw, al, apnl = rec("NOT IN")                          # bettable leagues (Elite + Setka Cup)
+    sw, sl, spnl = rec("IN")                              # shadow leagues (validating only)
+    n = aw + al
+    open_n = con.execute(f"SELECT COUNT(*) FROM paper_bets WHERE result IS NULL "
+                         f"AND league NOT IN ({ph})", tuple(shadow)).fetchone()[0]
+    _sl = {"Czech Liga Pro": "Liga Pro", "Setka Women": "Setka W"}
     lines = ["# TT paper ledger — live flag track record", "",
              f"_{_now()} UTC · every flag logged as 1u ($100) at -110 · this is the live "
              f"out-of-sample test of the league rules_", "",
-             f"- **Record:** {w}-{l}"
-             f"  ·  **P&L:** {pnl:+.2f}u (${pnl*UNIT_USD:+,.0f})"
-             + (f"  ·  **hit {w/n*100:.1f}%** (break-even 52.4%)" if n else "")
-             + f"  ·  **Open:** {open_n}", ""]
+             f"- **Bet record (Elite + Setka Cup):** {aw}-{al}"
+             f"  ·  **P&L:** {apnl:+.2f}u (${apnl*UNIT_USD:+,.0f})"
+             + (f"  ·  **hit {aw/n*100:.1f}%** (break-even 52.4%)" if n else "")
+             + f"  ·  **Open:** {open_n}"]
+    if sw + sl:
+        lines.append(f"- **Shadow (validating, not bet — {', '.join(_sl.get(x, x) for x in shadow)}):**"
+                     f"  {sw}-{sl}  ·  {spnl:+.2f}u  ·  hit {sw/(sw+sl)*100:.0f}%")
+    lines.append("")
     # real-line record: the same flags graded at the ACTUAL Kambi book total + odds (Elite +
     # in-range Liga Pro) — the honest edge-vs-price, accumulating forward as lined matches settle
     have_real = "real_result" in {r[1] for r in con.execute("PRAGMA table_info(paper_bets)")}
@@ -232,7 +253,7 @@ def report():
         lines.append("")
     con.close()
     REPORT.write_text("\n".join(lines) + "\n")
-    return w, l, pnl, open_n
+    return aw, al, apnl, open_n                        # the BETTABLE record (Elite + Setka Cup)
 
 
 def main():
