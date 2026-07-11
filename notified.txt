@@ -1,6 +1,7 @@
 Adam Kral|Milan Tlusty|over|1783787100
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
+Ales Barton|Jan Kanera|over|1783839600
 Anastasiia Hordynska-Sheiko|Viktoria Shevchuk|under|1783789500
 Anastasiia Volgina|Ksenia Tymchenko|under|1783692300
 Andrii Hrabskyi|Oleksandr Ivchuk|over|1783436400
@@ -37,10 +38,14 @@ Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jacek Oracz|Lukasz Pyda|under|1783787100
+Jacek Oracz|Michal Machelski|under|1783797000
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
+Jakub Komorowicz|Kamil Kos|over|1783793100
+Jakub Komorowicz|Wiekiera Arkadiusz|over|1783798500
 Jakub Lysek|Martin Sobota|over|1783750200
+Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jan Krupnik|Jan Skvrna|over|1783512600
@@ -48,6 +53,7 @@ Jan Krupnik|Tomas Kindl|over|1783793700
 Jan Krupnik|Tomas Krenek|over|1783782900
 Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
+Jan Steffan|Tomas Regner|over|1783899000
 Jan Szotkowski|Tadeas Zika|over|1783596600
 Jan Szotkowski|Tadeas Zika|over|1783607400
 Jan Szotkowski|Tomas Dousek|over|1783852200
