@@ -1,15 +1,15 @@
 # TT paper ledger — live flag track record
 
-_2026-07-11T12:10:16 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
+_2026-07-11T14:39:34 UTC · every flag logged as 1u ($100) at -110 · this is the live out-of-sample test of the league rules_
 
-- **Record:** 31-30  ·  **P&L:** -1.82u ($-182)  ·  **hit 50.8%** (break-even 52.4%)  ·  **Open:** 7
+- **Record:** 33-30  ·  **P&L:** -0.00u ($-0)  ·  **hit 52.4%** (break-even 52.4%)  ·  **Open:** 5
 
 - **Real-line record (Kambi):** 3-2  ·  +0.48u on 5 bets priced at the ACTUAL posted total + odds  ·  beats the price  (vs the flat 74.5 proxy above)
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 13 | 6-7 | 46% | -1.55 |
-| Setka Cup | 27 | 14-13 | 52% | -0.27 |
+| Setka Cup | 29 | 16-13 | 55% | +1.55 |
 | Setka Women | 4 | 2-2 | 50% | -0.18 |
 | TT Cup | 9 | 3-6 | 33% | -3.27 |
 | TT Elite Series | 8 | 6-2 | 75% | +3.45 |
@@ -18,6 +18,8 @@ _2026-07-11T12:10:16 UTC · every flag logged as 1u ($100) at -110 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-11 | Setka Cup | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.91 |
+| 2026-07-11 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.91 |
 | 2026-07-11 | Czech Liga Pro | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
 | 2026-07-11 | Czech Liga Pro | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.91 |
 | 2026-07-11 | TT Elite Series | Karol Sulkowski vs Michal Minda | over 74.5 | 91 | W | +0.91 |
@@ -41,6 +43,4 @@ _2026-07-11T12:10:16 UTC · every flag logged as 1u ($100) at -110 · this is th
 | 2026-07-10 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
 | 2026-07-10 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 71 | L | -1.00 |
 | 2026-07-10 | TT Elite Series | Jaroslaw Rolak vs Adrian Fabis | over 74.5 | 87 | W | +0.91 |
-| 2026-07-09 | TT Elite Series | Marian Lebek vs Kacper Adamus | under 74.5 | 109 | L | -1.00 |
-| 2026-07-09 | TT Elite Series | Jaroslaw Rolak vs Adrian Fabis | over 74.5 | 94 | W | +0.91 |
 

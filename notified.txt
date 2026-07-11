@@ -36,6 +36,7 @@ Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
+Jacek Oracz|Lukasz Pyda|under|1783787100
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
@@ -44,10 +45,12 @@ Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Krupnik|Tomas Kindl|over|1783793700
+Jan Krupnik|Tomas Krenek|over|1783782900
 Jan Pleskot|Lubor Sulava|over|1783699200
 Jan Skvrna|Radek Benes|over|1783509000
 Jan Szotkowski|Tadeas Zika|over|1783596600
 Jan Szotkowski|Tadeas Zika|over|1783607400
+Jan Szotkowski|Tomas Dousek|over|1783852200
 Jan Vidourek|Richard Vavricka|over|1783712100
 Jaroslav Sindler|Patrik Sturma|over|1783683600
 Jiri Ruzicka|Martin Huk|over|1783438200
@@ -83,6 +86,7 @@ Martin Huk|Radim Urbaniec|over|1783719000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Cabis|Michal Vavrecka|over|1783769400
 Michal Chalupa|Zbynek Pagac|over|1783506600
+Michal Vondrak|Tomas Vinter|over|1783850400
 Myroslav Loboda|Viktor Slozka|over|1783564200
 Nadiia Harmash|Olga Melnik|over|1783701000
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
