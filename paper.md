@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-12T22:54:23 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-12T23:04:28 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 25-15  ·  **P&L:** +5.83u ($+583)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 10
+- **Bet record (Elite + Setka Cup):** 26-15  ·  **P&L:** +6.67u ($+667)  ·  **hit 63.4%** (break-even 52.4%)  ·  **Open:** 9
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  17-17  ·  -2.83u  ·  hit 50%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,12 +11,13 @@ _2026-07-12T22:54:23 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 29 | 16-13 | 55% | +0.33 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 13 | 6-7 | 46% | -2.00 |
-| TT Elite Series | 11 | 9-2 | 82% | +5.50 |
+| TT Elite Series | 12 | 10-2 | 83% | +6.33 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-12 | TT Elite Series | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | TT Cup | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
 | 2026-07-12 | TT Cup | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 | 2026-07-12 | Czech Liga Pro | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
@@ -41,5 +42,4 @@ _2026-07-12T22:54:23 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-10 | Setka Women | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
 | 2026-07-10 | Setka Women | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
 | 2026-07-10 | Setka Cup | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
-| 2026-07-10 | Czech Liga Pro | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
 
