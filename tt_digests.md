@@ -38,3 +38,17 @@ SetkaW: today 2-2 -0.18u · all-time 2-2 -0.18u ($-18)
 TTCup: today 2-2 -0.18u · all-time 2-4 -2.18u ($-218)
 Elite: today 2-0 +1.82u · all-time 5-1 +3.55u ($+355)
 ```
+
+## 2026-07-11
+
+```
+TT paper ledger - 2026-07-11 (MT)
+TODAY: 5-1  +3.17u ($+317)
+ALL-TIME (since 7/9): 28-21  +2.33u ($+233)
+
+LigaPro: today 2-1 +0.67u · all-time 7-7 -1.17u ($-117)
+Setka: today 2-0 +1.67u · all-time 8-6 +0.67u ($+67)
+SetkaW: today - · all-time 2-2 -0.33u ($-33)
+TTCup: today - · all-time 3-5 -2.50u ($-250)
+Elite: today 1-0 +0.83u · all-time 8-1 +5.67u ($+567)
+```
