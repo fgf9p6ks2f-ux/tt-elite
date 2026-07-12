@@ -25,6 +25,10 @@ import time
 
 import requests
 
+from kambi_odds import npair as pk   # ONE canonical pair key across odds sources
+                                     # (accent-folds + token-sorts, so the kambi/smarkets/
+                                     # betway rows for a match collide on the same key)
+
 DB = "tt.sqlite"
 BASE = "https://api.smarkets.com/v3"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -60,12 +64,6 @@ def _get(path, tries=3, **params):
 def _chunks(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i + n]
-
-
-def pk(a, b):
-    """Canonical pair key (lowercase, pipe-joined, sorted) — shared with the odds table
-    so smarkets + betway rows for the same match collide on one key."""
-    return "|".join(sorted(x.strip().lower() for x in (a, b)))
 
 
 def matches():
@@ -151,23 +149,25 @@ def collect(db=DB, verbose=False):
     rows, n_ev = [], 0
     for eid, lines in tmk.items():
         m = by_id[eid]
-        got = False
-        for mid, line in lines:
+        cands = []                          # collapse to ONE main line/event (odds-table PK
+        for mid, line in lines:             # is source+event+collected_at; kambi does the same)
             sd = sides.get(mid, {})
             po, pu = prob.get(sd.get("over")), prob.get(sd.get("under"))
             if not po and not pu:
                 continue
-            # exchange ~zero vig: fill a missing side from its complement
-            po = po or (1 - pu)
+            po = po or (1 - pu)             # exchange ~zero vig: fill a missing side
             pu = pu or (1 - po)
-            over_od = round(1 / po, 3) if po else None
-            under_od = round(1 / pu, 3) if pu else None
-            rows.append((now, "smarkets", str(eid), m["start"][:10], m["league"],
-                         m["p1"], m["p2"], pk(m["p1"], m["p2"]), line, over_od, under_od))
-            got = True
-        n_ev += got
+            cands.append((abs(po - 0.5), line, po, pu))   # main line = over-prob nearest 50%
+        if not cands:
+            continue
+        cands.sort()
+        _, line, po, pu = cands[0]
+        rows.append((now, "smarkets", str(eid), m["start"][:10], m["league"],
+                     m["p1"], m["p2"], pk(m["p1"], m["p2"]), line,
+                     round(1 / po, 3) if po else None, round(1 / pu, 3) if pu else None))
+        n_ev += 1
     if rows:
-        con.executemany("INSERT INTO odds(collected_at,source,event_id,date,league,p1,p2,"
+        con.executemany("INSERT OR REPLACE INTO odds(collected_at,source,event_id,date,league,p1,p2,"
                         "pair_key,line,over_od,under_od) VALUES(?,?,?,?,?,?,?,?,?,?,?)", rows)
         con.commit()
     con.close()
