@@ -40,7 +40,6 @@ jobs:
           # the nightly results digest (separate workflow). slate_push benched 2026-07-09.
           for i in $(seq 1 6); do
             python ingest_24live.py --limit 400 || echo "ingest skipped"
-            python kambi_odds.py || echo "kambi odds skipped"   # real posted TOTAL lines (Elite+LigaPro)
             {
               echo "# Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)"
               echo
