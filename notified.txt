@@ -24,6 +24,7 @@ Dmitriy Kim|Yaroslav Stepanchuk|over|1783548300
 Dmitro Kuzmenko|Dmytro Prylepa|under|1783497600
 Dmitro Kuzmenko|Oleh Kurylenko|under|1783510200
 Dmitro Kuzmenko|Serhii Chuhai|under|1783580400
+Dmitro Kuzmenko|Serhii Chuhai|under|1783924200
 Dmytro Derevynskyi|Oleksandr Melashenko|over|1783535100
 Dmytro Derevynskyi|Roman Gnoevoy|over|1783524300
 Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
@@ -92,6 +93,7 @@ Ladislav Tuma|Oleh Plyska|over|1783670400
 Libor Smazik|Lukas Provaznik|over|1783694700
 Lubos Forman|Milan Smesny|under|1783668600
 Maksymilian Rus|Rafal Gajda|over|1783426800
+Mariusz Baron|Piotr Gumulinski|over|1783894800
 Martin Huk|Radim Urbaniec|over|1783440000
 Martin Huk|Radim Urbaniec|over|1783504800
 Martin Huk|Radim Urbaniec|over|1783645200
