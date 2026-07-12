@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-12T01:11:36 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-12T07:18:28 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 22-15  ·  **P&L:** +3.33u ($+333)  ·  **hit 59.5%** (break-even 52.4%)  ·  **Open:** 5
+- **Bet record (Elite + Setka Cup):** 25-15  ·  **P&L:** +5.83u ($+583)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  12-15  ·  -5.00u  ·  hit 44%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,12 +11,15 @@ _2026-07-12T01:11:36 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 29 | 16-13 | 55% | +0.33 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 9 | 3-6 | 33% | -3.50 |
-| TT Elite Series | 8 | 6-2 | 75% | +3.00 |
+| TT Elite Series | 11 | 9-2 | 82% | +5.50 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-12 | TT Elite Series | Lukasz Pyda vs Jacek Oracz | under 74.5 | 49 | W | +0.83 |
+| 2026-07-12 | TT Elite Series | Robert Szymik vs Jakub Michalski | under 74.5 | 57 | W | +0.83 |
+| 2026-07-12 | TT Elite Series | Michal Machelski vs Jacek Oracz | under 74.5 | 73 | W | +0.83 |
 | 2026-07-11 | Czech Liga Pro | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
 | 2026-07-11 | Setka Cup | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
 | 2026-07-11 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
@@ -39,7 +42,4 @@ _2026-07-12T01:11:36 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-10 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 70 | L | -1.00 |
 | 2026-07-10 | Czech Liga Pro | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.83 |
 | 2026-07-10 | Setka Cup | Oleh Plyska vs Ladislav Tuma | over 74.5 | 95 | W | +0.83 |
-| 2026-07-10 | Czech Liga Pro | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
-| 2026-07-10 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
-| 2026-07-10 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 71 | L | -1.00 |
 
