@@ -1,7 +1,8 @@
 name: tt-elite-daily
 # Resilient TT flagger. GitHub throttles/drops per CRON TICK, not per JOB, so instead of
 # 4x/day (a dropped run = a multi-hour gap) cron just STARTS one job every 30 min and the
-# job LOOPS the pipeline every ~9 min: refresh 24live -> rebuild today.md (check_today
+# job LOOPS the pipeline every ~9 min: refresh 24live -> pull SHARP totals (kambi + smarkets
+# exchange, the anchor to compare a soft book against) -> rebuild today.md (check_today
 # writes alert.txt + reminders.txt, deduped via notified.txt) -> push new bets -> schedule
 # 5-min reminders -> grade paper ledger -> commit. cancel-in-progress hands off seamlessly;
 # a delayed next-start is covered because the old job keeps polling up to 60 min. Free
@@ -40,6 +41,10 @@ jobs:
           # the nightly results digest (separate workflow). slate_push benched 2026-07-09.
           for i in $(seq 1 6); do
             python ingest_24live.py --limit 400 || echo "ingest skipped"
+            # SHARP anchor snapshot each cycle (~9-min resolution → captures openers + line moves).
+            # Keyless; append to tt.sqlite:odds (committed below). Never fail the loop on a feed hiccup.
+            python kambi_odds.py || echo "kambi odds skipped"      # populated: Liga Pro + TT Elite
+            python smarkets.py  || echo "smarkets odds skipped"    # exchange x-check: all leagues, thin
             {
               echo "# Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)"
               echo
