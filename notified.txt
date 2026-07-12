@@ -36,6 +36,7 @@ Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
+Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jacek Oracz|Lukasz Pyda|under|1783787100
@@ -47,6 +48,8 @@ Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jakub Komorowicz|Kamil Kos|over|1783793100
 Jakub Komorowicz|Wiekiera Arkadiusz|over|1783798500
+Jakub Kosowski|Jan Zandecki|over|1783927200
+Jakub Kosowski|Jan Zandecki|over|1783951800
 Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
@@ -78,6 +81,7 @@ Karol Sulkowski|Michal Minda|over|1783751100
 Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
+Krystian Kolodziej|Krzysztof Kapik|over|1783965900
 Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
 Krzysztof Kapik|Szymon Sporek|over|1783533900
