@@ -1,22 +1,23 @@
 # TT paper ledger — live flag track record
 
-_2026-07-12T12:12:11 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-12T12:22:54 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 25-15  ·  **P&L:** +5.83u ($+583)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  15-17  ·  -4.50u  ·  hit 47%
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  16-17  ·  -3.67u  ·  hit 48%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 17 | 9-8 | 53% | -0.50 |
 | Setka Cup | 29 | 16-13 | 55% | +0.33 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
-| TT Cup | 11 | 4-7 | 36% | -3.67 |
+| TT Cup | 12 | 5-7 | 42% | -2.83 |
 | TT Elite Series | 11 | 9-2 | 82% | +5.50 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-12 | TT Cup | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 | 2026-07-12 | Czech Liga Pro | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
 | 2026-07-12 | TT Cup | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 53 | L | -1.00 |
 | 2026-07-12 | Czech Liga Pro | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-12T12:12:11 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-10 | Setka Cup | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
 | 2026-07-10 | Czech Liga Pro | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
 | 2026-07-10 | Setka Women | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
-| 2026-07-10 | Setka Cup | Lukas Provaznik vs Libor Smazik | over 74.5 | 58 | L | -1.00 |
 
