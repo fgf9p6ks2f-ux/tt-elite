@@ -1,22 +1,23 @@
 # TT paper ledger — live flag track record
 
-_2026-07-12T07:29:21 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-12T07:40:12 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 25-15  ·  **P&L:** +5.83u ($+583)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  13-15  ·  -4.17u  ·  hit 46%
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  14-15  ·  -3.33u  ·  hit 48%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 15 | 8-7 | 53% | -0.33 |
 | Setka Cup | 29 | 16-13 | 55% | +0.33 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
-| TT Cup | 9 | 3-6 | 33% | -3.50 |
+| TT Cup | 10 | 4-6 | 40% | -2.67 |
 | TT Elite Series | 11 | 9-2 | 82% | +5.50 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-12 | TT Cup | Petr Vicherek vs Jonas Rak | over 74.5 | 85 | W | +0.83 |
 | 2026-07-12 | Czech Liga Pro | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Lukasz Pyda vs Jacek Oracz | under 74.5 | 49 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Robert Szymik vs Jakub Michalski | under 74.5 | 57 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-12T07:29:21 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-10 | Setka Women | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
 | 2026-07-10 | Setka Cup | Jan Seeman vs Jakub Dufek Jnr | over 74.5 | 87 | W | +0.83 |
 | 2026-07-10 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 70 | L | -1.00 |
-| 2026-07-10 | Czech Liga Pro | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.83 |
 
