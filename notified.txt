@@ -38,6 +38,7 @@ Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jacek Oracz|Lukasz Pyda|under|1783787100
+Jacek Oracz|Lukasz Pyda|under|1783821600
 Jacek Oracz|Michal Machelski|under|1783797000
 Jacek Oracz|Michal Machelski|under|1783818600
 Jachym Sebl|Jan Srnka|under|1783499100
