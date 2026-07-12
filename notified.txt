@@ -35,6 +35,7 @@ Grzegorz Felkel|Maciej Nowalinski|under|1783495200
 Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
+Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jacek Oracz|Lukasz Pyda|under|1783787100
@@ -108,6 +109,7 @@ Oleksii Mitla|Valerii Vlasenko|over|1783556100
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Ondrej Paril|Radomir Revay|over|1783753200
 Orest Hura|Valerii Vlasenko|over|1783464300
+Patryk Mecik|Rafal Skotniczny|under|1783922100
 Pavel Wawrosz|Radovan Polasek|over|1783492200
 Radek Benes|Tomas Krenek|over|1783510800
 Radomir Revay|Tadeas Zika|over|1783423800
