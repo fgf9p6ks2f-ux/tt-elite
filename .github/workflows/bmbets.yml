@@ -1,26 +1,29 @@
 name: bmbets-soft-odds
-# Scrapes bmbets per-book POINTS totals (Czech Liga Pro + TT Elite) — the SOFT-line layer
-# that unlocks the line-shopping edge. The odds are reCAPTCHA-v3 gated, so we render each
-# match in HEADED Chromium (xvfb) via Playwright rather than a plain request. Match discovery
-# is open (curl_cffi). If the datacenter IP gets reCAPTCHA-blocked (0 scraped -> the log says
-# so and no commit), add a residential proxy as the BMBETS_PROXY repo secret.
+# SELF-REDISPATCHING LOOP (GitHub throttles/drops the */20 cron -> saw 75-min gaps). Instead:
+# one job installs Playwright ONCE (amortized), then LOOPS scrape+edge every ~4 min for ~50 min,
+# and an always() step re-dispatches the NEXT run via DISPATCH_PAT -> an immortal chain that never
+# waits on the cron. The hourly cron is just a SEED in case the chain ever breaks. Odds are
+# reCAPTCHA-v3 gated so we render in headed Chromium (xvfb); set BMBETS_PROXY if a datacenter IP
+# ever gets blocked. Add the DISPATCH_PAT secret (a fine-grained PAT with Actions: read+write on
+# this repo) to make the loop immortal — without it, it falls back to the hourly cron.
 on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "matches to scrape"
-        default: "25"
+        description: "matches per scrape iteration"
+        default: "30"
   schedule:
-    - cron: "*/20 6-23 * * *"     # ~8am-1am Poland — the TT playing day
+    - cron: "9 4-23 * * *"     # hourly seed across the TT playing day (UTC); self-redispatch fills the gaps
+    - cron: "9 0-2 * * *"      # late slate
 concurrency:
   group: bmbets-soft-odds
-  cancel-in-progress: true
+  cancel-in-progress: true      # newest start supersedes; a dropped seed is covered by the running loop
 permissions:
   contents: write
 jobs:
-  scrape:
+  loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 60         # ~50-min loop, then the always() step redispatches the next run
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,7 +32,7 @@ jobs:
       - run: pip install curl_cffi playwright requests
       - run: python -m playwright install --with-deps chromium
       - run: sudo apt-get install -y xvfb
-      - name: scrape bmbets soft totals + flag/push +EV spots
+      - name: loop scrape + edge (~4-min cadence, ~50 min), push +EV, commit each cycle
         env:
           BMBETS_PROXY: ${{ secrets.BMBETS_PROXY }}
           BMBETS_HEADED: "1"
@@ -37,18 +40,32 @@ jobs:
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          xvfb-run -a python bmbets_odds.py --limit "${{ github.event.inputs.limit || 25 }}" --show || echo "bmbets scrape errored"
-          # edge layer: validated H2H lean x the softest bmbets price -> push NEW +EV spots.
-          # --push-shadow: user wants all 4 leagues alerted (Czech Liga Pro + TT Cup are shadow/
-          # historically -EV, pushed anyway on request; they carry a ⚠ shadow tag in the alert).
-          python bmbets_edge.py --push --push-shadow || echo "edge layer skipped"
-          if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
-            git add -f bmbets.sqlite 2>/dev/null || true          # each add guarded: bmbets_seen.json
-            git add -f bmbets_seen.json 2>/dev/null || true       # only exists once a spot has pushed
-            git commit -m "bmbets soft totals + edges [skip ci]" >/dev/null 2>&1 || true
-            git pull --rebase --autostash -X theirs -q || true
-            git push -q || echo "push skipped"
-            echo "committed bmbets rows + seen"
-          else
-            echo "NO bmbets rows this run — reCAPTCHA likely blocked the datacenter IP; set BMBETS_PROXY secret"
+          LIM="${{ github.event.inputs.limit || 30 }}"
+          for i in $(seq 1 6); do
+            echo "── cycle $i/6 ──"
+            xvfb-run -a python bmbets_odds.py --limit "$LIM" || echo "scrape errored"
+            python bmbets_edge.py --push --push-shadow || echo "edge layer skipped"
+            if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
+              git add -f bmbets.sqlite 2>/dev/null || true
+              git add -f bmbets_seen.json 2>/dev/null || true
+              git commit -m "bmbets soft totals + edges [skip ci]" >/dev/null 2>&1 || true
+              git pull --rebase --autostash -X theirs -q || true
+              git push -q || echo "push skipped"
+            fi
+            [ "$i" -lt 6 ] && sleep 240 || true
+          done
+      - name: self-redispatch — keep the loop immortal past throttled crons
+        if: always()
+        env:
+          DISPATCH_PAT: ${{ secrets.DISPATCH_PAT }}
+        run: |
+          if [ -z "$DISPATCH_PAT" ]; then
+            echo "no DISPATCH_PAT secret — relying on the hourly cron (add it for an immortal chain)"; exit 0
           fi
+          code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $DISPATCH_PAT" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bmbets.yml/dispatches" \
+            -d '{"ref":"main","inputs":{"limit":"30"}}')
+          if [ "$code" = "204" ]; then echo "✓ redispatched next bmbets loop (immortal chain)";
+          else echo "redispatch HTTP $code — the hourly cron is the fallback"; fi
