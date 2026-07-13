@@ -1,11 +1,10 @@
 name: bmbets-soft-odds
 # SELF-REDISPATCHING LOOP (GitHub throttles/drops the */20 cron -> saw 75-min gaps). Instead:
 # one job installs Playwright ONCE (amortized), then LOOPS scrape+edge every ~4 min for ~50 min,
-# and an always() step re-dispatches the NEXT run via DISPATCH_PAT -> an immortal chain that never
-# waits on the cron. The hourly cron is just a SEED in case the chain ever breaks. Odds are
-# reCAPTCHA-v3 gated so we render in headed Chromium (xvfb); set BMBETS_PROXY if a datacenter IP
-# ever gets blocked. Add the DISPATCH_PAT secret (a fine-grained PAT with Actions: read+write on
-# this repo) to make the loop immortal — without it, it falls back to the hourly cron.
+# and an always() step re-dispatches the NEXT run via the built-in github.token (verified it can
+# self-dispatch with permissions: actions: write) -> an IMMORTAL chain with NO secret required.
+# The hourly cron is just a SEED in case the chain ever breaks. Odds are reCAPTCHA-v3 gated so we
+# render in headed Chromium (xvfb); set BMBETS_PROXY only if a datacenter IP ever gets blocked.
 on:
   workflow_dispatch:
     inputs:
@@ -20,6 +19,7 @@ concurrency:
   cancel-in-progress: true      # newest start supersedes; a dropped seed is covered by the running loop
 permissions:
   contents: write
+  actions: write            # github.token self-redispatch needs this
 jobs:
   loop:
     runs-on: ubuntu-latest
@@ -57,13 +57,12 @@ jobs:
       - name: self-redispatch — keep the loop immortal past throttled crons
         if: always()
         env:
-          DISPATCH_PAT: ${{ secrets.DISPATCH_PAT }}
+          TOKEN: ${{ secrets.DISPATCH_PAT || github.token }}
         run: |
-          if [ -z "$DISPATCH_PAT" ]; then
-            echo "no DISPATCH_PAT secret — relying on the hourly cron (add it for an immortal chain)"; exit 0
-          fi
+          # github.token self-dispatches with actions: write (verified 2026-07-13) -> immortal,
+          # no secret needed. DISPATCH_PAT is an optional override.
           code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
-            -H "Authorization: Bearer $DISPATCH_PAT" \
+            -H "Authorization: Bearer $TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/bmbets.yml/dispatches" \
             -d '{"ref":"main","inputs":{"limit":"30"}}')
