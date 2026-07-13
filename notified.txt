@@ -10,6 +10,7 @@ Andrii Romanenko|Ihor Sukovatyi|over|1783519500
 Andrii Romanenko|Oleksandr Pohonov|over|1783537500
 Anhelina Plashchynska|Olga Melnik|under|1783697400
 Artem Yurkov|Vladimir Voronenko|over|1783699800
+Artem Yurkov|Vladimir Voronenko|over|1783951800
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Blazej Gola|Karol Guzy|under|1783620000
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
@@ -91,6 +92,7 @@ Ksenia Tymchenko|Olena Bondareva|under|1783703100
 Kuba Golaszewski|Michal Skorski|over|1783545600
 Ladislav Tuma|Oleh Plyska|over|1783670400
 Libor Smazik|Lukas Provaznik|over|1783694700
+Libor Smazik|Lukas Provaznik|over|1783954800
 Lubos Forman|Milan Smesny|under|1783668600
 Maksymilian Rus|Rafal Gajda|over|1783426800
 Mariusz Baron|Piotr Gumulinski|over|1783894800
