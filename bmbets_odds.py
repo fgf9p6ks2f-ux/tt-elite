@@ -86,6 +86,21 @@ def discover(prematch_only=True):
             seen.add(mid)
             out.append({"league": lg, "url": "https://bmbets.com" + full,
                         "id": mid, "p1": _title(p1), "p2": _title(p2), "start": status})
+    # SOONEST-TO-TIP first (bmbets times are GMT/UTC). Books post the O/U only ~1-2h before
+    # tip, so far-out matches have NO market yet (empty scrape); the closest matches are the
+    # ones with odds up AND the deepest book coverage. Sorting across both leagues fixes the
+    # bug where 143 far-out Czech Liga Pro rows crowded out the imminent TT Elite matches.
+    now = dt.datetime.now(dt.timezone.utc)
+    def _mins(hhmm):
+        try:
+            h, mm = map(int, hhmm.split(":"))
+        except ValueError:
+            return 1e9
+        tip = now.replace(hour=h, minute=mm, second=0, microsecond=0)
+        if tip < now - dt.timedelta(minutes=30):      # already >30min past -> it's tomorrow's card
+            tip += dt.timedelta(days=1)
+        return (tip - now).total_seconds()
+    out.sort(key=lambda m: _mins(m["start"]))
     return out
 
 
@@ -181,8 +196,8 @@ def collect(limit=40, show=False):
                               f"o/u {ln:>5}  best {a['best_over']}/{a['best_under']}  med {a['med_over']}/{a['med_under']} ({a['n']}bk)")
             else:
                 blocked += 1
-            if ok == 0 and blocked >= 6:       # first 6 empty w/ 0 hits -> IP reCAPTCHA-blocked; bail fast
-                print("6 empties, 0 successes — IP likely reCAPTCHA-blocked; aborting (set BMBETS_PROXY)")
+            if ok == 0 and blocked >= 10:      # 10 imminent matches all empty w/ 0 hits -> likely reCAPTCHA
+                print("10 empties, 0 successes on the soonest matches — likely reCAPTCHA-blocked; aborting (set BMBETS_PROXY)")
                 break
         browser.close()
     conn.close()
