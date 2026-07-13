@@ -41,7 +41,8 @@ jobs:
           # edge layer: validated H2H lean x the softest bmbets price -> push NEW bet-tier +EV spots
           python bmbets_edge.py --push || echo "edge layer skipped"
           if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
-            git add -f bmbets.sqlite bmbets_seen.json
+            git add -f bmbets.sqlite 2>/dev/null || true          # each add guarded: bmbets_seen.json
+            git add -f bmbets_seen.json 2>/dev/null || true       # only exists once a spot has pushed
             git commit -m "bmbets soft totals + edges [skip ci]" >/dev/null 2>&1 || true
             git pull --rebase --autostash -X theirs -q || true
             git push -q || echo "push skipped"
