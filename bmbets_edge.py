@@ -96,7 +96,8 @@ def spots(ev_min=EV_MIN):
 
 
 def fmt(s):
-    return (f"{s['league']}: {s['p1']} v {s['p2']}\n"
+    tag = "" if s["tier"] == "bet" else "  ⚠shadow"
+    return (f"{s['league']}: {s['p1']} v {s['p2']}{tag}\n"
             f"  {s['side'].upper()} {s['line']:g} @ {s['price']:.2f}  +{s['ev'] * 100:.1f}% EV  "
             f"{s['stake']:g}u   ({s['n']} H2H {s['raw'] * 100:.0f}%, {s['nbk']}bk)")
 

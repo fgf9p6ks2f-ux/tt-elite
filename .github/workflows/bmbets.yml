@@ -38,8 +38,10 @@ jobs:
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
           xvfb-run -a python bmbets_odds.py --limit "${{ github.event.inputs.limit || 25 }}" --show || echo "bmbets scrape errored"
-          # edge layer: validated H2H lean x the softest bmbets price -> push NEW bet-tier +EV spots
-          python bmbets_edge.py --push || echo "edge layer skipped"
+          # edge layer: validated H2H lean x the softest bmbets price -> push NEW +EV spots.
+          # --push-shadow: user wants all 4 leagues alerted (Czech Liga Pro + TT Cup are shadow/
+          # historically -EV, pushed anyway on request; they carry a ⚠ shadow tag in the alert).
+          python bmbets_edge.py --push --push-shadow || echo "edge layer skipped"
           if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
             git add -f bmbets.sqlite 2>/dev/null || true          # each add guarded: bmbets_seen.json
             git add -f bmbets_seen.json 2>/dev/null || true       # only exists once a spot has pushed
