@@ -16,8 +16,10 @@ import sqlite3
 
 import check_today as CT
 from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, kelly_units, load
+from kambi_odds import npair               # canonical pair key to join the bmbets odds
 
 OUT = Path(__file__).resolve().parent / "tt_board.json"
+BMDB = Path(__file__).resolve().parent / "bmbets.sqlite"   # per-book soft totals (bmbets scraper)
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
 MODEL_LINE = 74.5                          # the line the flag rules are tuned at
@@ -68,15 +70,51 @@ def tracker():
     return {"w": w, "l": len(dec) - w, "u": round(u, 1)}
 
 
+def bmbets_odds():
+    """npair -> {line: (best_over, best_under, n_books)} from the latest bmbets snapshot, so
+    the board can show the ACTUAL soft price at each line next to the H2H hit rate."""
+    from collections import defaultdict as dd
+    idx = dd(dict)
+    if not BMDB.exists():
+        return idx
+    try:
+        con = sqlite3.connect(f"file:{BMDB}?mode=ro", uri=True)
+        ts = con.execute("SELECT MAX(collected_at) FROM bmbets_odds").fetchone()[0]
+        if ts:
+            for pk, ln, bo, bu, nb in con.execute(
+                    "SELECT pair_key,line,best_over,best_under,n_books FROM bmbets_odds "
+                    "WHERE collected_at=?", (ts,)):
+                idx[pk][round(ln, 1)] = (bo, bu, nb)
+        con.close()
+    except Exception:
+        pass
+    return idx
+
+
 def build():
     rows = load(with_league=True)
     bets = CT.actionable(CT.all_fixtures(), rows, 74.5)
+    bm = bmbets_odds()
     out = []
     for b in bets:
         w = round(b["raw"] * b["n"])
         over_side = b["side"] == "over"
         lad = ladder(b.get("totals", []))
         pt = play_to(lad, over_side, b["league"])
+        # overlay the ACTUAL bmbets soft price for the flagged side onto each ladder line,
+        # and surface the book's MAIN line (where the most books cluster) as the "actual line".
+        bmlines = bm.get(npair(b["p1"], b["p2"]), {})
+        for r in lad:
+            q = bmlines.get(r["line"])
+            if q and (q[0] if over_side else q[1]):
+                r["od"] = round(q[0] if over_side else q[1], 2)
+                r["nb"] = q[2]
+        book = None
+        if bmlines:
+            ml = max(bmlines, key=lambda L: bmlines[L][2] or 0)      # main line = most books
+            price = bmlines[ml][0] if over_side else bmlines[ml][1]
+            if price:
+                book = {"line": ml, "od": round(price, 2), "nb": bmlines[ml][2]}
         out.append({
             "league": b["league"], "tag": CT.TAG.get(b["league"], b["league"]),
             "p1": b["p1"], "p2": b["p2"],
@@ -87,6 +125,7 @@ def build():
             "tier": b.get("tier") or "",
             "ladder": lad,
             "play_to": pt,
+            "book": book,               # actual bmbets main line + soft price (None if no odds yet)
         })
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
