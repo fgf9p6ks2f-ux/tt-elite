@@ -1,0 +1,48 @@
+name: bmbets-soft-odds
+# Scrapes bmbets per-book POINTS totals (Czech Liga Pro + TT Elite) — the SOFT-line layer
+# that unlocks the line-shopping edge. The odds are reCAPTCHA-v3 gated, so we render each
+# match in HEADED Chromium (xvfb) via Playwright rather than a plain request. Match discovery
+# is open (curl_cffi). If the datacenter IP gets reCAPTCHA-blocked (0 scraped -> the log says
+# so and no commit), add a residential proxy as the BMBETS_PROXY repo secret.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "matches to scrape"
+        default: "25"
+  schedule:
+    - cron: "*/20 6-23 * * *"     # ~8am-1am Poland — the TT playing day
+concurrency:
+  group: bmbets-soft-odds
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install curl_cffi playwright
+      - run: python -m playwright install --with-deps chromium
+      - run: sudo apt-get install -y xvfb
+      - name: scrape bmbets soft totals -> bmbets.sqlite
+        env:
+          BMBETS_PROXY: ${{ secrets.BMBETS_PROXY }}
+          BMBETS_HEADED: "1"
+        run: |
+          git config user.name "tt-bot"
+          git config user.email "tt-bot@users.noreply.github.com"
+          xvfb-run -a python bmbets_odds.py --limit "${{ github.event.inputs.limit || 25 }}" --show || echo "bmbets scrape errored"
+          if [ -n "$(git status --porcelain bmbets.sqlite)" ]; then
+            git add -f bmbets.sqlite
+            git commit -m "bmbets soft totals [skip ci]" >/dev/null 2>&1 || true
+            git pull --rebase --autostash -X theirs -q || true
+            git push -q || echo "push skipped"
+            echo "committed bmbets rows"
+          else
+            echo "NO bmbets rows this run — reCAPTCHA likely blocked the datacenter IP; set BMBETS_PROXY secret"
+          fi
