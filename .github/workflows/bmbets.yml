@@ -26,23 +26,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install curl_cffi playwright
+      - run: pip install curl_cffi playwright requests
       - run: python -m playwright install --with-deps chromium
       - run: sudo apt-get install -y xvfb
-      - name: scrape bmbets soft totals -> bmbets.sqlite
+      - name: scrape bmbets soft totals + flag/push +EV spots
         env:
           BMBETS_PROXY: ${{ secrets.BMBETS_PROXY }}
           BMBETS_HEADED: "1"
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
           xvfb-run -a python bmbets_odds.py --limit "${{ github.event.inputs.limit || 25 }}" --show || echo "bmbets scrape errored"
-          if [ -n "$(git status --porcelain bmbets.sqlite)" ]; then
-            git add -f bmbets.sqlite
-            git commit -m "bmbets soft totals [skip ci]" >/dev/null 2>&1 || true
+          # edge layer: validated H2H lean x the softest bmbets price -> push NEW bet-tier +EV spots
+          python bmbets_edge.py --push || echo "edge layer skipped"
+          if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
+            git add -f bmbets.sqlite bmbets_seen.json
+            git commit -m "bmbets soft totals + edges [skip ci]" >/dev/null 2>&1 || true
             git pull --rebase --autostash -X theirs -q || true
             git push -q || echo "push skipped"
-            echo "committed bmbets rows"
+            echo "committed bmbets rows + seen"
           else
             echo "NO bmbets rows this run — reCAPTCHA likely blocked the datacenter IP; set BMBETS_PROXY secret"
           fi
