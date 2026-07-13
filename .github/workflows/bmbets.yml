@@ -9,8 +9,8 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "matches per scrape iteration"
-        default: "30"
+        description: "safety cap on matches per scrape (2h window is the real bound)"
+        default: "80"
   schedule:
     - cron: "9 4-23 * * *"     # hourly seed across the TT playing day (UTC); self-redispatch fills the gaps
     - cron: "9 0-2 * * *"      # late slate
@@ -40,10 +40,10 @@ jobs:
         run: |
           git config user.name "tt-bot"
           git config user.email "tt-bot@users.noreply.github.com"
-          LIM="${{ github.event.inputs.limit || 30 }}"
-          for i in $(seq 1 6); do
-            echo "── cycle $i/6 ──"
-            xvfb-run -a python bmbets_odds.py --limit "$LIM" || echo "scrape errored"
+          LIM="${{ github.event.inputs.limit || 80 }}"
+          for i in $(seq 1 5); do
+            echo "── cycle $i/5 (2h window, up to $LIM matches, ~8-9 min) ──"
+            xvfb-run -a python bmbets_odds.py --limit "$LIM" --window 2 || echo "scrape errored"
             python bmbets_edge.py --push --push-shadow || echo "edge layer skipped"
             if [ -n "$(git status --porcelain bmbets.sqlite bmbets_seen.json)" ]; then
               git add -f bmbets.sqlite 2>/dev/null || true
@@ -52,7 +52,7 @@ jobs:
               git pull --rebase --autostash -X theirs -q || true
               git push -q || echo "push skipped"
             fi
-            [ "$i" -lt 6 ] && sleep 240 || true
+            [ "$i" -lt 5 ] && sleep 120 || true
           done
       - name: self-redispatch — keep the loop immortal past throttled crons
         if: always()

@@ -60,7 +60,7 @@ def _title(slug: str) -> str:
     return slug.replace("-", " ").title()
 
 
-def discover(prematch_only=True):
+def discover(prematch_only=True, within_hours=None):
     """Open league pages (no reCAPTCHA) -> matches. PRE-MATCH ONLY by default: bmbets shows a
     bare start time (HH:MM) in the row's date-col for scheduled matches, and FIN/LIVE/a set score
     once it starts. The rich 8-book depth (the edge) is on pre-match; live matches thin to 1 book,
@@ -103,7 +103,9 @@ def discover(prematch_only=True):
             tip += dt.timedelta(days=1)
         return (tip - now).total_seconds()
     out.sort(key=lambda m: _mins(m["start"]))
-    return out
+    if within_hours:                                   # scrape everything tipping within the window,
+        out = [m for m in out if _mins(m["start"]) <= within_hours * 3600]   # so a market is grabbed
+    return out                                          # the instant it posts (books hang O/U ~1-2h pre-tip)
 
 
 def _num(x):
@@ -151,7 +153,7 @@ def scrape(page, match):
     try:
         page.goto(match["url"] + "#!/overunder-by-points", wait_until="domcontentloaded", timeout=30000)
         # the reCAPTCHA'd /oddsdata fills #oddsContent; wait for a real line cell to appear
-        page.wait_for_selector("#oddsContent td.odd-han", timeout=15000)
+        page.wait_for_selector("#oddsContent td.odd-han", timeout=8000)   # fast-fail: a match with no posted market shouldn't cost 15s (the 2h window has many not-yet-lined)
         rows = page.evaluate(_EXTRACT)
         return aggregate(rows)
     except Exception:
@@ -171,9 +173,9 @@ def _store(conn, now, match, agg):
          for ln, a in agg.items()])
 
 
-def collect(limit=40, show=False):
-    matches = discover()
-    print(f"bmbets: {len(matches)} pre-match across {len(LEAGUES)} leagues; scraping soonest {limit}")
+def collect(limit=80, show=False, window=2.0):
+    matches = discover(within_hours=window)
+    print(f"bmbets: {len(matches)} pre-match within {window}h across {len(LEAGUES)} leagues; scraping up to {limit}")
     if not matches:
         return 0
     from playwright.sync_api import sync_playwright
@@ -210,13 +212,14 @@ def collect(limit=40, show=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, default=40)
+    ap.add_argument("--limit", type=int, default=80, help="safety cap on matches/scrape (the window is the real bound)")
+    ap.add_argument("--window", type=float, default=2.0, help="scrape every pre-match match tipping within this many hours")
     ap.add_argument("--headed", action="store_true", help="headed Chromium (needs a display / xvfb) — passes reCAPTCHA better")
     ap.add_argument("--show", action="store_true")
     args = ap.parse_args()
     global HEADED
     HEADED = HEADED or args.headed
-    n = collect(args.limit, args.show)
+    n = collect(args.limit, args.show, args.window)
     sys.exit(0 if n >= 0 else 1)
 
 
