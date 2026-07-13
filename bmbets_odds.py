@@ -173,7 +173,7 @@ def _store(conn, now, match, agg):
 
 def collect(limit=40, show=False):
     matches = discover()
-    print(f"bmbets: {len(matches)} matches listed (Czech Liga Pro + TT Elite); scraping up to {limit}")
+    print(f"bmbets: {len(matches)} pre-match across {len(LEAGUES)} leagues; scraping soonest {limit}")
     if not matches:
         return 0
     from playwright.sync_api import sync_playwright
