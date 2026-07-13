@@ -48,15 +48,22 @@ LEAGUES = {
     "Czech Liga Pro": "https://bmbets.com/table-tennis/czech-republic/czech-liga-pro/",
     "TT Elite Series": "https://bmbets.com/table-tennis/poland/tt-elite-series/",
 }
-_SLUG = re.compile(r"(/table-tennis/[a-z-]+/[a-z0-9-]+/([a-z0-9-]+)-v-([a-z0-9-]+)-(\d+)/)")
+_ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
+_DATECOL = re.compile(r'<td[^>]*class="[^"]*date-col[^"]*"[^>]*>(.*?)</td>', re.S)
+_LINK = re.compile(r"(/table-tennis/[a-z-]+/[a-z0-9-]+/([a-z0-9-]+)-v-([a-z0-9-]+)-(\d+)/)")
+_TIME = re.compile(r"^\d{1,2}:\d{2}$")
 
 
 def _title(slug: str) -> str:
     return slug.replace("-", " ").title()
 
 
-def discover():
-    """Open league pages (no reCAPTCHA) -> [{league,url,id,p1,p2}] for every listed match."""
+def discover(prematch_only=True):
+    """Open league pages (no reCAPTCHA) -> matches. PRE-MATCH ONLY by default: bmbets shows a
+    bare start time (HH:MM) in the row's date-col for scheduled matches, and FIN/LIVE/a set score
+    once it starts. The rich 8-book depth (the edge) is on pre-match; live matches thin to 1 book,
+    so we skip them. Rows are page-ordered ~chronologically, so matches[:limit] = the soonest tips
+    (freshest openers to shop)."""
     s = cr.Session(impersonate="chrome124")
     out, seen = [], set()
     for lg, u in LEAGUES.items():
@@ -64,12 +71,21 @@ def discover():
             html = s.get(u, headers={"Accept": "text/html"}, timeout=25).text
         except Exception as e:
             print(f"discover {lg}: {str(e)[:60]}"); continue
-        for full, p1, p2, mid in _SLUG.findall(html):
+        for rm in _ROW.finditer(html):
+            row = rm.group(1)
+            lm = _LINK.search(row)
+            if not lm:
+                continue
+            full, p1, p2, mid = lm.groups()
             if mid in seen:
+                continue
+            dc = _DATECOL.search(row)
+            status = re.sub(r"<[^>]+>", "", dc.group(1)).strip() if dc else ""
+            if prematch_only and not _TIME.match(status):     # keep only scheduled (upcoming) rows
                 continue
             seen.add(mid)
             out.append({"league": lg, "url": "https://bmbets.com" + full,
-                        "id": mid, "p1": _title(p1), "p2": _title(p2)})
+                        "id": mid, "p1": _title(p1), "p2": _title(p2), "start": status})
     return out
 
 
