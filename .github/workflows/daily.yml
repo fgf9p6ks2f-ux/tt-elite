@@ -19,6 +19,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write            # github.token self-redispatch (immortal loop past dropped crons)
 
 jobs:
   daily:
@@ -80,3 +81,18 @@ jobs:
             fi
             sleep 540
           done
+      - name: self-redispatch — keep the loop immortal past throttled/dropped crons
+        if: always()
+        env:
+          TOKEN: ${{ secrets.DISPATCH_PAT || github.token }}
+        run: |
+          # daily.yml had NO self-redispatch, so GitHub dropping the */30 cron froze the TT
+          # board+tracker for ~9.5h (2026-07-13). github.token self-dispatches with
+          # actions: write -> an immortal chain; the */30 cron is now just a seed fallback.
+          code=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/daily.yml/dispatches" \
+            -d '{"ref":"${{ github.ref_name }}"}')
+          if [ "$code" = "204" ]; then echo "✓ redispatched next daily loop (immortal chain)";
+          else echo "redispatch HTTP $code — the */30 cron is the fallback"; fi
