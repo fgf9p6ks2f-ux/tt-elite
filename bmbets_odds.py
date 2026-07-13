@@ -44,9 +44,11 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 PROXY = os.environ.get("BMBETS_PROXY") or None
 HEADED = os.environ.get("BMBETS_HEADED") == "1"
 
-LEAGUES = {
+LEAGUES = {   # names match tt.sqlite / 24live so pair_key + H2H flags join
     "Czech Liga Pro": "https://bmbets.com/table-tennis/czech-republic/czech-liga-pro/",
     "TT Elite Series": "https://bmbets.com/table-tennis/poland/tt-elite-series/",
+    "Setka Cup": "https://bmbets.com/table-tennis/ukraine/setka-cup/",
+    "TT Cup": "https://bmbets.com/table-tennis/ukraine/tt-cup/",
 }
 _ROW = re.compile(r"<tr[^>]*>(.*?)</tr>", re.S)
 _DATECOL = re.compile(r'<td[^>]*class="[^"]*date-col[^"]*"[^>]*>(.*?)</td>', re.S)
