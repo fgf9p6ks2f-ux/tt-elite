@@ -82,6 +82,19 @@ def grade():
                     "WHERE mid=?",
                     (total, "W" if won else "L", WIN_UNITS if won else -1.0, ts, mid))
         graded += 1
+    # self-heal: a bet whose match never landed a result and is now well past can NEVER grade —
+    # 24live drops finished matches from its feed after ~a day, so a loop OUTAGE during that window
+    # orphans the bet permanently. Mark such bets 'void' so they leave "open" instead of sitting
+    # forever. 12h grace >> the usual minutes-to-hours result-landing, so a merely-delayed real
+    # result still grades first; graded_at = the match time so it never pollutes a later digest.
+    # 'void' is excluded from W-L/units everywhere (tracker + report count only 'W'/'L').
+    voided = con.execute(
+        "UPDATE paper_bets SET result='void', pnl=0, graded_at=datetime(start_ts,'unixepoch') "
+        "WHERE result IS NULL AND start_ts < ? "
+        "AND mid NOT IN (SELECT match_id FROM matches WHERE total_points IS NOT NULL)",
+        (dt.datetime.now(dt.timezone.utc).timestamp() - 43200,)).rowcount
+    if voided:
+        print(f"  self-heal: {voided} unresolvable orphan bet(s) voided")
     con.commit()
     con.close()
     return graded
