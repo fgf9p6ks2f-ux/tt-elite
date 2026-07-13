@@ -136,7 +136,7 @@ def report():
     lines.append("")
     rows = con.execute(
         "SELECT league, COUNT(*), SUM(result='W'), SUM(result='L'), SUM(COALESCE(pnl,0)) "
-        "FROM paper_bets WHERE result IS NOT NULL GROUP BY league ORDER BY league").fetchall()
+        "FROM paper_bets WHERE result IN ('W','L') GROUP BY league ORDER BY league").fetchall()
     if rows:
         lines += ["| league | settled | W-L | hit | P&L (u) |", "|---|---|---|---|---|"]
         for lg, cnt, lw, ll, lpnl in rows:
@@ -145,7 +145,7 @@ def report():
         lines.append("")
     recent = con.execute(
         "SELECT graded_at, league, p1, p2, side, line, total, result, pnl FROM paper_bets "
-        "WHERE result IS NOT NULL ORDER BY graded_at DESC, start_ts DESC LIMIT 25").fetchall()
+        "WHERE result IN ('W','L') ORDER BY graded_at DESC, start_ts DESC LIMIT 25").fetchall()
     if recent:
         lines += ["### recent settled", "",
                   "| graded | league | matchup | bet | total | result | P&L |",
