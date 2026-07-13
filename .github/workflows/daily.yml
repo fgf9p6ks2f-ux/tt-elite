@@ -82,7 +82,13 @@ jobs:
             sleep 540
           done
       - name: self-redispatch — keep the loop immortal past throttled/dropped crons
-        if: always()
+        # NOT always(): a run superseded by cancel-in-progress must NOT redispatch, or every
+        # cron handoff spawns a competitor that the next tick cancels -> churn amplification
+        # (that pile of `cancelled` runs). success()||failure() fires only on a NATURAL finish:
+        #   • normal op → the */30 cron supersedes this loop → cancelled → no redispatch (clean).
+        #   • cron DROPPED → nothing supersedes us → loop runs its full ~54 min → completes →
+        #     redispatches → the immortal chain takes over. Best of both, near-zero churn.
+        if: success() || failure()
         env:
           TOKEN: ${{ secrets.DISPATCH_PAT || github.token }}
         run: |
