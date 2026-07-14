@@ -48,6 +48,7 @@ Jacek Oracz|Lukasz Pyda|under|1783821600
 Jacek Oracz|Michal Machelski|under|1783797000
 Jacek Oracz|Michal Machelski|under|1783818600
 Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
+Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
