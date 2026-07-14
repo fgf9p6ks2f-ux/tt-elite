@@ -30,6 +30,7 @@ Dmytro Derevynskyi|Oleksandr Melashenko|over|1783535100
 Dmytro Derevynskyi|Roman Gnoevoy|over|1783524300
 Dmytro Yurkov|Serhii Kushnirenko|over|1783427400
 Dmytro Yurkov|Serhii Ponomarenko|under|1783778400
+Dmytro Yurkov|Serhii Ponomarenko|under|1784032200
 Eduard Rubtsov|Oleksandr V Kovalchuk|over|1783562100
 Erik Precek|Radek Benes|under|1783496400
 Grzegorz Adamiak|Grzegorz Felkel|under|1783481100
@@ -45,6 +46,7 @@ Jacek Oracz|Lukasz Pyda|under|1783787100
 Jacek Oracz|Lukasz Pyda|under|1783821600
 Jacek Oracz|Michal Machelski|under|1783797000
 Jacek Oracz|Michal Machelski|under|1783818600
+Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
