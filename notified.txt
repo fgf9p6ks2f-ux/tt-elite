@@ -13,6 +13,7 @@ Artem Yurkov|Vladimir Voronenko|over|1783699800
 Artem Yurkov|Vladimir Voronenko|over|1783951800
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Blazej Gola|Karol Guzy|under|1783620000
+Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
 Bohdan Chaikovskyi|Serhii Maksymiv|over|1783533900
 Daniel Priesol|Radim Kvasnicka|over|1783792800
@@ -82,6 +83,7 @@ Karol Guzy|Krzysztof Zapala|over|1783542600
 Karol Guzy|Krzysztof Zapala|over|1783708200
 Karol Sulkowski|Michal Minda|over|1783742400
 Karol Sulkowski|Michal Minda|over|1783751100
+Karol Sulkowski|Michal Minda|over|1784035800
 Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
