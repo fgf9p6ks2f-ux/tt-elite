@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-14T21:25:51 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-14T21:36:28 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 31-18  ·  **P&L:** +7.83u ($+783)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (Elite + Setka Cup):** 32-18  ·  **P&L:** +8.67u ($+867)  ·  **hit 64.0%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  22-18  ·  +0.33u  ·  hit 55%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,12 +11,13 @@ _2026-07-14T21:25:51 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 31 | 18-13 | 58% | +2.00 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 16 | 8-8 | 50% | -1.33 |
-| TT Elite Series | 18 | 13-5 | 72% | +5.83 |
+| TT Elite Series | 19 | 14-5 | 74% | +6.67 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-14 | TT Elite Series | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 91 | W | +0.83 |
 | 2026-07-14 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
 | 2026-07-14 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Maksymilian Rus vs Boguslaw Madej | over 74.5 | 61 | L | -1.00 |
@@ -41,5 +42,4 @@ _2026-07-14T21:25:51 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | Czech Liga Pro | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Lukasz Pyda vs Jacek Oracz | under 74.5 | 49 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Robert Szymik vs Jakub Michalski | under 74.5 | 57 | W | +0.83 |
-| 2026-07-12 | TT Elite Series | Michal Machelski vs Jacek Oracz | under 74.5 | 73 | W | +0.83 |
 
