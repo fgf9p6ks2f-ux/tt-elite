@@ -1,22 +1,23 @@
 # TT paper ledger — live flag track record
 
-_2026-07-14T15:10:32 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-14T16:45:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 31-18  ·  **P&L:** +7.83u ($+783)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  20-18  ·  -1.33u  ·  hit 53%
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  21-18  ·  -0.50u  ·  hit 54%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 20 | 12-8 | 60% | +2.00 |
 | Setka Cup | 31 | 18-13 | 58% | +2.00 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
-| TT Cup | 14 | 6-8 | 43% | -3.00 |
+| TT Cup | 15 | 7-8 | 47% | -2.17 |
 | TT Elite Series | 18 | 13-5 | 72% | +5.83 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-14 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Maksymilian Rus vs Boguslaw Madej | over 74.5 | 61 | L | -1.00 |
 | 2026-07-14 | TT Elite Series | Karol Sulkowski vs Michal Minda | over 74.5 | 93 | W | +0.83 |
 | 2026-07-14 | Setka Cup | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-14T15:10:32 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | TT Elite Series | Robert Szymik vs Jakub Michalski | under 74.5 | 57 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Michal Machelski vs Jacek Oracz | under 74.5 | 73 | W | +0.83 |
 | 2026-07-11 | Czech Liga Pro | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
-| 2026-07-11 | Setka Cup | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
 
