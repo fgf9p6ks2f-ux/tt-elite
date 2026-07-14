@@ -1,13 +1,13 @@
 # TT paper ledger — live flag track record
 
-_2026-07-14T08:21:05 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-14T11:12:30 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 29-17  ·  **P&L:** +7.17u ($+717)  ·  **hit 63.0%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  19-17  ·  -1.17u  ·  hit 53%
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  20-17  ·  -0.33u  ·  hit 54%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 19 | 11-8 | 58% | +1.17 |
+| Czech Liga Pro | 20 | 12-8 | 60% | +2.00 |
 | Setka Cup | 30 | 17-13 | 57% | +1.17 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 13 | 6-7 | 46% | -2.00 |
@@ -17,6 +17,7 @@ _2026-07-14T08:21:05 UTC · every flag logged as 1u ($100) at -120 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-14 | Czech Liga Pro | Jan Pleskot vs Lubor Sulava | over 74.5 | 96 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Jakub Kosowski vs Jan Zandecki | over 74.5 | 111 | W | +0.83 |
 | 2026-07-13 | Setka Cup | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 92 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-14T08:21:05 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-11 | Czech Liga Pro | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
 | 2026-07-11 | Czech Liga Pro | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
 | 2026-07-11 | TT Elite Series | Karol Sulkowski vs Michal Minda | over 74.5 | 91 | W | +0.83 |
-| 2026-07-10 | TT Cup | Michal Raska vs Jakub Volny | over 74.5 | 94 | W | +0.83 |
 
