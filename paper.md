@@ -1,22 +1,25 @@
 # TT paper ledger — live flag track record
 
-_2026-07-14T12:45:33 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-14T15:10:32 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 29-17  ·  **P&L:** +7.17u ($+717)  ·  **hit 63.0%** (break-even 52.4%)  ·  **Open:** 4
+- **Bet record (Elite + Setka Cup):** 31-18  ·  **P&L:** +7.83u ($+783)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  20-18  ·  -1.33u  ·  hit 53%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 20 | 12-8 | 60% | +2.00 |
-| Setka Cup | 30 | 17-13 | 57% | +1.17 |
+| Setka Cup | 31 | 18-13 | 58% | +2.00 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 14 | 6-8 | 43% | -3.00 |
-| TT Elite Series | 16 | 12-4 | 75% | +6.00 |
+| TT Elite Series | 18 | 13-5 | 72% | +5.83 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-14 | TT Elite Series | Maksymilian Rus vs Boguslaw Madej | over 74.5 | 61 | L | -1.00 |
+| 2026-07-14 | TT Elite Series | Karol Sulkowski vs Michal Minda | over 74.5 | 93 | W | +0.83 |
+| 2026-07-14 | Setka Cup | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
 | 2026-07-14 | TT Cup | Jan Skvrna vs Radek Benes | over 74.5 | 72 | L | -1.00 |
 | 2026-07-14 | Czech Liga Pro | Jan Pleskot vs Lubor Sulava | over 74.5 | 96 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Jakub Kosowski vs Jan Zandecki | over 74.5 | 111 | W | +0.83 |
@@ -39,7 +42,4 @@ _2026-07-14T12:45:33 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | TT Elite Series | Michal Machelski vs Jacek Oracz | under 74.5 | 73 | W | +0.83 |
 | 2026-07-11 | Czech Liga Pro | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
 | 2026-07-11 | Setka Cup | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
-| 2026-07-11 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
-| 2026-07-11 | Czech Liga Pro | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
-| 2026-07-11 | Czech Liga Pro | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
 
