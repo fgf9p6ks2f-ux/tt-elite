@@ -72,6 +72,7 @@ Jan Szotkowski|Tadeas Zika|over|1783607400
 Jan Szotkowski|Tomas Dousek|over|1783852200
 Jan Vidourek|Richard Vavricka|over|1783712100
 Jaroslav Sindler|Patrik Sturma|over|1783683600
+Jaroslaw Rolak|Krzysztof Kotyl|over|1784067000
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
@@ -132,3 +133,4 @@ Roman Gnoevoy|Spartak Abalmaz|over|1783463100
 Roman Gnoevoy|Spartak Abalmaz|over|1783536900
 Serhii Kushnirenko|Serhii Ponomarenko|under|1783666800
 Serhii Kushnirenko|Serhii Ponomarenko|under|1783773000
+Serhii Kushnirenko|Serhii Ponomarenko|under|1784104200
