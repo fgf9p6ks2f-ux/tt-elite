@@ -1,22 +1,24 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T00:31:22 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T07:32:32 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 34-18  ·  **P&L:** +10.33u ($+1,033)  ·  **hit 65.4%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  22-18  ·  +0.33u  ·  hit 55%
+- **Bet record (Elite + Setka Cup):** 34-19  ·  **P&L:** +9.33u ($+933)  ·  **hit 64.2%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  23-18  ·  +1.17u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 20 | 12-8 | 60% | +2.00 |
+| Czech Liga Pro | 21 | 13-8 | 62% | +2.83 |
 | Setka Cup | 31 | 18-13 | 58% | +2.00 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 16 | 8-8 | 50% | -1.33 |
-| TT Elite Series | 21 | 16-5 | 76% | +8.33 |
+| TT Elite Series | 22 | 16-6 | 73% | +7.33 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | Czech Liga Pro | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
+| 2026-07-15 | TT Elite Series | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 56 | L | -1.00 |
 | 2026-07-15 | TT Elite Series | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 76 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 104 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 91 | W | +0.83 |
@@ -40,6 +42,4 @@ _2026-07-15T00:31:22 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | Czech Liga Pro | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
 | 2026-07-12 | TT Cup | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 53 | L | -1.00 |
 | 2026-07-12 | Czech Liga Pro | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
-| 2026-07-12 | TT Cup | Petr Vicherek vs Jonas Rak | over 74.5 | 85 | W | +0.83 |
-| 2026-07-12 | Czech Liga Pro | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 
