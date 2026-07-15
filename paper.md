@@ -1,22 +1,26 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T12:12:10 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T15:10:18 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 36-19  ·  **P&L:** +11.00u ($+1,100)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  25-19  ·  +1.83u  ·  hit 57%
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  26-22  ·  -0.33u  ·  hit 54%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 22 | 13-9 | 59% | +1.83 |
+| Czech Liga Pro | 23 | 14-9 | 61% | +2.67 |
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
-| Setka Women | 4 | 2-2 | 50% | -0.33 |
-| TT Cup | 18 | 10-8 | 56% | +0.33 |
+| Setka Women | 5 | 2-3 | 40% | -1.33 |
+| TT Cup | 20 | 10-10 | 50% | -1.67 |
 | TT Elite Series | 23 | 17-6 | 74% | +8.17 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | Setka Women | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
+| 2026-07-15 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Czech Liga Pro | Michael Sedlacek vs Ondrej Paril | over 74.5 | 112 | W | +0.83 |
+| 2026-07-15 | TT Cup | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | TT Cup | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 | 2026-07-15 | TT Elite Series | Rafal Gajda vs Kacper Adamus | over 74.5 | 93 | W | +0.83 |
 | 2026-07-15 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
@@ -38,8 +42,4 @@ _2026-07-15T12:12:10 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-13 | Setka Cup | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 92 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Rafal Skotniczny vs Patryk Mecik | under 74.5 | 94 | L | -1.00 |
-| 2026-07-13 | TT Elite Series | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 72 | L | -1.00 |
-| 2026-07-13 | Czech Liga Pro | Jan Potensky vs Jiri Grohsgott | under 74.5 | 73 | W | +0.83 |
-| 2026-07-13 | Czech Liga Pro | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
-| 2026-07-12 | TT Elite Series | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 
