@@ -1,6 +1,8 @@
 Adam Kral|Milan Tlusty|over|1783787100
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
+Adrian Wiecek|Josef Braun|over|1784180400
+Adrian Wiecek|Josef Braun|over|1784196000
 Ales Barton|Jan Kanera|over|1783839600
 Anastasiia Hordynska-Sheiko|Viktoria Shevchuk|under|1783789500
 Anastasiia Volgina|Ksenia Tymchenko|under|1783692300
@@ -88,6 +90,7 @@ Karol Guzy|Krzysztof Zapala|over|1783708200
 Karol Sulkowski|Michal Minda|over|1783742400
 Karol Sulkowski|Michal Minda|over|1783751100
 Karol Sulkowski|Michal Minda|over|1784035800
+Karol Sulkowski|Michal Minda|over|1784195400
 Karol Sulkowski|Milosz Piecowski|over|1783567500
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300

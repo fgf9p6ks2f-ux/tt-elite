@@ -1,15 +1,15 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T15:10:18 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T16:49:53 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 36-19  ·  **P&L:** +11.00u ($+1,100)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  26-22  ·  -0.33u  ·  hit 54%
+- **Bet record (Elite + Setka Cup):** 36-19  ·  **P&L:** +11.00u ($+1,100)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 3
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  26-23  ·  -1.33u  ·  hit 53%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 23 | 14-9 | 61% | +2.67 |
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
-| Setka Women | 5 | 2-3 | 40% | -1.33 |
+| Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 20 | 10-10 | 50% | -1.67 |
 | TT Elite Series | 23 | 17-6 | 74% | +8.17 |
 
@@ -17,6 +17,7 @@ _2026-07-15T15:10:18 UTC · every flag logged as 1u ($100) at -120 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | Setka Women | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
 | 2026-07-15 | Setka Women | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
 | 2026-07-15 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Czech Liga Pro | Michael Sedlacek vs Ondrej Paril | over 74.5 | 112 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-15T15:10:18 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-13 | TT Elite Series | Jakub Kosowski vs Jan Zandecki | over 74.5 | 111 | W | +0.83 |
 | 2026-07-13 | Setka Cup | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 | 2026-07-13 | TT Elite Series | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 92 | W | +0.83 |
-| 2026-07-13 | TT Elite Series | Rafal Skotniczny vs Patryk Mecik | under 74.5 | 94 | L | -1.00 |
 
