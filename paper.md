@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T20:50:56 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T21:01:27 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (Elite + Setka Cup):** 18-6  ·  **P&L:** +9.00u ($+900)  ·  **hit 75.0%** (break-even 52.4%)  ·  **Open:** 3
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  47-36  ·  +3.17u  ·  hit 57%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  48-36  ·  +4.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 23 | 14-9 | 61% | +2.67 |
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 22 | 12-10 | 55% | +0.00 |
+| TT Cup | 23 | 13-10 | 57% | +0.83 |
 | TT Elite Series | 24 | 18-6 | 75% | +9.00 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 12-10 · hit 55% · +0.00u (22 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 13-10 · hit 57% · +0.83u (23 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
 | 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
 | 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
 | 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 70 | L | -1.00 |
 | 2026-07-09 | Blazej Gola vs Karol Guzy | under 74.5 | 82 | L | -1.00 |
 | 2026-07-09 | Jan Masternak vs Bartlomiej Molka | over 74.5 | 64 | L | -1.00 |
-| 2026-07-08 | Jan Skvrna vs Radek Benes | over 74.5 | 92 | W | +0.83 |
 
 </details>
 
