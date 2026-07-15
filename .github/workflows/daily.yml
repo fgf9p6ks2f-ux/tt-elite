@@ -58,6 +58,7 @@ jobs:
               echo '```'
             } > today.md
             python paper_ledger.py || echo "paper ledger skipped"
+            python player_view_shadow.py || echo "pv shadow skipped"  # player-view LIVE validation -> pv.md
             python tt_board.py || echo "tt board skipped"           # dashboard TT tab feed
             python push_tt_board.py || echo "tt push skipped"       # -> public dashboard repo
             if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
