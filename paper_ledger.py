@@ -156,17 +156,26 @@ def report():
             hit = f"{lw/(lw+ll)*100:.0f}%" if (lw + ll) else "—"
             lines.append(f"| {lg} | {cnt} | {lw}-{ll} | {hit} | {lpnl:+.2f} |")
         lines.append("")
-    recent = con.execute(
-        "SELECT graded_at, league, p1, p2, side, line, total, result, pnl FROM paper_bets "
-        "WHERE result IN ('W','L') ORDER BY graded_at DESC, start_ts DESC LIMIT 25").fetchall()
-    if recent:
-        lines += ["### recent settled", "",
-                  "| graded | league | matchup | bet | total | result | P&L |",
-                  "|---|---|---|---|---|---|---|"]
-        for ga, lg, p1, p2, sd, ln, tot, res, pn in recent:
-            lines.append(f"| {str(ga)[:10]} | {lg} | {p1} vs {p2} | {sd} {ln} | {tot} | "
-                         f"{res} | {pn:+.2f} |")
-        lines.append("")
+    # per-league DROPDOWNS: GitHub renders <details>/<summary> as a collapsible menu, so each league
+    # is a click-to-expand section showing just its settled bets. Summary line carries the league's
+    # record; ordered best-P&L first so the strongest leagues sit on top.
+    lg_rows = con.execute(
+        "SELECT league, SUM(result='W'), SUM(result='L'), SUM(COALESCE(pnl,0)) "
+        "FROM paper_bets WHERE result IN ('W','L') GROUP BY league").fetchall()
+    if lg_rows:
+        lines += ["### recent settled — by league", "", "_click a league to expand its bets_", ""]
+        for lg, lw, ll, lpnl in sorted(lg_rows, key=lambda r: -r[3]):
+            hit = f"{lw/(lw+ll)*100:.0f}%" if (lw + ll) else "—"
+            lines.append(f"<details><summary><b>{lg}</b> &mdash; {lw}-{ll} · hit {hit} · "
+                         f"{lpnl:+.2f}u ({lw + ll} settled)</summary>")
+            lines += ["", "| graded | matchup | bet | total | result | P&L |",
+                      "|---|---|---|---|---|---|"]
+            for ga, p1, p2, sd, ln, tot, res, pn in con.execute(
+                    "SELECT graded_at, p1, p2, side, line, total, result, pnl FROM paper_bets "
+                    "WHERE result IN ('W','L') AND league=? ORDER BY graded_at DESC, start_ts DESC "
+                    "LIMIT 20", (lg,)).fetchall():
+                lines.append(f"| {str(ga)[:10]} | {p1} vs {p2} | {sd} {ln} | {tot} | {res} | {pn:+.2f} |")
+            lines += ["", "</details>", ""]
     con.close()
     REPORT.write_text("\n".join(lines) + "\n")
     return aw, al, apnl, open_n                        # the BETTABLE record (Elite + Setka Cup)
