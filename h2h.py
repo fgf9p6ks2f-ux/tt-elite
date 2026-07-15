@@ -37,7 +37,10 @@ LEAGUE_CFG = {
     #   LigaPro 58.6%/+12% -> 62.7%/+20%  ·  SetkaW   61.8%/+18% -> 67.2%/+28%
     # Fewer, higher-conviction bets (Setka ~12/day -> a handful). No longer thin-margin,
     # so the ·VOL volume tag is dropped.
-    "Setka Cup":       {"rule": "shrunk", "k": 10.0, "thr": 0.72, "min": 8, "base": 0.515},
+    # SHADOW 2026-07-15 (user "flip to Elite-only"): live ledger says Elite is ~85% of profit (+6.0 of
+    # +7.17u); Setka Cup is only +1.17u/57% on 30 bets (CI still straddles break-even), so demote to
+    # shadow — keep flagging + logging to validate, but don't bet/push. Only Elite is bettable now.
+    "Setka Cup":       {"rule": "shrunk", "k": 10.0, "thr": 0.72, "min": 8, "base": 0.515, "tier": "shadow"},
     # SHADOW tier (2026-07-11): still flagged + logged to the paper ledger (so we keep validating
     # the call), but NOT pushed/notified and NOT counted in the bettable headline record. The live
     # ledger split showed the edge is concentrated: Elite + Setka Cup = 22-15 (60%) +5.0u, while
