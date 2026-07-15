@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T11:29:28 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T11:40:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 35-19  ·  **P&L:** +10.17u ($+1,017)  ·  **hit 64.8%** (break-even 52.4%)  ·  **Open:** 1
+- **Bet record (Elite + Setka Cup):** 36-19  ·  **P&L:** +11.00u ($+1,100)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  24-19  ·  +1.00u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,12 +11,13 @@ _2026-07-15T11:29:28 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 17 | 9-8 | 53% | -0.50 |
-| TT Elite Series | 22 | 16-6 | 73% | +7.33 |
+| TT Elite Series | 23 | 17-6 | 74% | +8.17 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | TT Elite Series | Rafal Gajda vs Kacper Adamus | over 74.5 | 93 | W | +0.83 |
 | 2026-07-15 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 | 2026-07-15 | TT Cup | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-15T11:29:28 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-13 | Czech Liga Pro | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | TT Elite Series | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | TT Cup | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
-| 2026-07-12 | TT Cup | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 
