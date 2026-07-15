@@ -14,6 +14,7 @@ Anhelina Plashchynska|Olga Melnik|under|1783697400
 Artem Yurkov|Vladimir Voronenko|over|1783699800
 Artem Yurkov|Vladimir Voronenko|over|1783951800
 Bartlomiej Molka|Jan Masternak|over|1783573200
+Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
 Blazej Gola|Karol Guzy|under|1783620000
 Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
