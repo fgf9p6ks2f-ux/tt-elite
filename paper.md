@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T00:00:00 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T00:10:26 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 33-18  ·  **P&L:** +9.50u ($+950)  ·  **hit 64.7%** (break-even 52.4%)  ·  **Open:** 2
+- **Bet record (Elite + Setka Cup):** 34-18  ·  **P&L:** +10.33u ($+1,033)  ·  **hit 65.4%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  22-18  ·  +0.33u  ·  hit 55%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,12 +11,13 @@ _2026-07-15T00:00:00 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 31 | 18-13 | 58% | +2.00 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 16 | 8-8 | 50% | -1.33 |
-| TT Elite Series | 20 | 15-5 | 75% | +7.50 |
+| TT Elite Series | 21 | 16-5 | 76% | +8.33 |
 
 ### recent settled
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | TT Elite Series | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 76 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 104 | W | +0.83 |
 | 2026-07-14 | TT Elite Series | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 91 | W | +0.83 |
 | 2026-07-14 | TT Cup | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-15T00:00:00 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | Czech Liga Pro | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
 | 2026-07-12 | TT Cup | Petr Vicherek vs Jonas Rak | over 74.5 | 85 | W | +0.83 |
 | 2026-07-12 | Czech Liga Pro | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
-| 2026-07-12 | TT Elite Series | Lukasz Pyda vs Jacek Oracz | under 74.5 | 49 | W | +0.83 |
 

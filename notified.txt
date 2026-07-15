@@ -74,6 +74,7 @@ Jan Szotkowski|Tomas Dousek|over|1783852200
 Jan Vidourek|Richard Vavricka|over|1783712100
 Jaroslav Sindler|Patrik Sturma|over|1783683600
 Jaroslaw Rolak|Krzysztof Kotyl|over|1784067000
+Jaroslaw Rolak|Krzysztof Kotyl|over|1784075700
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
