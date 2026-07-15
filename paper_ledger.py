@@ -122,6 +122,8 @@ def report():
     # (still logged + graded here to keep validating the cut, but not bet). Shadow set = LEAGUE_CFG.
     from h2h import LEAGUE_CFG
     shadow = sorted(lg for lg, c in LEAGUE_CFG.items() if c.get("tier") == "shadow")
+    bettable = sorted(lg for lg, c in LEAGUE_CFG.items()
+                      if c.get("rule") != "off" and c.get("tier") != "shadow")
     ph = ",".join("?" * len(shadow)) if shadow else "''"
 
     def rec(op):
@@ -139,7 +141,7 @@ def report():
     lines = ["# TT paper ledger — live flag track record", "",
              f"_{_now()} UTC · every flag logged as 1u ($100) at -120 · this is the live "
              f"out-of-sample test of the league rules_", "",
-             f"- **Bet record (Elite + Setka Cup):** {aw}-{al}"
+             f"- **Bet record ({', '.join(bettable) or 'none'}):** {aw}-{al}"
              f"  ·  **P&L:** {apnl:+.2f}u (${apnl*UNIT_USD:+,.0f})"
              + (f"  ·  **hit {aw/n*100:.1f}%** (break-even 52.4%)" if n else "")
              + f"  ·  **Open:** {open_n}"]
