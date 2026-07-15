@@ -81,6 +81,7 @@ Jiri Ruzicka|Michal Zahradka|over|1783506600
 Kacper Adamus|Marian Lebek|under|1783634400
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
+Kacper Adamus|Rafal Gajda|over|1784113500
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Karol Guzy|Krzysztof Zapala|over|1783542600
 Karol Guzy|Krzysztof Zapala|over|1783708200

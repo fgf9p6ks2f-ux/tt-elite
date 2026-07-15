@@ -1,13 +1,13 @@
 # TT paper ledger — live flag track record
 
-_2026-07-15T11:16:16 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-15T11:18:42 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (Elite + Setka Cup):** 35-19  ·  **P&L:** +10.17u ($+1,017)  ·  **hit 64.8%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  24-18  ·  +2.00u  ·  hit 57%
+- **Bet record (Elite + Setka Cup):** 35-19  ·  **P&L:** +10.17u ($+1,017)  ·  **hit 64.8%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow (validating, not bet — Liga Pro, Setka W, TT Cup):**  24-19  ·  +1.00u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 21 | 13-8 | 62% | +2.83 |
+| Czech Liga Pro | 22 | 13-9 | 59% | +1.83 |
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
 | Setka Women | 4 | 2-2 | 50% | -0.33 |
 | TT Cup | 17 | 9-8 | 53% | -0.50 |
@@ -17,6 +17,7 @@ _2026-07-15T11:16:16 UTC · every flag logged as 1u ($100) at -120 · this is th
 
 | graded | league | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|---|
+| 2026-07-15 | Czech Liga Pro | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Setka Cup | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 | 2026-07-15 | TT Cup | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
 | 2026-07-15 | Czech Liga Pro | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
@@ -41,5 +42,4 @@ _2026-07-15T11:16:16 UTC · every flag logged as 1u ($100) at -120 · this is th
 | 2026-07-12 | TT Elite Series | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | TT Cup | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
 | 2026-07-12 | TT Cup | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
-| 2026-07-12 | Czech Liga Pro | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
 
