@@ -1,12 +1,12 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-16 04:19 UTC_
+_updated 2026-07-16 04:30 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-542 upcoming fixtures (all leagues) · 242,262 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
+544 upcoming fixtures (all leagues) · 242,264 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
 
 === 9 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
@@ -18,7 +18,7 @@ Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
   Wed 11:40PM MT  Elite       Adrian Wiecek vs Josef Braun                O≤77.5   72%   89%   19   89.4
   Thu 4:00AM MT   Elite       Josef Braun vs Adrian Wiecek                O≤77.5   72%   89%   19   89.4
   Thu 4:15AM MT   TTCup·shadowJaroslav Sindler vs Patrik Sturma           O≤74.5   69%   74%   27   82.5
-  Wed 10:30PM MT  Elite       Oliver Vincenec vs Lukasz Oracz           U78.5 +13%   63%   72%   36   73.4
+  Wed 10:40PM MT  Elite       Oliver Vincenec vs Lukasz Oracz           U78.5 +13%   63%   72%   36   73.4
 
 'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.
 
