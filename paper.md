@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T12:51:23 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T15:21:17 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 29-19  ·  **P&L:** +5.27u ($+527)  ·  **hit 60.4%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  51-38  ·  +4.50u  ·  hit 57%
+- **Bet record (TT Elite Series):** 29-20  ·  **P&L:** +4.27u ($+427)  ·  **hit 59.2%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  52-38  ·  +5.33u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 25 | 15-10 | 60% | +2.50 |
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 25 | 14-11 | 56% | +0.67 |
-| TT Elite Series | 48 | 29-19 | 60% | +5.27 |
+| TT Cup | 26 | 15-11 | 58% | +1.50 |
+| TT Elite Series | 49 | 29-20 | 59% | +4.27 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 29-19 · hit 60% · +5.27u (48 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 29-20 · hit 59% · +4.27u (49 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Grzegorz Adamiak vs Artur Daniel | under 79.5 | 92 | L | -1.00 |
 | 2026-07-16 | Jakub Glanowski vs Michal Minda | under 95.5 | 99 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Adrian Wiecek | over 74.5 | 55 | L | -1.00 |
 | 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 67 | L | -1.00 |
 | 2026-07-16 | Dawid Pyrek vs Michal Machelski | over 73.5 | 62 | L | -1.00 |
 | 2026-07-16 | Oliver Vincenec vs Lukasz Oracz | under 78.5 | 55 | W | +0.89 |
-| 2026-07-16 | Josef Braun vs Patrik Klos | over 75.5 | 90 | W | +0.85 |
 
 </details>
 
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 14-11 · hit 56% · +0.67u (25 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 15-11 · hit 58% · +1.50u (26 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
 | 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
 | 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
 | 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Michal Raska vs Jakub Volny | over 74.5 | 94 | W | +0.83 |
 | 2026-07-10 | Michal Raska vs Jakub Volny | over 74.5 | 70 | L | -1.00 |
 | 2026-07-10 | Richard Vavricka vs Jan Vidourek | over 74.5 | 77 | W | +0.83 |
-| 2026-07-10 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 70 | L | -1.00 |
 
 </details>
 
