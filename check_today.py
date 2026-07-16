@@ -94,34 +94,41 @@ def all_fixtures():
     return fx
 
 
+ELITE_HIT_THR = 0.70    # flag a side only if the pair hits it >=70% of the time AT the FanDuel line
+ELITE_MIN_N = 12        # ...over at least this many H2H meetings (guards against small-sample noise)
+
+
 def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
-    """TT Elite real-line +EV bet vs FanDuel, or None. Joins the pair to FanDuel's live
-    line+odds by name, prices the calibrated P(over line) against the devigged market, and
-    stamps the bet with the REAL line + REAL odds so the ledger grades the bet on the board."""
+    """TT Elite bet vs FanDuel by RAW HIT RATE (no +EV): if the pair has gone OVER or UNDER the
+    ACTUAL FanDuel line in >=70% of their H2H meetings (min 12), flag that side. Still stamped with
+    the real line + real odds so the ledger grades/pays at the actual FanDuel price."""
     m = board.get(frozenset((fd_tt.norm(p1), fd_tt.norm(p2))))
-    if not m:                                        # no FanDuel line yet -> can't price it
-        return None
-    base = realline.recent_base(con, m["line"])
-    pick = realline.ev_pick(totals, m["line"], m["over_odds"], m["under_odds"], base)
-    if not pick:
-        return None
+    if not m or m.get("over_odds") is None or m.get("under_odds") is None:
+        return None                                  # no FanDuel price -> can't bet it
+    line = m["line"]
     n = len(totals)
-    ov = sum(1 for t in totals if t > pick["line"])
-    raw = ov / n if pick["side"] == "over" else 1 - ov / n     # pair rate AT the real line
-    return {"hit": pick["p_model"], "raw": raw, "n": n, "side": pick["side"],
+    if n < ELITE_MIN_N:                              # too few meetings to trust a 70% rate
+        return None
+    over_rate = sum(1 for t in totals if t > line) / n
+    if over_rate >= ELITE_HIT_THR:
+        side, hit, odds = "over", over_rate, m["over_odds"]
+    elif (1 - over_rate) >= ELITE_HIT_THR:
+        side, hit, odds = "under", 1 - over_rate, m["under_odds"]
+    else:
+        return None                                  # neither side clears 70% -> no bet
+    return {"hit": hit, "raw": hit, "n": n, "side": side,
             "p1": p1, "p2": p2, "avg": sum(totals) / n, "when": mt_time(ts),
             "ts": int(ts) if ts else 0, "league": ELITE, "mid": mid,
-            "line": pick["line"], "odds": pick["odds"], "edge": pick["edge"],
-            "p_mkt": pick["p_mkt"], "totals": totals, "tier": tier,
-            "zone": f"{'O' if pick['side'] == 'over' else 'U'}{pick['line']:g} "
-                    f"+{pick['edge'] * 100:.0f}%"}
+            "line": line, "odds": odds, "edge": None,
+            "totals": totals, "tier": tier,
+            "zone": f"{'O' if side == 'over' else 'U'}{line:g}"}
 
 
 def actionable(fixtures, rows, line, min_h2h=None, pct=None):
     """H2H records are per-league (same pair in two leagues = different dynamics). TT Elite
-    (the only FanDuel-priced league) is flagged by the real-line +EV engine; the remaining
-    shadow leagues keep their own validated fixed-line rule (LEAGUE_CFG). --min/--pct force
-    the plain raw rule for ALL leagues (manual override). Collect-only leagues never flag."""
+    (the only FanDuel-priced league) is flagged by the FanDuel-line 70%-hit-rate rule; the
+    remaining shadow leagues keep their own validated fixed-line rule (LEAGUE_CFG). --min/--pct
+    force the plain raw rule for ALL leagues (manual override). Collect-only leagues never flag."""
     board = fd_tt.load_board()
     con = sqlite3.connect(DB)
     rec_by_league = {}
@@ -134,10 +141,9 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             rec_by_league[league] = h2h_records(
                 [r for r in rows if r[4] == league], line)
         meets = rec_by_league[league].get(pair_key(p1, p2), [])
-        # TT Elite real-line +EV (unless a manual raw override is in force). If FanDuel has
-        # PRICED this match, its +EV verdict is final (bet or skip). If not — board missing
-        # (VM publisher down) or match not yet on the board — fall through to the legacy
-        # fixed-line rule so Elite NEVER goes silent (graceful degradation).
+        # TT Elite = FanDuel-line 70%-hit-rate rule ONLY (unless a manual raw override is in force).
+        # If FanDuel hasn't priced the match there's no line to judge, so no bet — NO fallback to the
+        # old fixed-74.5 rule (the user wants FanDuel-line bets only).
         if league == ELITE and not (min_h2h or pct):
             m = board.get(frozenset((fd_tt.norm(p1), fd_tt.norm(p2))))
             if m and m.get("over_odds") is not None and m.get("under_odds") is not None:
@@ -145,8 +151,8 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
                                board, con, cfgL.get("tier"))
                 if b:
                     bets.append(b)
-                continue
-        # shadow leagues, un-priced Elite, and manual override: existing fixed-line rule
+            continue
+        # shadow leagues and manual override: existing fixed-line rule
         cfg = ({"rule": "raw", "pct": pct or 0.70, "min": min_h2h or 10}
                if (min_h2h or pct) else LEAGUE_CFG.get(league, DEFAULT_CFG))
         hit = decide(meets, cfg)

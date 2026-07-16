@@ -134,11 +134,11 @@ def elite_h2h(bets):
     tot_by_norm = {}                                     # frozenset(norm p1, norm p2) -> [totals]
     for (a, b), meets in rec.items():
         tot_by_norm[frozenset((fd_tt.norm(a), fd_tt.norm(b)))] = [t for _, t, _ in meets]
-    picks = {}                                          # frozenset(norm) -> {side, edge, line}
-    for b in bets:
-        if b.get("league") == "TT Elite Series" and b.get("edge") is not None:
+    picks = {}                                          # frozenset(norm) -> {side, hit, line}
+    for b in bets:                                      # Elite real-line bets carry FanDuel odds
+        if b.get("league") == "TT Elite Series" and b.get("odds") is not None:
             picks[frozenset((fd_tt.norm(b["p1"]), fd_tt.norm(b["p2"])))] = {
-                "side": b["side"], "edge": round(b["edge"] * 100), "line": b.get("line")}
+                "side": b["side"], "hit": round((b.get("raw") or 0) * 100), "line": b.get("line")}
     out, seen = [], set()
     for m in matches:
         p1n, p2n = m.get("p1_norm"), m.get("p2_norm")
