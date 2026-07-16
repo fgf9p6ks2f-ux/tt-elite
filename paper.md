@@ -1,13 +1,13 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T07:01:17 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T07:12:13 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 24-13  ·  **P&L:** +7.18u ($+718)  ·  **hit 64.9%** (break-even 52.4%)  ·  **Open:** 7
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  49-36  ·  +4.83u  ·  hit 58%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  50-36  ·  +5.67u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 23 | 14-9 | 61% | +2.67 |
+| Czech Liga Pro | 24 | 15-9 | 62% | +3.50 |
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 23 | 13-10 | 57% | +0.83 |
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 14-9 · hit 61% · +2.67u (23 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 15-9 · hit 62% · +3.50u (24 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Jan Pleskot vs Lubor Sulava | over 74.5 | 97 | W | +0.83 |
 | 2026-07-15 | Michael Sedlacek vs Ondrej Paril | over 74.5 | 112 | W | +0.83 |
 | 2026-07-15 | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Radim Urbaniec vs Martin Huk | over 74.5 | 71 | L | -1.00 |
 | 2026-07-09 | Jan Szotkowski vs Tadeas Zika | over 74.5 | 114 | W | +0.83 |
 | 2026-07-09 | Radomir Revay vs Tadeas Zika | over 74.5 | 72 | L | -1.00 |
-| 2026-07-09 | Tadeas Zika vs Jan Szotkowski | over 74.5 | 46 | L | -1.00 |
 
 </details>
 
