@@ -18,6 +18,8 @@ Artur Daniel|Grzegorz Adamiak|under|1784178900
 Artur Daniel|Grzegorz Adamiak|under|1784208000
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
+Bartosz Sulkowski|Kamil Rudomina|over|1784177700
+Bartosz Sulkowski|Kamil Rudomina|over|1784186400
 Blazej Gola|Karol Guzy|under|1783620000
 Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
