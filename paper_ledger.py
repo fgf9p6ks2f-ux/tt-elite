@@ -29,7 +29,20 @@ WIN_UNITS = 100.0 / 120.0            # flat 1u at -120 — conservative default 
 DDL = """CREATE TABLE IF NOT EXISTS paper_bets (
     mid TEXT PRIMARY KEY, league TEXT, p1 TEXT, p2 TEXT, side TEXT, line REAL,
     conf REAL, raw REAL, n INTEGER, start_ts INTEGER, flagged_at TEXT,
-    total INTEGER, result TEXT, pnl REAL, graded_at TEXT)"""
+    total INTEGER, result TEXT, pnl REAL, graded_at TEXT, odds INTEGER)"""
+
+
+def _migrate(con):
+    """Add the real-odds column to older ledgers (Elite bets carry FanDuel's actual price;
+    a NULL odds = the flat -120 proxy still used by the shadow leagues FanDuel doesn't price)."""
+    con.execute(DDL)
+    if "odds" not in {r[1] for r in con.execute("PRAGMA table_info(paper_bets)")}:
+        con.execute("ALTER TABLE paper_bets ADD COLUMN odds INTEGER")
+
+
+def _dec(american):
+    a = float(american)
+    return 1 + a / 100 if a > 0 else 1 + 100 / (-a)
 
 
 def _now():
@@ -40,7 +53,7 @@ def log_flags(bets, line=None):
     """Record each flagged bet once (PK = its source match id). `line` is the default;
     a bet may carry its own (the ESB line-conditional flags bet pair-specific lines)."""
     con = sqlite3.connect(DB)
-    con.execute(DDL)
+    _migrate(con)
     ts = _now()
     added = 0
     for b in bets:
@@ -49,10 +62,10 @@ def log_flags(bets, line=None):
         cur = con.execute(
             "INSERT OR IGNORE INTO paper_bets "
             "(mid, league, p1, p2, side, line, conf, raw, n, start_ts, flagged_at, "
-            " total, result, pnl, graded_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            " total, result, pnl, graded_at, odds) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (b["mid"], b["league"], b["p1"], b["p2"], b["side"],
              b.get("line", line), b["hit"], b["raw"], b["n"], b["ts"], ts,
-             None, None, None, None))
+             None, None, None, None, b.get("odds")))
         added += cur.rowcount
     con.commit()
     con.close()
@@ -62,25 +75,28 @@ def log_flags(bets, line=None):
 def grade():
     """Settle open paper bets whose match result has landed in tt.sqlite."""
     con = sqlite3.connect(DB)
-    con.execute(DDL)
-    # re-price every settled WIN to the current default (idempotent) — so a price change
-    # (-110 -> -120) applies to the WHOLE ledger, not just bets settled from here on. Losses = -1u.
-    con.execute("UPDATE paper_bets SET pnl=? WHERE result='W' AND ABS(COALESCE(pnl,0)-?)>1e-6",
-                (WIN_UNITS, WIN_UNITS))
+    _migrate(con)
+    # re-price every settled flat-priced WIN to the current default (idempotent) — so a price
+    # change (-110 -> -120) applies to the WHOLE ledger. Elite bets carry their own FanDuel
+    # odds (odds NOT NULL) and are NOT touched here — their PnL is fixed at settle time. Losses=-1u.
+    con.execute("UPDATE paper_bets SET pnl=? WHERE result='W' AND odds IS NULL "
+                "AND ABS(COALESCE(pnl,0)-?)>1e-6", (WIN_UNITS, WIN_UNITS))
     con.commit()
     ts = _now()
     graded = 0
-    for mid, side, line in con.execute(
-            "SELECT mid, side, line FROM paper_bets WHERE result IS NULL").fetchall():
+    for mid, side, line, odds in con.execute(
+            "SELECT mid, side, line, odds FROM paper_bets WHERE result IS NULL").fetchall():
         row = con.execute("SELECT total_points FROM matches WHERE match_id=? "
                           "AND total_points IS NOT NULL", (mid,)).fetchone()
         if not row:
             continue
         total = row[0]
         won = (total > line) == (side == "over")
+        # PnL: real FanDuel odds when we have them (Elite), else the flat -120 proxy (shadow)
+        win_u = (_dec(odds) - 1.0) if odds is not None else WIN_UNITS
         con.execute("UPDATE paper_bets SET total=?, result=?, pnl=?, graded_at=? "
                     "WHERE mid=?",
-                    (total, "W" if won else "L", WIN_UNITS if won else -1.0, ts, mid))
+                    (total, "W" if won else "L", win_u if won else -1.0, ts, mid))
         graded += 1
     # self-heal: a bet whose match never landed a result and is now well past can NEVER grade —
     # 24live drops finished matches from its feed after ~a day, so a loop OUTAGE during that window

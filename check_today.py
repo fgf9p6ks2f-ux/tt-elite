@@ -18,8 +18,12 @@ import sqlite3
 from pathlib import Path
 
 import source_24live as src
+import fd_tt
+import realline
 from h2h import (DB, DEFAULT_CFG, LEAGUE_CFG, decide, h2h_records, kelly_units,
                  load, pair_key)
+
+ELITE = "TT Elite Series"       # the only league FanDuel prices -> real-line +EV path
 
 HERE = Path(__file__).resolve().parent
 
@@ -61,7 +65,8 @@ def write_alerts(bets, line):
         if b.get("tier") == "volume":
             tag += "·VOL"                               # thin-margin volume tier — optional
         w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
-        u = kelly_units(b["hit"])                       # sized off rule confidence @-110
+        dec = realline.american_to_dec(b["odds"]) if b.get("odds") else 1.9091
+        u = kelly_units(b["hit"], dec_odds=dec)         # sized off model prob @ the REAL odds
         msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
                f"{b['zone']} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) · {u:g}u")
         new.append(msg)
@@ -89,21 +94,59 @@ def all_fixtures():
     return fx
 
 
+def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
+    """TT Elite real-line +EV bet vs FanDuel, or None. Joins the pair to FanDuel's live
+    line+odds by name, prices the calibrated P(over line) against the devigged market, and
+    stamps the bet with the REAL line + REAL odds so the ledger grades the bet on the board."""
+    m = board.get(frozenset((fd_tt.norm(p1), fd_tt.norm(p2))))
+    if not m:                                        # no FanDuel line yet -> can't price it
+        return None
+    base = realline.recent_base(con, m["line"])
+    pick = realline.ev_pick(totals, m["line"], m["over_odds"], m["under_odds"], base)
+    if not pick:
+        return None
+    n = len(totals)
+    ov = sum(1 for t in totals if t > pick["line"])
+    raw = ov / n if pick["side"] == "over" else 1 - ov / n     # pair rate AT the real line
+    return {"hit": pick["p_model"], "raw": raw, "n": n, "side": pick["side"],
+            "p1": p1, "p2": p2, "avg": sum(totals) / n, "when": mt_time(ts),
+            "ts": int(ts) if ts else 0, "league": ELITE, "mid": mid,
+            "line": pick["line"], "odds": pick["odds"], "edge": pick["edge"],
+            "p_mkt": pick["p_mkt"], "totals": totals, "tier": tier,
+            "zone": f"{'O' if pick['side'] == 'over' else 'U'}{pick['line']:g} "
+                    f"+{pick['edge'] * 100:.0f}%"}
+
+
 def actionable(fixtures, rows, line, min_h2h=None, pct=None):
-    """H2H records are per-league (same pair in two leagues = different dynamics).
-    Each league is flagged by its own validated rule (LEAGUE_CFG); --min/--pct
-    override the rule with the plain raw threshold when given. Collect-only
-    leagues (rule 'off') never flag, even under a manual override."""
+    """H2H records are per-league (same pair in two leagues = different dynamics). TT Elite
+    (the only FanDuel-priced league) is flagged by the real-line +EV engine; the remaining
+    shadow leagues keep their own validated fixed-line rule (LEAGUE_CFG). --min/--pct force
+    the plain raw rule for ALL leagues (manual override). Collect-only leagues never flag."""
+    board = fd_tt.load_board()
+    con = sqlite3.connect(DB)
     rec_by_league = {}
     bets = []
     for p1, p2, ts, league, mid in fixtures:
-        if LEAGUE_CFG.get(league, {}).get("rule") == "off":
+        cfgL = LEAGUE_CFG.get(league, {})
+        if cfgL.get("rule") == "off":
             continue
         if league not in rec_by_league:
             rec_by_league[league] = h2h_records(
                 [r for r in rows if r[4] == league], line)
         meets = rec_by_league[league].get(pair_key(p1, p2), [])
-        # either flag alone triggers the manual raw override (missing one gets a default)
+        # TT Elite real-line +EV (unless a manual raw override is in force). If FanDuel has
+        # PRICED this match, its +EV verdict is final (bet or skip). If not — board missing
+        # (VM publisher down) or match not yet on the board — fall through to the legacy
+        # fixed-line rule so Elite NEVER goes silent (graceful degradation).
+        if league == ELITE and not (min_h2h or pct):
+            m = board.get(frozenset((fd_tt.norm(p1), fd_tt.norm(p2))))
+            if m and m.get("over_odds") is not None and m.get("under_odds") is not None:
+                b = _elite_bet(p1, p2, ts, mid, [t for _, t, _ in meets],
+                               board, con, cfgL.get("tier"))
+                if b:
+                    bets.append(b)
+                continue
+        # shadow leagues, un-priced Elite, and manual override: existing fixed-line rule
         cfg = ({"rule": "raw", "pct": pct or 0.70, "min": min_h2h or 10}
                if (min_h2h or pct) else LEAGUE_CFG.get(league, DEFAULT_CFG))
         hit = decide(meets, cfg)
@@ -113,9 +156,10 @@ def actionable(fixtures, rows, line, min_h2h=None, pct=None):
             bets.append({"hit": strength, "raw": raw, "n": n, "side": side,
                          "p1": p1, "p2": p2, "avg": avg, "when": mt_time(ts),
                          "ts": int(ts) if ts else 0, "league": league, "mid": mid,
-                         "zone": line_zone(meets, side, cfg, line),
+                         "line": line, "zone": line_zone(meets, side, cfg, line),
                          "totals": [t for _, t, _ in meets],   # raw H2H totals -> per-line ladder
-                         "tier": LEAGUE_CFG.get(league, {}).get("tier")})
+                         "tier": cfgL.get("tier")})
+    con.close()
     return sorted(bets, key=lambda b: -b["hit"])
 
 
