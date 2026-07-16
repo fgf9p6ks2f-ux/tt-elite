@@ -1,4 +1,5 @@
 Adam Kral|Milan Tlusty|over|1783787100
+Adrian Burkacki|Jakub Kaczmarek|over|1784171400
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
 Adrian Wiecek|Josef Braun|over|1784180400
@@ -83,6 +84,7 @@ Jaroslaw Rolak|Krzysztof Kotyl|over|1784075700
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
+Josef Braun|Patrik Klos|over|1784173500
 Kacper Adamus|Marian Lebek|under|1783634400
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
