@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T05:21:57 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T05:32:30 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 22-9  ·  **P&L:** +9.42u ($+942)  ·  **hit 71.0%** (break-even 52.4%)  ·  **Open:** 7
+- **Bet record (TT Elite Series):** 22-10  ·  **P&L:** +8.42u ($+842)  ·  **hit 68.8%** (break-even 52.4%)  ·  **Open:** 8
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  48-36  ·  +4.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-16T05:21:57 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 23 | 13-10 | 57% | +0.83 |
-| TT Elite Series | 31 | 22-9 | 71% | +9.42 |
+| TT Elite Series | 32 | 22-10 | 69% | +8.42 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 22-9 · hit 71% · +9.42u (31 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 22-10 · hit 69% · +8.42u (32 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 67 | L | -1.00 |
 | 2026-07-16 | Dawid Pyrek vs Michal Machelski | over 73.5 | 62 | L | -1.00 |
 | 2026-07-16 | Oliver Vincenec vs Lukasz Oracz | under 78.5 | 55 | W | +0.89 |
 | 2026-07-16 | Josef Braun vs Patrik Klos | over 75.5 | 90 | W | +0.85 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-13 | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 92 | W | +0.83 |
 | 2026-07-13 | Rafal Skotniczny vs Patryk Mecik | under 74.5 | 94 | L | -1.00 |
 | 2026-07-13 | Grzegorz Poliniewicz vs Maciej Nowalinski | over 74.5 | 72 | L | -1.00 |
-| 2026-07-12 | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 
 </details>
 
