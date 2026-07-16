@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T07:12:13 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T07:39:38 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 24-13  ·  **P&L:** +7.18u ($+718)  ·  **hit 64.9%** (break-even 52.4%)  ·  **Open:** 7
+- **Bet record (TT Elite Series):** 25-14  ·  **P&L:** +7.03u ($+703)  ·  **hit 64.1%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  50-36  ·  +5.67u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-16T07:12:13 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 23 | 13-10 | 57% | +0.83 |
-| TT Elite Series | 37 | 24-13 | 65% | +7.18 |
+| TT Elite Series | 39 | 25-14 | 64% | +7.03 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 24-13 · hit 65% · +7.18u (37 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 25-14 · hit 64% · +7.03u (39 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Patryk Mecik vs Oliver Vincenec | over 72.5 | 63 | L | -1.00 |
+| 2026-07-16 | Jakub Pruszkowski vs Krzysztof Hetnar | over 73.5 | 77 | W | +0.85 |
 | 2026-07-16 | Adrian Wiecek vs Josef Braun | over 74.5 | 50 | L | -1.00 |
 | 2026-07-16 | Jakub Zochniak vs Kamil Rudomina | over 75.5 | 96 | W | +0.85 |
 | 2026-07-16 | Oliver Vincenec vs Marian Lebek | under 89.5 | 92 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 56 | L | -1.00 |
 | 2026-07-15 | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 76 | W | +0.83 |
 | 2026-07-14 | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 104 | W | +0.83 |
-| 2026-07-14 | Jacek Przewlocki vs Krzysztof Kotyl | over 74.5 | 91 | W | +0.83 |
-| 2026-07-14 | Maksymilian Rus vs Boguslaw Madej | over 74.5 | 61 | L | -1.00 |
 
 </details>
 
