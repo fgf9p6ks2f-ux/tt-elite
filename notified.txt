@@ -144,6 +144,7 @@ Oleksandr Ovsiienko|Vladyslav Stukalov|under|1783508400
 Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
 Oleksandr V Kovalchuk|Serhii Skachenko|over|1783558500
 Oleksii Mitla|Valerii Vlasenko|over|1783556100
+Oliver Vincenec|Patryk Mecik|over|1784184600
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Ondrej Paril|Radomir Revay|over|1783753200
 Orest Hura|Valerii Vlasenko|over|1783464300
