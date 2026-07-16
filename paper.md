@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T20:26:12 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T20:36:39 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 30-20  ·  **P&L:** +5.07u ($+507)  ·  **hit 60.0%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-39  ·  +6.00u  ·  hit 58%
+- **Bet record (TT Elite Series):** 30-20  ·  **P&L:** +5.07u ($+507)  ·  **hit 60.0%** (break-even 52.4%)  ·  **Open:** 4
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-40  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 25 | 15-10 | 60% | +2.50 |
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 29 | 17-12 | 59% | +2.17 |
+| TT Cup | 30 | 17-13 | 57% | +1.17 |
 | TT Elite Series | 50 | 30-20 | 60% | +5.07 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 17-12 · hit 59% · +2.17u (29 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 17-13 · hit 57% · +1.17u (30 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
 | 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
 | 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
 | 2026-07-12 | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 | 2026-07-12 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 53 | L | -1.00 |
-| 2026-07-12 | Petr Vicherek vs Jonas Rak | over 74.5 | 85 | W | +0.83 |
 
 </details>
 

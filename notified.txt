@@ -1,4 +1,6 @@
 Adam Kral|Milan Tlusty|over|1783787100
+Adam Staniczek|Pawel Chojnacki|under|1784233200
+Adam Staniczek|Pawel Chojnacki|under|1784247600
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
 Adrian Burkacki|Marian Lebek|under|1784187300
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
