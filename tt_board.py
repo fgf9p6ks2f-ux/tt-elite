@@ -15,10 +15,14 @@ from pathlib import Path
 import sqlite3
 
 import check_today as CT
-from h2h import DB, DEFAULT_CFG, LEAGUE_CFG, kelly_units, load
+import fd_tt                                # norm() for the FanDuel<->24live name join
+from h2h import (DB, DEFAULT_CFG, LEAGUE_CFG, h2h_records, kelly_units, load,
+                 pair_key)
 from kambi_odds import npair               # canonical pair key to join the bmbets odds
 
-OUT = Path(__file__).resolve().parent / "tt_board.json"
+HERE = Path(__file__).resolve().parent
+OUT = HERE / "tt_board.json"
+FD_BOARD = HERE / "fd_board.json"          # FanDuel.ca board (fetched by daily.yml before this runs)
 BMDB = Path(__file__).resolve().parent / "bmbets.sqlite"   # per-book soft totals (bmbets scraper)
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
@@ -91,6 +95,36 @@ def bmbets_odds():
     return idx
 
 
+def elite_h2h():
+    """For every Elite match on FanDuel's board, the pair's RAW H2H total-points list from
+    tt.sqlite (normalized-name keyed). The dashboard renders the record + hit rate AT the live
+    FanDuel line by counting these totals over/under whatever line FanDuel currently posts — so
+    the record always matches the displayed (moving) line. Empty if the board isn't present."""
+    if not FD_BOARD.exists():
+        return []
+    try:
+        matches = json.loads(FD_BOARD.read_text()).get("matches", [])
+    except (ValueError, OSError):
+        return []
+    rec = h2h_records(load(league="TT Elite", with_league=True), 74.5)   # totals are line-independent
+    tot_by_norm = {}                                     # frozenset(norm p1, norm p2) -> [totals]
+    for (a, b), meets in rec.items():
+        tot_by_norm[frozenset((fd_tt.norm(a), fd_tt.norm(b)))] = [t for _, t, _ in meets]
+    out, seen = [], set()
+    for m in matches:
+        p1n, p2n = m.get("p1_norm"), m.get("p2_norm")
+        if not (p1n and p2n):
+            continue
+        key = frozenset((p1n, p2n))
+        if key in seen:
+            continue
+        seen.add(key)
+        totals = tot_by_norm.get(key)
+        if totals:
+            out.append({"p1n": p1n, "p2n": p2n, "totals": totals})
+    return out
+
+
 def build():
     rows = load(with_league=True)
     bets = CT.actionable(CT.all_fixtures(), rows, 74.5)
@@ -129,7 +163,8 @@ def build():
         })
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
-                               "bets": out, "tracker": trk, "model_line": MODEL_LINE}))
+                               "bets": out, "tracker": trk, "model_line": MODEL_LINE,
+                               "elite_h2h": elite_h2h()}))
     print(f"tt_board: {len(out)} actionable bets, tracker {trk['w']}-{trk['l']} "
           f"({trk['u']:+.1f}u) -> {OUT}")
 
