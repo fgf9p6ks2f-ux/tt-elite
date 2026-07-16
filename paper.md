@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T20:57:25 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T21:08:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 30-20  ·  **P&L:** +5.07u ($+507)  ·  **hit 60.0%** (break-even 52.4%)  ·  **Open:** 4
+- **Bet record (TT Elite Series):** 30-21  ·  **P&L:** +4.07u ($+407)  ·  **hit 58.8%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-40  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-16T20:57:25 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 30 | 17-13 | 57% | +1.17 |
-| TT Elite Series | 50 | 30-20 | 60% | +5.07 |
+| TT Elite Series | 51 | 30-21 | 59% | +4.07 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 30-20 · hit 60% · +5.07u (50 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 30-21 · hit 59% · +4.07u (51 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Pawel Chojnacki vs Adam Staniczek | under 93.5 | 95 | L | -1.00 |
 | 2026-07-16 | Pawel Chojnacki vs Dawid Pyrek | under 93.5 | 79 | W | +0.80 |
 | 2026-07-16 | Grzegorz Adamiak vs Artur Daniel | under 79.5 | 92 | L | -1.00 |
 | 2026-07-16 | Jakub Glanowski vs Michal Minda | under 95.5 | 99 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Grzegorz Poliniewicz vs Krzysztof Wloczko | over 77.5 | 78 | W | +0.91 |
 | 2026-07-16 | Grzegorz Adamiak vs Artur Daniel | under 79.5 | 84 | L | -1.00 |
 | 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 67 | L | -1.00 |
-| 2026-07-16 | Dawid Pyrek vs Michal Machelski | over 73.5 | 62 | L | -1.00 |
 
 </details>
 

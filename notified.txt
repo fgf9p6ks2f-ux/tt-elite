@@ -143,6 +143,8 @@ Martin Huk|Radim Urbaniec|over|1783719000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
 Michal Cabis|Michal Vavrecka|over|1783769400
 Michal Chalupa|Zbynek Pagac|over|1783506600
+Michal Skorski|Mikolaj Lukaszewski|under|1784235600
+Michal Skorski|Mikolaj Lukaszewski|under|1784244000
 Michal Vondrak|Tomas Vinter|over|1783850400
 Myroslav Loboda|Viktor Slozka|over|1783564200
 Nadiia Harmash|Olga Melnik|over|1783701000
