@@ -62,6 +62,7 @@ Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
+Jakub Kaczmarek|Lukasz Oracz|under|1784185800
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jakub Komorowicz|Kamil Kos|over|1783793100
 Jakub Komorowicz|Wiekiera Arkadiusz|over|1783798500
@@ -70,6 +71,7 @@ Jakub Kosowski|Jan Zandecki|over|1783951800
 Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
+Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
 Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jakub Zochniak|Kamil Rudomina|over|1784172300
