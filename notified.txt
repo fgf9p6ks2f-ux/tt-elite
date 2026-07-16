@@ -24,6 +24,7 @@ Daniel Priesol|Radim Kvasnicka|over|1783792800
 Dawid Jadam|Krystian Kolodziej|under|1783535400
 Dawid Michna|Martin Olejnik|over|1783428900
 Dawid Pyrek|Kamil Delikatny|under|1783534800
+Dawid Pyrek|Michal Machelski|over|1784176800
 Dawid Pyrek|Witold Stechly|over|1784171100
 Dawid Stapor|Michal Lysakowski|under|1783490400
 Dawid Stapor|Pawel Gola|over|1783486800
