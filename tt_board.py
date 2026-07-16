@@ -62,16 +62,39 @@ def ladder(totals):
 
 
 def tracker():
-    """Live record/units for the Tracker tab, from graded paper_bets since the epoch (flat
-    1u). Settles as each match ends (paper_ledger grades in the TT loop every ~9 min)."""
+    """Per-league live record/units for the Tracker tab, from graded paper_bets since the epoch.
+    TT Elite grades at the REAL FanDuel line + odds (each bet carries them), so its units are the
+    actual payouts; the other TT leagues (not bet — kept running for validation) grade at the flat
+    -120 proxy. Returns per-league rows + keeps top-level w/l/u for older consumers."""
     con = sqlite3.connect(DB)
-    rows = con.execute("SELECT league, result, pnl FROM paper_bets "
-                       "WHERE result IS NOT NULL AND graded_at >= ?", (EPOCH,)).fetchall()
+    rows = con.execute("SELECT league, result, pnl, odds FROM paper_bets "
+                       "WHERE result IN ('W','L') AND graded_at >= ?", (EPOCH,)).fetchall()
+    # TT Elite is now bet at the REAL FanDuel line + odds — so its record counts ONLY those bets
+    # (odds NOT NULL); the legacy fixed-74.5 proxy Elite bets are excluded from the real-line card.
+    ep = con.execute("SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
+                     "AND odds IS NOT NULL AND result IS NULL").fetchone()[0]
     con.close()
-    dec = [r for r in rows if r[0] in TT_LEAGUES and r[1] in ("W", "L")]
-    w = sum(1 for r in dec if r[1] == "W")
-    u = sum(r[2] or 0 for r in dec)
-    return {"w": w, "l": len(dec) - w, "u": round(u, 1)}
+    by = {}
+    for lg, res, pnl, odds in rows:
+        if lg not in TT_LEAGUES:
+            continue
+        if lg == "TT Elite Series" and odds is None:   # skip the discredited fixed-74.5 proxy bets
+            continue
+        d = by.setdefault(lg, {"w": 0, "l": 0, "u": 0.0})
+        d["w" if res == "W" else "l"] += 1
+        d["u"] += pnl or 0.0
+    order = ["TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"]
+    leagues = []
+    for lg in order:
+        if lg in by:
+            d = by[lg]
+            leagues.append({"league": lg, "w": d["w"], "l": d["l"], "u": round(d["u"], 2)})
+        elif lg == "TT Elite Series" and ep:           # real-line bets pending but none settled yet
+            leagues.append({"league": lg, "w": 0, "l": 0, "u": 0.0})
+    w = sum(x["w"] for x in leagues)
+    l = sum(x["l"] for x in leagues)
+    return {"w": w, "l": l, "u": round(sum(x["u"] for x in leagues), 2),
+            "leagues": leagues, "elite_pending": ep}
 
 
 def bmbets_odds():
