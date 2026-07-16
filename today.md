@@ -1,14 +1,14 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-16 03:02 UTC_
+_updated 2026-07-16 03:13 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-537 upcoming fixtures (all leagues) · 242,238 historical matches · line 74.5 · per-league validated rules · 3 new alert(s)
+543 upcoming fixtures (all leagues) · 242,240 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 11 ACTIONABLE BETS TODAY ===
+=== 9 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
   Wed 11:30PM MT  Setka·shadowArtur Akopyan vs Martin Holub               O≤77.5   75%   81%   37   85.3
   Thu 8:30PM MT   LigaPro·shadowJan Potensky vs Jiri Grohsgott              U≥73.5   74%   77%   44   67.5
@@ -18,8 +18,6 @@ Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
   Wed 11:40PM MT  Elite       Adrian Wiecek vs Josef Braun                O≤77.5   72%   89%   19   89.4
   Thu 4:00AM MT   Elite       Josef Braun vs Adrian Wiecek                O≤77.5   72%   89%   19   89.4
   Thu 4:15AM MT   TTCup·shadowJaroslav Sindler vs Patrik Sturma           O≤74.5   69%   74%   27   82.5
-  Wed 8:45PM MT   Elite       Lukasz Oracz vs Marian Lebek              U83.5 +18%   67%   76%   25   72.4
-  Wed 9:05PM MT   Elite       Witold Stechly vs Dawid Pyrek             O69.5 +17%   67%   57%   14   75.3
   Wed 9:25PM MT   Elite       Jakub Zochniak vs Kamil Rudomina          O75.5 +11%   61%   58%   60   76.5
 
 'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.
