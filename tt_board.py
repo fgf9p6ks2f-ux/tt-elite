@@ -95,11 +95,12 @@ def bmbets_odds():
     return idx
 
 
-def elite_h2h():
-    """For every Elite match on FanDuel's board, the pair's RAW H2H total-points list from
-    tt.sqlite (normalized-name keyed). The dashboard renders the record + hit rate AT the live
-    FanDuel line by counting these totals over/under whatever line FanDuel currently posts — so
-    the record always matches the displayed (moving) line. Empty if the board isn't present."""
+def elite_h2h(bets):
+    """For every Elite match on FanDuel's board: the pair's RAW H2H total-points list (so the
+    dashboard renders the record + hit rate AT the live FanDuel line), plus the model's +EV PICK
+    when there is one. The pick comes straight from the real-line engine's flagged bets — which
+    only fire when there's an edge OVER or UNDER at the ACTUAL FanDuel line — so the dashboard
+    only flags a side on games you'd genuinely bet. No board -> empty."""
     if not FD_BOARD.exists():
         return []
     try:
@@ -110,6 +111,11 @@ def elite_h2h():
     tot_by_norm = {}                                     # frozenset(norm p1, norm p2) -> [totals]
     for (a, b), meets in rec.items():
         tot_by_norm[frozenset((fd_tt.norm(a), fd_tt.norm(b)))] = [t for _, t, _ in meets]
+    picks = {}                                          # frozenset(norm) -> {side, edge, line}
+    for b in bets:
+        if b.get("league") == "TT Elite Series" and b.get("edge") is not None:
+            picks[frozenset((fd_tt.norm(b["p1"]), fd_tt.norm(b["p2"])))] = {
+                "side": b["side"], "edge": round(b["edge"] * 100), "line": b.get("line")}
     out, seen = [], set()
     for m in matches:
         p1n, p2n = m.get("p1_norm"), m.get("p2_norm")
@@ -119,9 +125,11 @@ def elite_h2h():
         if key in seen:
             continue
         seen.add(key)
-        totals = tot_by_norm.get(key)
-        if totals:
-            out.append({"p1n": p1n, "p2n": p2n, "totals": totals})
+        entry = {"p1n": p1n, "p2n": p2n, "totals": tot_by_norm.get(key) or []}
+        if key in picks:
+            entry["pick"] = picks[key]
+        if entry["totals"] or "pick" in entry:
+            out.append(entry)
     return out
 
 
@@ -164,7 +172,7 @@ def build():
     trk = tracker()
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
                                "bets": out, "tracker": trk, "model_line": MODEL_LINE,
-                               "elite_h2h": elite_h2h()}))
+                               "elite_h2h": elite_h2h(bets)}))
     print(f"tt_board: {len(out)} actionable bets, tracker {trk['w']}-{trk['l']} "
           f"({trk['u']:+.1f}u) -> {OUT}")
 
