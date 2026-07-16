@@ -14,6 +14,8 @@ Andrii Romanenko|Oleksandr Pohonov|over|1783537500
 Anhelina Plashchynska|Olga Melnik|under|1783697400
 Artem Yurkov|Vladimir Voronenko|over|1783699800
 Artem Yurkov|Vladimir Voronenko|over|1783951800
+Artur Daniel|Grzegorz Adamiak|under|1784178900
+Artur Daniel|Grzegorz Adamiak|under|1784208000
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
 Blazej Gola|Karol Guzy|under|1783620000
