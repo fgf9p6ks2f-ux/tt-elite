@@ -65,6 +65,7 @@ Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
+Jakub Glanowski|Michal Minda|under|1784202600
 Jakub Kaczmarek|Lukasz Oracz|under|1784185800
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jakub Komorowicz|Kamil Kos|over|1783793100
