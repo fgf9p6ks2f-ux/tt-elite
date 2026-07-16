@@ -25,6 +25,10 @@ OUT = HERE / "tt_board.json"
 FD_BOARD = HERE / "fd_board.json"          # FanDuel.ca board (fetched by daily.yml before this runs)
 BMDB = Path(__file__).resolve().parent / "bmbets.sqlite"   # per-book soft totals (bmbets scraper)
 EPOCH = "2026-07-09"                       # fresh-start record epoch (matches tt_digest)
+# TT Elite record RESET: the FanDuel-line 70%-hit-rate rule went live 2026-07-16 ~05:47 UTC.
+# The Elite card counts only bets flagged from here (real-line, odds NOT NULL) — the earlier
+# +EV-engine bets stay in the ledger as history but are excluded from the live Elite record.
+ELITE_EPOCH = "2026-07-16T05:45:00"
 TT_LEAGUES = {"TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"}
 MODEL_LINE = 74.5                          # the line the flag rules are tuned at
 LADDER = [70.5 + i for i in range(11)]     # 70.5 .. 80.5 — one row per posted .5 line
@@ -67,19 +71,19 @@ def tracker():
     actual payouts; the other TT leagues (not bet — kept running for validation) grade at the flat
     -120 proxy. Returns per-league rows + keeps top-level w/l/u for older consumers."""
     con = sqlite3.connect(DB)
-    rows = con.execute("SELECT league, result, pnl, odds FROM paper_bets "
+    rows = con.execute("SELECT league, result, pnl, odds, flagged_at FROM paper_bets "
                        "WHERE result IN ('W','L') AND graded_at >= ?", (EPOCH,)).fetchall()
-    # TT Elite is now bet at the REAL FanDuel line + odds — so its record counts ONLY those bets
-    # (odds NOT NULL); the legacy fixed-74.5 proxy Elite bets are excluded from the real-line card.
+    # TT Elite record = ONLY real-line bets (odds NOT NULL) flagged under the 70%-rule (>= ELITE_EPOCH).
+    # Excludes the discredited fixed-74.5 proxy AND the earlier +EV-engine bets (kept in the ledger).
     ep = con.execute("SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
-                     "AND odds IS NOT NULL AND result IS NULL").fetchone()[0]
+                     "AND odds IS NOT NULL AND result IS NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
     con.close()
     by = {}
-    for lg, res, pnl, odds in rows:
+    for lg, res, pnl, odds, fa in rows:
         if lg not in TT_LEAGUES:
             continue
-        if lg == "TT Elite Series" and odds is None:   # skip the discredited fixed-74.5 proxy bets
-            continue
+        if lg == "TT Elite Series" and (odds is None or (fa or "") < ELITE_EPOCH):
+            continue                                   # Elite: only post-reset real-line (70%-rule) bets
         d = by.setdefault(lg, {"w": 0, "l": 0, "u": 0.0})
         d["w" if res == "W" else "l"] += 1
         d["u"] += pnl or 0.0
@@ -89,7 +93,7 @@ def tracker():
         if lg in by:
             d = by[lg]
             leagues.append({"league": lg, "w": d["w"], "l": d["l"], "u": round(d["u"], 2)})
-        elif lg == "TT Elite Series" and ep:           # real-line bets pending but none settled yet
+        elif lg == "TT Elite Series":                  # always show Elite (bettable) even 0-0 post-reset
             leagues.append({"league": lg, "w": 0, "l": 0, "u": 0.0})
     w = sum(x["w"] for x in leagues)
     l = sum(x["l"] for x in leagues)
