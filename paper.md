@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T03:24:39 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T04:20:23 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 18-6  ·  **P&L:** +9.00u ($+900)  ·  **hit 75.0%** (break-even 52.4%)  ·  **Open:** 8
+- **Bet record (TT Elite Series):** 21-8  ·  **P&L:** +9.53u ($+953)  ·  **hit 72.4%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  48-36  ·  +4.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,21 @@ _2026-07-16T03:24:39 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 32 | 19-13 | 59% | +2.83 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 23 | 13-10 | 57% | +0.83 |
-| TT Elite Series | 24 | 18-6 | 75% | +9.00 |
+| TT Elite Series | 29 | 21-8 | 72% | +9.53 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 18-6 · hit 75% · +9.00u (24 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 21-8 · hit 72% · +9.53u (29 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Josef Braun vs Patrik Klos | over 75.5 | 90 | W | +0.85 |
+| 2026-07-16 | Jakub Zochniak vs Kamil Rudomina | over 75.5 | 86 | W | +0.85 |
+| 2026-07-16 | Jakub Kaczmarek vs Adrian Burkacki | over 74.5 | 86 | W | +0.83 |
+| 2026-07-16 | Witold Stechly vs Dawid Pyrek | over 69.5 | 66 | L | -1.00 |
+| 2026-07-16 | Lukasz Oracz vs Marian Lebek | under 83.5 | 106 | L | -1.00 |
 | 2026-07-15 | Krzysztof Kotyl vs Bartlomiej Wisniewski | over 74.5 | 98 | W | +0.83 |
 | 2026-07-15 | Rafal Gajda vs Kacper Adamus | over 74.5 | 93 | W | +0.83 |
 | 2026-07-15 | Krzysztof Kotyl vs Jaroslaw Rolak | over 74.5 | 56 | L | -1.00 |
@@ -36,11 +41,6 @@ _click a league to expand its bets_
 | 2026-07-12 | Mariusz Baron vs Piotr Gumulinski | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | Lukasz Pyda vs Jacek Oracz | under 74.5 | 49 | W | +0.83 |
 | 2026-07-12 | Robert Szymik vs Jakub Michalski | under 74.5 | 57 | W | +0.83 |
-| 2026-07-12 | Michal Machelski vs Jacek Oracz | under 74.5 | 73 | W | +0.83 |
-| 2026-07-11 | Karol Sulkowski vs Michal Minda | over 74.5 | 91 | W | +0.83 |
-| 2026-07-10 | Piotr Staniszewski vs Krzysztof Kotyl | over 74.5 | 95 | W | +0.83 |
-| 2026-07-10 | Jaroslaw Rolak vs Adrian Fabis | over 74.5 | 87 | W | +0.83 |
-| 2026-07-09 | Marian Lebek vs Kacper Adamus | under 74.5 | 109 | L | -1.00 |
 
 </details>
 
