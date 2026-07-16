@@ -1,15 +1,17 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-16 17:01 UTC_
+_updated 2026-07-16 17:12 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-457 upcoming fixtures (all leagues) · 242,849 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+456 upcoming fixtures (all leagues) · 242,853 historical matches · line 74.5 · per-league validated rules · 2 new alert(s)
 
-=== 2 ACTIONABLE BETS TODAY ===
+=== 4 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
+  Thu 4:05PM MT   Elite       Patryk Jendrzejewski vs Tomasz Filbrandt     U92.5   81%   81%   16   76.8
+  Thu 6:20PM MT   Elite       Patryk Jendrzejewski vs Tomasz Filbrandt     U92.5   81%   81%   16   76.8
   Fri 4:00AM MT   LigaPro·shadowMichael Sedlacek vs Radovan Polasek         O≤74.5   74%   81%   21   81.3
   Thu 8:30PM MT   LigaPro·shadowJan Potensky vs Jiri Grohsgott              U≥73.5   74%   77%   44   67.5
 

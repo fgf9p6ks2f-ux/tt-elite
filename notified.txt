@@ -153,6 +153,8 @@ Oliver Vincenec|Patryk Mecik|over|1784184600
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Ondrej Paril|Radomir Revay|over|1783753200
 Orest Hura|Valerii Vlasenko|over|1783464300
+Patryk Jendrzejewski|Tomasz Filbrandt|under|1784239500
+Patryk Jendrzejewski|Tomasz Filbrandt|under|1784247600
 Patryk Mecik|Rafal Skotniczny|under|1783922100
 Pavel Wawrosz|Radovan Polasek|over|1783492200
 Radek Benes|Tomas Krenek|over|1783510800
