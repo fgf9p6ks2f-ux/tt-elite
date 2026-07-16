@@ -1,14 +1,14 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-16 05:10 UTC_
+_updated 2026-07-16 05:21 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-543 upcoming fixtures (all leagues) · 242,280 historical matches · line 74.5 · per-league validated rules · 2 new alert(s)
+541 upcoming fixtures (all leagues) · 242,282 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 12 ACTIONABLE BETS TODAY ===
+=== 9 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
   Wed 11:30PM MT  Setka·shadowArtur Akopyan vs Martin Holub               O≤77.5   75%   81%   37   85.3
   Thu 8:30PM MT   LigaPro·shadowJan Potensky vs Jiri Grohsgott              U≥73.5   74%   77%   44   67.5
@@ -17,10 +17,7 @@ Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
   Thu 12:30AM MT  LigaPro·shadowJan Pleskot vs Lubor Sulava                 O≤74.5   72%   73%  135   83.6
   Wed 11:40PM MT  Elite       Adrian Wiecek vs Josef Braun                O≤77.5   72%   89%   19   89.4
   Thu 4:00AM MT   Elite       Josef Braun vs Adrian Wiecek                O≤77.5   72%   89%   19   89.4
-  Wed 10:55PM MT  Elite       Kamil Rudomina vs Bartosz Sulkowski       O69.5 +19%   72%   68%   41   76.3
-  Thu 1:20AM MT   Elite       Kamil Rudomina vs Bartosz Sulkowski       O69.5 +19%   72%   68%   41   76.3
   Thu 4:15AM MT   TTCup·shadowJaroslav Sindler vs Patrik Sturma           O≤74.5   69%   74%   27   82.5
-  Wed 11:15PM MT  Elite       Grzegorz Adamiak vs Artur Daniel          U79.5 +17%   66%   76%   37   69.8
   Thu 7:20AM MT   Elite       Grzegorz Adamiak vs Artur Daniel          U79.5 +17%   66%   76%   37   69.8
 
 'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.
