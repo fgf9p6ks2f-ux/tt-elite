@@ -1,5 +1,6 @@
 Adam Kral|Milan Tlusty|over|1783787100
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
+Adrian Burkacki|Marian Lebek|under|1784187300
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
 Adrian Wiecek|Josef Braun|over|1784180400
@@ -50,6 +51,7 @@ Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
 Grzegorz Poliniewicz|Krzysztof Wloczko|over|1784178900
+Grzegorz Poliniewicz|Krzysztof Wloczko|under|1784187600
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
 Ihor Torhachov|Serhii Priadko|over|1783522800
