@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T12:29:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-16T12:40:36 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 29-18  ·  **P&L:** +6.27u ($+627)  ·  **hit 61.7%** (break-even 52.4%)  ·  **Open:** 2
+- **Bet record (TT Elite Series):** 29-19  ·  **P&L:** +5.27u ($+527)  ·  **hit 60.4%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  51-38  ·  +4.50u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-16T12:29:46 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 25 | 14-11 | 56% | +0.67 |
-| TT Elite Series | 47 | 29-18 | 62% | +6.27 |
+| TT Elite Series | 48 | 29-19 | 60% | +5.27 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 29-18 · hit 62% · +6.27u (47 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 29-19 · hit 60% · +5.27u (48 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-16 | Jakub Glanowski vs Michal Minda | under 95.5 | 99 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Adrian Wiecek | over 74.5 | 55 | L | -1.00 |
 | 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Artur Daniel | under 93.5 | 92 | W | +0.80 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Dawid Pyrek vs Michal Machelski | over 73.5 | 62 | L | -1.00 |
 | 2026-07-16 | Oliver Vincenec vs Lukasz Oracz | under 78.5 | 55 | W | +0.89 |
 | 2026-07-16 | Josef Braun vs Patrik Klos | over 75.5 | 90 | W | +0.85 |
-| 2026-07-16 | Jakub Zochniak vs Kamil Rudomina | over 75.5 | 86 | W | +0.85 |
 
 </details>
 
