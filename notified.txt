@@ -28,6 +28,7 @@ Blazej Gola|Karol Guzy|under|1783620000
 Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
 Bohdan Chaikovskyi|Serhii Maksymiv|over|1783533900
+Damian Fira|Jakub Michalski|under|1784321100
 Daniel Priesol|Radim Kvasnicka|over|1783792800
 Dawid Jadam|Krystian Kolodziej|under|1783535400
 Dawid Michna|Martin Olejnik|over|1783428900
