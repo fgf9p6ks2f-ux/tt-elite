@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T11:22:26 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T11:33:02 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  55-42  ·  +3.83u  ·  hit 57%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  55-43  ·  +2.83u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 34 | 21-13 | 62% | +4.50 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 30 | 17-13 | 57% | +1.17 |
+| TT Cup | 31 | 17-14 | 55% | +0.17 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
 
 ### recent settled — by league
@@ -71,33 +71,6 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 17-13 · hit 57% · +1.17u (30 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
-| 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
-| 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
-| 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
-| 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
-| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
-| 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
-| 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
-| 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
-| 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
-| 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
-| 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
-| 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
-| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
-| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
-| 2026-07-14 | Jan Skvrna vs Radek Benes | over 74.5 | 72 | L | -1.00 |
-| 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
-| 2026-07-12 | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
-| 2026-07-12 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 53 | L | -1.00 |
-
-</details>
-
 <details><summary><b>Czech Liga Pro</b> &mdash; 15-12 · hit 56% · +0.50u (27 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
@@ -122,6 +95,33 @@ _click a league to expand its bets_
 | 2026-07-10 | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
 | 2026-07-10 | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.83 |
 | 2026-07-10 | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
+
+</details>
+
+<details><summary><b>TT Cup</b> &mdash; 17-14 · hit 55% · +0.17u (31 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
+| 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
+| 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
+| 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
+| 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
+| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
+| 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
+| 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
+| 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
+| 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
+| 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
+| 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
+| 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
+| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
+| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
+| 2026-07-14 | Jan Skvrna vs Radek Benes | over 74.5 | 72 | L | -1.00 |
+| 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
+| 2026-07-12 | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 
 </details>
 
