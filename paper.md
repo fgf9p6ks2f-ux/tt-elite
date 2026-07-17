@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-16T23:54:04 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T00:04:51 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 31-22  ·  **P&L:** +3.98u ($+398)  ·  **hit 58.5%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (TT Elite Series):** 32-22  ·  **P&L:** +4.85u ($+485)  ·  **hit 59.3%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-40  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-16T23:54:04 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 30 | 17-13 | 57% | +1.17 |
-| TT Elite Series | 53 | 31-22 | 58% | +3.98 |
+| TT Elite Series | 54 | 32-22 | 59% | +4.85 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 31-22 · hit 58% · +3.98u (53 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 32-22 · hit 59% · +4.85u (54 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 74 | W | +0.87 |
 | 2026-07-16 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 91 | W | +0.91 |
 | 2026-07-16 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 91 | L | -1.00 |
 | 2026-07-16 | Pawel Chojnacki vs Adam Staniczek | under 93.5 | 95 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Adrian Wiecek vs Josef Braun | over 74.5 | 50 | L | -1.00 |
 | 2026-07-16 | Jakub Zochniak vs Kamil Rudomina | over 75.5 | 96 | W | +0.85 |
 | 2026-07-16 | Oliver Vincenec vs Marian Lebek | under 89.5 | 92 | L | -1.00 |
-| 2026-07-16 | Grzegorz Poliniewicz vs Krzysztof Wloczko | over 77.5 | 78 | W | +0.91 |
 
 </details>
 
