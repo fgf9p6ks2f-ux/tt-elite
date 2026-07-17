@@ -1,14 +1,14 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T11:43:43 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T11:48:30 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  55-43  ·  +2.83u  ·  hit 56%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  56-43  ·  +3.67u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
-| Setka Cup | 34 | 21-13 | 62% | +4.50 |
+| Setka Cup | 35 | 22-13 | 63% | +5.33 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 31 | 17-14 | 55% | +0.17 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 21-13 · hit 62% · +4.50u (34 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 22-13 · hit 63% · +5.33u (35 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
 | 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
 | 2026-07-15 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Valerii Vlasenko vs Oleksii Mitla | over 74.5 | 52 | L | -1.00 |
 | 2026-07-09 | Serhii Chelpanov vs Oleksandr V Kovalchuk | over 74.5 | 61 | L | -1.00 |
 | 2026-07-09 | Yaroslav Stepanchuk vs Dmitriy Kim | over 74.5 | 98 | W | +0.83 |
-| 2026-07-08 | Kostiantyn Hrynenko vs Oleksandr Melashenko | over 74.5 | 71 | L | -1.00 |
 
 </details>
 
