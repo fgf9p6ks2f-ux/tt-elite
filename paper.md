@@ -1,14 +1,14 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T16:37:11 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T16:47:55 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  58-45  ·  +3.33u  ·  hit 56%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  59-45  ·  +4.17u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
-| Setka Cup | 36 | 23-13 | 64% | +6.17 |
+| Setka Cup | 37 | 24-13 | 65% | +7.00 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 34 | 18-16 | 53% | -1.00 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 23-13 · hit 64% · +6.17u (36 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 24-13 · hit 65% · +7.00u (37 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 90 | W | +0.83 |
 | 2026-07-17 | Serhii Miroshnychenko vs Viktor Ziakun | under 74.5 | 50 | W | +0.83 |
 | 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
 | 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Eduard Rubtsov vs Oleksandr V Kovalchuk | over 74.5 | 111 | W | +0.83 |
 | 2026-07-09 | Oleksandr V Kovalchuk vs Serhii Skachenko | over 74.5 | 56 | L | -1.00 |
 | 2026-07-09 | Valerii Vlasenko vs Oleksii Mitla | over 74.5 | 52 | L | -1.00 |
-| 2026-07-09 | Serhii Chelpanov vs Oleksandr V Kovalchuk | over 74.5 | 61 | L | -1.00 |
 
 </details>
 
