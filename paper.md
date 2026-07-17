@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T08:30:42 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T11:09:31 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 35-22  ·  **P&L:** +7.43u ($+743)  ·  **hit 61.4%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-41  ·  +4.00u  ·  hit 57%
+- **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  55-42  ·  +3.83u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 26 | 15-11 | 58% | +1.50 |
-| Setka Cup | 33 | 20-13 | 61% | +3.67 |
+| Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
+| Setka Cup | 34 | 21-13 | 62% | +4.50 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 30 | 17-13 | 57% | +1.17 |
-| TT Elite Series | 57 | 35-22 | 61% | +7.43 |
+| TT Elite Series | 58 | 36-22 | 62% | +8.33 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 35-22 · hit 61% · +7.43u (57 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 36-22 · hit 62% · +8.33u (58 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Jerzy Pelka vs Marian Lebek | under 77.5 | 74 | W | +0.89 |
 | 2026-07-17 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 54 | W | +0.91 |
 | 2026-07-17 | Adam Staniczek vs Pawel Chojnacki | under 93.5 | 42 | W | +0.87 |
 | 2026-07-17 | Michal Skorski vs Kamil Klocek | over 69.5 | 70 | W | +0.80 |
@@ -40,14 +41,14 @@ _click a league to expand its bets_
 | 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 80 | W | +0.74 |
 | 2026-07-16 | Jakub Kaczmarek vs Lukasz Oracz | under 76.5 | 110 | L | -1.00 |
 | 2026-07-16 | Patryk Mecik vs Oliver Vincenec | over 72.5 | 63 | L | -1.00 |
-| 2026-07-16 | Jakub Pruszkowski vs Krzysztof Hetnar | over 73.5 | 77 | W | +0.85 |
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 20-13 · hit 61% · +3.67u (33 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 21-13 · hit 62% · +4.50u (34 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
 | 2026-07-15 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 | 2026-07-14 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
@@ -67,34 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Serhii Chelpanov vs Oleksandr V Kovalchuk | over 74.5 | 61 | L | -1.00 |
 | 2026-07-09 | Yaroslav Stepanchuk vs Dmitriy Kim | over 74.5 | 98 | W | +0.83 |
 | 2026-07-08 | Kostiantyn Hrynenko vs Oleksandr Melashenko | over 74.5 | 71 | L | -1.00 |
-| 2026-07-08 | Andrii Romanenko vs Oleksandr Pohonov | over 74.5 | 68 | L | -1.00 |
-
-</details>
-
-<details><summary><b>Czech Liga Pro</b> &mdash; 15-11 · hit 58% · +1.50u (26 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
-| 2026-07-17 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 82 | L | -1.00 |
-| 2026-07-16 | Dominik Oborny vs Marcel Heczko | over 74.5 | 58 | L | -1.00 |
-| 2026-07-16 | Jan Pleskot vs Lubor Sulava | over 74.5 | 97 | W | +0.83 |
-| 2026-07-15 | Michael Sedlacek vs Ondrej Paril | over 74.5 | 112 | W | +0.83 |
-| 2026-07-15 | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
-| 2026-07-14 | Jan Pleskot vs Lubor Sulava | over 74.5 | 96 | W | +0.83 |
-| 2026-07-13 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 73 | W | +0.83 |
-| 2026-07-13 | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
-| 2026-07-12 | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
-| 2026-07-12 | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
-| 2026-07-12 | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
-| 2026-07-11 | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
-| 2026-07-11 | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
-| 2026-07-11 | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
-| 2026-07-10 | Radim Urbaniec vs Martin Huk | over 74.5 | 76 | W | +0.83 |
-| 2026-07-10 | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
-| 2026-07-10 | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.83 |
-| 2026-07-10 | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
-| 2026-07-10 | Radim Urbaniec vs Martin Huk | over 74.5 | 71 | L | -1.00 |
 
 </details>
 
@@ -122,6 +95,33 @@ _click a league to expand its bets_
 | 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
 | 2026-07-12 | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 | 2026-07-12 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 53 | L | -1.00 |
+
+</details>
+
+<details><summary><b>Czech Liga Pro</b> &mdash; 15-12 · hit 56% · +0.50u (27 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-17 | Michael Sedlacek vs Radovan Polasek | over 74.5 | 74 | L | -1.00 |
+| 2026-07-17 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 82 | L | -1.00 |
+| 2026-07-16 | Dominik Oborny vs Marcel Heczko | over 74.5 | 58 | L | -1.00 |
+| 2026-07-16 | Jan Pleskot vs Lubor Sulava | over 74.5 | 97 | W | +0.83 |
+| 2026-07-15 | Michael Sedlacek vs Ondrej Paril | over 74.5 | 112 | W | +0.83 |
+| 2026-07-15 | Radim Urbaniec vs Martin Huk | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
+| 2026-07-14 | Jan Pleskot vs Lubor Sulava | over 74.5 | 96 | W | +0.83 |
+| 2026-07-13 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 73 | W | +0.83 |
+| 2026-07-13 | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
+| 2026-07-12 | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
+| 2026-07-12 | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
+| 2026-07-12 | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
+| 2026-07-11 | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
+| 2026-07-11 | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
+| 2026-07-11 | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
+| 2026-07-10 | Radim Urbaniec vs Martin Huk | over 74.5 | 76 | W | +0.83 |
+| 2026-07-10 | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
+| 2026-07-10 | Martin Huk vs Radim Urbaniec | over 74.5 | 76 | W | +0.83 |
+| 2026-07-10 | Milan Smesny vs Lubos Forman | under 74.5 | 92 | L | -1.00 |
 
 </details>
 
