@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T16:26:12 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T16:37:11 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  57-44  ·  +3.50u  ·  hit 56%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  58-45  ·  +3.33u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 36 | 23-13 | 64% | +6.17 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 32 | 17-15 | 53% | -0.83 |
+| TT Cup | 34 | 18-16 | 53% | -1.00 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
 
 ### recent settled — by league
@@ -98,10 +98,12 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 17-15 · hit 53% · -0.83u (32 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 18-16 · hit 53% · -1.00u (34 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
+| 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
 | 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
 | 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
@@ -120,8 +122,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
 | 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
 | 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
-| 2026-07-14 | Jan Skvrna vs Radek Benes | over 74.5 | 72 | L | -1.00 |
-| 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
 
 </details>
 
