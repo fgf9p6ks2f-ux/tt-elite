@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T14:56:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T16:04:56 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  56-43  ·  +3.67u  ·  hit 57%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  57-44  ·  +3.50u  ·  hit 56%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
-| Setka Cup | 35 | 22-13 | 63% | +5.33 |
+| Setka Cup | 36 | 23-13 | 64% | +6.17 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
-| TT Cup | 31 | 17-14 | 55% | +0.17 |
+| TT Cup | 32 | 17-15 | 53% | -0.83 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
 
 ### recent settled — by league
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 22-13 · hit 63% · +5.33u (35 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 23-13 · hit 64% · +6.17u (36 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Serhii Miroshnychenko vs Viktor Ziakun | under 74.5 | 50 | W | +0.83 |
 | 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
 | 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Oleksandr V Kovalchuk vs Serhii Skachenko | over 74.5 | 56 | L | -1.00 |
 | 2026-07-09 | Valerii Vlasenko vs Oleksii Mitla | over 74.5 | 52 | L | -1.00 |
 | 2026-07-09 | Serhii Chelpanov vs Oleksandr V Kovalchuk | over 74.5 | 61 | L | -1.00 |
-| 2026-07-09 | Yaroslav Stepanchuk vs Dmitriy Kim | over 74.5 | 98 | W | +0.83 |
 
 </details>
 
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 17-14 · hit 55% · +0.17u (31 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 17-15 · hit 53% · -0.83u (32 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
 | 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
 | 2026-07-14 | Jan Skvrna vs Radek Benes | over 74.5 | 72 | L | -1.00 |
 | 2026-07-12 | Jan Przybyla vs Patrik Jokiel | over 74.5 | 103 | W | +0.83 |
-| 2026-07-12 | Jonas Kulveit vs Adam Kral | over 74.5 | 83 | W | +0.83 |
 
 </details>
 
