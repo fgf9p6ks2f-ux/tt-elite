@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T20:58:03 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T21:09:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 37-22  ·  **P&L:** +9.13u ($+913)  ·  **hit 62.7%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  60-45  ·  +5.00u  ·  hit 57%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  61-45  ·  +5.83u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 37 | 24-13 | 65% | +7.00 |
 | Setka Women | 7 | 3-4 | 43% | -1.50 |
-| TT Cup | 34 | 18-16 | 53% | -1.00 |
+| TT Cup | 35 | 19-16 | 54% | -0.17 |
 | TT Elite Series | 59 | 37-22 | 63% | +9.13 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 18-16 · hit 53% · -1.00u (34 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 19-16 · hit 54% · -0.17u (35 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
 | 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
 | 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
 | 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 | 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
 | 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
-| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 77 | W | +0.83 |
 
 </details>
 
