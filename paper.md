@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T20:26:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T20:36:32 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 1
+- **Bet record (TT Elite Series):** 37-22  ·  **P&L:** +9.13u ($+913)  ·  **hit 62.7%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  60-45  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-17T20:26:01 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 37 | 24-13 | 65% | +7.00 |
 | Setka Women | 7 | 3-4 | 43% | -1.50 |
 | TT Cup | 34 | 18-16 | 53% | -1.00 |
-| TT Elite Series | 58 | 36-22 | 62% | +8.33 |
+| TT Elite Series | 59 | 37-22 | 63% | +9.13 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 36-22 · hit 62% · +8.33u (58 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 37-22 · hit 63% · +9.13u (59 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Robert Szymik vs Rafal Adach | under 101.5 | 90 | W | +0.80 |
 | 2026-07-17 | Jerzy Pelka vs Marian Lebek | under 77.5 | 74 | W | +0.89 |
 | 2026-07-17 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 54 | W | +0.91 |
 | 2026-07-17 | Adam Staniczek vs Pawel Chojnacki | under 93.5 | 42 | W | +0.87 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Marian Lebek vs Adrian Burkacki | under 91.5 | 76 | W | +0.80 |
 | 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 80 | W | +0.74 |
 | 2026-07-16 | Jakub Kaczmarek vs Lukasz Oracz | under 76.5 | 110 | L | -1.00 |
-| 2026-07-16 | Patryk Mecik vs Oliver Vincenec | over 72.5 | 63 | L | -1.00 |
 
 </details>
 
