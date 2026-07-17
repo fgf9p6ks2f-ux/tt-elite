@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T00:26:03 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T00:36:35 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 32-22  ·  **P&L:** +4.85u ($+485)  ·  **hit 59.3%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (TT Elite Series):** 35-22  ·  **P&L:** +7.43u ($+743)  ·  **hit 61.4%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  54-40  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,19 @@ _2026-07-17T00:26:03 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 33 | 20-13 | 61% | +3.67 |
 | Setka Women | 6 | 2-4 | 33% | -2.33 |
 | TT Cup | 30 | 17-13 | 57% | +1.17 |
-| TT Elite Series | 54 | 32-22 | 59% | +4.85 |
+| TT Elite Series | 57 | 35-22 | 61% | +7.43 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 32-22 · hit 59% · +4.85u (54 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 35-22 · hit 61% · +7.43u (57 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 54 | W | +0.91 |
+| 2026-07-17 | Adam Staniczek vs Pawel Chojnacki | under 93.5 | 42 | W | +0.87 |
+| 2026-07-17 | Michal Skorski vs Kamil Klocek | over 69.5 | 70 | W | +0.80 |
 | 2026-07-17 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 74 | W | +0.87 |
 | 2026-07-16 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 91 | W | +0.91 |
 | 2026-07-16 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 91 | L | -1.00 |
@@ -38,9 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Jakub Kaczmarek vs Lukasz Oracz | under 76.5 | 110 | L | -1.00 |
 | 2026-07-16 | Patryk Mecik vs Oliver Vincenec | over 72.5 | 63 | L | -1.00 |
 | 2026-07-16 | Jakub Pruszkowski vs Krzysztof Hetnar | over 73.5 | 77 | W | +0.85 |
-| 2026-07-16 | Adrian Wiecek vs Josef Braun | over 74.5 | 50 | L | -1.00 |
-| 2026-07-16 | Jakub Zochniak vs Kamil Rudomina | over 75.5 | 96 | W | +0.85 |
-| 2026-07-16 | Oliver Vincenec vs Marian Lebek | under 89.5 | 92 | L | -1.00 |
 
 </details>
 
