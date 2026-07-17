@@ -168,6 +168,7 @@ Radek Benes|Tomas Krenek|over|1783510800
 Radomir Revay|Tadeas Zika|over|1783423800
 Radomir Revay|Tadeas Zika|over|1783490400
 Radomir Revay|Tadeas Zika|over|1783600200
+Rafal Adach|Robert Szymik|under|1784318100
 Roman Boklah|Serhii Priadko|over|1783526400
 Roman Gnoevoy|Spartak Abalmaz|over|1783463100
 Roman Gnoevoy|Spartak Abalmaz|over|1783536900

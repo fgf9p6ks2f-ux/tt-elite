@@ -1,15 +1,15 @@
 # TT paper ledger — live flag track record
 
-_2026-07-17T17:36:12 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-17T20:15:25 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  59-45  ·  +4.17u  ·  hit 57%
+- **Bet record (TT Elite Series):** 36-22  ·  **P&L:** +8.33u ($+833)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  60-45  ·  +5.00u  ·  hit 57%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 37 | 24-13 | 65% | +7.00 |
-| Setka Women | 6 | 2-4 | 33% | -2.33 |
+| Setka Women | 7 | 3-4 | 43% | -1.50 |
 | TT Cup | 34 | 18-16 | 53% | -1.00 |
 | TT Elite Series | 58 | 36-22 | 62% | +8.33 |
 
@@ -125,10 +125,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Women</b> &mdash; 2-4 · hit 33% · -2.33u (6 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 3-4 · hit 43% · -1.50u (7 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
 | 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
 | 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
 | 2026-07-10 | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
