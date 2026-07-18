@@ -1,4 +1,5 @@
 Adam Kral|Milan Tlusty|over|1783787100
+Adam Linek|Maciej Kolek|under|1784351700
 Adam Staniczek|Pawel Chojnacki|under|1784233200
 Adam Staniczek|Pawel Chojnacki|under|1784247600
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
