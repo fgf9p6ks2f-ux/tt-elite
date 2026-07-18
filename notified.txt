@@ -153,6 +153,8 @@ Martin Huk|Radim Urbaniec|over|1783679400
 Martin Huk|Radim Urbaniec|over|1783710000
 Martin Huk|Radim Urbaniec|over|1783719000
 Mateusz Burkacki|Szymon Radlo|over|1783488600
+Mateusz Rutkowski|Michal Olbrycht|over|1784409600
+Mateusz Rutkowski|Michal Olbrycht|over|1784417700
 Michal Cabis|Michal Vavrecka|over|1783769400
 Michal Chalupa|Zbynek Pagac|over|1783506600
 Michal Skorski|Mikolaj Lukaszewski|under|1784235600
