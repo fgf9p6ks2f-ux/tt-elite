@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T19:03:51 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T21:11:34 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 45-25  ·  **P&L:** +13.15u ($+1,315)  ·  **hit 64.3%** (break-even 52.4%)  ·  **Open:** 6
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  67-47  ·  +8.83u  ·  hit 59%
+- **Bet record (TT Elite Series):** 46-25  ·  **P&L:** +13.95u ($+1,395)  ·  **hit 64.8%** (break-even 52.4%)  ·  **Open:** 5
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  67-48  ·  +7.83u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 37 | 21-16 | 57% | +1.50 |
-| TT Elite Series | 70 | 45-25 | 64% | +13.15 |
+| TT Cup | 38 | 21-17 | 55% | +0.50 |
+| TT Elite Series | 71 | 46-25 | 65% | +13.95 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 45-25 · hit 64% · +13.15u (70 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 46-25 · hit 65% · +13.95u (71 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Jacek Oracz vs Artur Kubiak | under 93.5 | 83 | W | +0.80 |
 | 2026-07-18 | Henryk Tkaczyk vs Jakub Skorupa | under 93.5 | 97 | L | -1.00 |
 | 2026-07-18 | Patryk Gamrot vs Daniel Morawiec | over 80.5 | 81 | W | +0.85 |
 | 2026-07-18 | Gracjan Kesik vs Milosz Piecowski | over 74.5 | 92 | W | +0.87 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 74 | W | +0.87 |
 | 2026-07-16 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 91 | W | +0.91 |
 | 2026-07-16 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 91 | L | -1.00 |
-| 2026-07-16 | Pawel Chojnacki vs Adam Staniczek | under 93.5 | 95 | L | -1.00 |
 
 </details>
 
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 21-16 · hit 57% · +1.50u (37 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 21-17 · hit 55% · +0.50u (38 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 66 | L | -1.00 |
 | 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
 | 2026-07-18 | Christian Kratochvil vs Jaroslav Dohnal | over 74.5 | 97 | W | +0.83 |
 | 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
 | 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 
 </details>
 
