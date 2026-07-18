@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T00:27:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T07:13:34 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 38-22  ·  **P&L:** +9.96u ($+996)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (TT Elite Series):** 40-23  ·  **P&L:** +10.70u ($+1,070)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  61-45  ·  +5.83u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,19 @@ _2026-07-18T00:27:46 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 37 | 24-13 | 65% | +7.00 |
 | Setka Women | 7 | 3-4 | 43% | -1.50 |
 | TT Cup | 35 | 19-16 | 54% | -0.17 |
-| TT Elite Series | 60 | 38-22 | 63% | +9.96 |
+| TT Elite Series | 63 | 40-23 | 63% | +10.70 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 38-22 · hit 63% · +9.96u (60 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 40-23 · hit 63% · +10.70u (63 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
+| 2026-07-18 | Dariusz Wrobel vs Kamil Klocek | under 77.5 | 54 | W | +0.89 |
+| 2026-07-18 | Michal Wolny vs Artur Kubiak | under 86.5 | 91 | L | -1.00 |
 | 2026-07-17 | Jakub Michalski vs Damian Fira | under 88.5 | 74 | W | +0.83 |
 | 2026-07-17 | Robert Szymik vs Rafal Adach | under 101.5 | 90 | W | +0.80 |
 | 2026-07-17 | Jerzy Pelka vs Marian Lebek | under 77.5 | 74 | W | +0.89 |
@@ -38,9 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Artur Daniel | under 93.5 | 92 | W | +0.80 |
 | 2026-07-16 | Patryk Mecik vs Lukasz Oracz | over 53.5 | 53 | L | -1.00 |
-| 2026-07-16 | Grzegorz Poliniewicz vs Krzysztof Wloczko | under 91.5 | 77 | W | +0.91 |
-| 2026-07-16 | Marian Lebek vs Adrian Burkacki | under 91.5 | 76 | W | +0.80 |
-| 2026-07-16 | Kamil Rudomina vs Bartosz Sulkowski | over 69.5 | 80 | W | +0.74 |
 
 </details>
 
