@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T10:05:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T10:48:09 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 40-24  ·  **P&L:** +9.70u ($+970)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  64-46  ·  +7.33u  ·  hit 58%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  65-46  ·  +8.17u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 38 | 25-13 | 66% | +7.83 |
 | Setka Women | 9 | 4-5 | 44% | -1.67 |
-| TT Cup | 36 | 20-16 | 56% | +0.67 |
+| TT Cup | 37 | 21-16 | 57% | +1.50 |
 | TT Elite Series | 64 | 40-24 | 62% | +9.70 |
 
 ### recent settled — by league
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 20-16 · hit 56% · +0.67u (36 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 21-16 · hit 57% · +1.50u (37 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
 | 2026-07-18 | Christian Kratochvil vs Jaroslav Dohnal | over 74.5 | 97 | W | +0.83 |
 | 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
 | 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
 | 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
-| 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
 
 </details>
 
