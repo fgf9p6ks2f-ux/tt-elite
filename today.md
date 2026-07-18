@@ -1,12 +1,12 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-18 11:09 UTC_
+_updated 2026-07-18 11:19 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-453 upcoming fixtures (all leagues) · 244,438 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+448 upcoming fixtures (all leagues) · 244,444 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
 === 4 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
