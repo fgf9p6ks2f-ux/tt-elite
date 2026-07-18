@@ -1,15 +1,16 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-18 14:48 UTC_
+_updated 2026-07-18 14:59 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-400 upcoming fixtures (all leagues) · 244,598 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+392 upcoming fixtures (all leagues) · 244,609 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
 
-=== 3 ACTIONABLE BETS TODAY ===
+=== 4 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
+  Sat 8:45AM MT   Elite       Daniel Morawiec vs Lukasz Oracz              U97.5   82%   82%   17   75.9
   Sat 4:30PM MT   LigaPro·shadowMartin Huk vs Radim Urbaniec                O≤74.5   72%   77%   30   81.1
   Sat 11:05AM MT  SetkaW·shadowAnna Gorchakova vs Margarita Gordeets       U≥71.5   68%   72%   36   67.4
   Sat 12:05PM MT  SetkaW·shadowKateryna Bondarenko vs Anastasiia Volgina   O≤77.5   66%   83%   12   83.9
