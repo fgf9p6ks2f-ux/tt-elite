@@ -1,15 +1,15 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T18:20:55 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T18:31:49 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 45-24  ·  **P&L:** +14.15u ($+1,415)  ·  **hit 65.2%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  66-47  ·  +8.00u  ·  hit 58%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  67-47  ·  +8.83u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
-| Setka Women | 10 | 4-6 | 40% | -2.67 |
+| Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 37 | 21-16 | 57% | +1.50 |
 | TT Elite Series | 69 | 45-24 | 65% | +14.15 |
 
@@ -125,10 +125,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Women</b> &mdash; 4-6 · hit 40% · -2.67u (10 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 5-6 · hit 45% · -1.83u (11 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
 | 2026-07-18 | Anna Gorchakova vs Margarita Gordeets | under 74.5 | 81 | L | -1.00 |
 | 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
 | 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
