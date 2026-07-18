@@ -1,14 +1,14 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T07:24:07 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T07:34:32 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 40-23  ·  **P&L:** +10.70u ($+1,070)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  61-45  ·  +5.83u  ·  hit 58%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  62-45  ·  +6.67u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
-| Setka Cup | 37 | 24-13 | 65% | +7.00 |
+| Setka Cup | 38 | 25-13 | 66% | +7.83 |
 | Setka Women | 7 | 3-4 | 43% | -1.50 |
 | TT Cup | 35 | 19-16 | 54% | -0.17 |
 | TT Elite Series | 63 | 40-23 | 63% | +10.70 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 24-13 · hit 65% · +7.00u (37 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 25-13 · hit 66% · +7.83u (38 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 60 | W | +0.83 |
 | 2026-07-17 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 90 | W | +0.83 |
 | 2026-07-17 | Serhii Miroshnychenko vs Viktor Ziakun | under 74.5 | 50 | W | +0.83 |
 | 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
 | 2026-07-09 | Eduard Rubtsov vs Oleksandr V Kovalchuk | over 74.5 | 111 | W | +0.83 |
 | 2026-07-09 | Oleksandr V Kovalchuk vs Serhii Skachenko | over 74.5 | 56 | L | -1.00 |
-| 2026-07-09 | Valerii Vlasenko vs Oleksii Mitla | over 74.5 | 52 | L | -1.00 |
 
 </details>
 
