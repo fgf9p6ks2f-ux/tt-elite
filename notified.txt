@@ -34,6 +34,7 @@ Damian Fira|Jakub Michalski|under|1784321100
 Daniel Morawiec|Lukasz Oracz|under|1784385900
 Daniel Morawiec|Patryk Gamrot|over|1784388600
 Daniel Priesol|Radim Kvasnicka|over|1783792800
+Dariusz Maszczynski|Piotr Gesiarz|under|1784421300
 Dariusz Wrobel|Kamil Klocek|under|1784333400
 Dawid Jadam|Krystian Kolodziej|under|1783535400
 Dawid Michna|Martin Olejnik|over|1783428900
