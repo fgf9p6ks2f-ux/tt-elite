@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T15:22:27 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T15:33:21 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 41-24  ·  **P&L:** +10.57u ($+1,057)  ·  **hit 63.1%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (TT Elite Series):** 43-24  ·  **P&L:** +12.43u ($+1,243)  ·  **hit 64.2%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  66-46  ·  +9.00u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-18T15:22:27 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 9 | 4-5 | 44% | -1.67 |
 | TT Cup | 37 | 21-16 | 57% | +1.50 |
-| TT Elite Series | 65 | 41-24 | 63% | +10.57 |
+| TT Elite Series | 67 | 43-24 | 64% | +12.43 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 41-24 · hit 63% · +10.57u (65 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 43-24 · hit 64% · +12.43u (67 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Filip Witczak vs Rafal Wojcik | under 92.5 | 90 | W | +0.95 |
+| 2026-07-18 | Daniel Morawiec vs Lukasz Oracz | under 97.5 | 82 | W | +0.91 |
 | 2026-07-18 | Jacek Wieczerzak vs Rafal Glica | over 73.5 | 77 | W | +0.87 |
 | 2026-07-18 | Maciej Kolek vs Adam Linek | under 89.5 | 104 | L | -1.00 |
 | 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Pawel Chojnacki vs Dawid Pyrek | under 93.5 | 79 | W | +0.80 |
 | 2026-07-16 | Grzegorz Adamiak vs Artur Daniel | under 79.5 | 92 | L | -1.00 |
 | 2026-07-16 | Jakub Glanowski vs Michal Minda | under 95.5 | 99 | L | -1.00 |
-| 2026-07-16 | Josef Braun vs Adrian Wiecek | over 74.5 | 55 | L | -1.00 |
-| 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
 
 </details>
 
