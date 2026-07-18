@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T21:33:22 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T21:44:18 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 46-25  ·  **P&L:** +13.95u ($+1,395)  ·  **hit 64.8%** (break-even 52.4%)  ·  **Open:** 5
+- **Bet record (TT Elite Series):** 47-25  ·  **P&L:** +15.00u ($+1,500)  ·  **hit 65.3%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  67-48  ·  +7.83u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-18T21:33:22 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 38 | 21-17 | 55% | +0.50 |
-| TT Elite Series | 71 | 46-25 | 65% | +13.95 |
+| TT Elite Series | 72 | 47-25 | 65% | +15.00 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 46-25 · hit 65% · +13.95u (71 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 47-25 · hit 65% · +15.00u (72 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 76 | W | +1.05 |
 | 2026-07-18 | Jacek Oracz vs Artur Kubiak | under 93.5 | 83 | W | +0.80 |
 | 2026-07-18 | Henryk Tkaczyk vs Jakub Skorupa | under 93.5 | 97 | L | -1.00 |
 | 2026-07-18 | Patryk Gamrot vs Daniel Morawiec | over 80.5 | 81 | W | +0.85 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Michal Skorski vs Kamil Klocek | over 69.5 | 70 | W | +0.80 |
 | 2026-07-17 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 74 | W | +0.87 |
 | 2026-07-16 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 91 | W | +0.91 |
-| 2026-07-16 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 91 | L | -1.00 |
 
 </details>
 
