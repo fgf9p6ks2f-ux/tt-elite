@@ -20,6 +20,7 @@ Artem Yurkov|Vladimir Voronenko|over|1783951800
 Artur Daniel|Grzegorz Adamiak|under|1784178900
 Artur Daniel|Grzegorz Adamiak|under|1784208000
 Artur Daniel|Josef Braun|under|1784192400
+Artur Kubiak|Michal Wolny|under|1784332800
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
 Bartosz Sulkowski|Kamil Rudomina|over|1784177700
