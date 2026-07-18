@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T12:09:01 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T14:38:49 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 40-24  ·  **P&L:** +9.70u ($+970)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  65-46  ·  +8.17u  ·  hit 59%
+- **Bet record (TT Elite Series):** 41-24  ·  **P&L:** +10.57u ($+1,057)  ·  **hit 63.1%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  66-46  ·  +9.00u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
-| Setka Cup | 38 | 25-13 | 66% | +7.83 |
+| Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 9 | 4-5 | 44% | -1.67 |
 | TT Cup | 37 | 21-16 | 57% | +1.50 |
-| TT Elite Series | 64 | 40-24 | 62% | +9.70 |
+| TT Elite Series | 65 | 41-24 | 63% | +10.57 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 40-24 · hit 62% · +9.70u (64 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 41-24 · hit 63% · +10.57u (65 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Jacek Wieczerzak vs Rafal Glica | over 73.5 | 77 | W | +0.87 |
 | 2026-07-18 | Maciej Kolek vs Adam Linek | under 89.5 | 104 | L | -1.00 |
 | 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
 | 2026-07-18 | Dariusz Wrobel vs Kamil Klocek | under 77.5 | 54 | W | +0.89 |
@@ -40,14 +41,14 @@ _click a league to expand its bets_
 | 2026-07-16 | Jakub Glanowski vs Michal Minda | under 95.5 | 99 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Adrian Wiecek | over 74.5 | 55 | L | -1.00 |
 | 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
-| 2026-07-16 | Josef Braun vs Artur Daniel | under 93.5 | 92 | W | +0.80 |
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 25-13 · hit 66% · +7.83u (38 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 26-13 · hit 67% · +8.67u (39 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Oleksandr Ziakun vs Dmytro Prylepa | over 74.5 | 104 | W | +0.83 |
 | 2026-07-18 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 60 | W | +0.83 |
 | 2026-07-17 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 90 | W | +0.83 |
 | 2026-07-17 | Serhii Miroshnychenko vs Viktor Ziakun | under 74.5 | 50 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-09 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 54 | W | +0.83 |
 | 2026-07-09 | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
 | 2026-07-09 | Eduard Rubtsov vs Oleksandr V Kovalchuk | over 74.5 | 111 | W | +0.83 |
-| 2026-07-09 | Oleksandr V Kovalchuk vs Serhii Skachenko | over 74.5 | 56 | L | -1.00 |
 
 </details>
 
