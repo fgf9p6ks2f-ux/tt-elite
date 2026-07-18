@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T08:07:02 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T10:05:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 40-23  ·  **P&L:** +10.70u ($+1,070)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  62-45  ·  +6.67u  ·  hit 58%
+- **Bet record (TT Elite Series):** 40-24  ·  **P&L:** +9.70u ($+970)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  64-46  ·  +7.33u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 27 | 15-12 | 56% | +0.50 |
 | Setka Cup | 38 | 25-13 | 66% | +7.83 |
-| Setka Women | 7 | 3-4 | 43% | -1.50 |
-| TT Cup | 35 | 19-16 | 54% | -0.17 |
-| TT Elite Series | 63 | 40-23 | 63% | +10.70 |
+| Setka Women | 9 | 4-5 | 44% | -1.67 |
+| TT Cup | 36 | 20-16 | 56% | +0.67 |
+| TT Elite Series | 64 | 40-24 | 62% | +9.70 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 40-23 · hit 63% · +10.70u (63 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 40-24 · hit 62% · +9.70u (64 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Maciej Kolek vs Adam Linek | under 89.5 | 104 | L | -1.00 |
 | 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
 | 2026-07-18 | Dariusz Wrobel vs Kamil Klocek | under 77.5 | 54 | W | +0.89 |
 | 2026-07-18 | Michal Wolny vs Artur Kubiak | under 86.5 | 91 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Josef Braun vs Adrian Wiecek | over 74.5 | 55 | L | -1.00 |
 | 2026-07-16 | Michal Minda vs Karol Sulkowski | over 74.5 | 60 | L | -1.00 |
 | 2026-07-16 | Josef Braun vs Artur Daniel | under 93.5 | 92 | W | +0.80 |
-| 2026-07-16 | Patryk Mecik vs Lukasz Oracz | over 53.5 | 53 | L | -1.00 |
 
 </details>
 
@@ -71,6 +71,33 @@ _click a league to expand its bets_
 
 </details>
 
+<details><summary><b>TT Cup</b> &mdash; 20-16 · hit 56% · +0.67u (36 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-18 | Christian Kratochvil vs Jaroslav Dohnal | over 74.5 | 97 | W | +0.83 |
+| 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
+| 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
+| 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
+| 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
+| 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
+| 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
+| 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
+| 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
+| 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
+| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
+| 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
+| 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
+| 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
+| 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
+| 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
+| 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
+| 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
+| 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
+
+</details>
+
 <details><summary><b>Czech Liga Pro</b> &mdash; 15-12 · hit 56% · +0.50u (27 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
@@ -98,37 +125,12 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 19-16 · hit 54% · -0.17u (35 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 4-5 · hit 44% · -1.67u (9 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
-| 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
-| 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
-| 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
-| 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
-| 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
-| 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
-| 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
-| 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
-| 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
-| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
-| 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
-| 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
-| 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
-| 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
-| 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
-| 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Jan Krupnik vs Jan Skvrna | over 74.5 | 73 | L | -1.00 |
-| 2026-07-15 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
-| 2026-07-15 | Patrik Jokiel vs Ales Drozd | over 74.5 | 77 | W | +0.83 |
-| 2026-07-14 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 87 | W | +0.83 |
-
-</details>
-
-<details><summary><b>Setka Women</b> &mdash; 3-4 · hit 43% · -1.50u (7 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
+| 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
+| 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
 | 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
 | 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
 | 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
