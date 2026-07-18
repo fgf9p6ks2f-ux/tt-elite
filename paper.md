@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-18T18:53:03 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-18T19:03:51 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 45-24  ·  **P&L:** +14.15u ($+1,415)  ·  **hit 65.2%** (break-even 52.4%)  ·  **Open:** 4
+- **Bet record (TT Elite Series):** 45-25  ·  **P&L:** +13.15u ($+1,315)  ·  **hit 64.3%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  67-47  ·  +8.83u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-18T18:53:03 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 37 | 21-16 | 57% | +1.50 |
-| TT Elite Series | 69 | 45-24 | 65% | +14.15 |
+| TT Elite Series | 70 | 45-25 | 64% | +13.15 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 45-24 · hit 65% · +14.15u (69 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 45-25 · hit 64% · +13.15u (70 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-18 | Henryk Tkaczyk vs Jakub Skorupa | under 93.5 | 97 | L | -1.00 |
 | 2026-07-18 | Patryk Gamrot vs Daniel Morawiec | over 80.5 | 81 | W | +0.85 |
 | 2026-07-18 | Gracjan Kesik vs Milosz Piecowski | over 74.5 | 92 | W | +0.87 |
 | 2026-07-18 | Filip Witczak vs Rafal Wojcik | under 92.5 | 90 | W | +0.95 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Patryk Jendrzejewski vs Tomasz Filbrandt | under 92.5 | 91 | W | +0.91 |
 | 2026-07-16 | Michal Skorski vs Mikolaj Lukaszewski | under 86.5 | 91 | L | -1.00 |
 | 2026-07-16 | Pawel Chojnacki vs Adam Staniczek | under 93.5 | 95 | L | -1.00 |
-| 2026-07-16 | Pawel Chojnacki vs Dawid Pyrek | under 93.5 | 79 | W | +0.80 |
 
 </details>
 

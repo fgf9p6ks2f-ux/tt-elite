@@ -21,6 +21,7 @@ Artem Yurkov|Vladimir Voronenko|over|1783951800
 Artur Daniel|Grzegorz Adamiak|under|1784178900
 Artur Daniel|Grzegorz Adamiak|under|1784208000
 Artur Daniel|Josef Braun|under|1784192400
+Artur Kubiak|Jacek Oracz|under|1784400300
 Artur Kubiak|Michal Wolny|under|1784332800
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
@@ -145,6 +146,8 @@ Lukasz Oracz|Oliver Vincenec|under|1784176200
 Lukasz Oracz|Oliver Vincenec|under|1784176800
 Lukasz Oracz|Patryk Mecik|over|1784188800
 Maksymilian Rus|Rafal Gajda|over|1783426800
+Marcin Marchlewski|Mateusz Rutkowski|over|1784411100
+Marcin Marchlewski|Mateusz Rutkowski|over|1784418900
 Marcin Marchlewski|Tomasz Filbrandt|over|1784334000
 Marian Lebek|Oliver Vincenec|under|1784180100
 Mariusz Baron|Piotr Gumulinski|over|1783894800
