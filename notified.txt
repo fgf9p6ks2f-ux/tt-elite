@@ -59,6 +59,7 @@ Eduard Rubtsov|Oleksandr V Kovalchuk|over|1783562100
 Erik Precek|Radek Benes|under|1783496400
 Filip Witczak|Rafal Wojcik|under|1784387100
 Gracjan Kesik|Milosz Piecowski|over|1784388300
+Gracjan Kesik|Milosz Piecowski|over|1784412600
 Grzegorz Adamiak|Grzegorz Felkel|under|1783481100
 Grzegorz Felkel|Maciej Nowalinski|under|1783495200
 Grzegorz Marud|Oliver Vincenec|over|1783473000
