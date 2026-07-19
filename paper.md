@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T21:24:11 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T21:34:52 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 57-28  ·  **P&L:** +21.01u ($+2,101)  ·  **hit 67.1%** (break-even 52.4%)  ·  **Open:** 2
+- **Bet record (TT Elite Series):** 58-28  ·  **P&L:** +21.81u ($+2,181)  ·  **hit 67.4%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  72-52  ·  +8.00u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-19T21:24:11 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 44 | 24-20 | 55% | +0.00 |
-| TT Elite Series | 85 | 57-28 | 67% | +21.01 |
+| TT Elite Series | 86 | 58-28 | 67% | +21.81 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 57-28 · hit 67% · +21.01u (85 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 58-28 · hit 67% · +21.81u (86 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Mariusz Baron vs Grzegorz Marud | under 93.5 | 92 | W | +0.80 |
 | 2026-07-19 | Mariusz Baron vs Wojciech Urban | under 91.5 | 75 | W | +0.83 |
 | 2026-07-19 | Adam Ruszkiewicz vs Marian Lebek | under 77.5 | 35 | W | +0.83 |
 | 2026-07-19 | Jakub Skorupa vs Pawel Chojnacki | under 73.5 | 73 | W | +0.89 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-18 | Patryk Gamrot vs Daniel Morawiec | over 80.5 | 81 | W | +0.85 |
 | 2026-07-18 | Gracjan Kesik vs Milosz Piecowski | over 74.5 | 92 | W | +0.87 |
 | 2026-07-18 | Filip Witczak vs Rafal Wojcik | under 92.5 | 90 | W | +0.95 |
-| 2026-07-18 | Daniel Morawiec vs Lukasz Oracz | under 97.5 | 82 | W | +0.91 |
 
 </details>
 
