@@ -1,6 +1,6 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T18:11:57 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T18:23:15 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 56-28  ·  **P&L:** +20.17u ($+2,017)  ·  **hit 66.7%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  71-51  ·  +8.17u  ·  hit 58%
