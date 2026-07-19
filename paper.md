@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T08:38:33 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T08:49:17 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 52-27  ·  **P&L:** +17.80u ($+1,780)  ·  **hit 65.8%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  70-48  ·  +10.33u  ·  hit 59%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  70-49  ·  +9.33u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 29 | 17-12 | 59% | +2.17 |
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 39 | 22-17 | 56% | +1.33 |
+| TT Cup | 40 | 22-18 | 55% | +0.33 |
 | TT Elite Series | 79 | 52-27 | 66% | +17.80 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 22-17 · hit 56% · +1.33u (39 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 22-18 · hit 55% · +0.33u (40 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Laurent Lasota vs Peter Chvojka | under 74.5 | 100 | L | -1.00 |
 | 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
 | 2026-07-18 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 66 | L | -1.00 |
 | 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
 | 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
 | 2026-07-15 | Blazej Gola vs Karol Guzy | under 74.5 | 58 | W | +0.83 |
-| 2026-07-15 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 73 | L | -1.00 |
 
 </details>
 
