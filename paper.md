@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T15:41:57 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T16:32:36 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 54-28  ·  **P&L:** +18.45u ($+1,845)  ·  **hit 65.9%** (break-even 52.4%)  ·  **Open:** 3
+- **Bet record (TT Elite Series):** 55-28  ·  **P&L:** +19.34u ($+1,934)  ·  **hit 66.3%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  71-51  ·  +8.17u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-19T15:41:57 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 42 | 23-19 | 55% | +0.17 |
-| TT Elite Series | 82 | 54-28 | 66% | +18.45 |
+| TT Elite Series | 83 | 55-28 | 66% | +19.34 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 54-28 · hit 66% · +18.45u (82 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 55-28 · hit 66% · +19.34u (83 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Jakub Skorupa vs Pawel Chojnacki | under 73.5 | 73 | W | +0.89 |
 | 2026-07-19 | Filip Witczak vs Rafal Wojcik | over 62.5 | 57 | L | -1.00 |
 | 2026-07-19 | Adam Linek vs Aleksander Lilien | under 90.5 | 81 | W | +0.80 |
 | 2026-07-19 | Adrian Eliasz vs Arkadiusz Mugowski | under 80.5 | 75 | W | +0.85 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-18 | Daniel Morawiec vs Lukasz Oracz | under 97.5 | 82 | W | +0.91 |
 | 2026-07-18 | Jacek Wieczerzak vs Rafal Glica | over 73.5 | 77 | W | +0.87 |
 | 2026-07-18 | Maciej Kolek vs Adam Linek | under 89.5 | 104 | L | -1.00 |
-| 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
 
 </details>
 
