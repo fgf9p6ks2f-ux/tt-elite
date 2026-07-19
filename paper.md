@@ -1,8 +1,8 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T07:23:59 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T07:35:18 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 51-26  ·  **P&L:** +18.00u ($+1,800)  ·  **hit 66.2%** (break-even 52.4%)  ·  **Open:** 1
+- **Bet record (TT Elite Series):** 52-26  ·  **P&L:** +18.80u ($+1,880)  ·  **hit 66.7%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  69-48  ·  +9.50u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-19T07:23:59 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 39 | 26-13 | 67% | +8.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 39 | 22-17 | 56% | +1.33 |
-| TT Elite Series | 77 | 51-26 | 66% | +18.00 |
+| TT Elite Series | 78 | 52-26 | 67% | +18.80 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 51-26 · hit 66% · +18.00u (77 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 52-26 · hit 67% · +18.80u (78 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Bartlomiej Wisniewski vs Arkadiusz Mugowski | under 88.5 | 84 | W | +0.80 |
 | 2026-07-19 | Piotr Gesiarz vs Dariusz Maszczynski | under 97.5 | 89 | W | +0.95 |
 | 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 69 | W | +1.00 |
 | 2026-07-19 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 96 | W | +1.05 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-18 | Michal Wolny vs Artur Kubiak | under 86.5 | 91 | L | -1.00 |
 | 2026-07-17 | Jakub Michalski vs Damian Fira | under 88.5 | 74 | W | +0.83 |
 | 2026-07-17 | Robert Szymik vs Rafal Adach | under 101.5 | 90 | W | +0.80 |
-| 2026-07-17 | Jerzy Pelka vs Marian Lebek | under 77.5 | 74 | W | +0.89 |
 
 </details>
 
