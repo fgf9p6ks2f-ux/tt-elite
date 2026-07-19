@@ -98,6 +98,8 @@ Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
 Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
+Jakub Skorupa|Pawel Chojnacki|under|1784476200
+Jakub Skorupa|Pawel Chojnacki|under|1784504700
 Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jakub Zochniak|Kamil Rudomina|over|1784172300
