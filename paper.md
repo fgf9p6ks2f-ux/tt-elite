@@ -1,26 +1,27 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T12:18:03 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T14:45:42 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 52-27  ·  **P&L:** +17.80u ($+1,780)  ·  **hit 65.8%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  70-50  ·  +8.33u  ·  hit 58%
+- **Bet record (TT Elite Series):** 53-27  ·  **P&L:** +18.65u ($+1,865)  ·  **hit 66.2%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  71-51  ·  +8.17u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 29 | 17-12 | 59% | +2.17 |
-| Setka Cup | 39 | 26-13 | 67% | +8.67 |
+| Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 41 | 22-19 | 54% | -0.67 |
-| TT Elite Series | 79 | 52-27 | 66% | +17.80 |
+| TT Cup | 42 | 23-19 | 55% | +0.17 |
+| TT Elite Series | 80 | 53-27 | 66% | +18.65 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 52-27 · hit 66% · +17.80u (79 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 53-27 · hit 66% · +18.65u (80 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Adrian Eliasz vs Arkadiusz Mugowski | under 80.5 | 75 | W | +0.85 |
 | 2026-07-19 | Adrian Eliasz vs Mateusz Misiak | under 89.5 | 105 | L | -1.00 |
 | 2026-07-19 | Bartlomiej Wisniewski vs Arkadiusz Mugowski | under 88.5 | 84 | W | +0.80 |
 | 2026-07-19 | Piotr Gesiarz vs Dariusz Maszczynski | under 97.5 | 89 | W | +0.95 |
@@ -40,14 +41,14 @@ _click a league to expand its bets_
 | 2026-07-18 | Tomasz Filbrandt vs Marcin Marchlewski | over 77.5 | 91 | W | +0.85 |
 | 2026-07-18 | Dariusz Wrobel vs Kamil Klocek | under 77.5 | 54 | W | +0.89 |
 | 2026-07-18 | Michal Wolny vs Artur Kubiak | under 86.5 | 91 | L | -1.00 |
-| 2026-07-17 | Jakub Michalski vs Damian Fira | under 88.5 | 74 | W | +0.83 |
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 26-13 · hit 67% · +8.67u (39 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 26-14 · hit 65% · +7.67u (40 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Viktor Ziakun vs Serhii Miroshnychenko | under 74.5 | 77 | L | -1.00 |
 | 2026-07-18 | Oleksandr Ziakun vs Dmytro Prylepa | over 74.5 | 104 | W | +0.83 |
 | 2026-07-18 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 60 | W | +0.83 |
 | 2026-07-17 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 90 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
 | 2026-07-09 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 54 | W | +0.83 |
 | 2026-07-09 | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
-| 2026-07-09 | Eduard Rubtsov vs Oleksandr V Kovalchuk | over 74.5 | 111 | W | +0.83 |
 
 </details>
 
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 22-19 · hit 54% · -0.67u (41 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 23-19 · hit 55% · +0.17u (42 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
 | 2026-07-19 | Lukas Pour vs Jaroslav Brynych | over 74.5 | 58 | L | -1.00 |
 | 2026-07-19 | Laurent Lasota vs Peter Chvojka | under 74.5 | 100 | L | -1.00 |
 | 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
 | 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
 | 2026-07-15 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 105 | W | +0.83 |
-| 2026-07-15 | Jakub Volny vs Daniel Branny | over 74.5 | 75 | W | +0.83 |
 
 </details>
 
