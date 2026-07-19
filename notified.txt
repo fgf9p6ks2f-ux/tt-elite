@@ -16,6 +16,7 @@ Andrii Romanenko|Bohdan Chaikovskyi|over|1783523100
 Andrii Romanenko|Ihor Sukovatyi|over|1783519500
 Andrii Romanenko|Oleksandr Pohonov|over|1783537500
 Anhelina Plashchynska|Olga Melnik|under|1783697400
+Arkadiusz Mugowski|Bartlomiej Wisniewski|under|1784444100
 Artem Yurkov|Vladimir Voronenko|over|1783699800
 Artem Yurkov|Vladimir Voronenko|over|1783951800
 Artur Daniel|Grzegorz Adamiak|under|1784178900
