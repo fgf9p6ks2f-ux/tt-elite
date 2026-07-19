@@ -160,6 +160,7 @@ Marcin Marchlewski|Mateusz Rutkowski|over|1784418900
 Marcin Marchlewski|Tomasz Filbrandt|over|1784334000
 Marian Lebek|Oliver Vincenec|under|1784180100
 Mariusz Baron|Piotr Gumulinski|over|1783894800
+Mariusz Baron|Wojciech Urban|under|1784483700
 Martin Huk|Radim Urbaniec|over|1783440000
 Martin Huk|Radim Urbaniec|over|1783504800
 Martin Huk|Radim Urbaniec|over|1783645200
