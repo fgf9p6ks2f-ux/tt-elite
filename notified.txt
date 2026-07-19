@@ -1,4 +1,5 @@
 Adam Kral|Milan Tlusty|over|1783787100
+Adam Linek|Aleksander Lilien|under|1784473200
 Adam Linek|Maciej Kolek|under|1784351700
 Adam Ruszkiewicz|Marian Lebek|under|1784470800
 Adam Staniczek|Pawel Chojnacki|under|1784233200
@@ -61,6 +62,7 @@ Dmytro Yurkov|Serhii Ponomarenko|under|1783778400
 Dmytro Yurkov|Serhii Ponomarenko|under|1784032200
 Eduard Rubtsov|Oleksandr V Kovalchuk|over|1783562100
 Erik Precek|Radek Benes|under|1783496400
+Filip Witczak|Rafal Wojcik|over|1784473500
 Filip Witczak|Rafal Wojcik|under|1784387100
 Gracjan Kesik|Milosz Piecowski|over|1784388300
 Gracjan Kesik|Milosz Piecowski|over|1784412600
