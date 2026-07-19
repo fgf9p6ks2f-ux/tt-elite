@@ -5,6 +5,7 @@ Adam Staniczek|Pawel Chojnacki|under|1784233200
 Adam Staniczek|Pawel Chojnacki|under|1784247600
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
 Adrian Burkacki|Marian Lebek|under|1784187300
+Adrian Eliasz|Arkadiusz Mugowski|under|1784461800
 Adrian Eliasz|Mateusz Misiak|under|1784445600
 Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
