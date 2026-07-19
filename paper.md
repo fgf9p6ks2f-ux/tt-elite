@@ -1,16 +1,16 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T19:07:05 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-19T21:13:13 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
 - **Bet record (TT Elite Series):** 57-28  ·  **P&L:** +21.01u ($+2,101)  ·  **hit 67.1%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  72-51  ·  +9.00u  ·  hit 59%
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  72-52  ·  +8.00u  ·  hit 58%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 29 | 17-12 | 59% | +2.17 |
 | Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 43 | 24-19 | 56% | +1.00 |
+| TT Cup | 44 | 24-20 | 55% | +0.00 |
 | TT Elite Series | 85 | 57-28 | 67% | +21.01 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 24-19 · hit 56% · +1.00u (43 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 24-20 · hit 55% · +0.00u (44 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-19 | Dalibor Velky Jr vs Jan Skvrna | over 74.5 | 70 | L | -1.00 |
 | 2026-07-19 | Jan Skvrna vs Tomas Kindl | over 74.5 | 86 | W | +0.83 |
 | 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
 | 2026-07-19 | Lukas Pour vs Jaroslav Brynych | over 74.5 | 58 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
 | 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
 | 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
-| 2026-07-16 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 75 | W | +0.83 |
 
 </details>
 
