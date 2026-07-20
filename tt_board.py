@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import statistics as st
 from pathlib import Path
 
 import sqlite3
@@ -147,9 +148,71 @@ def elite_h2h(bets):
     return out
 
 
+PROJ_WINDOW_H = 12    # show the upcoming Elite slate this many hours ahead (24live lists ~28h out)
+
+
+def _player_total_avg(con, player, n=40):
+    """Mean total points across the player's most recent matches — the basis for a projected line
+    before FanDuel prices the match."""
+    v = [r[0] for r in con.execute(
+        "SELECT total_points FROM matches WHERE (p1=? OR p2=?) AND total_points IS NOT NULL "
+        "ORDER BY date DESC LIMIT ?", (player, player, n))]
+    return st.mean(v) if v else None
+
+
+def elite_upcoming(fixtures, board_norms):
+    """The upcoming TT Elite slate from 24live — FURTHER ahead than FanDuel posts (fixtures list ~28h
+    out; FanDuel prices ~9 near-term). Each carries a PROJECTED line (blend of the two players' recent
+    match-total averages) + the pair's H2H lean at that line, so the board shows the day's games as
+    soon as the matchup is known. Pairs already on the FanDuel board are omitted (the live card shows
+    those with the real line). PROJECTED-only — informational, never bet or graded."""
+    con = sqlite3.connect(DB)
+    # matches(p1)/(p2) index — without it the per-fixture total lookups full-scan 246k rows (minutes).
+    con.execute("CREATE INDEX IF NOT EXISTS idx_matches_p1 ON matches(p1)")
+    con.execute("CREATE INDEX IF NOT EXISTS idx_matches_p2 ON matches(p2)")
+    now = dt.datetime.now(dt.timezone.utc).timestamp()
+    out = []
+    for p1, p2, ts, lg, _mid in fixtures:
+        if lg != "TT Elite Series" or not ts or ts <= now or ts > now + PROJ_WINDOW_H * 3600:
+            continue
+        if frozenset((fd_tt.norm(p1), fd_tt.norm(p2))) in board_norms:
+            continue                                        # FanDuel already prices it -> live card
+        a = _player_total_avg(con, p1)
+        b = _player_total_avg(con, p2)
+        if not (a and b):
+            continue
+        proj = round(((a + b) / 2) * 2) / 2                 # nearest 0.5
+        if proj == int(proj):
+            proj -= 0.5                                     # keep it a half-point line (no push)
+        tots = [r[0] for r in con.execute(
+            "SELECT total_points FROM matches WHERE ((p1=? AND p2=?) OR (p1=? AND p2=?)) "
+            "AND total_points IS NOT NULL", (p1, p2, p2, p1))]
+        n = len(tots)
+        over = sum(1 for t in tots if t > proj)
+        side = None                                         # a lean only with enough H2H history
+        if n >= 8:
+            rate = over / n
+            side = "over" if rate >= 0.60 else "under" if rate <= 0.40 else None
+        out.append({"p1": p1, "p2": p2, "ts": int(ts), "proj": proj,
+                    "n": n, "over": over, "side": side})
+    con.close()
+    out.sort(key=lambda e: e["ts"])
+    return out[:40]
+
+
+def _board_norms():
+    try:
+        return {frozenset((m["p1_norm"], m["p2_norm"]))
+                for m in json.loads(FD_BOARD.read_text()).get("matches", [])
+                if m.get("p1_norm") and m.get("p2_norm")}
+    except (ValueError, OSError):
+        return set()
+
+
 def build():
     rows = load(with_league=True)
-    bets = CT.actionable(CT.all_fixtures(), rows, 74.5)
+    fixtures = CT.all_fixtures()
+    bets = CT.actionable(fixtures, rows, 74.5)
     bm = bmbets_odds()
     out = []
     for b in bets:
@@ -184,11 +247,12 @@ def build():
             "book": book,               # actual bmbets main line + soft price (None if no odds yet)
         })
     trk = tracker()
+    upcoming = elite_upcoming(fixtures, _board_norms())
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(),
                                "bets": out, "tracker": trk, "model_line": MODEL_LINE,
-                               "elite_h2h": elite_h2h(bets)}))
-    print(f"tt_board: {len(out)} actionable bets, tracker {trk['w']}-{trk['l']} "
-          f"({trk['u']:+.1f}u) -> {OUT}")
+                               "elite_h2h": elite_h2h(bets), "elite_upcoming": upcoming}))
+    print(f"tt_board: {len(out)} actionable bets, {len(upcoming)} upcoming projected, "
+          f"tracker {trk['w']}-{trk['l']} ({trk['u']:+.1f}u) -> {OUT}")
 
 
 if __name__ == "__main__":
