@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T16:02:49 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T16:06:00 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 36-18  ·  **P&L:** +13.48u ($+1,348)  ·  **hit 66.7%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  94-64  ·  +14.33u  ·  hit 59%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  95-64  ·  +15.17u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
 | Setka Cup | 42 | 27-15 | 64% | +7.50 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 47 | 25-22 | 53% | -1.17 |
+| TT Cup | 48 | 26-22 | 54% | -0.33 |
 | TT Elite Series | 94 | 61-33 | 65% | +19.39 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 25-22 · hit 53% · -1.17u (47 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 26-22 · hit 54% · -0.33u (48 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 | 2026-07-20 | Martin Filipek vs Frantisek Balcar | over 74.5 | 59 | L | -1.00 |
 | 2026-07-20 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 74 | L | -1.00 |
 | 2026-07-20 | Jan Skvrna vs Radek Benes | over 74.5 | 93 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
-| 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
 
 </details>
 
