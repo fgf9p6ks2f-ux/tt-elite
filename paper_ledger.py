@@ -134,35 +134,33 @@ def _agg(con, where="", args=()):
 def report():
     con = sqlite3.connect(DB)
     con.execute(DDL)
-    # split the headline: the BETTABLE record (active leagues we actually push) vs SHADOW leagues
-    # (still logged + graded here to keep validating the cut, but not bet). Shadow set = LEAGUE_CFG.
-    from h2h import LEAGUE_CFG
-    shadow = sorted(lg for lg, c in LEAGUE_CFG.items() if c.get("tier") == "shadow")
-    bettable = sorted(lg for lg, c in LEAGUE_CFG.items()
-                      if c.get("rule") != "off" and c.get("tier") != "shadow")
-    ph = ",".join("?" * len(shadow)) if shadow else "''"
+    # FANDUEL-LINE record only (2026-07-20, user "tracker based on fd lines"): the headline counts
+    # ONLY bets flagged at a real FanDuel line — odds NOT NULL, the FanDuel American odds each Elite
+    # bet carries. Everything else is the fixed-74.5 -120 proxy on shadow leagues FanDuel doesn't
+    # price; it's still logged + graded for reference but NEVER in the headline. FD prices only Elite.
+    ELITE_EPOCH = "2026-07-16T05:45:00"                   # FanDuel-line go-live (matches tt_board.py)
 
-    def rec(op):
+    def rec(op, epoch=False):
+        extra = f" AND flagged_at >= '{ELITE_EPOCH}'" if epoch else ""
         r = con.execute(f"SELECT COALESCE(SUM(result='W'),0), COALESCE(SUM(result='L'),0), "
                         f"COALESCE(SUM(pnl),0) FROM paper_bets WHERE result IS NOT NULL "
-                        f"AND league {op} ({ph})", tuple(shadow)).fetchone()
+                        f"AND odds {op}{extra}").fetchone()
         return r[0], r[1], r[2]
 
-    aw, al, apnl = rec("NOT IN")                          # bettable leagues (Elite + Setka Cup)
-    sw, sl, spnl = rec("IN")                              # shadow leagues (validating only)
+    aw, al, apnl = rec("IS NOT NULL", epoch=True)         # FanDuel-line bets since the FD go-live
+    sw, sl, spnl = rec("IS NULL")                         # 74.5 -120 proxy shadow leagues (not bet)
     n = aw + al
-    open_n = con.execute(f"SELECT COUNT(*) FROM paper_bets WHERE result IS NULL "
-                         f"AND league NOT IN ({ph})", tuple(shadow)).fetchone()[0]
-    _sl = {"Czech Liga Pro": "Liga Pro", "Setka Women": "Setka W"}
-    lines = ["# TT paper ledger — live flag track record", "",
-             f"_{_now()} UTC · every flag logged as 1u ($100) at -120 · this is the live "
-             f"out-of-sample test of the league rules_", "",
-             f"- **Bet record ({', '.join(bettable) or 'none'}):** {aw}-{al}"
+    open_n = con.execute("SELECT COUNT(*) FROM paper_bets WHERE result IS NULL "
+                         "AND odds IS NOT NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
+    lines = ["# TT paper ledger — FanDuel-line track record", "",
+             f"_{_now()} UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · "
+             f"the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_", "",
+             f"- **FanDuel-line record:** {aw}-{al}"
              f"  ·  **P&L:** {apnl:+.2f}u (${apnl*UNIT_USD:+,.0f})"
              + (f"  ·  **hit {aw/n*100:.1f}%** (break-even 52.4%)" if n else "")
              + f"  ·  **Open:** {open_n}"]
     if sw + sl:
-        lines.append(f"- **Shadow (validating, not bet — {', '.join(_sl.get(x, x) for x in shadow)}):**"
+        lines.append(f"- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**"
                      f"  {sw}-{sl}  ·  {spnl:+.2f}u  ·  hit {sw/(sw+sl)*100:.0f}%")
     lines.append("")
     rows = con.execute(

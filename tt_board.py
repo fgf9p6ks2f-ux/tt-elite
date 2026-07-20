@@ -66,39 +66,26 @@ def ladder(totals):
 
 
 def tracker():
-    """Per-league live record/units for the Tracker tab, from graded paper_bets since the epoch.
-    TT Elite grades at the REAL FanDuel line + odds (each bet carries them), so its units are the
-    actual payouts; the other TT leagues (not bet — kept running for validation) grade at the flat
-    -120 proxy. Returns per-league rows + keeps top-level w/l/u for older consumers."""
+    """Live record/units for the Tracker tab — TT Elite Series ONLY, graded at the REAL FanDuel line
+    + odds each bet carries (odds NOT NULL), since ELITE_EPOCH. FanDuel prices ONLY TT Elite, so per
+    the user's FanDuel-lines-only rule (2026-07-20) the shadow leagues (Setka/Liga Pro/TT Cup/Setka
+    Women, graded at the discredited fixed-74.5 -120 proxy) are excluded from the record entirely —
+    they still log to the ledger for reference, but never surface here or in the headline."""
     con = sqlite3.connect(DB)
-    rows = con.execute("SELECT league, result, pnl, odds, flagged_at FROM paper_bets "
-                       "WHERE result IN ('W','L') AND graded_at >= ?", (EPOCH,)).fetchall()
-    # TT Elite record = ONLY real-line bets (odds NOT NULL) flagged under the 70%-rule (>= ELITE_EPOCH).
-    # Excludes the discredited fixed-74.5 proxy AND the earlier +EV-engine bets (kept in the ledger).
-    ep = con.execute("SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
-                     "AND odds IS NOT NULL AND result IS NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
+    rows = con.execute(
+        "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') "
+        "AND league='TT Elite Series' AND odds IS NOT NULL AND flagged_at >= ?",
+        (ELITE_EPOCH,)).fetchall()
+    ep = con.execute(
+        "SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
+        "AND odds IS NOT NULL AND result IS NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
     con.close()
-    by = {}
-    for lg, res, pnl, odds, fa in rows:
-        if lg not in TT_LEAGUES:
-            continue
-        if lg == "TT Elite Series" and (odds is None or (fa or "") < ELITE_EPOCH):
-            continue                                   # Elite: only post-reset real-line (70%-rule) bets
-        d = by.setdefault(lg, {"w": 0, "l": 0, "u": 0.0})
-        d["w" if res == "W" else "l"] += 1
-        d["u"] += pnl or 0.0
-    order = ["TT Elite Series", "Setka Cup", "Czech Liga Pro", "TT Cup", "Setka Women"]
-    leagues = []
-    for lg in order:
-        if lg in by:
-            d = by[lg]
-            leagues.append({"league": lg, "w": d["w"], "l": d["l"], "u": round(d["u"], 2)})
-        elif lg == "TT Elite Series":                  # always show Elite (bettable) even 0-0 post-reset
-            leagues.append({"league": lg, "w": 0, "l": 0, "u": 0.0})
-    w = sum(x["w"] for x in leagues)
-    l = sum(x["l"] for x in leagues)
-    return {"w": w, "l": l, "u": round(sum(x["u"] for x in leagues), 2),
-            "leagues": leagues, "elite_pending": ep}
+    w = sum(1 for r in rows if r[0] == "W")
+    l = sum(1 for r in rows if r[0] == "L")
+    u = round(sum(r[1] or 0 for r in rows), 2)
+    return {"w": w, "l": l, "u": u,
+            "leagues": [{"league": "TT Elite Series", "w": w, "l": l, "u": u}],
+            "elite_pending": ep}
 
 
 def bmbets_odds():
