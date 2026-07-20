@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T11:19:08 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T11:29:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 35-16  ·  **P&L:** +14.64u ($+1,464)  ·  **hit 68.6%** (break-even 52.4%)  ·  **Open:** 3
+- **FanDuel-line record:** 35-17  ·  **P&L:** +13.64u ($+1,364)  ·  **hit 67.3%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  94-61  ·  +17.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-20T11:19:08 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 41 | 27-14 | 66% | +8.50 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 45 | 25-20 | 56% | +0.83 |
-| TT Elite Series | 91 | 60-31 | 66% | +20.56 |
+| TT Elite Series | 92 | 60-32 | 65% | +19.56 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 60-31 · hit 66% · +20.56u (91 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 60-32 · hit 65% · +19.56u (92 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Pawel Adamus vs Oliver Vincenec | over 78.5 | 76 | L | -1.00 |
 | 2026-07-20 | Jakub Chmielowski vs Krystian Kolodziej | over 60.5 | 52 | L | -1.00 |
 | 2026-07-20 | Witold Stechly vs Jerzy Michalik | under 98.5 | 101 | L | -1.00 |
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 79 | W | +0.86 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 96 | W | +1.05 |
 | 2026-07-19 | Gracjan Kesik vs Milosz Piecowski | over 77.5 | 62 | L | -1.00 |
 | 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 86 | W | +1.00 |
-| 2026-07-18 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 76 | W | +1.05 |
 
 </details>
 
