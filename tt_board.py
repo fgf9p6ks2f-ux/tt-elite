@@ -192,12 +192,22 @@ def elite_upcoming(fixtures, board_norms):
             "AND total_points IS NOT NULL", (p1, p2, p2, p1))]
         n = len(tots)
         over = sum(1 for t in tots if t > proj)
-        side = None                                         # a lean only with enough H2H history
-        if n >= 8:
+        # LIKELY FLAG ONLY (2026-07-20, user): keep a projected game only if the pair hits a side
+        # >=70% at the projected line with enough H2H — the SAME bar the live Elite flag uses
+        # (ELITE_HIT_THR=0.70, min 12). Toss-ups / thin history are dropped: the card shows only
+        # the bets we'd actually flag once FanDuel prices them, not the whole slate.
+        side, hit = None, None
+        if n >= 12:
             rate = over / n
-            side = "over" if rate >= 0.60 else "under" if rate <= 0.40 else None
+            if rate >= 0.70:
+                side, hit = "over", rate
+            elif rate <= 0.30:
+                side, hit = "under", 1 - rate
+        if side is None:
+            continue
         out.append({"p1": p1, "p2": p2, "p1n": fd_tt.norm(p1), "p2n": fd_tt.norm(p2),
-                    "ts": int(ts), "proj": proj, "n": n, "over": over, "side": side})
+                    "ts": int(ts), "proj": proj, "n": n, "over": over,
+                    "side": side, "hit": round(hit * 100)})
     con.close()
     out.sort(key=lambda e: e["ts"])
     return out[:60]
