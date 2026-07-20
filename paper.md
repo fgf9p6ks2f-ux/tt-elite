@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T19:16:58 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T20:50:28 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 36-19  ·  **P&L:** +12.48u ($+1,248)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 0
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  97-65  ·  +15.83u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  97-66  ·  +14.83u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
 | Setka Cup | 43 | 28-15 | 65% | +8.33 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 50 | 27-23 | 54% | -0.50 |
+| TT Cup | 51 | 27-24 | 53% | -1.50 |
 | TT Elite Series | 95 | 61-34 | 64% | +18.39 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 27-23 · hit 54% · -0.50u (50 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 27-24 · hit 53% · -1.50u (51 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
 | 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
 | 2026-07-20 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 80 | W | +0.83 |
 | 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
 | 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
 | 2026-07-17 | Petr Vicherek vs Jonas Rak | over 74.5 | 51 | L | -1.00 |
-| 2026-07-17 | Tomas Kindl vs Michal Raska | over 74.5 | 70 | L | -1.00 |
 
 </details>
 
