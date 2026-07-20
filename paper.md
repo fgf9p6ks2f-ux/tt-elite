@@ -1,14 +1,14 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T09:23:03 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T10:36:11 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 35-15  ·  **P&L:** +15.64u ($+1,564)  ·  **hit 70.0%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  92-61  ·  +15.67u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  93-61  ·  +16.50u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
-| Setka Cup | 40 | 26-14 | 65% | +7.67 |
+| Setka Cup | 41 | 27-14 | 66% | +8.50 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 44 | 24-20 | 55% | +0.00 |
 | TT Elite Series | 90 | 60-30 | 67% | +21.56 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 26-14 · hit 65% · +7.67u (40 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 27-14 · hit 66% · +8.50u (41 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Dmitro Kuzmenko vs Serhii Chuhai | under 74.5 | 56 | W | +0.83 |
 | 2026-07-19 | Viktor Ziakun vs Serhii Miroshnychenko | under 74.5 | 77 | L | -1.00 |
 | 2026-07-18 | Oleksandr Ziakun vs Dmytro Prylepa | over 74.5 | 104 | W | +0.83 |
 | 2026-07-18 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 60 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Oleh Plyska vs Ladislav Tuma | over 74.5 | 95 | W | +0.83 |
 | 2026-07-10 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
 | 2026-07-09 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 54 | W | +0.83 |
-| 2026-07-09 | Myroslav Loboda vs Viktor Slozka | over 74.5 | 74 | L | -1.00 |
 
 </details>
 
