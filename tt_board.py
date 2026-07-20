@@ -148,7 +148,10 @@ def elite_h2h(bets):
     return out
 
 
-PROJ_WINDOW_H = 12    # show the upcoming Elite slate this many hours ahead (24live lists ~28h out)
+PROJ_WINDOW_H = 24    # project the FULL day's Elite slate ahead (24live lists ~28h out) so the VM
+                      # dashboard can render it fresh each cycle without recomputing (the VM can't
+                      # reach 24live — Cloudflare-blocks its IP — so projections are computed here in
+                      # Actions once, then the VM re-filters/dedups the whole-day list at render speed).
 
 
 def _player_total_avg(con, player, n=40):
@@ -193,11 +196,11 @@ def elite_upcoming(fixtures, board_norms):
         if n >= 8:
             rate = over / n
             side = "over" if rate >= 0.60 else "under" if rate <= 0.40 else None
-        out.append({"p1": p1, "p2": p2, "ts": int(ts), "proj": proj,
-                    "n": n, "over": over, "side": side})
+        out.append({"p1": p1, "p2": p2, "p1n": fd_tt.norm(p1), "p2n": fd_tt.norm(p2),
+                    "ts": int(ts), "proj": proj, "n": n, "over": over, "side": side})
     con.close()
     out.sort(key=lambda e: e["ts"])
-    return out[:40]
+    return out[:60]
 
 
 def _board_norms():
