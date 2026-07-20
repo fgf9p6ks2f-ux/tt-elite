@@ -1,26 +1,28 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T11:29:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T13:20:26 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 35-17  ·  **P&L:** +13.64u ($+1,364)  ·  **hit 67.3%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  94-61  ·  +17.33u  ·  hit 61%
+- **FanDuel-line record:** 36-18  ·  **P&L:** +13.48u ($+1,348)  ·  **hit 66.7%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  94-64  ·  +14.33u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
-| Setka Cup | 41 | 27-14 | 66% | +8.50 |
+| Setka Cup | 42 | 27-15 | 64% | +7.50 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 45 | 25-20 | 56% | +0.83 |
-| TT Elite Series | 92 | 60-32 | 65% | +19.56 |
+| TT Cup | 47 | 25-22 | 53% | -1.17 |
+| TT Elite Series | 94 | 61-33 | 65% | +19.39 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 60-32 · hit 65% · +19.56u (92 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 61-33 · hit 65% · +19.39u (94 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 103 | L | -1.00 |
+| 2026-07-20 | Miroslav Sklensky vs Karol Wisniewski | under 80.5 | 72 | W | +0.83 |
 | 2026-07-20 | Pawel Adamus vs Oliver Vincenec | over 78.5 | 76 | L | -1.00 |
 | 2026-07-20 | Jakub Chmielowski vs Krystian Kolodziej | over 60.5 | 52 | L | -1.00 |
 | 2026-07-20 | Witold Stechly vs Jerzy Michalik | under 98.5 | 101 | L | -1.00 |
@@ -39,15 +41,14 @@ _click a league to expand its bets_
 | 2026-07-19 | Piotr Gesiarz vs Dariusz Maszczynski | under 97.5 | 89 | W | +0.95 |
 | 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 69 | W | +1.00 |
 | 2026-07-19 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 96 | W | +1.05 |
-| 2026-07-19 | Gracjan Kesik vs Milosz Piecowski | over 77.5 | 62 | L | -1.00 |
-| 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 86 | W | +1.00 |
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 27-14 · hit 66% · +8.50u (41 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 27-15 · hit 64% · +7.50u (42 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Vladimir Voronenko vs Artem Yurkov | over 74.5 | 60 | L | -1.00 |
 | 2026-07-20 | Dmitro Kuzmenko vs Serhii Chuhai | under 74.5 | 56 | W | +0.83 |
 | 2026-07-19 | Viktor Ziakun vs Serhii Miroshnychenko | under 74.5 | 77 | L | -1.00 |
 | 2026-07-18 | Oleksandr Ziakun vs Dmytro Prylepa | over 74.5 | 104 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Jan Seeman vs Jakub Dufek Jnr | over 74.5 | 87 | W | +0.83 |
 | 2026-07-10 | Oleh Plyska vs Ladislav Tuma | over 74.5 | 95 | W | +0.83 |
 | 2026-07-10 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 87 | L | -1.00 |
-| 2026-07-09 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 54 | W | +0.83 |
 
 </details>
 
@@ -98,10 +98,12 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 25-20 · hit 56% · +0.83u (45 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 25-22 · hit 53% · -1.17u (47 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Martin Filipek vs Frantisek Balcar | over 74.5 | 59 | L | -1.00 |
+| 2026-07-20 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 74 | L | -1.00 |
 | 2026-07-20 | Jan Skvrna vs Radek Benes | over 74.5 | 93 | W | +0.83 |
 | 2026-07-19 | Dalibor Velky Jr vs Jan Skvrna | over 74.5 | 70 | L | -1.00 |
 | 2026-07-19 | Jan Skvrna vs Tomas Kindl | over 74.5 | 86 | W | +0.83 |
@@ -120,8 +122,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Karol Guzy vs Blazej Gola | under 74.5 | 107 | L | -1.00 |
 | 2026-07-16 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 89 | W | +0.83 |
 | 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
-| 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
-| 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
 
 </details>
 
