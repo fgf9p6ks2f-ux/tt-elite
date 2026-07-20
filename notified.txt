@@ -161,6 +161,7 @@ Lukasz Oracz|Patryk Mecik|over|1784188800
 Maciej Nowalinski|Tibor Spanik|under|1784536200
 Maciej Nowalinski|Tibor Spanik|under|1784550600
 Maksymilian Rus|Rafal Gajda|over|1783426800
+Marcin Kowalczyk|Miroslaw Piecowski|under|1784564100
 Marcin Marchlewski|Mateusz Rutkowski|over|1784411100
 Marcin Marchlewski|Mateusz Rutkowski|over|1784418900
 Marcin Marchlewski|Tomasz Filbrandt|over|1784334000
