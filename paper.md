@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-20T10:36:11 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-20T10:46:52 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 35-15  ·  **P&L:** +15.64u ($+1,564)  ·  **hit 70.0%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  93-61  ·  +16.50u  ·  hit 60%
+- **FanDuel-line record:** 35-15  ·  **P&L:** +15.64u ($+1,564)  ·  **hit 70.0%** (break-even 52.4%)  ·  **Open:** 3
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  94-61  ·  +17.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
 | Setka Cup | 41 | 27-14 | 66% | +8.50 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 44 | 24-20 | 55% | +0.00 |
+| TT Cup | 45 | 25-20 | 56% | +0.83 |
 | TT Elite Series | 90 | 60-30 | 67% | +21.56 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 24-20 · hit 55% · +0.00u (44 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 25-20 · hit 56% · +0.83u (45 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Jan Skvrna vs Radek Benes | over 74.5 | 93 | W | +0.83 |
 | 2026-07-19 | Dalibor Velky Jr vs Jan Skvrna | over 74.5 | 70 | L | -1.00 |
 | 2026-07-19 | Jan Skvrna vs Tomas Kindl | over 74.5 | 86 | W | +0.83 |
 | 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Milan Tlusty vs Adam Kral | over 74.5 | 103 | W | +0.83 |
 | 2026-07-16 | Blazej Gola vs Krzysztof Zapala | under 74.5 | 116 | L | -1.00 |
 | 2026-07-16 | Adam Kral vs Milan Tlusty | over 74.5 | 94 | W | +0.83 |
-| 2026-07-16 | Jan Skvrna vs Radek Benes | over 74.5 | 68 | L | -1.00 |
 
 </details>
 

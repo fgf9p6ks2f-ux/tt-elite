@@ -87,6 +87,7 @@ Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jacek Wieczerzak|Rafal Glica|over|1784379900
 Jachym Sebl|Jan Srnka|under|1783499100
+Jakub Chmielowski|Krystian Kolodziej|over|1784543400
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Glanowski|Michal Minda|under|1784202600
 Jakub Kaczmarek|Lukasz Oracz|under|1784185800
@@ -188,6 +189,7 @@ Oleksandr V Kovalchuk|Serhii Chelpanov|over|1783554900
 Oleksandr V Kovalchuk|Serhii Skachenko|over|1783558500
 Oleksii Mitla|Valerii Vlasenko|over|1783556100
 Oliver Vincenec|Patryk Mecik|over|1784184600
+Oliver Vincenec|Pawel Adamus|over|1784545200
 Oliwier Sokolowski|Wojciech Wojtaszczyk|under|1783431000
 Ondrej Paril|Radomir Revay|over|1783753200
 Orest Hura|Valerii Vlasenko|over|1783464300
