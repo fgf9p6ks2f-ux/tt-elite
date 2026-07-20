@@ -1,19 +1,21 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-20 21:12 UTC_
+_updated 2026-07-20 21:29 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
-  (TT Elite Series fixtures skipped: 24live tournament 22357 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22357?lang=en&section=all&short=0&limit=200)
-  (Setka Cup fixtures skipped: 24live tournament 22353 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22353?lang=en&section=all&short=0&limit=200)
-  (Czech Liga Pro fixtures skipped: 24live tournament 22338 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22338?lang=en&section=all&short=0&limit=200)
-  (TT Cup fixtures skipped: 24live tournament 22339 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22339?lang=en&section=all&short=0&limit=200)
-  (Setka Women fixtures skipped: 24live tournament 22364 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22364?lang=en&section=all&short=0&limit=200)
-  (TT Challenger Series fixtures skipped: 24live tournament 22341 failed after 4 tries: 503 Server Error: Service Unavailable for url: https://24live.com/api/tournament/22341?lang=en&section=all&short=0&limit=200)
 
-0 upcoming fixtures (all leagues) · 246,796 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+496 upcoming fixtures (all leagues) · 246,796 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-  no flagged pairs among the upcoming fixtures right now — check back closer to the slate (fixtures post a few hours ahead).
+=== 5 ACTIONABLE BETS TODAY ===
+  when            league      matchup                                       zone  conf   raw    n    avg
+  Tue 8:00AM MT   Setka·shadowDmytro Yurkov vs Serhii Ponomarenko         U≥71.5   81%   84%   94   62.1
+  Tue 12:30PM MT  LigaPro·shadowDominik Oborny vs Tomas Milota              O≤77.5   75%   90%   10   87.0
+  Mon 3:05PM MT   TTCup·shadowJan Vidourek vs Richard Vavricka            O≤77.5   75%   84%   25   84.6
+  Tue 6:30AM MT   Setka·shadowSerhii Kushnirenko vs Serhii Ponomarenko    U≥71.5   75%   81%   47   63.3
+  Tue 4:55AM MT   TTCup·shadowDavid Sykora vs Vaclav Hejda Jr             O≤77.5   71%   85%   13   83.2
+
+'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.
 
 ```
