@@ -1,26 +1,28 @@
 # TT paper ledger — live flag track record
 
-_2026-07-19T22:06:54 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-20T08:29:08 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
 
-- **Bet record (TT Elite Series):** 58-28  ·  **P&L:** +21.81u ($+2,181)  ·  **hit 67.4%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  72-52  ·  +8.00u  ·  hit 58%
+- **Bet record (TT Elite Series):** 59-29  ·  **P&L:** +21.70u ($+2,170)  ·  **hit 67.0%** (break-even 52.4%)  ·  **Open:** 2
+- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  74-52  ·  +9.67u  ·  hit 59%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 29 | 17-12 | 59% | +2.17 |
+| Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
 | Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 44 | 24-20 | 55% | +0.00 |
-| TT Elite Series | 86 | 58-28 | 67% | +21.81 |
+| TT Elite Series | 88 | 59-29 | 67% | +21.70 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 58-28 · hit 67% · +21.81u (86 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 59-29 · hit 67% · +21.70u (88 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Pawel Chojnacki vs Jakub Skorupa | under 73.5 | 61 | W | +0.89 |
+| 2026-07-20 | Wojciech Urban vs Pawel Slosarczyk | over 62.5 | 61 | L | -1.00 |
 | 2026-07-19 | Mariusz Baron vs Grzegorz Marud | under 93.5 | 92 | W | +0.80 |
 | 2026-07-19 | Mariusz Baron vs Wojciech Urban | under 91.5 | 75 | W | +0.83 |
 | 2026-07-19 | Adam Ruszkiewicz vs Marian Lebek | under 77.5 | 35 | W | +0.83 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-18 | Jacek Oracz vs Artur Kubiak | under 93.5 | 83 | W | +0.80 |
 | 2026-07-18 | Henryk Tkaczyk vs Jakub Skorupa | under 93.5 | 97 | L | -1.00 |
 | 2026-07-18 | Patryk Gamrot vs Daniel Morawiec | over 80.5 | 81 | W | +0.85 |
-| 2026-07-18 | Gracjan Kesik vs Milosz Piecowski | over 74.5 | 92 | W | +0.87 |
-| 2026-07-18 | Filip Witczak vs Rafal Wojcik | under 92.5 | 90 | W | +0.95 |
 
 </details>
 
@@ -71,10 +71,12 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 17-12 · hit 59% · +2.17u (29 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 19-12 · hit 61% · +3.83u (31 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Jiri Grohsgott vs Jan Potensky | under 74.5 | 64 | W | +0.83 |
+| 2026-07-20 | Josef Pelikan vs Vladimir Svoboda | under 74.5 | 54 | W | +0.83 |
 | 2026-07-19 | Jan Pleskot vs Lubor Sulava | over 74.5 | 76 | W | +0.83 |
 | 2026-07-19 | Martin Huk vs Radim Urbaniec | over 74.5 | 94 | W | +0.83 |
 | 2026-07-17 | Michael Sedlacek vs Radovan Polasek | over 74.5 | 74 | L | -1.00 |
@@ -93,8 +95,6 @@ _click a league to expand its bets_
 | 2026-07-11 | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
 | 2026-07-11 | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
 | 2026-07-11 | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
-| 2026-07-10 | Radim Urbaniec vs Martin Huk | over 74.5 | 76 | W | +0.83 |
-| 2026-07-10 | Lubor Sulava vs Jan Pleskot | over 74.5 | 57 | L | -1.00 |
 
 </details>
 
