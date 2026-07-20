@@ -1,9 +1,9 @@
-# TT paper ledger — live flag track record
+# TT paper ledger — FanDuel-line track record
 
-_2026-07-20T09:01:46 UTC · every flag logged as 1u ($100) at -120 · this is the live out-of-sample test of the league rules_
+_2026-07-20T09:12:31 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **Bet record (TT Elite Series):** 60-29  ·  **P&L:** +22.56u ($+2,256)  ·  **hit 67.4%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow (validating, not bet — Liga Pro, Setka Cup, Setka W, TT Cup):**  74-52  ·  +9.67u  ·  hit 59%
+- **FanDuel-line record:** 35-15  ·  **P&L:** +15.64u ($+1,564)  ·  **hit 70.0%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  92-61  ·  +15.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
@@ -11,16 +11,17 @@ _2026-07-20T09:01:46 UTC · every flag logged as 1u ($100) at -120 · this is th
 | Setka Cup | 40 | 26-14 | 65% | +7.67 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 44 | 24-20 | 55% | +0.00 |
-| TT Elite Series | 89 | 60-29 | 67% | +22.56 |
+| TT Elite Series | 90 | 60-30 | 67% | +21.56 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 60-29 · hit 67% · +22.56u (89 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 60-30 · hit 67% · +21.56u (90 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-20 | Witold Stechly vs Jerzy Michalik | under 98.5 | 101 | L | -1.00 |
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 79 | W | +0.86 |
 | 2026-07-20 | Pawel Chojnacki vs Jakub Skorupa | under 73.5 | 61 | W | +0.89 |
 | 2026-07-20 | Wojciech Urban vs Pawel Slosarczyk | over 62.5 | 61 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 86 | W | +1.00 |
 | 2026-07-18 | Michal Olbrycht vs Mateusz Rutkowski | over 53.5 | 76 | W | +1.05 |
 | 2026-07-18 | Jacek Oracz vs Artur Kubiak | under 93.5 | 83 | W | +0.80 |
-| 2026-07-18 | Henryk Tkaczyk vs Jakub Skorupa | under 93.5 | 97 | L | -1.00 |
 
 </details>
 
