@@ -140,6 +140,7 @@ Karol Sulkowski|Michal Minda|over|1783751100
 Karol Sulkowski|Michal Minda|over|1784035800
 Karol Sulkowski|Michal Minda|over|1784195400
 Karol Sulkowski|Milosz Piecowski|over|1783567500
+Karol Wisniewski|Miroslav Sklensky|under|1784544900
 Kostiantyn Hrynenko|Oleksandr Melashenko|over|1783538700
 Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Krzysztof Kapik|over|1783965900
