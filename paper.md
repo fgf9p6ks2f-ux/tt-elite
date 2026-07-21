@@ -1,26 +1,28 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T17:59:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T21:43:42 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 41-23  ·  **P&L:** +12.93u ($+1,293)  ·  **hit 64.1%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  103-67  ·  +18.83u  ·  hit 61%
+- **FanDuel-line record:** 41-25  ·  **P&L:** +10.93u ($+1,093)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 1
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  104-67  ·  +19.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
+| Czech Liga Pro | 32 | 20-12 | 62% | +4.67 |
 | Setka Cup | 45 | 30-15 | 67% | +10.00 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
 | TT Cup | 54 | 29-25 | 54% | -0.83 |
-| TT Elite Series | 104 | 66-38 | 63% | +18.85 |
+| TT Elite Series | 106 | 66-40 | 62% | +16.85 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 66-38 · hit 63% · +18.85u (104 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 66-40 · hit 62% · +16.85u (106 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Stanislaw Wnek vs Wojciech Gluszek | under 82.5 | 105 | L | -1.00 |
+| 2026-07-21 | Marian Brunner vs Zbigniew Nocun | over 54.5 | 51 | L | -1.00 |
 | 2026-07-21 | Martin Olejnik vs Krzysztof Wloczko | under 73.5 | 87 | L | -1.00 |
 | 2026-07-21 | Maksymilian Rus vs Rafal Gajda | over 74.5 | 66 | L | -1.00 |
 | 2026-07-21 | Rafal Gajda vs Maksymilian Rus | over 74.5 | 98 | W | +0.87 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 79 | W | +0.86 |
 | 2026-07-20 | Pawel Chojnacki vs Jakub Skorupa | under 73.5 | 61 | W | +0.89 |
 | 2026-07-20 | Wojciech Urban vs Pawel Slosarczyk | over 62.5 | 61 | L | -1.00 |
-| 2026-07-19 | Mariusz Baron vs Grzegorz Marud | under 93.5 | 92 | W | +0.80 |
-| 2026-07-19 | Mariusz Baron vs Wojciech Urban | under 91.5 | 75 | W | +0.83 |
 
 </details>
 
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 19-12 · hit 61% · +3.83u (31 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 20-12 · hit 62% · +4.67u (32 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Dominik Oborny vs Tomas Milota | over 74.5 | 77 | W | +0.83 |
 | 2026-07-20 | Jiri Grohsgott vs Jan Potensky | under 74.5 | 64 | W | +0.83 |
 | 2026-07-20 | Josef Pelikan vs Vladimir Svoboda | under 74.5 | 54 | W | +0.83 |
 | 2026-07-19 | Jan Pleskot vs Lubor Sulava | over 74.5 | 76 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-12 | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 | 2026-07-11 | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
 | 2026-07-11 | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
-| 2026-07-11 | Ondrej Paril vs Radomir Revay | over 74.5 | 76 | W | +0.83 |
 
 </details>
 
