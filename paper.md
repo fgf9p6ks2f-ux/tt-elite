@@ -1,14 +1,14 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T12:44:35 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T12:52:20 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 41-21  ·  **P&L:** +14.93u ($+1,493)  ·  **hit 66.1%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  101-67  ·  +17.17u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  102-67  ·  +18.00u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
-| Setka Cup | 43 | 28-15 | 65% | +8.33 |
+| Setka Cup | 44 | 29-15 | 66% | +9.17 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
 | TT Cup | 54 | 29-25 | 54% | -0.83 |
 | TT Elite Series | 102 | 66-36 | 65% | +20.85 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 28-15 · hit 65% · +8.33u (43 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 29-15 · hit 66% · +9.17u (44 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 46 | W | +0.83 |
 | 2026-07-20 | Artem Yurkov vs Vladyslav Mishchenko | over 74.5 | 78 | W | +0.83 |
 | 2026-07-20 | Vladimir Voronenko vs Artem Yurkov | over 74.5 | 60 | L | -1.00 |
 | 2026-07-20 | Dmitro Kuzmenko vs Serhii Chuhai | under 74.5 | 56 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-10 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
 | 2026-07-10 | Lukas Provaznik vs Libor Smazik | over 74.5 | 58 | L | -1.00 |
 | 2026-07-10 | Jan Seeman vs Jakub Dufek Jnr | over 74.5 | 87 | W | +0.83 |
-| 2026-07-10 | Oleh Plyska vs Ladislav Tuma | over 74.5 | 95 | W | +0.83 |
 
 </details>
 
