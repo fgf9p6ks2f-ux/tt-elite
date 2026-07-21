@@ -98,6 +98,8 @@ Jakub Komorowicz|Kamil Kos|over|1783793100
 Jakub Komorowicz|Wiekiera Arkadiusz|over|1783798500
 Jakub Kosowski|Jan Zandecki|over|1783927200
 Jakub Kosowski|Jan Zandecki|over|1783951800
+Jakub Kosowski|Martin Olejnik|under|1784616900
+Jakub Kosowski|Martin Olejnik|under|1784625600
 Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
