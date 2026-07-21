@@ -1,18 +1,17 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-20 21:40 UTC_
+_updated 2026-07-21 00:15 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-496 upcoming fixtures (all leagues) · 246,803 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+432 upcoming fixtures (all leagues) · 246,897 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 5 ACTIONABLE BETS TODAY ===
+=== 4 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
   Tue 8:00AM MT   Setka·shadowDmytro Yurkov vs Serhii Ponomarenko         U≥71.5   81%   84%   94   62.1
   Tue 12:30PM MT  LigaPro·shadowDominik Oborny vs Tomas Milota              O≤77.5   75%   90%   10   87.0
-  Mon 3:05PM MT   TTCup·shadowJan Vidourek vs Richard Vavricka            O≤77.5   75%   84%   25   84.6
   Tue 6:30AM MT   Setka·shadowSerhii Kushnirenko vs Serhii Ponomarenko    U≥71.5   75%   81%   47   63.3
   Tue 4:55AM MT   TTCup·shadowDavid Sykora vs Vaclav Hejda Jr             O≤77.5   71%   85%   13   83.2
 
