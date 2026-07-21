@@ -80,13 +80,29 @@ def tracker():
     ep = con.execute(
         "SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
         "AND odds IS NOT NULL AND result IS NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
+    # last-48h graded Elite bets for the dashboard's 24h dropdown, grouped by settle day
+    rb = con.execute(
+        "SELECT p1, p2, side, line, result, pnl, graded_at FROM paper_bets "
+        "WHERE league='TT Elite Series' AND odds IS NOT NULL AND result IN ('W','L') "
+        "AND graded_at >= datetime('now','-2 day') ORDER BY graded_at DESC").fetchall()
     con.close()
+    from collections import OrderedDict
+    rdays = OrderedDict()
+    for p1, p2, side, line, res, pnl, ga in rb:
+        rdays.setdefault((ga or "")[:10], []).append(
+            {"name": "%s v %s %s%g" % (p1.split()[-1], p2.split()[-1],
+                                       "o" if side == "over" else "u", line),
+             "won": res == "W", "pnl": round(pnl or 0, 2)})
+    recent = [{"date": d, "w": sum(1 for b in bs if b["won"]),
+               "l": sum(1 for b in bs if not b["won"]),
+               "u": round(sum(b["pnl"] for b in bs), 2), "bets": bs}
+              for d, bs in rdays.items()]
     w = sum(1 for r in rows if r[0] == "W")
     l = sum(1 for r in rows if r[0] == "L")
     u = round(sum(r[1] or 0 for r in rows), 2)
     return {"w": w, "l": l, "u": u,
             "leagues": [{"league": "TT Elite Series", "w": w, "l": l, "u": u}],
-            "elite_pending": ep}
+            "elite_pending": ep, "recent": recent}
 
 
 def bmbets_odds():
