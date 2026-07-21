@@ -1,26 +1,32 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T10:31:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T12:03:54 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 37-19  ·  **P&L:** +13.39u ($+1,339)  ·  **hit 66.1%** (break-even 52.4%)  ·  **Open:** 6
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  98-66  ·  +15.67u  ·  hit 60%
+- **FanDuel-line record:** 41-21  ·  **P&L:** +14.93u ($+1,493)  ·  **hit 66.1%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  101-67  ·  +17.17u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
 | Setka Cup | 43 | 28-15 | 65% | +8.33 |
-| Setka Women | 11 | 5-6 | 45% | -1.83 |
-| TT Cup | 52 | 28-24 | 54% | -0.67 |
-| TT Elite Series | 96 | 62-34 | 65% | +19.30 |
+| Setka Women | 13 | 7-6 | 54% | -0.17 |
+| TT Cup | 54 | 29-25 | 54% | -0.83 |
+| TT Elite Series | 102 | 66-36 | 65% | +20.85 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 62-34 · hit 65% · +19.30u (96 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 66-36 · hit 65% · +20.85u (102 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Rafal Gajda vs Maksymilian Rus | over 74.5 | 98 | W | +0.87 |
+| 2026-07-21 | Artur Sobel vs Igor Dabrowski | over 48.5 | 46 | L | -1.00 |
+| 2026-07-21 | Adrian Wiecek vs Jakub Kosowski | under 84.5 | 69 | W | +0.86 |
+| 2026-07-21 | Jakub Kosowski vs Martin Olejnik | under 90.5 | 53 | W | +0.91 |
+| 2026-07-21 | Jakub Kosowski vs Adrian Wiecek | under 84.5 | 110 | L | -1.00 |
+| 2026-07-21 | Igor Dabrowski vs Artur Sobel | over 48.5 | 93 | W | +0.91 |
 | 2026-07-21 | Jakub Kosowski vs Martin Olejnik | under 90.5 | 73 | W | +0.91 |
 | 2026-07-20 | Miroslaw Piecowski vs Marcin Kowalczyk | under 86.5 | 92 | L | -1.00 |
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 103 | L | -1.00 |
@@ -35,12 +41,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Mariusz Baron vs Wojciech Urban | under 91.5 | 75 | W | +0.83 |
 | 2026-07-19 | Adam Ruszkiewicz vs Marian Lebek | under 77.5 | 35 | W | +0.83 |
 | 2026-07-19 | Jakub Skorupa vs Pawel Chojnacki | under 73.5 | 73 | W | +0.89 |
-| 2026-07-19 | Filip Witczak vs Rafal Wojcik | over 62.5 | 57 | L | -1.00 |
-| 2026-07-19 | Adam Linek vs Aleksander Lilien | under 90.5 | 81 | W | +0.80 |
-| 2026-07-19 | Adrian Eliasz vs Arkadiusz Mugowski | under 80.5 | 75 | W | +0.85 |
-| 2026-07-19 | Adrian Eliasz vs Mateusz Misiak | under 89.5 | 105 | L | -1.00 |
-| 2026-07-19 | Bartlomiej Wisniewski vs Arkadiusz Mugowski | under 88.5 | 84 | W | +0.80 |
-| 2026-07-19 | Piotr Gesiarz vs Dariusz Maszczynski | under 97.5 | 89 | W | +0.95 |
 
 </details>
 
@@ -98,10 +98,32 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 28-24 · hit 54% · -0.67u (52 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 7-6 · hit 54% · -0.17u (13 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 56 | W | +0.83 |
+| 2026-07-21 | Svitlana Yureneva vs Anhelina Plashchynska | under 74.5 | 50 | W | +0.83 |
+| 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
+| 2026-07-18 | Anna Gorchakova vs Margarita Gordeets | under 74.5 | 81 | L | -1.00 |
+| 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
+| 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
+| 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
+| 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
+| 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
+| 2026-07-10 | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
+| 2026-07-10 | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
+| 2026-07-10 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
+| 2026-07-10 | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
+
+</details>
+
+<details><summary><b>TT Cup</b> &mdash; 29-25 · hit 54% · -0.83u (54 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-21 | Filip Marat vs Milan Tlusty | over 74.5 | 90 | W | +0.83 |
+| 2026-07-21 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 73 | L | -1.00 |
 | 2026-07-21 | Jan Vidourek vs Richard Vavricka | over 74.5 | 99 | W | +0.83 |
 | 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
 | 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
@@ -120,26 +142,6 @@ _click a league to expand its bets_
 | 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
 | 2026-07-18 | Christian Kratochvil vs Jaroslav Dohnal | over 74.5 | 97 | W | +0.83 |
 | 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
-| 2026-07-17 | Milan Tlusty vs Adam Kral | over 74.5 | 55 | L | -1.00 |
-| 2026-07-17 | Krzysztof Zapala vs Mateusz Szymanski | over 74.5 | 91 | W | +0.83 |
-
-</details>
-
-<details><summary><b>Setka Women</b> &mdash; 5-6 · hit 45% · -1.83u (11 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
-| 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
-| 2026-07-18 | Anna Gorchakova vs Margarita Gordeets | under 74.5 | 81 | L | -1.00 |
-| 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
-| 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
-| 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
-| 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
-| 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
-| 2026-07-10 | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
-| 2026-07-10 | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
-| 2026-07-10 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
-| 2026-07-10 | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
 
 </details>
 
