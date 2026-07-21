@@ -40,7 +40,7 @@ jobs:
           git config user.email "tt-bot@users.noreply.github.com"
           # ntfy now fires ONLY for: new-bet alerts (below), 5-min reminders (below), and
           # the nightly results digest (separate workflow). slate_push benched 2026-07-09.
-          for i in $(seq 1 6); do
+          for i in $(seq 1 18); do
             # FanDuel.ca TT Elite lines are collected by the Oracle VM (Canada IP; Actions'
             # US IP is geo-blocked) and committed to the PUBLIC tennis-odds-collector repo.
             # Pull the freshest board each cycle; check_today grades Elite vs these real lines,
@@ -88,7 +88,7 @@ jobs:
                 git push -q || true
               fi
             fi
-            sleep 540
+            sleep 180
           done
       - name: self-redispatch — keep the loop immortal past throttled/dropped crons
         # NOT always(): a run superseded by cancel-in-progress must NOT redispatch, or every
