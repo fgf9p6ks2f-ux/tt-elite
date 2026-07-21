@@ -220,3 +220,4 @@ Roman Gnoevoy|Spartak Abalmaz|over|1783536900
 Serhii Kushnirenko|Serhii Ponomarenko|under|1783666800
 Serhii Kushnirenko|Serhii Ponomarenko|under|1783773000
 Serhii Kushnirenko|Serhii Ponomarenko|under|1784104200
+Stanislaw Wnek|Wojciech Gluszek|under|1784655900
