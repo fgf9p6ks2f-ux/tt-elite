@@ -54,8 +54,8 @@ def write_alerts(bets, line):
     now = int(dt.datetime.now(dt.timezone.utc).timestamp())
     new, reminders = [], []
     for b in bets:
-        if b.get("tier") == "shadow":                   # shadow leagues (TT Cup, Liga Pro, Setka W):
-            continue                                     # logged to the paper ledger, never pushed
+        if b.get("tier") == "shadow" or b.get("skip_bet"):   # shadow leagues + the 80-90-under leak:
+            continue                                     # logged to the paper ledger, never pushed/bet
         a, c = pair_key(b["p1"], b["p2"])
         key = f"{a}|{c}|{b['side']}|{b['ts']}"          # ts makes it per-match, stable
         if key in seen:
@@ -116,12 +116,19 @@ def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
         side, hit, odds = "under", 1 - over_rate, m["under_odds"]
     else:
         return None                                  # neither side clears 70% -> no bet
-    return {"hit": hit, "raw": hit, "n": n, "side": side,
-            "p1": p1, "p2": p2, "avg": sum(totals) / n, "when": mt_time(ts),
-            "ts": int(ts) if ts else 0, "league": ELITE, "mid": mid,
-            "line": line, "odds": odds, "edge": None,
-            "totals": totals, "tier": tier,
-            "zone": f"{'O' if side == 'over' else 'U'}{line:g}"}
+    b = {"hit": hit, "raw": hit, "n": n, "side": side,
+         "p1": p1, "p2": p2, "avg": sum(totals) / n, "when": mt_time(ts),
+         "ts": int(ts) if ts else 0, "league": ELITE, "mid": mid,
+         "line": line, "odds": odds, "edge": None,
+         "totals": totals, "tier": tier,
+         "zone": f"{'O' if side == 'over' else 'U'}{line:g}"}
+    # 80-90-UNDER LEAK (loss profile 2026-07-21): TT totals are BIMODAL (quick sweep vs deciding-game
+    # grind), so unders on 80-90 lines get blown out when a match goes long — 6-9/-4.0u, avg margin
+    # -3.8 (genuinely wrong side, not variance). SKIP it: still logged+graded (forward validation) but
+    # never alerted/bet, and excluded from the headline record (tt_board tracker). Keep tracking.
+    if side == "under" and 80.0 <= line < 90.0:
+        b["skip_bet"] = "u80_90"
+    return b
 
 
 def actionable(fixtures, rows, line, min_h2h=None, pct=None):
@@ -215,7 +222,8 @@ def main():
     print(f"  {'when':<16}{'league':<12}{'matchup':<42}{'zone':>8}{'conf':>6}{'raw':>6}"
           f"{'n':>5}{'avg':>7}")
     for b in bets:
-        tag = TAG.get(b["league"], b["league"]) + ("·shadow" if b.get("tier") == "shadow" else "")
+        tag = TAG.get(b["league"], b["league"]) + ("·shadow" if b.get("tier") == "shadow" else "") \
+            + ("·SKIP(80-90u leak)" if b.get("skip_bet") else "")
         print(f"  {b['when']:<16}{tag:<12}"
               f"{b['p1']+' vs '+b['p2']:<42}{b['zone']:>8}"
               f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")

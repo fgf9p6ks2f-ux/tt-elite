@@ -73,17 +73,24 @@ def tracker():
     Women, graded at the discredited fixed-74.5 -120 proxy) are excluded from the record entirely —
     they still log to the ledger for reference, but never surface here or in the headline."""
     con = sqlite3.connect(DB)
+    # the 80-90-UNDER LEAK (loss profile 2026-07-21): SHADOWED — still graded, but excluded from the
+    # headline/pending/recent (we don't bet it). Tracked separately in `filtered` to validate forward.
+    FILT = "AND NOT (side='under' AND line >= 80 AND line < 90)"
     rows = con.execute(
         "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') "
-        "AND league='TT Elite Series' AND odds IS NOT NULL AND flagged_at >= ?",
+        f"AND league='TT Elite Series' AND odds IS NOT NULL {FILT} AND flagged_at >= ?",
+        (ELITE_EPOCH,)).fetchall()
+    shadow = con.execute(
+        "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') AND league='TT Elite Series' "
+        "AND odds IS NOT NULL AND side='under' AND line >= 80 AND line < 90 AND flagged_at >= ?",
         (ELITE_EPOCH,)).fetchall()
     ep = con.execute(
         "SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
-        "AND odds IS NOT NULL AND result IS NULL AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
+        f"AND odds IS NOT NULL AND result IS NULL {FILT} AND flagged_at >= ?", (ELITE_EPOCH,)).fetchone()[0]
     # last-48h graded Elite bets for the dashboard's 24h dropdown, grouped by settle day
     rb = con.execute(
         "SELECT p1, p2, side, line, result, pnl, graded_at FROM paper_bets "
-        "WHERE league='TT Elite Series' AND odds IS NOT NULL AND result IN ('W','L') "
+        f"WHERE league='TT Elite Series' AND odds IS NOT NULL AND result IN ('W','L') {FILT} "
         "AND graded_at >= datetime('now','-2 day') ORDER BY graded_at DESC").fetchall()
     con.close()
     from collections import OrderedDict
@@ -100,9 +107,13 @@ def tracker():
     w = sum(1 for r in rows if r[0] == "W")
     l = sum(1 for r in rows if r[0] == "L")
     u = round(sum(r[1] or 0 for r in rows), 2)
+    sw = sum(1 for r in shadow if r[0] == "W")
+    sl = sum(1 for r in shadow if r[0] == "L")
+    su = round(sum(r[1] or 0 for r in shadow), 2)
     return {"w": w, "l": l, "u": u,
             "leagues": [{"league": "TT Elite Series", "w": w, "l": l, "u": u}],
-            "elite_pending": ep, "recent": recent}
+            "elite_pending": ep, "recent": recent,
+            "filtered": {"w": sw, "l": sl, "u": su, "note": "80-90 unders (shadow, not bet)"}}
 
 
 def bmbets_odds():
