@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T22:25:09 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T22:35:32 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 41-25  ·  **P&L:** +10.93u ($+1,093)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 1
+- **FanDuel-line record:** 42-25  ·  **P&L:** +11.84u ($+1,184)  ·  **hit 62.7%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  104-67  ·  +19.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-21T22:25:09 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 45 | 30-15 | 67% | +10.00 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
 | TT Cup | 54 | 29-25 | 54% | -0.83 |
-| TT Elite Series | 106 | 66-40 | 62% | +16.85 |
+| TT Elite Series | 107 | 67-40 | 63% | +17.76 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 66-40 · hit 62% · +16.85u (106 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 67-40 · hit 63% · +17.76u (107 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Wojciech Gluszek vs Krzysztof Kotyl | under 75.5 | 73 | W | +0.91 |
 | 2026-07-21 | Stanislaw Wnek vs Wojciech Gluszek | under 82.5 | 105 | L | -1.00 |
 | 2026-07-21 | Marian Brunner vs Zbigniew Nocun | over 54.5 | 51 | L | -1.00 |
 | 2026-07-21 | Martin Olejnik vs Krzysztof Wloczko | under 73.5 | 87 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Witold Stechly vs Jerzy Michalik | under 98.5 | 101 | L | -1.00 |
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 79 | W | +0.86 |
 | 2026-07-20 | Pawel Chojnacki vs Jakub Skorupa | under 73.5 | 61 | W | +0.89 |
-| 2026-07-20 | Wojciech Urban vs Pawel Slosarczyk | over 62.5 | 61 | L | -1.00 |
 
 </details>
 
