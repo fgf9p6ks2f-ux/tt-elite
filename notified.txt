@@ -154,6 +154,7 @@ Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
 Krzysztof Kapik|Szymon Sporek|over|1783533900
 Krzysztof Kotyl|Piotr Staniszewski|over|1783713900
+Krzysztof Wloczko|Martin Olejnik|under|1784640000
 Ksenia Tymchenko|Olena Bondareva|under|1783703100
 Kuba Golaszewski|Michal Skorski|over|1783545600
 Ladislav Tuma|Oleh Plyska|over|1783670400
