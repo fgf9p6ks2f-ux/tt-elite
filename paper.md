@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T10:09:39 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T10:20:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 36-19  ·  **P&L:** +12.48u ($+1,248)  ·  **hit 65.5%** (break-even 52.4%)  ·  **Open:** 4
+- **FanDuel-line record:** 37-19  ·  **P&L:** +13.39u ($+1,339)  ·  **hit 66.1%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  98-66  ·  +15.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-21T10:09:39 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 43 | 28-15 | 65% | +8.33 |
 | Setka Women | 11 | 5-6 | 45% | -1.83 |
 | TT Cup | 52 | 28-24 | 54% | -0.67 |
-| TT Elite Series | 95 | 61-34 | 64% | +18.39 |
+| TT Elite Series | 96 | 62-34 | 65% | +19.30 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 61-34 · hit 64% · +18.39u (95 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 62-34 · hit 65% · +19.30u (96 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Jakub Kosowski vs Martin Olejnik | under 90.5 | 73 | W | +0.91 |
 | 2026-07-20 | Miroslaw Piecowski vs Marcin Kowalczyk | under 86.5 | 92 | L | -1.00 |
 | 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 103 | L | -1.00 |
 | 2026-07-20 | Miroslav Sklensky vs Karol Wisniewski | under 80.5 | 72 | W | +0.83 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Adrian Eliasz vs Mateusz Misiak | under 89.5 | 105 | L | -1.00 |
 | 2026-07-19 | Bartlomiej Wisniewski vs Arkadiusz Mugowski | under 88.5 | 84 | W | +0.80 |
 | 2026-07-19 | Piotr Gesiarz vs Dariusz Maszczynski | under 97.5 | 89 | W | +0.95 |
-| 2026-07-19 | Marcin Marchlewski vs Mateusz Rutkowski | over 48.5 | 69 | W | +1.00 |
 
 </details>
 
