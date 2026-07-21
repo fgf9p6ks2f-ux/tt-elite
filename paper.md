@@ -1,26 +1,28 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-21T13:02:52 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-21T15:26:27 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 41-21  ·  **P&L:** +14.93u ($+1,493)  ·  **hit 66.1%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  102-67  ·  +18.00u  ·  hit 60%
+- **FanDuel-line record:** 41-23  ·  **P&L:** +12.93u ($+1,293)  ·  **hit 64.1%** (break-even 52.4%)  ·  **Open:** 0
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  103-67  ·  +18.83u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 31 | 19-12 | 61% | +3.83 |
-| Setka Cup | 44 | 29-15 | 66% | +9.17 |
+| Setka Cup | 45 | 30-15 | 67% | +10.00 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
 | TT Cup | 54 | 29-25 | 54% | -0.83 |
-| TT Elite Series | 102 | 66-36 | 65% | +20.85 |
+| TT Elite Series | 104 | 66-38 | 63% | +18.85 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 66-36 · hit 65% · +20.85u (102 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 66-38 · hit 63% · +18.85u (104 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Martin Olejnik vs Krzysztof Wloczko | under 73.5 | 87 | L | -1.00 |
+| 2026-07-21 | Maksymilian Rus vs Rafal Gajda | over 74.5 | 66 | L | -1.00 |
 | 2026-07-21 | Rafal Gajda vs Maksymilian Rus | over 74.5 | 98 | W | +0.87 |
 | 2026-07-21 | Artur Sobel vs Igor Dabrowski | over 48.5 | 46 | L | -1.00 |
 | 2026-07-21 | Adrian Wiecek vs Jakub Kosowski | under 84.5 | 69 | W | +0.86 |
@@ -39,15 +41,14 @@ _click a league to expand its bets_
 | 2026-07-20 | Wojciech Urban vs Pawel Slosarczyk | over 62.5 | 61 | L | -1.00 |
 | 2026-07-19 | Mariusz Baron vs Grzegorz Marud | under 93.5 | 92 | W | +0.80 |
 | 2026-07-19 | Mariusz Baron vs Wojciech Urban | under 91.5 | 75 | W | +0.83 |
-| 2026-07-19 | Adam Ruszkiewicz vs Marian Lebek | under 77.5 | 35 | W | +0.83 |
-| 2026-07-19 | Jakub Skorupa vs Pawel Chojnacki | under 73.5 | 73 | W | +0.89 |
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 29-15 · hit 66% · +9.17u (44 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 30-15 · hit 67% · +10.00u (45 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-21 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 58 | W | +0.83 |
 | 2026-07-21 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 46 | W | +0.83 |
 | 2026-07-20 | Artem Yurkov vs Vladyslav Mishchenko | over 74.5 | 78 | W | +0.83 |
 | 2026-07-20 | Vladimir Voronenko vs Artem Yurkov | over 74.5 | 60 | L | -1.00 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-11 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-10 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
 | 2026-07-10 | Lukas Provaznik vs Libor Smazik | over 74.5 | 58 | L | -1.00 |
-| 2026-07-10 | Jan Seeman vs Jakub Dufek Jnr | over 74.5 | 87 | W | +0.83 |
 
 </details>
 
