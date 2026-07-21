@@ -190,11 +190,17 @@ def elite_upcoming(fixtures, board_norms):
     con.execute("CREATE INDEX IF NOT EXISTS idx_matches_p1 ON matches(p1)")
     con.execute("CREATE INDEX IF NOT EXISTS idx_matches_p2 ON matches(p2)")
     now = dt.datetime.now(dt.timezone.utc).timestamp()
+    # last-name fallback: a pair counts as "on the FanDuel board" even if 24live/FanDuel spell the
+    # first names differently — so a projection is never generated for an already-priced match.
+    _lt = lambda x: x.split()[-1] if x and x.split() else ""
+    board_last = {frozenset(_lt(n) for n in fs) for fs in board_norms}
     out = []
     for p1, p2, ts, lg, _mid in fixtures:
         if lg != "TT Elite Series" or not ts or ts <= now or ts > now + PROJ_WINDOW_H * 3600:
             continue
-        if frozenset((fd_tt.norm(p1), fd_tt.norm(p2))) in board_norms:
+        n1, n2 = fd_tt.norm(p1), fd_tt.norm(p2)
+        if (frozenset((n1, n2)) in board_norms
+                or frozenset((_lt(n1), _lt(n2))) in board_last):
             continue                                        # FanDuel already prices it -> live card
         a = _player_total_avg(con, p1)
         b = _player_total_avg(con, p2)

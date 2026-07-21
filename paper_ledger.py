@@ -59,6 +59,12 @@ def log_flags(bets, line=None):
     for b in bets:
         if not b.get("mid"):
             continue
+        # ABSOLUTE RULE (user, 2026-07-21): a TT Elite bet is tracked ONLY at an actual posted
+        # FanDuel line. A projected/proxy line (odds is None) must NEVER enter the Elite record.
+        # _elite_bet already returns None without a FanDuel price; this is the belt-and-suspenders
+        # guard so no future refactor can leak a non-FanDuel line into the tracker.
+        if b.get("league") == "TT Elite Series" and b.get("odds") is None:
+            continue
         cur = con.execute(
             "INSERT OR IGNORE INTO paper_bets "
             "(mid, league, p1, p2, side, line, conf, raw, n, start_ts, flagged_at, "
