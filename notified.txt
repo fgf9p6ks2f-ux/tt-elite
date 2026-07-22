@@ -144,6 +144,7 @@ Kacper Adamus|Marian Lebek|under|1783634400
 Kacper Adamus|Rafal Gajda|over|1783488600
 Kacper Adamus|Rafal Gajda|over|1783516200
 Kacper Adamus|Rafal Gajda|over|1784113500
+Kacper Adamus|Rafal Gajda|under|1784721300
 Kacper Adamus|Sebastian Juzek|over|1784705400
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Kamil Klocek|Michal Skorski|over|1784247000
