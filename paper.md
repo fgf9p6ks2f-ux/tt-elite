@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T08:27:50 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T08:31:34 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 44-29  ·  **P&L:** +9.54u ($+954)  ·  **hit 60.3%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  109-70  ·  +20.83u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  110-70  ·  +21.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 33 | 21-12 | 64% | +5.50 |
 | Setka Cup | 48 | 32-16 | 67% | +10.67 |
 | Setka Women | 14 | 7-7 | 50% | -1.17 |
-| TT Cup | 57 | 31-26 | 54% | -0.17 |
+| TT Cup | 58 | 32-26 | 55% | +0.67 |
 | TT Elite Series | 113 | 69-44 | 61% | +15.46 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 31-26 · hit 54% · -0.17u (57 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 32-26 · hit 55% · +0.67u (58 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Petr Vodal vs Tomas Hnizdil | under 74.5 | 55 | W | +0.83 |
 | 2026-07-22 | Jan Skvrna vs Radek Benes | over 74.5 | 75 | W | +0.83 |
 | 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
 | 2026-07-22 | Jan Skvrna vs Bruno Mrowetz | over 74.5 | 87 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Lukas Pour vs Jaroslav Brynych | over 74.5 | 58 | L | -1.00 |
 | 2026-07-19 | Laurent Lasota vs Peter Chvojka | under 74.5 | 100 | L | -1.00 |
 | 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
-| 2026-07-18 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 66 | L | -1.00 |
 
 </details>
 
