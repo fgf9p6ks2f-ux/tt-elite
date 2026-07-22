@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T07:32:02 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T07:36:00 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 42-27  ·  **P&L:** +9.84u ($+984)  ·  **hit 60.9%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  105-69  ·  +18.50u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  107-69  ·  +20.17u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 32 | 20-12 | 62% | +4.67 |
-| Setka Cup | 46 | 30-16 | 65% | +9.00 |
+| Setka Cup | 47 | 31-16 | 66% | +9.83 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
-| TT Cup | 56 | 30-26 | 54% | -1.00 |
+| TT Cup | 57 | 31-26 | 54% | -0.17 |
 | TT Elite Series | 109 | 67-42 | 61% | +15.76 |
 
 ### recent settled — by league
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 30-16 · hit 65% · +9.00u (46 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 31-16 · hit 66% · +9.83u (47 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Lukas Veigl vs Ladislav Dobias | over 74.5 | 105 | W | +0.83 |
 | 2026-07-22 | Volodymyr Burylov vs Lukas Heinzl | over 74.5 | 72 | L | -1.00 |
 | 2026-07-21 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 58 | W | +0.83 |
 | 2026-07-21 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 46 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-13 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 | 2026-07-11 | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
 | 2026-07-11 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
-| 2026-07-10 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
 
 </details>
 
@@ -98,30 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Women</b> &mdash; 7-6 · hit 54% · -0.17u (13 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 31-26 · hit 54% · -0.17u (57 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
-| 2026-07-21 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 56 | W | +0.83 |
-| 2026-07-21 | Svitlana Yureneva vs Anhelina Plashchynska | under 74.5 | 50 | W | +0.83 |
-| 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
-| 2026-07-18 | Anna Gorchakova vs Margarita Gordeets | under 74.5 | 81 | L | -1.00 |
-| 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
-| 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
-| 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
-| 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
-| 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
-| 2026-07-10 | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
-| 2026-07-10 | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
-| 2026-07-10 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
-| 2026-07-10 | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
-
-</details>
-
-<details><summary><b>TT Cup</b> &mdash; 30-26 · hit 54% · -1.00u (56 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
+| 2026-07-22 | Jan Skvrna vs Radek Benes | over 74.5 | 75 | W | +0.83 |
 | 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
 | 2026-07-22 | Jan Skvrna vs Bruno Mrowetz | over 74.5 | 87 | W | +0.83 |
 | 2026-07-21 | Filip Marat vs Milan Tlusty | over 74.5 | 90 | W | +0.83 |
@@ -141,7 +122,26 @@ _click a league to expand its bets_
 | 2026-07-19 | Laurent Lasota vs Peter Chvojka | under 74.5 | 100 | L | -1.00 |
 | 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
 | 2026-07-18 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 66 | L | -1.00 |
-| 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
+
+</details>
+
+<details><summary><b>Setka Women</b> &mdash; 7-6 · hit 54% · -0.17u (13 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-21 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 56 | W | +0.83 |
+| 2026-07-21 | Svitlana Yureneva vs Anhelina Plashchynska | under 74.5 | 50 | W | +0.83 |
+| 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
+| 2026-07-18 | Anna Gorchakova vs Margarita Gordeets | under 74.5 | 81 | L | -1.00 |
+| 2026-07-18 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 57 | W | +0.83 |
+| 2026-07-18 | Anhelina Plashchynska vs Yana Mykhailyk | under 74.5 | 81 | L | -1.00 |
+| 2026-07-17 | Margarita Gordeets vs Anna Gorchakova | under 74.5 | 58 | W | +0.83 |
+| 2026-07-15 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 77 | L | -1.00 |
+| 2026-07-15 | Anhelina Plashchynska vs Svitlana Yureneva | under 74.5 | 84 | L | -1.00 |
+| 2026-07-10 | Ksenia Tymchenko vs Olena Bondareva | under 74.5 | 70 | W | +0.83 |
+| 2026-07-10 | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
+| 2026-07-10 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
+| 2026-07-10 | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
 
 </details>
 
