@@ -1,14 +1,14 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T13:19:49 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T13:23:24 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 53-32  ·  **P&L:** +14.03u ($+1,403)  ·  **hit 62.4%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  112-72  ·  +21.33u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  113-72  ·  +22.17u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
-| Setka Cup | 49 | 33-16 | 67% | +11.50 |
+| Setka Cup | 50 | 34-16 | 68% | +12.33 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 59 | 32-27 | 54% | -0.33 |
 | TT Elite Series | 125 | 78-47 | 62% | +19.94 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 33-16 · hit 67% · +11.50u (49 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 34-16 · hit 68% · +12.33u (50 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Oleksandr Seliuchenko vs Artem Yurkov | over 74.5 | 93 | W | +0.83 |
 | 2026-07-22 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 96 | W | +0.83 |
 | 2026-07-22 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 64 | W | +0.83 |
 | 2026-07-22 | Lukas Veigl vs Ladislav Dobias | over 74.5 | 105 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
 | 2026-07-15 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 | 2026-07-14 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
-| 2026-07-13 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 
 </details>
 
