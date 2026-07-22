@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T22:01:04 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T22:04:28 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 61-37  ·  **P&L:** +16.19u ($+1,619)  ·  **hit 62.2%** (break-even 52.4%)  ·  **Open:** 5
+- **FanDuel-line record:** 62-38  ·  **P&L:** +16.10u ($+1,610)  ·  **hit 62.0%** (break-even 52.4%)  ·  **Open:** 3
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-22T22:01:04 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 138 | 86-52 | 62% | +22.11 |
+| TT Elite Series | 140 | 87-53 | 62% | +22.02 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 86-52 · hit 62% · +22.11u (138 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 87-53 · hit 62% · +22.02u (140 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Jerzy Pelka vs Marian Lebek | under 84.5 | 67 | W | +0.91 |
+| 2026-07-22 | Miroslaw Warzecha vs Henryk Tkaczyk | over 53.5 | 50 | L | -1.00 |
 | 2026-07-22 | Oliver Vincenec vs Lukasz Oracz | under 82.5 | 73 | W | +0.87 |
 | 2026-07-22 | Mateusz Rutkowski vs Maciej Kolek | over 63.5 | 56 | L | -1.00 |
 | 2026-07-22 | Mikolaj Lukaszewski vs Bartlomiej Wisniewski | over 56.5 | 56 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Artur Szoltysek vs Adrian Myszewski | under 78.5 | 63 | W | +0.87 |
 | 2026-07-22 | Kacper Adamus vs Krzysztof Hetnar | under 83.5 | 61 | W | +0.87 |
 | 2026-07-22 | Grzegorz Poliniewicz vs Jakub Zochniak | over 51.5 | 102 | W | +0.80 |
-| 2026-07-22 | Rafal Gajda vs Sebastian Juzek | over 57.5 | 69 | W | +0.87 |
-| 2026-07-22 | Grzegorz Adamiak vs Maciej Nowalinski | over 64.5 | 55 | L | -1.00 |
 
 </details>
 
