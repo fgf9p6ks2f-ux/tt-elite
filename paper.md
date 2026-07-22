@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T11:22:06 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T11:25:53 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 52-31  ·  **P&L:** +14.23u ($+1,423)  ·  **hit 62.7%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  112-71  ·  +22.33u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  112-72  ·  +21.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
 | Setka Cup | 49 | 33-16 | 67% | +11.50 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 58 | 32-26 | 55% | +0.67 |
+| TT Cup | 59 | 32-27 | 54% | -0.33 |
 | TT Elite Series | 123 | 77-46 | 63% | +20.14 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 32-26 · hit 55% · +0.67u (58 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 32-27 · hit 54% · -0.33u (59 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 69 | L | -1.00 |
 | 2026-07-22 | Petr Vodal vs Tomas Hnizdil | under 74.5 | 55 | W | +0.83 |
 | 2026-07-22 | Jan Skvrna vs Radek Benes | over 74.5 | 75 | W | +0.83 |
 | 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
 | 2026-07-19 | Lukas Pour vs Jaroslav Brynych | over 74.5 | 58 | L | -1.00 |
 | 2026-07-19 | Laurent Lasota vs Peter Chvojka | under 74.5 | 100 | L | -1.00 |
-| 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
 
 </details>
 
