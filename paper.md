@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T21:37:31 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T21:40:58 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 60-37  ·  **P&L:** +15.32u ($+1,532)  ·  **hit 61.9%** (break-even 52.4%)  ·  **Open:** 4
+- **FanDuel-line record:** 61-37  ·  **P&L:** +16.19u ($+1,619)  ·  **hit 62.2%** (break-even 52.4%)  ·  **Open:** 3
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-72  ·  +25.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T21:37:31 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 61 | 34-27 | 56% | +1.33 |
-| TT Elite Series | 137 | 85-52 | 62% | +21.24 |
+| TT Elite Series | 138 | 86-52 | 62% | +22.11 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 85-52 · hit 62% · +21.24u (137 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 86-52 · hit 62% · +22.11u (138 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Oliver Vincenec vs Lukasz Oracz | under 82.5 | 73 | W | +0.87 |
 | 2026-07-22 | Mateusz Rutkowski vs Maciej Kolek | over 63.5 | 56 | L | -1.00 |
 | 2026-07-22 | Mikolaj Lukaszewski vs Bartlomiej Wisniewski | over 56.5 | 56 | L | -1.00 |
 | 2026-07-22 | Henryk Tkaczyk vs Jacek Zelezik | under 81.5 | 90 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Grzegorz Poliniewicz vs Jakub Zochniak | over 51.5 | 102 | W | +0.80 |
 | 2026-07-22 | Rafal Gajda vs Sebastian Juzek | over 57.5 | 69 | W | +0.87 |
 | 2026-07-22 | Grzegorz Adamiak vs Maciej Nowalinski | over 64.5 | 55 | L | -1.00 |
-| 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 75 | W | +0.83 |
 
 </details>
 
