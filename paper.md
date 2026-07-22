@@ -1,15 +1,15 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T10:05:07 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T10:08:47 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 49-31  ·  **P&L:** +11.69u ($+1,169)  ·  **hit 61.3%** (break-even 52.4%)  ·  **Open:** 3
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  111-70  ·  +22.50u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  111-71  ·  +21.50u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 33 | 21-12 | 64% | +5.50 |
 | Setka Cup | 49 | 33-16 | 67% | +11.50 |
-| Setka Women | 14 | 7-7 | 50% | -1.17 |
+| Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 58 | 32-26 | 55% | +0.67 |
 | TT Elite Series | 120 | 74-46 | 62% | +17.60 |
 
@@ -125,10 +125,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Women</b> &mdash; 7-7 · hit 50% · -1.17u (14 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 7-8 · hit 47% · -2.17u (15 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Alina Ovriakh vs Nataliia Plokhotniuk | under 74.5 | 97 | L | -1.00 |
 | 2026-07-22 | Nataliia Plokhotniuk vs Alina Ovriakh | under 74.5 | 83 | L | -1.00 |
 | 2026-07-21 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 56 | W | +0.83 |
 | 2026-07-21 | Svitlana Yureneva vs Anhelina Plashchynska | under 74.5 | 50 | W | +0.83 |
