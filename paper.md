@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T13:01:37 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T13:05:35 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 53-31  ·  **P&L:** +15.03u ($+1,503)  ·  **hit 63.1%** (break-even 52.4%)  ·  **Open:** 3
+- **FanDuel-line record:** 53-32  ·  **P&L:** +14.03u ($+1,403)  ·  **hit 62.4%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  112-72  ·  +21.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T13:01:37 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 49 | 33-16 | 67% | +11.50 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 59 | 32-27 | 54% | -0.33 |
-| TT Elite Series | 124 | 78-46 | 63% | +20.94 |
+| TT Elite Series | 125 | 78-47 | 62% | +19.94 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 78-46 · hit 63% · +20.94u (124 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 78-47 · hit 62% · +19.94u (125 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Aleksander Lilien vs Grzegorz Poliniewicz | under 94.5 | 95 | L | -1.00 |
 | 2026-07-22 | Rafal Gajda vs Kacper Adamus | under 122.5 | 120 | W | +0.80 |
 | 2026-07-22 | Artur Szoltysek vs Adrian Myszewski | under 78.5 | 63 | W | +0.87 |
 | 2026-07-22 | Kacper Adamus vs Krzysztof Hetnar | under 83.5 | 61 | W | +0.87 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Oliver Vincenec vs Grzegorz Marud | over 71.5 | 52 | L | -1.00 |
 | 2026-07-21 | Wojciech Gluszek vs Krzysztof Kotyl | under 75.5 | 73 | W | +0.91 |
 | 2026-07-21 | Stanislaw Wnek vs Wojciech Gluszek | under 82.5 | 105 | L | -1.00 |
-| 2026-07-21 | Marian Brunner vs Zbigniew Nocun | over 54.5 | 51 | L | -1.00 |
 
 </details>
 
