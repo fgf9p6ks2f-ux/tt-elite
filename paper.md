@@ -1,14 +1,14 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T19:29:38 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T19:33:19 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 60-34  ·  **P&L:** +18.32u ($+1,832)  ·  **hit 63.8%** (break-even 52.4%)  ·  **Open:** 2
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  115-72  ·  +23.83u  ·  hit 61%
+- **FanDuel-line record:** 60-34  ·  **P&L:** +18.32u ($+1,832)  ·  **hit 63.8%** (break-even 52.4%)  ·  **Open:** 3
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  116-72  ·  +24.67u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
-| Setka Cup | 51 | 35-16 | 69% | +13.17 |
+| Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 60 | 33-27 | 55% | +0.50 |
 | TT Elite Series | 134 | 85-49 | 63% | +24.24 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 35-16 · hit 69% · +13.17u (51 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 36-16 · hit 69% · +14.00u (52 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Ladislav Dobias vs Josef Chalupa | over 74.5 | 83 | W | +0.83 |
 | 2026-07-22 | Ondrej Mezera vs Jakub Senk | over 74.5 | 100 | W | +0.83 |
 | 2026-07-22 | Oleksandr Seliuchenko vs Artem Yurkov | over 74.5 | 93 | W | +0.83 |
 | 2026-07-22 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 96 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
 | 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
-| 2026-07-15 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 
 </details>
 

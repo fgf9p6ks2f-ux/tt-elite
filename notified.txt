@@ -38,6 +38,7 @@ Artur Sobel|Igor Dabrowski|over|1784628600
 Artur Szoltysek|Mariusz Zwolinski|under|1784728500
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
+Bartlomiej Wisniewski|Mikolaj Lukaszewski|over|1784748000
 Bartosz Sulkowski|Kamil Rudomina|over|1784177700
 Bartosz Sulkowski|Kamil Rudomina|over|1784186400
 Blazej Gola|Karol Guzy|under|1783620000
