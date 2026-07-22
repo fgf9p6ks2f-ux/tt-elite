@@ -78,6 +78,7 @@ Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Marud|Oliver Vincenec|over|1784672700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783484700
 Grzegorz Poliniewicz|Jakub Chmielowski|over|1783493400
+Grzegorz Poliniewicz|Jakub Zochniak|over|1784713500
 Grzegorz Poliniewicz|Krzysztof Wloczko|over|1784178900
 Grzegorz Poliniewicz|Krzysztof Wloczko|under|1784187600
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200

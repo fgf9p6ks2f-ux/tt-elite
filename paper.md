@@ -1,14 +1,14 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T09:55:03 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T09:58:21 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 49-31  ·  **P&L:** +11.69u ($+1,169)  ·  **hit 61.3%** (break-even 52.4%)  ·  **Open:** 1
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  110-70  ·  +21.67u  ·  hit 61%
+- **FanDuel-line record:** 49-31  ·  **P&L:** +11.69u ($+1,169)  ·  **hit 61.3%** (break-even 52.4%)  ·  **Open:** 2
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  111-70  ·  +22.50u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 33 | 21-12 | 64% | +5.50 |
-| Setka Cup | 48 | 32-16 | 67% | +10.67 |
+| Setka Cup | 49 | 33-16 | 67% | +11.50 |
 | Setka Women | 14 | 7-7 | 50% | -1.17 |
 | TT Cup | 58 | 32-26 | 55% | +0.67 |
 | TT Elite Series | 120 | 74-46 | 62% | +17.60 |
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 32-16 · hit 67% · +10.67u (48 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 33-16 · hit 67% · +11.50u (49 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 96 | W | +0.83 |
 | 2026-07-22 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 64 | W | +0.83 |
 | 2026-07-22 | Lukas Veigl vs Ladislav Dobias | over 74.5 | 105 | W | +0.83 |
 | 2026-07-22 | Volodymyr Burylov vs Lukas Heinzl | over 74.5 | 72 | L | -1.00 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 62 | W | +0.83 |
 | 2026-07-14 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
 | 2026-07-13 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
-| 2026-07-11 | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
 
 </details>
 
