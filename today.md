@@ -1,6 +1,6 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-22 19:43 UTC_
+_updated 2026-07-22 19:46 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
@@ -8,10 +8,8 @@ Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 367 upcoming fixtures (all leagues) · 248,648 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 4 ACTIONABLE BETS TODAY ===
+=== 2 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
-  Wed 3:00PM MT   Elite·★DEEP Mateusz Rutkowski vs Maciej Kolek            O63.5   73%   73%   45   75.8
-  Wed 5:15PM MT   Elite·★DEEP Mateusz Rutkowski vs Maciej Kolek            O63.5   73%   73%   45   75.8
   Thu 9:30AM MT   LigaPro·shadowRoman Hudeczek vs Michal Chalupa            O≤77.5   72%   77%   26   85.9
   Wed 3:25PM MT   TTCup·shadowMichal Brozek vs David Bochnak              O≤77.5   70%   89%    9   85.9
 
