@@ -91,6 +91,7 @@ Grzegorz Poliniewicz|Krzysztof Wloczko|over|1784178900
 Grzegorz Poliniewicz|Krzysztof Wloczko|under|1784187600
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
+Henryk Tkaczyk|Jacek Zelezik|over|1784763000
 Henryk Tkaczyk|Jacek Zelezik|under|1784747400
 Henryk Tkaczyk|Jakub Skorupa|under|1784399100
 Henryk Tkaczyk|Miroslaw Warzecha|over|1784755800
@@ -146,6 +147,7 @@ Jaroslav Sindler|Patrik Sturma|over|1783683600
 Jaroslaw Rolak|Krzysztof Kotyl|over|1784067000
 Jaroslaw Rolak|Krzysztof Kotyl|over|1784075700
 Jerzy Michalik|Witold Stechly|under|1784535600
+Jerzy Pelka|Lukasz Oracz|over|1784763300
 Jerzy Pelka|Marian Lebek|under|1784276400
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
