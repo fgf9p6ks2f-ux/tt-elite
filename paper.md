@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T19:54:14 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T19:57:59 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 60-34  ·  **P&L:** +18.32u ($+1,832)  ·  **hit 63.8%** (break-even 52.4%)  ·  **Open:** 5
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  116-72  ·  +24.67u  ·  hit 62%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-72  ·  +25.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 60 | 33-27 | 55% | +0.50 |
+| TT Cup | 61 | 34-27 | 56% | +1.33 |
 | TT Elite Series | 134 | 85-49 | 63% | +24.24 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 33-27 · hit 55% · +0.50u (60 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 34-27 · hit 56% · +1.33u (61 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Martin Chmelicek vs Miroslav Cyrus | over 74.5 | 85 | W | +0.83 |
 | 2026-07-22 | Blazej Gola vs Karol Guzy | under 74.5 | 74 | W | +0.83 |
 | 2026-07-22 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 69 | L | -1.00 |
 | 2026-07-22 | Petr Vodal vs Tomas Hnizdil | under 74.5 | 55 | W | +0.83 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Dalibor Velky Jr vs Jan Skvrna | over 74.5 | 70 | L | -1.00 |
 | 2026-07-19 | Jan Skvrna vs Tomas Kindl | over 74.5 | 86 | W | +0.83 |
 | 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
-| 2026-07-19 | Lukas Pour vs Jaroslav Brynych | over 74.5 | 58 | L | -1.00 |
 
 </details>
 
