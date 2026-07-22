@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T21:57:32 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T22:01:04 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 61-37  ·  **P&L:** +16.19u ($+1,619)  ·  **hit 62.2%** (break-even 52.4%)  ·  **Open:** 5
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-72  ·  +25.50u  ·  hit 62%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 61 | 34-27 | 56% | +1.33 |
+| TT Cup | 62 | 34-28 | 55% | +0.33 |
 | TT Elite Series | 138 | 86-52 | 62% | +22.11 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 34-27 · hit 56% · +1.33u (61 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 34-28 · hit 55% · +0.33u (62 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Michal Brozek vs David Bochnak | over 74.5 | 74 | L | -1.00 |
 | 2026-07-22 | Martin Chmelicek vs Miroslav Cyrus | over 74.5 | 85 | W | +0.83 |
 | 2026-07-22 | Blazej Gola vs Karol Guzy | under 74.5 | 74 | W | +0.83 |
 | 2026-07-22 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 69 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Jan Skvrna vs Radek Benes | over 74.5 | 93 | W | +0.83 |
 | 2026-07-19 | Dalibor Velky Jr vs Jan Skvrna | over 74.5 | 70 | L | -1.00 |
 | 2026-07-19 | Jan Skvrna vs Tomas Kindl | over 74.5 | 86 | W | +0.83 |
-| 2026-07-19 | Jan Osmera vs Jean-Baptiste Cousin | over 74.5 | 77 | W | +0.83 |
 
 </details>
 
