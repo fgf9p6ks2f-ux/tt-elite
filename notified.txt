@@ -107,6 +107,7 @@ Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
 Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
+Jakub Skorupa|Marian Brunner|over|1784694000
 Jakub Skorupa|Pawel Chojnacki|under|1784476200
 Jakub Skorupa|Pawel Chojnacki|under|1784504700
 Jakub Volny|Michal Raska|over|1783714200
@@ -167,6 +168,7 @@ Lubos Forman|Milan Smesny|under|1783668600
 Lukasz Oracz|Marian Lebek|under|1784169900
 Lukasz Oracz|Oliver Vincenec|under|1784176200
 Lukasz Oracz|Oliver Vincenec|under|1784176800
+Lukasz Oracz|Oliver Vincenec|under|1784695800
 Lukasz Oracz|Patryk Mecik|over|1784188800
 Maciej Nowalinski|Tibor Spanik|under|1784536200
 Maciej Nowalinski|Tibor Spanik|under|1784550600
