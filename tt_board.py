@@ -75,7 +75,7 @@ def tracker():
     con = sqlite3.connect(DB)
     # the 80-90-UNDER LEAK (loss profile 2026-07-21): SHADOWED — still graded, but excluded from the
     # headline/pending/recent (we don't bet it). Tracked separately in `filtered` to validate forward.
-    FILT = "AND NOT (side='under' AND line >= 80 AND line < 90)"
+    FILT = "AND NOT (side='under' AND line >= 80 AND line < 90) AND n >= 15"  # +thin-H2H(<15) leak
     rows = con.execute(
         "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') "
         f"AND league='TT Elite Series' AND odds IS NOT NULL {FILT} AND flagged_at >= ?",
