@@ -151,6 +151,7 @@ Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Kamil Klocek|Michal Skorski|over|1784247000
 Kamil Rudomina|Michal Minda|under|1784709000
 Kamil Smolka|Rafal Gajda|over|1784724300
+Kamil Smolka|Rafal Gajda|under|1784724300
 Karol Guzy|Krzysztof Zapala|over|1783542600
 Karol Guzy|Krzysztof Zapala|over|1783708200
 Karol Sulkowski|Michal Minda|over|1783742400
