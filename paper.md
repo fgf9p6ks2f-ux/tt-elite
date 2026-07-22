@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T04:28:27 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T04:31:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 42-26  ·  **P&L:** +10.84u ($+1,084)  ·  **hit 61.8%** (break-even 52.4%)  ·  **Open:** 3
+- **FanDuel-line record:** 42-27  ·  **P&L:** +9.84u ($+984)  ·  **hit 60.9%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  104-67  ·  +19.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T04:28:27 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 45 | 30-15 | 67% | +10.00 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
 | TT Cup | 54 | 29-25 | 54% | -0.83 |
-| TT Elite Series | 108 | 67-41 | 62% | +16.76 |
+| TT Elite Series | 109 | 67-42 | 61% | +15.76 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 67-41 · hit 62% · +16.76u (108 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 67-42 · hit 61% · +15.76u (109 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Karol Wisniewski vs Josef Braun | over 66.5 | 53 | L | -1.00 |
 | 2026-07-22 | Oliver Vincenec vs Grzegorz Marud | over 71.5 | 52 | L | -1.00 |
 | 2026-07-21 | Wojciech Gluszek vs Krzysztof Kotyl | under 75.5 | 73 | W | +0.91 |
 | 2026-07-21 | Stanislaw Wnek vs Wojciech Gluszek | under 82.5 | 105 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Pawel Adamus vs Oliver Vincenec | over 78.5 | 76 | L | -1.00 |
 | 2026-07-20 | Jakub Chmielowski vs Krystian Kolodziej | over 60.5 | 52 | L | -1.00 |
 | 2026-07-20 | Witold Stechly vs Jerzy Michalik | under 98.5 | 101 | L | -1.00 |
-| 2026-07-20 | Tibor Spanik vs Maciej Nowalinski | under 79.5 | 79 | W | +0.86 |
 
 </details>
 
