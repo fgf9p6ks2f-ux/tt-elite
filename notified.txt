@@ -157,6 +157,7 @@ Krystian Kolodziej|Krzysztof Kapik|over|1783524300
 Krystian Kolodziej|Krzysztof Kapik|over|1783965900
 Krystian Kolodziej|Szymon Sporek|over|1783521300
 Krystian Kolodziej|Szymon Sporek|over|1783539600
+Krzysztof Hetnar|Rafal Gajda|over|1784706900
 Krzysztof Kapik|Szymon Sporek|over|1783533900
 Krzysztof Kotyl|Piotr Staniszewski|over|1783713900
 Krzysztof Kotyl|Wojciech Gluszek|under|1784670300
