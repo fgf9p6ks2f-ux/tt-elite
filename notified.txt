@@ -133,6 +133,7 @@ Jerzy Pelka|Marian Lebek|under|1784276400
 Jiri Ruzicka|Martin Huk|over|1783438200
 Jiri Ruzicka|Michal Zahradka|over|1783420200
 Jiri Ruzicka|Michal Zahradka|over|1783506600
+Josef Braun|Karol Wisniewski|over|1784691900
 Josef Braun|Patrik Klos|over|1784173500
 Kacper Adamus|Marian Lebek|under|1783634400
 Kacper Adamus|Rafal Gajda|over|1783488600
