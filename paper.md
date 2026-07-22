@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T16:58:25 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T17:02:04 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 56-33  ·  **P&L:** +15.76u ($+1,576)  ·  **hit 62.9%** (break-even 52.4%)  ·  **Open:** 1
+- **FanDuel-line record:** 57-33  ·  **P&L:** +16.67u ($+1,667)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  115-72  ·  +23.83u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T16:58:25 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 51 | 35-16 | 69% | +13.17 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 60 | 33-27 | 55% | +0.50 |
-| TT Elite Series | 129 | 81-48 | 63% | +21.67 |
+| TT Elite Series | 130 | 82-48 | 63% | +22.58 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 81-48 · hit 63% · +21.67u (129 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 82-48 · hit 63% · +22.58u (130 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Sebastian Juzek vs Krzysztof Hetnar | under 74.5 | 55 | W | +0.91 |
 | 2026-07-22 | Pawel Kurek vs Mariusz Koczyba | under 79.5 | 77 | W | +0.87 |
 | 2026-07-22 | Mariusz Zwolinski vs Artur Szoltysek | under 95.5 | 101 | L | -1.00 |
 | 2026-07-22 | Piotr Gumulinski vs Jakub Kaczmarek | over 68.5 | 93 | W | +0.95 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Sebastian Juzek vs Kacper Adamus | over 60.5 | 59 | L | -1.00 |
 | 2026-07-22 | Oliver Vincenec vs Lukasz Oracz | under 79.5 | 64 | W | +0.86 |
 | 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 79 | W | +0.83 |
-| 2026-07-22 | Jakub Skorupa vs Marian Brunner | over 57.5 | 46 | L | -1.00 |
 
 </details>
 
