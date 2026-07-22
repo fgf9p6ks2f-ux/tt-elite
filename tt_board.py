@@ -288,6 +288,7 @@ def build():
             "rec": f"{w}-{b['n'] - w}", "n": b["n"], "avg": round(b["avg"], 1),
             "ts": b["ts"], "u": round(kelly_units(b["hit"]), 1),
             "tier": b.get("tier") or "",
+            "deep": bool(b.get("deep")),   # ★ deep-rivalry (>=40 H2H) higher-conviction flag
             "ladder": lad,
             "play_to": pt,
             "book": book,               # actual bmbets main line + soft price (None if no odds yet)
