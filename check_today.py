@@ -96,6 +96,10 @@ def all_fixtures():
 
 ELITE_HIT_THR = 0.70    # flag a side only if the pair hits it >=70% of the time AT the FanDuel line
 ELITE_MIN_N = 12        # ...over at least this many H2H meetings (guards against small-sample noise)
+ELITE_MIN_N_BET = 15    # ...but only BET pairs with >=15 H2H. Loss diagnosis 2026-07-22: the 12-14
+                        # bucket went 4-9 / -43% at real FanDuel lines (thin pair-history = unreliable
+                        # RAW rate; thin-H2H OVERS were 0-5). 12-14 stay logged+graded for forward
+                        # validation, just skipped like the 80-90u leak (never alerted/bet/counted).
 
 
 def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
@@ -126,7 +130,9 @@ def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
     # grind), so unders on 80-90 lines get blown out when a match goes long — 6-9/-4.0u, avg margin
     # -3.8 (genuinely wrong side, not variance). SKIP it: still logged+graded (forward validation) but
     # never alerted/bet, and excluded from the headline record (tt_board tracker). Keep tracking.
-    if side == "under" and 80.0 <= line < 90.0:
+    if n < ELITE_MIN_N_BET:                          # thin H2H (12-14): fwd 4-9/-43%, sample too small
+        b["skip_bet"] = "thin_h2h"
+    elif side == "under" and 80.0 <= line < 90.0:
         b["skip_bet"] = "u80_90"
     return b
 
