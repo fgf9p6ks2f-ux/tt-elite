@@ -188,6 +188,8 @@ Lukasz Oracz|Oliver Vincenec|under|1784176200
 Lukasz Oracz|Oliver Vincenec|under|1784176800
 Lukasz Oracz|Oliver Vincenec|under|1784695800
 Lukasz Oracz|Patryk Mecik|over|1784188800
+Maciej Kolek|Mateusz Rutkowski|over|1784754000
+Maciej Kolek|Mateusz Rutkowski|over|1784762100
 Maciej Nowalinski|Tibor Spanik|under|1784536200
 Maciej Nowalinski|Tibor Spanik|under|1784550600
 Maksymilian Rus|Rafal Gajda|over|1783426800
