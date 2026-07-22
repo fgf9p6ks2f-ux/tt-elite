@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T20:01:13 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T20:04:22 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 60-34  ·  **P&L:** +18.32u ($+1,832)  ·  **hit 63.8%** (break-even 52.4%)  ·  **Open:** 5
+- **FanDuel-line record:** 60-36  ·  **P&L:** +16.32u ($+1,632)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 3
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-72  ·  +25.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-22T20:01:13 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 61 | 34-27 | 56% | +1.33 |
-| TT Elite Series | 134 | 85-49 | 63% | +24.24 |
+| TT Elite Series | 136 | 85-51 | 62% | +22.24 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 85-49 · hit 63% · +24.24u (134 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 85-51 · hit 62% · +22.24u (136 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Mikolaj Lukaszewski vs Bartlomiej Wisniewski | over 56.5 | 56 | L | -1.00 |
+| 2026-07-22 | Henryk Tkaczyk vs Jacek Zelezik | under 81.5 | 90 | L | -1.00 |
 | 2026-07-22 | Zbigniew Nocun vs Henryk Tkaczyk | over 68.5 | 69 | W | +0.95 |
 | 2026-07-22 | Adrian Fabis vs Mikolaj Lukaszewski | under 94.5 | 98 | L | -1.00 |
 | 2026-07-22 | Miroslaw Warzecha vs Jacek Zelezik | under 73.5 | 51 | W | +0.83 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Grzegorz Adamiak vs Maciej Nowalinski | over 64.5 | 55 | L | -1.00 |
 | 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 75 | W | +0.83 |
 | 2026-07-22 | Kamil Smolka vs Kacper Adamus | under 87.5 | 67 | W | +0.87 |
-| 2026-07-22 | Kamil Rudomina vs Michal Minda | under 94.5 | 94 | W | +0.74 |
-| 2026-07-22 | Wojciech Urban vs Oliver Vincenec | under 81.5 | 93 | L | -1.00 |
 
 </details>
 
