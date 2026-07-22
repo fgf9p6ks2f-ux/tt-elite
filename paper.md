@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T23:03:36 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T23:06:49 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 63-39  ·  **P&L:** +15.97u ($+1,597)  ·  **hit 61.8%** (break-even 52.4%)  ·  **Open:** 6
+- **FanDuel-line record:** 64-39  ·  **P&L:** +16.77u ($+1,677)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T23:03:36 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 142 | 88-54 | 62% | +21.89 |
+| TT Elite Series | 143 | 89-54 | 62% | +22.69 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 88-54 · hit 62% · +21.89u (142 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 89-54 · hit 62% · +22.69u (143 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Zbigniew Nocun vs Jacek Zelezik | under 88.5 | 71 | W | +0.80 |
 | 2026-07-22 | Andriej Fomin vs Adam Staniczek | under 99.5 | 85 | W | +0.87 |
 | 2026-07-22 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 96 | L | -1.00 |
 | 2026-07-22 | Jerzy Pelka vs Marian Lebek | under 84.5 | 67 | W | +0.91 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Kamil Smolka vs Rafal Gajda | over 75.5 | 95 | W | +0.91 |
 | 2026-07-22 | Aleksander Lilien vs Grzegorz Poliniewicz | under 94.5 | 95 | L | -1.00 |
 | 2026-07-22 | Rafal Gajda vs Kacper Adamus | under 122.5 | 120 | W | +0.80 |
-| 2026-07-22 | Artur Szoltysek vs Adrian Myszewski | under 78.5 | 63 | W | +0.87 |
 
 </details>
 
