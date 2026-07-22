@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T14:38:19 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T14:42:02 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 55-32  ·  **P&L:** +15.89u ($+1,589)  ·  **hit 63.2%** (break-even 52.4%)  ·  **Open:** 1
+- **FanDuel-line record:** 55-33  ·  **P&L:** +14.89u ($+1,489)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  114-72  ·  +23.00u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T14:38:19 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 51 | 35-16 | 69% | +13.17 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 59 | 32-27 | 54% | -0.33 |
-| TT Elite Series | 127 | 80-47 | 63% | +21.80 |
+| TT Elite Series | 128 | 80-48 | 62% | +20.80 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 80-47 · hit 63% · +21.80u (127 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 80-48 · hit 62% · +20.80u (128 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Mariusz Zwolinski vs Artur Szoltysek | under 95.5 | 101 | L | -1.00 |
 | 2026-07-22 | Piotr Gumulinski vs Jakub Kaczmarek | over 68.5 | 93 | W | +0.95 |
 | 2026-07-22 | Kamil Smolka vs Rafal Gajda | over 75.5 | 95 | W | +0.91 |
 | 2026-07-22 | Aleksander Lilien vs Grzegorz Poliniewicz | under 94.5 | 95 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 79 | W | +0.83 |
 | 2026-07-22 | Jakub Skorupa vs Marian Brunner | over 57.5 | 46 | L | -1.00 |
 | 2026-07-22 | Karol Wisniewski vs Josef Braun | over 66.5 | 53 | L | -1.00 |
-| 2026-07-22 | Oliver Vincenec vs Grzegorz Marud | over 71.5 | 52 | L | -1.00 |
 
 </details>
 
