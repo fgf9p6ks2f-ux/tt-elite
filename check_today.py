@@ -62,6 +62,8 @@ def write_alerts(bets, line):
             continue
         seen.add(key)
         tag = TAG.get(b["league"], b["league"])
+        if b.get("deep"):
+            tag = "★" + tag                             # deep rivalry (>=40 H2H) — higher conviction
         if b.get("tier") == "volume":
             tag += "·VOL"                               # thin-margin volume tier — optional
         w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
@@ -100,6 +102,9 @@ ELITE_MIN_N_BET = 15    # ...but only BET pairs with >=15 H2H. Loss diagnosis 20
                         # bucket went 4-9 / -43% at real FanDuel lines (thin pair-history = unreliable
                         # RAW rate; thin-H2H OVERS were 0-5). 12-14 stay logged+graded for forward
                         # validation, just skipped like the 80-90u leak (never alerted/bet/counted).
+DEEP_RIVALRY_N = 40     # ★ higher-conviction TAG (NOT a filter — volume unchanged): pairs with >=40
+                        # H2H meetings hit ~77-84% at real FD lines (deep sample = very stable pattern;
+                        # 2026-07-22 threshold sweep). Marked ★DEEP on alerts/board, still normal bets.
 
 
 def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
@@ -125,7 +130,8 @@ def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
          "ts": int(ts) if ts else 0, "league": ELITE, "mid": mid,
          "line": line, "odds": odds, "edge": None,
          "totals": totals, "tier": tier,
-         "zone": f"{'O' if side == 'over' else 'U'}{line:g}"}
+         "zone": f"{'O' if side == 'over' else 'U'}{line:g}",
+         "deep": n >= DEEP_RIVALRY_N}
     # 80-90-UNDER LEAK (loss profile 2026-07-21): TT totals are BIMODAL (quick sweep vs deciding-game
     # grind), so unders on 80-90 lines get blown out when a match goes long — 6-9/-4.0u, avg margin
     # -3.8 (genuinely wrong side, not variance). SKIP it: still logged+graded (forward validation) but
@@ -229,7 +235,8 @@ def main():
           f"{'n':>5}{'avg':>7}")
     for b in bets:
         tag = TAG.get(b["league"], b["league"]) + ("·shadow" if b.get("tier") == "shadow" else "") \
-            + ("·SKIP(80-90u leak)" if b.get("skip_bet") else "")
+            + ("·SKIP(80-90u leak)" if b.get("skip_bet") else "") \
+            + ("·★DEEP" if b.get("deep") else "")
         print(f"  {b['when']:<16}{tag:<12}"
               f"{b['p1']+' vs '+b['p2']:<42}{b['zone']:>8}"
               f"{b['hit']*100:>5.0f}%{b['raw']*100:>5.0f}%{b['n']:>5}{b['avg']:>7.1f}")
