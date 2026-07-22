@@ -96,6 +96,7 @@ Jacek Oracz|Michal Machelski|under|1783818600
 Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jacek Wieczerzak|Rafal Glica|over|1784379900
+Jacek Zelezik|Miroslaw Warzecha|under|1784741400
 Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Chmielowski|Krystian Kolodziej|over|1784543400
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
