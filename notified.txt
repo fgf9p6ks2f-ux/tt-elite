@@ -14,6 +14,7 @@ Adrian Wiecek|Jakub Kosowski|under|1784612400
 Adrian Wiecek|Jakub Kosowski|under|1784628000
 Adrian Wiecek|Josef Braun|over|1784180400
 Adrian Wiecek|Josef Braun|over|1784196000
+Aleksander Lilien|Grzegorz Poliniewicz|under|1784723700
 Ales Barton|Jan Kanera|over|1783839600
 Anastasiia Hordynska-Sheiko|Viktoria Shevchuk|under|1783789500
 Anastasiia Volgina|Ksenia Tymchenko|under|1783692300
@@ -149,6 +150,7 @@ Kacper Adamus|Sebastian Juzek|over|1784705400
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Kamil Klocek|Michal Skorski|over|1784247000
 Kamil Rudomina|Michal Minda|under|1784709000
+Kamil Smolka|Rafal Gajda|over|1784724300
 Karol Guzy|Krzysztof Zapala|over|1783542600
 Karol Guzy|Krzysztof Zapala|over|1783708200
 Karol Sulkowski|Michal Minda|over|1783742400
