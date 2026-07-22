@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T10:29:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T10:32:58 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 49-31  ·  **P&L:** +11.69u ($+1,169)  ·  **hit 61.3%** (break-even 52.4%)  ·  **Open:** 3
+- **FanDuel-line record:** 51-31  ·  **P&L:** +13.36u ($+1,336)  ·  **hit 62.2%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  112-71  ·  +22.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-22T10:29:51 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 49 | 33-16 | 67% | +11.50 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 58 | 32-26 | 55% | +0.67 |
-| TT Elite Series | 120 | 74-46 | 62% | +17.60 |
+| TT Elite Series | 122 | 76-46 | 62% | +19.27 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 74-46 · hit 62% · +17.60u (120 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 76-46 · hit 62% · +19.27u (122 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Kacper Adamus vs Krzysztof Hetnar | under 83.5 | 61 | W | +0.87 |
+| 2026-07-22 | Grzegorz Poliniewicz vs Jakub Zochniak | over 51.5 | 102 | W | +0.80 |
 | 2026-07-22 | Rafal Gajda vs Sebastian Juzek | over 57.5 | 69 | W | +0.87 |
 | 2026-07-22 | Grzegorz Adamiak vs Maciej Nowalinski | over 64.5 | 55 | L | -1.00 |
 | 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 75 | W | +0.83 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-21 | Marian Brunner vs Zbigniew Nocun | over 54.5 | 51 | L | -1.00 |
 | 2026-07-21 | Martin Olejnik vs Krzysztof Wloczko | under 73.5 | 87 | L | -1.00 |
 | 2026-07-21 | Maksymilian Rus vs Rafal Gajda | over 74.5 | 66 | L | -1.00 |
-| 2026-07-21 | Rafal Gajda vs Maksymilian Rus | over 74.5 | 98 | W | +0.87 |
-| 2026-07-21 | Artur Sobel vs Igor Dabrowski | over 48.5 | 46 | L | -1.00 |
 
 </details>
 
