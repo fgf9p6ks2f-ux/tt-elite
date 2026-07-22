@@ -122,6 +122,7 @@ Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
 Jakub Skorupa|Marian Brunner|over|1784694000
 Jakub Skorupa|Pawel Chojnacki|under|1784476200
 Jakub Skorupa|Pawel Chojnacki|under|1784504700
+Jakub Skorupa|Pawel Chojnacki|under|1784765400
 Jakub Volny|Michal Raska|over|1783714200
 Jakub Volny|Michal Raska|over|1783716000
 Jakub Zochniak|Kamil Rudomina|over|1784172300
