@@ -33,6 +33,7 @@ Artur Kubiak|Jacek Oracz|under|1784400300
 Artur Kubiak|Michal Wolny|under|1784332800
 Artur Sobel|Igor Dabrowski|over|1784604300
 Artur Sobel|Igor Dabrowski|over|1784628600
+Artur Szoltysek|Mariusz Zwolinski|under|1784728500
 Bartlomiej Molka|Jan Masternak|over|1783573200
 Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
 Bartosz Sulkowski|Kamil Rudomina|over|1784177700
