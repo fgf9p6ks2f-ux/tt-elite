@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T06:50:22 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T06:53:46 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 42-27  ·  **P&L:** +9.84u ($+984)  ·  **hit 60.9%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  104-67  ·  +19.67u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  105-69  ·  +18.50u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 32 | 20-12 | 62% | +4.67 |
-| Setka Cup | 45 | 30-15 | 67% | +10.00 |
+| Setka Cup | 46 | 30-16 | 65% | +9.00 |
 | Setka Women | 13 | 7-6 | 54% | -0.17 |
-| TT Cup | 54 | 29-25 | 54% | -0.83 |
+| TT Cup | 56 | 30-26 | 54% | -1.00 |
 | TT Elite Series | 109 | 67-42 | 61% | +15.76 |
 
 ### recent settled — by league
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 30-15 · hit 67% · +10.00u (45 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 30-16 · hit 65% · +9.00u (46 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Volodymyr Burylov vs Lukas Heinzl | over 74.5 | 72 | L | -1.00 |
 | 2026-07-21 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 58 | W | +0.83 |
 | 2026-07-21 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 46 | W | +0.83 |
 | 2026-07-20 | Artem Yurkov vs Vladyslav Mishchenko | over 74.5 | 78 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-11 | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
 | 2026-07-11 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
 | 2026-07-10 | Artem Yurkov vs Vladimir Voronenko | over 74.5 | 103 | W | +0.83 |
-| 2026-07-10 | Lukas Provaznik vs Libor Smazik | over 74.5 | 58 | L | -1.00 |
 
 </details>
 
@@ -118,10 +118,12 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 29-25 · hit 54% · -0.83u (54 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 30-26 · hit 54% · -1.00u (56 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
+| 2026-07-22 | Jan Skvrna vs Bruno Mrowetz | over 74.5 | 87 | W | +0.83 |
 | 2026-07-21 | Filip Marat vs Milan Tlusty | over 74.5 | 90 | W | +0.83 |
 | 2026-07-21 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 73 | L | -1.00 |
 | 2026-07-21 | Jan Vidourek vs Richard Vavricka | over 74.5 | 99 | W | +0.83 |
@@ -140,8 +142,6 @@ _click a league to expand its bets_
 | 2026-07-19 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 83 | W | +0.83 |
 | 2026-07-18 | Karol Guzy vs Krzysztof Zapala | over 74.5 | 66 | L | -1.00 |
 | 2026-07-18 | Radek Benes vs Dalibor Velky Jr | over 74.5 | 91 | W | +0.83 |
-| 2026-07-18 | Christian Kratochvil vs Jaroslav Dohnal | over 74.5 | 97 | W | +0.83 |
-| 2026-07-17 | Krzysztof Zapala vs Karol Guzy | over 74.5 | 76 | W | +0.83 |
 
 </details>
 
