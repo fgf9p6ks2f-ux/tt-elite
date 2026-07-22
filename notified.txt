@@ -2,6 +2,7 @@ Adam Kral|Milan Tlusty|over|1783787100
 Adam Linek|Aleksander Lilien|under|1784473200
 Adam Linek|Maciej Kolek|under|1784351700
 Adam Ruszkiewicz|Marian Lebek|under|1784470800
+Adam Staniczek|Andriej Fomin|under|1784758200
 Adam Staniczek|Jerzy Michalik|over|1784766900
 Adam Staniczek|Pawel Chojnacki|under|1784233200
 Adam Staniczek|Pawel Chojnacki|under|1784247600
