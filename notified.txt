@@ -188,6 +188,7 @@ Lukasz Oracz|Marian Lebek|under|1784169900
 Lukasz Oracz|Oliver Vincenec|under|1784176200
 Lukasz Oracz|Oliver Vincenec|under|1784176800
 Lukasz Oracz|Oliver Vincenec|under|1784695800
+Lukasz Oracz|Oliver Vincenec|under|1784754600
 Lukasz Oracz|Patryk Mecik|over|1784188800
 Maciej Kolek|Mateusz Rutkowski|over|1784754000
 Maciej Kolek|Mateusz Rutkowski|over|1784762100
