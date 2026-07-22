@@ -1,15 +1,15 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T07:54:13 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T07:57:55 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 44-28  ·  **P&L:** +10.54u ($+1,054)  ·  **hit 61.1%** (break-even 52.4%)  ·  **Open:** 3
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  107-69  ·  +20.17u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  109-70  ·  +20.83u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 32 | 20-12 | 62% | +4.67 |
-| Setka Cup | 47 | 31-16 | 66% | +9.83 |
-| Setka Women | 13 | 7-6 | 54% | -0.17 |
+| Czech Liga Pro | 33 | 21-12 | 64% | +5.50 |
+| Setka Cup | 48 | 32-16 | 67% | +10.67 |
+| Setka Women | 14 | 7-7 | 50% | -1.17 |
 | TT Cup | 57 | 31-26 | 54% | -0.17 |
 | TT Elite Series | 112 | 69-43 | 62% | +16.46 |
 
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 31-16 · hit 66% · +9.83u (47 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 32-16 · hit 67% · +10.67u (48 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 64 | W | +0.83 |
 | 2026-07-22 | Lukas Veigl vs Ladislav Dobias | over 74.5 | 105 | W | +0.83 |
 | 2026-07-22 | Volodymyr Burylov vs Lukas Heinzl | over 74.5 | 72 | L | -1.00 |
 | 2026-07-21 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 58 | W | +0.83 |
@@ -67,14 +68,14 @@ _click a league to expand its bets_
 | 2026-07-14 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 68 | W | +0.83 |
 | 2026-07-13 | Serhii Chuhai vs Dmitro Kuzmenko | under 74.5 | 57 | W | +0.83 |
 | 2026-07-11 | Serhii Berezynskyi vs Oleh Napirko | under 74.5 | 74 | W | +0.83 |
-| 2026-07-11 | Serhii Kushnirenko vs Serhii Ponomarenko | under 74.5 | 71 | W | +0.83 |
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 20-12 · hit 62% · +4.67u (32 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 21-12 · hit 64% · +5.50u (33 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Adrian Walek vs Richard Skacelik | over 74.5 | 76 | W | +0.83 |
 | 2026-07-21 | Dominik Oborny vs Tomas Milota | over 74.5 | 77 | W | +0.83 |
 | 2026-07-20 | Jiri Grohsgott vs Jan Potensky | under 74.5 | 64 | W | +0.83 |
 | 2026-07-20 | Josef Pelikan vs Vladimir Svoboda | under 74.5 | 54 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-12 | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
 | 2026-07-12 | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 | 2026-07-11 | Daniel Priesol vs Radim Kvasnicka | over 74.5 | 76 | W | +0.83 |
-| 2026-07-11 | Michal Vavrecka vs Michal Cabis | over 74.5 | 70 | L | -1.00 |
 
 </details>
 
@@ -125,10 +125,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Women</b> &mdash; 7-6 · hit 54% · -0.17u (13 settled)</summary>
+<details><summary><b>Setka Women</b> &mdash; 7-7 · hit 50% · -1.17u (14 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Nataliia Plokhotniuk vs Alina Ovriakh | under 74.5 | 83 | L | -1.00 |
 | 2026-07-21 | Yana Mykhailyk vs Anhelina Plashchynska | under 74.5 | 56 | W | +0.83 |
 | 2026-07-21 | Svitlana Yureneva vs Anhelina Plashchynska | under 74.5 | 50 | W | +0.83 |
 | 2026-07-18 | Kateryna Bondarenko vs Anastasiia Volgina | over 74.5 | 87 | W | +0.83 |
