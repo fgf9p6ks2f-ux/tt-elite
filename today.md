@@ -1,15 +1,17 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-22 21:43 UTC_
+_updated 2026-07-22 21:47 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-348 upcoming fixtures (all leagues) · 248,728 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+348 upcoming fixtures (all leagues) · 248,728 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
 
-=== 1 ACTIONABLE BETS TODAY ===
+=== 3 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
+  Wed 3:30PM MT   Elite       Miroslaw Warzecha vs Henryk Tkaczyk          O53.5   86%   86%   28   71.5
+  Wed 3:35PM MT   Elite·SKIP(80-90u leak)Jerzy Pelka vs Marian Lebek                  U84.5   85%   85%   13   68.3
   Thu 9:30AM MT   LigaPro·shadowRoman Hudeczek vs Michal Chalupa            O≤77.5   72%   77%   26   85.9
 
 'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.

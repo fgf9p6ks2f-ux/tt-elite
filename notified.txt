@@ -91,6 +91,7 @@ Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
 Henryk Tkaczyk|Jacek Zelezik|under|1784747400
 Henryk Tkaczyk|Jakub Skorupa|under|1784399100
+Henryk Tkaczyk|Miroslaw Warzecha|over|1784755800
 Henryk Tkaczyk|Zbigniew Nocun|over|1784744400
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
