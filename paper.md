@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T09:03:40 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T09:07:05 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 45-30  ·  **P&L:** +9.37u ($+937)  ·  **hit 60.0%** (break-even 52.4%)  ·  **Open:** 4
+- **FanDuel-line record:** 47-30  ·  **P&L:** +10.98u ($+1,098)  ·  **hit 61.0%** (break-even 52.4%)  ·  **Open:** 2
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  110-70  ·  +21.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-22T09:03:40 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 48 | 32-16 | 67% | +10.67 |
 | Setka Women | 14 | 7-7 | 50% | -1.17 |
 | TT Cup | 58 | 32-26 | 55% | +0.67 |
-| TT Elite Series | 115 | 70-45 | 61% | +15.29 |
+| TT Elite Series | 117 | 72-45 | 62% | +16.90 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 70-45 · hit 61% · +15.29u (115 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 72-45 · hit 62% · +16.90u (117 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Kamil Smolka vs Kacper Adamus | under 87.5 | 67 | W | +0.87 |
+| 2026-07-22 | Kamil Rudomina vs Michal Minda | under 94.5 | 94 | W | +0.74 |
 | 2026-07-22 | Wojciech Urban vs Oliver Vincenec | under 81.5 | 93 | L | -1.00 |
 | 2026-07-22 | Rafal Gajda vs Krzysztof Hetnar | over 69.5 | 90 | W | +0.83 |
 | 2026-07-22 | Sebastian Juzek vs Kacper Adamus | over 60.5 | 59 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-21 | Adrian Wiecek vs Jakub Kosowski | under 84.5 | 69 | W | +0.86 |
 | 2026-07-21 | Jakub Kosowski vs Martin Olejnik | under 90.5 | 53 | W | +0.91 |
 | 2026-07-21 | Jakub Kosowski vs Adrian Wiecek | under 84.5 | 110 | L | -1.00 |
-| 2026-07-21 | Igor Dabrowski vs Artur Sobel | over 48.5 | 93 | W | +0.91 |
-| 2026-07-21 | Jakub Kosowski vs Martin Olejnik | under 90.5 | 73 | W | +0.91 |
 
 </details>
 
