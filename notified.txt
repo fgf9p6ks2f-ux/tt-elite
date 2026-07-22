@@ -2,6 +2,7 @@ Adam Kral|Milan Tlusty|over|1783787100
 Adam Linek|Aleksander Lilien|under|1784473200
 Adam Linek|Maciej Kolek|under|1784351700
 Adam Ruszkiewicz|Marian Lebek|under|1784470800
+Adam Staniczek|Jerzy Michalik|over|1784766900
 Adam Staniczek|Pawel Chojnacki|under|1784233200
 Adam Staniczek|Pawel Chojnacki|under|1784247600
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
@@ -88,6 +89,7 @@ Grzegorz Poliniewicz|Krzysztof Wloczko|under|1784187600
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
 Henryk Tkaczyk|Jakub Skorupa|under|1784399100
+Henryk Tkaczyk|Zbigniew Nocun|over|1784744400
 Ihor Torhachov|Serhii Priadko|over|1783522800
 Ivan Fashchevskyi|Mykhailo Potapov|over|1783529700
 Jacek Oracz|Lukasz Pyda|under|1783787100
