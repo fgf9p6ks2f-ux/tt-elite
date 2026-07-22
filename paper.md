@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-22T17:30:38 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-22T17:34:03 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 57-33  ·  **P&L:** +16.67u ($+1,667)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 1
+- **FanDuel-line record:** 58-33  ·  **P&L:** +17.53u ($+1,753)  ·  **hit 63.7%** (break-even 52.4%)  ·  **Open:** 0
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  115-72  ·  +23.83u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-22T17:30:38 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 51 | 35-16 | 69% | +13.17 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 60 | 33-27 | 55% | +0.50 |
-| TT Elite Series | 130 | 82-48 | 63% | +22.58 |
+| TT Elite Series | 131 | 83-48 | 63% | +23.45 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 82-48 · hit 63% · +22.58u (130 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 83-48 · hit 63% · +23.45u (131 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-22 | Kamil Smolka vs Kacper Adamus | under 88.5 | 76 | W | +0.87 |
 | 2026-07-22 | Sebastian Juzek vs Krzysztof Hetnar | under 74.5 | 55 | W | +0.91 |
 | 2026-07-22 | Pawel Kurek vs Mariusz Koczyba | under 79.5 | 77 | W | +0.87 |
 | 2026-07-22 | Mariusz Zwolinski vs Artur Szoltysek | under 95.5 | 101 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Rafal Gajda vs Krzysztof Hetnar | over 69.5 | 90 | W | +0.83 |
 | 2026-07-22 | Sebastian Juzek vs Kacper Adamus | over 60.5 | 59 | L | -1.00 |
 | 2026-07-22 | Oliver Vincenec vs Lukasz Oracz | under 79.5 | 64 | W | +0.86 |
-| 2026-07-22 | Josef Braun vs Krzysztof Wloczko | under 88.5 | 79 | W | +0.83 |
 
 </details>
 
