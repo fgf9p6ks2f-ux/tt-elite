@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T13:59:46 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T14:03:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 88-62  ·  **P&L:** +14.61u ($+1,461)  ·  **hit 58.7%** (break-even 52.4%)  ·  **Open:** 7
+- **FanDuel-line record:** 89-63  ·  **P&L:** +14.46u ($+1,446)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-76  ·  +22.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T13:59:46 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 66 | 35-31 | 53% | -1.83 |
-| TT Elite Series | 190 | 113-77 | 59% | +20.53 |
+| TT Elite Series | 192 | 114-78 | 59% | +20.38 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 113-77 · hit 59% · +20.53u (190 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 114-78 · hit 59% · +20.38u (192 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 75 | W | +0.85 |
+| 2026-07-23 | Grzegorz Felkel vs Grzegorz Adamiak | under 69.5 | 92 | L | -1.00 |
 | 2026-07-23 | Michal Minda vs Grzegorz Poliniewicz | over 64.5 | 64 | L | -1.00 |
 | 2026-07-23 | Piotr Gumulinski vs Mariusz Adamus | under 91.5 | 88 | W | +1.00 |
 | 2026-07-23 | Karol Sulkowski vs Igor Dabrowski | under 86.5 | 83 | W | +0.95 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Aleksander Lilien vs Jakub Zochniak | under 91.5 | 92 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Adrian Burkacki | under 80.5 | 85 | L | -1.00 |
 | 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 71.5 | 84 | W | +0.87 |
-| 2026-07-23 | Oliver Vincenec vs Lukasz Oracz | under 79.5 | 71 | W | +0.85 |
-| 2026-07-23 | Zbigniew Nocun vs Jacek Zelezik | under 83.5 | 70 | W | +0.91 |
 
 </details>
 
