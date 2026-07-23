@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T04:01:30 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T04:05:42 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 73-52  ·  **P&L:** +11.54u ($+1,154)  ·  **hit 58.4%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 74-54  ·  **P&L:** +10.40u ($+1,040)  ·  **hit 57.8%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,19 @@ _2026-07-23T04:01:30 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 165 | 98-67 | 59% | +17.45 |
+| TT Elite Series | 168 | 99-69 | 59% | +16.32 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 98-67 · hit 59% · +17.45u (165 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 99-69 · hit 59% · +16.32u (168 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Jakub Kaczmarek vs Marian Lebek | over 55.5 | 52 | L | -1.00 |
+| 2026-07-23 | Henryk Tkaczyk vs Miroslaw Warzecha | under 86.5 | 72 | W | +0.87 |
+| 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 73.5 | 69 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Lukasz Oracz | under 83.5 | 80 | W | +0.87 |
 | 2026-07-23 | Witold Stechly vs Zbigniew Nocun | under 82.5 | 86 | L | -1.00 |
 | 2026-07-23 | Igor Dabrowski vs Kamil Rudomina | under 96.5 | 97 | L | -1.00 |
@@ -38,9 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 95 | L | -1.00 |
 | 2026-07-23 | Jakub Skorupa vs Pawel Chojnacki | under 72.5 | 74 | L | -1.00 |
 | 2026-07-23 | Oliver Vincenec vs Adrian Burkacki | over 69.5 | 98 | W | +0.80 |
-| 2026-07-23 | Jerzy Pelka vs Lukasz Oracz | over 63.5 | 52 | L | -1.00 |
-| 2026-07-23 | Henryk Tkaczyk vs Jacek Zelezik | over 52.5 | 51 | L | -1.00 |
-| 2026-07-23 | Mateusz Rutkowski vs Maciej Kolek | over 63.5 | 72 | W | +0.83 |
 
 </details>
 
