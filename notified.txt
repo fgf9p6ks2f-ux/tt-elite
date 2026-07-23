@@ -222,6 +222,7 @@ Marcin Marchlewski|Tomasz Filbrandt|over|1784334000
 Marian Brunner|Zbigniew Nocun|over|1784655000
 Marian Lebek|Oliver Vincenec|over|1784774700
 Marian Lebek|Oliver Vincenec|under|1784180100
+Marian Lebek|Wojciech Urban|under|1784796300
 Mariusz Adamus|Mariusz Baron|under|1784793300
 Mariusz Adamus|Mariusz Baron|under|1784814900
 Mariusz Baron|Piotr Gumulinski|over|1783894800
