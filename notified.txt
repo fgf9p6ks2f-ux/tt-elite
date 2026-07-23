@@ -6,6 +6,8 @@ Adam Staniczek|Andriej Fomin|under|1784758200
 Adam Staniczek|Jerzy Michalik|over|1784766900
 Adam Staniczek|Pawel Chojnacki|under|1784233200
 Adam Staniczek|Pawel Chojnacki|under|1784247600
+Adam Staniczek|Zbigniew Nocun|over|1784835000
+Adam Staniczek|Zbigniew Nocun|over|1784856600
 Adrian Burkacki|Jakub Kaczmarek|over|1784171400
 Adrian Burkacki|Jakub Kaczmarek|under|1784789100
 Adrian Burkacki|Marian Lebek|over|1784761800
