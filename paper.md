@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T03:02:10 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T03:06:17 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 71-47  ·  **P&L:** +14.80u ($+1,480)  ·  **hit 60.2%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 72-50  ·  **P&L:** +12.67u ($+1,267)  ·  **hit 59.0%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,20 @@ _2026-07-23T03:02:10 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 158 | 96-62 | 61% | +20.71 |
+| TT Elite Series | 162 | 97-65 | 60% | +18.58 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 96-62 · hit 61% · +20.71u (158 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 97-65 · hit 60% · +18.58u (162 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Oliver Vincenec vs Marian Lebek | over 55.5 | 54 | L | -1.00 |
+| 2026-07-23 | Henryk Tkaczyk vs Zbigniew Nocun | over 57.5 | 53 | L | -1.00 |
+| 2026-07-23 | Witold Stechly vs Michal Wolny | over 56.5 | 46 | L | -1.00 |
+| 2026-07-23 | Mikolaj Lukaszewski vs Adrian Fabis | under 84.5 | 75 | W | +0.87 |
 | 2026-07-23 | Marian Lebek vs Lukasz Oracz | under 91.5 | 92 | L | -1.00 |
 | 2026-07-23 | Adrian Fabis vs Kuba Golaszewski | under 93.5 | 84 | W | +0.91 |
 | 2026-07-23 | Miroslaw Warzecha vs Jacek Zelezik | over 51.5 | 48 | L | -1.00 |
@@ -37,10 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Adrian Burkacki vs Marian Lebek | over 50.5 | 49 | L | -1.00 |
 | 2026-07-22 | Adrian Fabis vs Kuba Golaszewski | under 85.5 | 82 | W | +0.91 |
 | 2026-07-22 | Zbigniew Nocun vs Jacek Zelezik | under 88.5 | 71 | W | +0.80 |
-| 2026-07-22 | Andriej Fomin vs Adam Staniczek | under 99.5 | 85 | W | +0.87 |
-| 2026-07-22 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 96 | L | -1.00 |
-| 2026-07-22 | Jerzy Pelka vs Marian Lebek | under 84.5 | 67 | W | +0.91 |
-| 2026-07-22 | Miroslaw Warzecha vs Henryk Tkaczyk | over 53.5 | 50 | L | -1.00 |
 
 </details>
 
