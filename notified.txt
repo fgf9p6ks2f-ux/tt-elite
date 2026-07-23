@@ -140,6 +140,7 @@ Jakub Kosowski|Martin Olejnik|under|1784625600
 Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
+Jakub Nowak|Kacper Adamus|over|1784839500
 Jakub Nowak|Wojciech Pytlas|under|1784831100
 Jakub Nowak|Wojciech Urban|under|1784826600
 Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
