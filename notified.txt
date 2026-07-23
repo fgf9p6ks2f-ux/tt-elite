@@ -222,6 +222,8 @@ Marian Brunner|Zbigniew Nocun|over|1784655000
 Marian Lebek|Oliver Vincenec|over|1784774700
 Marian Lebek|Oliver Vincenec|under|1784180100
 Mariusz Baron|Piotr Gumulinski|over|1783894800
+Mariusz Baron|Piotr Gumulinski|under|1784790600
+Mariusz Baron|Piotr Gumulinski|under|1784806200
 Mariusz Baron|Wojciech Urban|under|1784483700
 Mariusz Koczyba|Pawel Kurek|under|1784736000
 Martin Huk|Radim Urbaniec|over|1783440000
