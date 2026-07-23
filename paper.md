@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T00:01:48 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T00:05:23 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 66-40  ·  **P&L:** +17.51u ($+1,751)  ·  **hit 62.3%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 66-42  ·  **P&L:** +15.51u ($+1,551)  ·  **hit 61.1%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T00:01:48 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 146 | 91-55 | 62% | +23.43 |
+| TT Elite Series | 148 | 91-57 | 61% | +21.43 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 91-55 · hit 62% · +23.43u (146 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 91-57 · hit 61% · +21.43u (148 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Jerzy Pelka vs Lukasz Oracz | over 63.5 | 52 | L | -1.00 |
+| 2026-07-23 | Henryk Tkaczyk vs Jacek Zelezik | over 52.5 | 51 | L | -1.00 |
 | 2026-07-23 | Mateusz Rutkowski vs Maciej Kolek | over 63.5 | 72 | W | +0.83 |
 | 2026-07-22 | Adrian Burkacki vs Marian Lebek | over 50.5 | 49 | L | -1.00 |
 | 2026-07-22 | Adrian Fabis vs Kuba Golaszewski | under 85.5 | 82 | W | +0.91 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Kamil Smolka vs Kacper Adamus | under 88.5 | 76 | W | +0.87 |
 | 2026-07-22 | Sebastian Juzek vs Krzysztof Hetnar | under 74.5 | 55 | W | +0.91 |
 | 2026-07-22 | Pawel Kurek vs Mariusz Koczyba | under 79.5 | 77 | W | +0.87 |
-| 2026-07-22 | Mariusz Zwolinski vs Artur Szoltysek | under 95.5 | 101 | L | -1.00 |
-| 2026-07-22 | Piotr Gumulinski vs Jakub Kaczmarek | over 68.5 | 93 | W | +0.95 |
 
 </details>
 
