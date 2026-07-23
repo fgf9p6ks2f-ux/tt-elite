@@ -1,16 +1,15 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-23 00:28 UTC_
+_updated 2026-07-23 00:32 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-594 upcoming fixtures (all leagues) · 248,805 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+591 upcoming fixtures (all leagues) · 248,805 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 8 ACTIONABLE BETS TODAY ===
+=== 7 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
-  Wed 6:00PM MT   Elite·SKIP(80-90u leak)Oliver Vincenec vs Adrian Burkacki          U101.5  100%  100%   14   75.6
   Thu 10:55AM MT  Elite·SKIP(80-90u leak)Pawel Chojnacki vs Jakub Skorupa             U89.5   81%   81%   21   68.0
   Thu 4:55PM MT   Elite·SKIP(80-90u leak)Pawel Chojnacki vs Jakub Skorupa             U89.5   81%   81%   21   68.0
   Thu 4:15AM MT   TTCup·shadowJan Skvrna vs Jan Krupnik                   O≤77.5   74%   78%   51   84.5
