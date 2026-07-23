@@ -143,6 +143,7 @@ Jakub Volny|Michal Raska|over|1783716000
 Jakub Zochniak|Kamil Rudomina|over|1784172300
 Jakub Zochniak|Kamil Rudomina|over|1784180400
 Jakub Zochniak|Kamil Rudomina|under|1784180400
+Jakub Zochniak|Michal Minda|under|1784801100
 Jan Krupnik|Jan Skvrna|over|1783512600
 Jan Krupnik|Tomas Kindl|over|1783793700
 Jan Krupnik|Tomas Kindl|over|1783804800
