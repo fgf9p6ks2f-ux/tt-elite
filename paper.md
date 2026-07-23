@@ -1,13 +1,13 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T16:21:23 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T16:25:31 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 91-63  ·  **P&L:** +16.07u ($+1,607)  ·  **hit 59.1%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-76  ·  +22.33u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-77  ·  +21.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
+| Czech Liga Pro | 35 | 22-13 | 63% | +5.33 |
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 66 | 35-31 | 53% | -1.83 |
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 22-12 · hit 65% · +6.33u (34 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 22-13 · hit 63% · +5.33u (35 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Roman Hudeczek vs Michal Chalupa | over 74.5 | 55 | L | -1.00 |
 | 2026-07-22 | Ondrej Paril vs Michal Vavrecka | over 74.5 | 75 | W | +0.83 |
 | 2026-07-22 | Adrian Walek vs Richard Skacelik | over 74.5 | 76 | W | +0.83 |
 | 2026-07-21 | Dominik Oborny vs Tomas Milota | over 74.5 | 77 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-13 | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
 | 2026-07-12 | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
-| 2026-07-12 | Ales Barton vs Jan Kanera | over 74.5 | 93 | W | +0.83 |
 
 </details>
 
