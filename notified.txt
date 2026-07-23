@@ -173,6 +173,7 @@ Jaroslaw Rolak|Krzysztof Kotyl|over|1784067000
 Jaroslaw Rolak|Krzysztof Kotyl|over|1784075700
 Jerzy Michalik|Michal Machelski|under|1784836500
 Jerzy Michalik|Michal Machelski|under|1784858100
+Jerzy Michalik|Witold Stechly|over|1784849400
 Jerzy Michalik|Witold Stechly|under|1784535600
 Jerzy Pelka|Lukasz Oracz|over|1784763300
 Jerzy Pelka|Marian Lebek|under|1784276400
