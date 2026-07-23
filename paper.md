@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T16:33:16 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T16:37:26 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 91-63  ·  **P&L:** +16.07u ($+1,607)  ·  **hit 59.1%** (break-even 52.4%)  ·  **Open:** 4
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-77  ·  +21.33u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  119-78  ·  +21.17u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 35 | 22-13 | 63% | +5.33 |
-| Setka Cup | 52 | 36-16 | 69% | +14.00 |
+| Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 66 | 35-31 | 53% | -1.83 |
+| TT Cup | 67 | 35-32 | 52% | -2.83 |
 | TT Elite Series | 194 | 116-78 | 60% | +21.99 |
 
 ### recent settled — by league
@@ -44,10 +44,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Setka Cup</b> &mdash; 36-16 · hit 69% · +14.00u (52 settled)</summary>
+<details><summary><b>Setka Cup</b> &mdash; 37-16 · hit 70% · +14.83u (53 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Dmytro Yurkov vs Serhii Ponomarenko | under 74.5 | 55 | W | +0.83 |
 | 2026-07-22 | Ladislav Dobias vs Josef Chalupa | over 74.5 | 83 | W | +0.83 |
 | 2026-07-22 | Ondrej Mezera vs Jakub Senk | over 74.5 | 100 | W | +0.83 |
 | 2026-07-22 | Oleksandr Seliuchenko vs Artem Yurkov | over 74.5 | 93 | W | +0.83 |
@@ -67,7 +68,6 @@ _click a league to expand its bets_
 | 2026-07-17 | Serhii Miroshnychenko vs Viktor Ziakun | under 74.5 | 50 | W | +0.83 |
 | 2026-07-17 | Vladyslav Mishchenko vs Artem Yurkov | over 74.5 | 86 | W | +0.83 |
 | 2026-07-17 | Serhii Ponomarenko vs Serhii Kushnirenko | under 74.5 | 71 | W | +0.83 |
-| 2026-07-16 | Artur Akopyan vs Martin Holub | over 74.5 | 81 | W | +0.83 |
 
 </details>
 
@@ -98,33 +98,6 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 35-31 · hit 53% · -1.83u (66 settled)</summary>
-
-| graded | matchup | bet | total | result | P&L |
-|---|---|---|---|---|---|
-| 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 66 | L | -1.00 |
-| 2026-07-23 | Radek Benes vs Jan Skvrna | over 74.5 | 55 | L | -1.00 |
-| 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 82 | W | +0.83 |
-| 2026-07-23 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 65 | L | -1.00 |
-| 2026-07-22 | Michal Brozek vs David Bochnak | over 74.5 | 74 | L | -1.00 |
-| 2026-07-22 | Martin Chmelicek vs Miroslav Cyrus | over 74.5 | 85 | W | +0.83 |
-| 2026-07-22 | Blazej Gola vs Karol Guzy | under 74.5 | 74 | W | +0.83 |
-| 2026-07-22 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 69 | L | -1.00 |
-| 2026-07-22 | Petr Vodal vs Tomas Hnizdil | under 74.5 | 55 | W | +0.83 |
-| 2026-07-22 | Jan Skvrna vs Radek Benes | over 74.5 | 75 | W | +0.83 |
-| 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
-| 2026-07-22 | Jan Skvrna vs Bruno Mrowetz | over 74.5 | 87 | W | +0.83 |
-| 2026-07-21 | Filip Marat vs Milan Tlusty | over 74.5 | 90 | W | +0.83 |
-| 2026-07-21 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 73 | L | -1.00 |
-| 2026-07-21 | Jan Vidourek vs Richard Vavricka | over 74.5 | 99 | W | +0.83 |
-| 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
-| 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
-| 2026-07-20 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 80 | W | +0.83 |
-| 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
-| 2026-07-20 | Martin Filipek vs Frantisek Balcar | over 74.5 | 59 | L | -1.00 |
-
-</details>
-
 <details><summary><b>Setka Women</b> &mdash; 7-8 · hit 47% · -2.17u (15 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
@@ -144,6 +117,33 @@ _click a league to expand its bets_
 | 2026-07-10 | Olga Melnik vs Nadiia Harmash | over 74.5 | 69 | L | -1.00 |
 | 2026-07-10 | Olga Melnik vs Anhelina Plashchynska | under 74.5 | 47 | W | +0.83 |
 | 2026-07-10 | Ksenia Tymchenko vs Anastasiia Volgina | under 74.5 | 80 | L | -1.00 |
+
+</details>
+
+<details><summary><b>TT Cup</b> &mdash; 35-32 · hit 52% · -2.83u (67 settled)</summary>
+
+| graded | matchup | bet | total | result | P&L |
+|---|---|---|---|---|---|
+| 2026-07-23 | Ales Drozd vs Patrik Jokiel | over 74.5 | 57 | L | -1.00 |
+| 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 66 | L | -1.00 |
+| 2026-07-23 | Radek Benes vs Jan Skvrna | over 74.5 | 55 | L | -1.00 |
+| 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 82 | W | +0.83 |
+| 2026-07-23 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 65 | L | -1.00 |
+| 2026-07-22 | Michal Brozek vs David Bochnak | over 74.5 | 74 | L | -1.00 |
+| 2026-07-22 | Martin Chmelicek vs Miroslav Cyrus | over 74.5 | 85 | W | +0.83 |
+| 2026-07-22 | Blazej Gola vs Karol Guzy | under 74.5 | 74 | W | +0.83 |
+| 2026-07-22 | Jaroslav Sindler vs Patrik Sturma | over 74.5 | 69 | L | -1.00 |
+| 2026-07-22 | Petr Vodal vs Tomas Hnizdil | under 74.5 | 55 | W | +0.83 |
+| 2026-07-22 | Jan Skvrna vs Radek Benes | over 74.5 | 75 | W | +0.83 |
+| 2026-07-22 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 57 | L | -1.00 |
+| 2026-07-22 | Jan Skvrna vs Bruno Mrowetz | over 74.5 | 87 | W | +0.83 |
+| 2026-07-21 | Filip Marat vs Milan Tlusty | over 74.5 | 90 | W | +0.83 |
+| 2026-07-21 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 73 | L | -1.00 |
+| 2026-07-21 | Jan Vidourek vs Richard Vavricka | over 74.5 | 99 | W | +0.83 |
+| 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
+| 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
+| 2026-07-20 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 80 | W | +0.83 |
+| 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 
 </details>
 
