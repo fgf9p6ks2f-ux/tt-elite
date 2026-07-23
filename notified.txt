@@ -112,6 +112,8 @@ Jacek Oracz|Lukasz Pyda|under|1783787100
 Jacek Oracz|Lukasz Pyda|under|1783821600
 Jacek Oracz|Michal Machelski|under|1783797000
 Jacek Oracz|Michal Machelski|under|1783818600
+Jacek Oracz|Pawel Chojnacki|under|1784828700
+Jacek Oracz|Pawel Chojnacki|under|1784843100
 Jacek Przewlocki|Krzysztof Kotyl|over|1784062800
 Jacek Przewlocki|Krzysztof Kotyl|over|1784071200
 Jacek Wieczerzak|Rafal Glica|over|1784379900
