@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T22:07:08 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T22:11:12 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 92-65  ·  **P&L:** +14.90u ($+1,490)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 19
+- **FanDuel-line record:** 101-65  ·  **P&L:** +22.73u ($+2,273)  ·  **hit 60.8%** (break-even 52.4%)  ·  **Open:** 10
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  120-79  ·  +21.00u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,25 @@ _2026-07-23T22:07:08 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 197 | 117-80 | 59% | +20.82 |
+| TT Elite Series | 206 | 126-80 | 61% | +28.64 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 117-80 · hit 59% · +20.82u (197 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 126-80 · hit 61% · +28.64u (206 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Pawel Chojnacki vs Jacek Oracz | under 90.5 | 86 | W | +0.91 |
+| 2026-07-23 | Henryk Tkaczyk vs Dariusz Molenda | under 85.5 | 73 | W | +0.83 |
+| 2026-07-23 | Michal Machelski vs Zbigniew Nocun | over 58.5 | 75 | W | +0.95 |
+| 2026-07-23 | Kacper Adamus vs Jakub Nowak | over 74.5 | 92 | W | +0.83 |
+| 2026-07-23 | Jacek Przewlocki vs Jaroslaw Rolak | over 79.5 | 80 | W | +0.85 |
+| 2026-07-23 | Michal Machelski vs Jerzy Michalik | under 99.5 | 85 | W | +0.83 |
+| 2026-07-23 | Marcin Kowalczyk vs Dariusz Szlubowski | over 60.5 | 102 | W | +0.87 |
+| 2026-07-23 | Zbigniew Nocun vs Adam Staniczek | over 55.5 | 60 | W | +0.91 |
+| 2026-07-23 | Dariusz Molenda vs Jerzy Michalik | over 66.5 | 75 | W | +0.83 |
 | 2026-07-23 | Jacek Oracz vs Pawel Chojnacki | under 90.5 | 96 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Jakub Nowak | under 95.5 | 117 | L | -1.00 |
 | 2026-07-23 | Pawel Chojnacki vs Jakub Skorupa | under 89.5 | 57 | W | +0.83 |
@@ -32,15 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Piotr Gumulinski vs Mariusz Adamus | under 91.5 | 88 | W | +1.00 |
 | 2026-07-23 | Karol Sulkowski vs Igor Dabrowski | under 86.5 | 83 | W | +0.95 |
 | 2026-07-23 | Rafal Gajda vs Witold Buczynski | over 65.5 | 99 | W | +0.87 |
-| 2026-07-23 | Piotr Gumulinski vs Mariusz Baron | under 99.5 | 130 | L | -1.00 |
-| 2026-07-23 | Grzegorz Poliniewicz vs Adrian Spychala | under 80.5 | 86 | L | -1.00 |
-| 2026-07-23 | Mariusz Adamus vs Piotr Gumulinski | under 91.5 | 91 | W | +1.00 |
-| 2026-07-23 | Michal Minda vs Jakub Zochniak | under 95.5 | 80 | W | +0.80 |
-| 2026-07-23 | Wojciech Urban vs Marian Lebek | under 89.5 | 100 | L | -1.00 |
-| 2026-07-23 | Rafal Gajda vs Witold Buczynski | over 65.5 | 56 | L | -1.00 |
-| 2026-07-23 | Jakub Kaczmarek vs Oliver Vincenec | under 97.5 | 90 | W | +0.87 |
-| 2026-07-23 | Mariusz Adamus vs Mariusz Baron | under 97.5 | 97 | W | +0.74 |
-| 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 71 | W | +0.85 |
 
 </details>
 
