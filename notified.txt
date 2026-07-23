@@ -226,6 +226,8 @@ Marian Lebek|Oliver Vincenec|under|1784180100
 Marian Lebek|Wojciech Urban|under|1784796300
 Mariusz Adamus|Mariusz Baron|under|1784793300
 Mariusz Adamus|Mariusz Baron|under|1784814900
+Mariusz Adamus|Piotr Gumulinski|under|1784802000
+Mariusz Adamus|Piotr Gumulinski|under|1784810700
 Mariusz Baron|Piotr Gumulinski|over|1783894800
 Mariusz Baron|Piotr Gumulinski|under|1784790600
 Mariusz Baron|Piotr Gumulinski|under|1784806200
