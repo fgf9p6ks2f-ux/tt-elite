@@ -192,6 +192,7 @@ Libor Smazik|Lukas Provaznik|over|1783694700
 Libor Smazik|Lukas Provaznik|over|1783954800
 Lubos Forman|Milan Smesny|under|1783668600
 Lukasz Oracz|Marian Lebek|under|1784169900
+Lukasz Oracz|Marian Lebek|under|1784770500
 Lukasz Oracz|Oliver Vincenec|under|1784176200
 Lukasz Oracz|Oliver Vincenec|under|1784176800
 Lukasz Oracz|Oliver Vincenec|under|1784695800
