@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T05:36:37 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T05:40:42 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 76-55  ·  **P&L:** +11.15u ($+1,115)  ·  **hit 58.0%** (break-even 52.4%)  ·  **Open:** 6
+- **FanDuel-line record:** 77-55  ·  **P&L:** +11.99u ($+1,199)  ·  **hit 58.3%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T05:36:37 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 171 | 101-70 | 59% | +17.07 |
+| TT Elite Series | 172 | 102-70 | 59% | +17.91 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 101-70 · hit 59% · +17.07u (171 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 102-70 · hit 59% · +17.91u (172 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Oliver Vincenec vs Lukasz Oracz | under 79.5 | 71 | W | +0.85 |
 | 2026-07-23 | Zbigniew Nocun vs Jacek Zelezik | under 83.5 | 70 | W | +0.91 |
 | 2026-07-23 | Witold Stechly vs Miroslaw Warzecha | under 93.5 | 99 | L | -1.00 |
 | 2026-07-23 | Adrian Burkacki vs Oliver Vincenec | over 56.5 | 71 | W | +0.83 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 89.5 | 63 | W | +0.91 |
 | 2026-07-23 | Adam Staniczek vs Jerzy Michalik | over 58.5 | 81 | W | +0.95 |
 | 2026-07-23 | Mariusz Koczyba vs Marian Lebek | under 82.5 | 86 | L | -1.00 |
-| 2026-07-23 | Zbigniew Nocun vs Miroslaw Warzecha | under 91.5 | 90 | W | +0.71 |
 
 </details>
 
