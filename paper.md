@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T20:13:14 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T20:17:08 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 92-65  ·  **P&L:** +14.90u ($+1,490)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 14
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  119-78  ·  +21.17u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  119-79  ·  +20.17u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 35 | 22-13 | 63% | +5.33 |
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 67 | 35-32 | 52% | -2.83 |
+| TT Cup | 68 | 35-33 | 51% | -3.83 |
 | TT Elite Series | 197 | 117-80 | 59% | +20.82 |
 
 ### recent settled — by league
@@ -120,10 +120,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 35-32 · hit 52% · -2.83u (67 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 35-33 · hit 51% · -3.83u (68 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Lukas Krupnik Jr vs Jiri Matus | over 74.5 | 66 | L | -1.00 |
 | 2026-07-23 | Ales Drozd vs Patrik Jokiel | over 74.5 | 57 | L | -1.00 |
 | 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 66 | L | -1.00 |
 | 2026-07-23 | Radek Benes vs Jan Skvrna | over 74.5 | 55 | L | -1.00 |
@@ -143,7 +144,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
 | 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
 | 2026-07-20 | Wiekiera Arkadiusz vs Jakub Komorowicz | over 74.5 | 80 | W | +0.83 |
-| 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 
 </details>
 
