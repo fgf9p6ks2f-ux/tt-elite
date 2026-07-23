@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T00:54:19 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T00:58:06 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 67-43  ·  **P&L:** +15.31u ($+1,531)  ·  **hit 60.9%** (break-even 52.4%)  ·  **Open:** 11
+- **FanDuel-line record:** 67-44  ·  **P&L:** +14.31u ($+1,431)  ·  **hit 60.4%** (break-even 52.4%)  ·  **Open:** 10
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T00:54:19 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 150 | 92-58 | 61% | +21.23 |
+| TT Elite Series | 151 | 92-59 | 61% | +20.23 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 92-58 · hit 61% · +21.23u (150 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 92-59 · hit 61% · +20.23u (151 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 95 | L | -1.00 |
 | 2026-07-23 | Jakub Skorupa vs Pawel Chojnacki | under 72.5 | 74 | L | -1.00 |
 | 2026-07-23 | Oliver Vincenec vs Adrian Burkacki | over 69.5 | 98 | W | +0.80 |
 | 2026-07-23 | Jerzy Pelka vs Lukasz Oracz | over 63.5 | 52 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Zbigniew Nocun vs Henryk Tkaczyk | over 68.5 | 69 | W | +0.95 |
 | 2026-07-22 | Adrian Fabis vs Mikolaj Lukaszewski | under 94.5 | 98 | L | -1.00 |
 | 2026-07-22 | Miroslaw Warzecha vs Jacek Zelezik | under 73.5 | 51 | W | +0.83 |
-| 2026-07-22 | Kamil Smolka vs Kacper Adamus | under 88.5 | 76 | W | +0.87 |
 
 </details>
 
