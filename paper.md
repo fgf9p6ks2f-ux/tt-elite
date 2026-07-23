@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T23:37:07 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T23:41:09 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 102-65  ·  **P&L:** +23.56u ($+2,356)  ·  **hit 61.1%** (break-even 52.4%)  ·  **Open:** 12
+- **FanDuel-line record:** 104-65  ·  **P&L:** +25.26u ($+2,526)  ·  **hit 61.5%** (break-even 52.4%)  ·  **Open:** 10
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  120-79  ·  +21.00u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T23:37:07 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 207 | 127-80 | 61% | +29.48 |
+| TT Elite Series | 209 | 129-80 | 62% | +31.18 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 127-80 · hit 61% · +29.48u (207 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 129-80 · hit 62% · +31.18u (209 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Jakub Nowak vs Kacper Adamus | over 74.5 | 75 | W | +0.83 |
+| 2026-07-23 | Adam Staniczek vs Jerzy Michalik | under 88.5 | 50 | W | +0.87 |
 | 2026-07-23 | Pawel Chojnacki vs Jakub Skorupa | under 89.5 | 74 | W | +0.83 |
 | 2026-07-23 | Pawel Chojnacki vs Jacek Oracz | under 90.5 | 86 | W | +0.91 |
 | 2026-07-23 | Henryk Tkaczyk vs Dariusz Molenda | under 85.5 | 73 | W | +0.83 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 75 | W | +0.85 |
 | 2026-07-23 | Grzegorz Felkel vs Grzegorz Adamiak | under 69.5 | 92 | L | -1.00 |
 | 2026-07-23 | Michal Minda vs Grzegorz Poliniewicz | over 64.5 | 64 | L | -1.00 |
-| 2026-07-23 | Piotr Gumulinski vs Mariusz Adamus | under 91.5 | 88 | W | +1.00 |
-| 2026-07-23 | Karol Sulkowski vs Igor Dabrowski | under 86.5 | 83 | W | +0.95 |
 
 </details>
 
