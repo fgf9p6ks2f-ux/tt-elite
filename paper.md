@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T07:10:35 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T07:15:27 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 78-56  ·  **P&L:** +11.86u ($+1,186)  ·  **hit 58.2%** (break-even 52.4%)  ·  **Open:** 7
+- **FanDuel-line record:** 78-57  ·  **P&L:** +10.86u ($+1,086)  ·  **hit 57.8%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T07:10:35 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 174 | 103-71 | 59% | +17.78 |
+| TT Elite Series | 175 | 103-72 | 59% | +16.78 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 103-71 · hit 59% · +17.78u (174 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 103-72 · hit 59% · +16.78u (175 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Aleksander Lilien vs Jakub Zochniak | under 91.5 | 92 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Adrian Burkacki | under 80.5 | 85 | L | -1.00 |
 | 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 71.5 | 84 | W | +0.87 |
 | 2026-07-23 | Oliver Vincenec vs Lukasz Oracz | under 79.5 | 71 | W | +0.85 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Marian Lebek vs Lukasz Oracz | under 91.5 | 92 | L | -1.00 |
 | 2026-07-23 | Adrian Fabis vs Kuba Golaszewski | under 93.5 | 84 | W | +0.91 |
 | 2026-07-23 | Miroslaw Warzecha vs Jacek Zelezik | over 51.5 | 48 | L | -1.00 |
-| 2026-07-23 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 89.5 | 63 | W | +0.91 |
 
 </details>
 
