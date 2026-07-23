@@ -1,16 +1,16 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T12:23:44 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T12:27:59 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 85-61  ·  **P&L:** +12.79u ($+1,279)  ·  **hit 58.2%** (break-even 52.4%)  ·  **Open:** 7
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-74  ·  +24.33u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-75  ·  +23.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 34 | 22-12 | 65% | +6.33 |
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 64 | 35-29 | 55% | +0.17 |
+| TT Cup | 65 | 35-30 | 54% | -0.83 |
 | TT Elite Series | 186 | 110-76 | 59% | +18.71 |
 
 ### recent settled — by league
@@ -98,10 +98,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 35-29 · hit 55% · +0.17u (64 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 35-30 · hit 54% · -0.83u (65 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Radek Benes vs Jan Skvrna | over 74.5 | 55 | L | -1.00 |
 | 2026-07-23 | Jan Skvrna vs Jan Krupnik | over 74.5 | 82 | W | +0.83 |
 | 2026-07-23 | Dalibor Velky Jr vs Radek Benes | over 74.5 | 65 | L | -1.00 |
 | 2026-07-22 | Michal Brozek vs David Bochnak | over 74.5 | 74 | L | -1.00 |
@@ -121,7 +122,6 @@ _click a league to expand its bets_
 | 2026-07-20 | Bruno Mrowetz vs Jan Skvrna | over 74.5 | 78 | W | +0.83 |
 | 2026-07-20 | Martin Filipek vs Frantisek Balcar | over 74.5 | 59 | L | -1.00 |
 | 2026-07-20 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 74 | L | -1.00 |
-| 2026-07-20 | Jan Skvrna vs Radek Benes | over 74.5 | 93 | W | +0.83 |
 
 </details>
 
