@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T06:40:15 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T06:44:32 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 78-56  ·  **P&L:** +11.86u ($+1,186)  ·  **hit 58.2%** (break-even 52.4%)  ·  **Open:** 4
+- **FanDuel-line record:** 78-56  ·  **P&L:** +11.86u ($+1,186)  ·  **hit 58.2%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
