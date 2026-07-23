@@ -84,6 +84,7 @@ Filip Witczak|Rafal Wojcik|under|1784387100
 Gracjan Kesik|Milosz Piecowski|over|1784388300
 Gracjan Kesik|Milosz Piecowski|over|1784412600
 Grzegorz Adamiak|Grzegorz Felkel|under|1783481100
+Grzegorz Adamiak|Grzegorz Felkel|under|1784812800
 Grzegorz Adamiak|Maciej Nowalinski|over|1784710800
 Grzegorz Felkel|Maciej Nowalinski|under|1783495200
 Grzegorz Marud|Mariusz Baron|under|1784495100
