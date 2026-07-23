@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T08:06:44 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T08:11:15 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 79-57  ·  **P&L:** +11.73u ($+1,173)  ·  **hit 58.1%** (break-even 52.4%)  ·  **Open:** 7
+- **FanDuel-line record:** 81-57  ·  **P&L:** +13.38u ($+1,338)  ·  **hit 58.7%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T08:06:44 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 176 | 104-72 | 59% | +17.65 |
+| TT Elite Series | 178 | 106-72 | 60% | +19.30 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 104-72 · hit 59% · +17.65u (176 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 106-72 · hit 60% · +19.30u (178 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 71 | W | +0.85 |
+| 2026-07-23 | Piotr Gumulinski vs Mariusz Baron | under 99.5 | 97 | W | +0.80 |
 | 2026-07-23 | Jakub Kaczmarek vs Adrian Burkacki | under 94.5 | 82 | W | +0.87 |
 | 2026-07-23 | Aleksander Lilien vs Jakub Zochniak | under 91.5 | 92 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Adrian Burkacki | under 80.5 | 85 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Henryk Tkaczyk vs Zbigniew Nocun | over 57.5 | 53 | L | -1.00 |
 | 2026-07-23 | Witold Stechly vs Michal Wolny | over 56.5 | 46 | L | -1.00 |
 | 2026-07-23 | Mikolaj Lukaszewski vs Adrian Fabis | under 84.5 | 75 | W | +0.87 |
-| 2026-07-23 | Marian Lebek vs Lukasz Oracz | under 91.5 | 92 | L | -1.00 |
-| 2026-07-23 | Adrian Fabis vs Kuba Golaszewski | under 93.5 | 84 | W | +0.91 |
 
 </details>
 
