@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T18:07:32 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T18:11:55 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 92-64  ·  **P&L:** +15.90u ($+1,590)  ·  **hit 59.0%** (break-even 52.4%)  ·  **Open:** 5
+- **FanDuel-line record:** 92-65  ·  **P&L:** +14.90u ($+1,490)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  119-78  ·  +21.17u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T18:07:32 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 67 | 35-32 | 52% | -2.83 |
-| TT Elite Series | 196 | 117-79 | 60% | +21.82 |
+| TT Elite Series | 197 | 117-80 | 59% | +20.82 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 117-79 · hit 60% · +21.82u (196 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 117-80 · hit 59% · +20.82u (197 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Jacek Oracz vs Pawel Chojnacki | under 90.5 | 96 | L | -1.00 |
 | 2026-07-23 | Wojciech Urban vs Jakub Nowak | under 95.5 | 117 | L | -1.00 |
 | 2026-07-23 | Pawel Chojnacki vs Jakub Skorupa | under 89.5 | 57 | W | +0.83 |
 | 2026-07-23 | Mariusz Adamus vs Mariusz Baron | under 97.5 | 90 | W | +0.74 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Jakub Kaczmarek vs Oliver Vincenec | under 97.5 | 90 | W | +0.87 |
 | 2026-07-23 | Mariusz Adamus vs Mariusz Baron | under 97.5 | 97 | W | +0.74 |
 | 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 71 | W | +0.85 |
-| 2026-07-23 | Piotr Gumulinski vs Mariusz Baron | under 99.5 | 97 | W | +0.80 |
 
 </details>
 
