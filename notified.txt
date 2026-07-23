@@ -58,6 +58,7 @@ Daniel Morawiec|Lukasz Oracz|under|1784385900
 Daniel Morawiec|Patryk Gamrot|over|1784388600
 Daniel Priesol|Radim Kvasnicka|over|1783792800
 Dariusz Maszczynski|Piotr Gesiarz|under|1784421300
+Dariusz Molenda|Zbigniew Nocun|under|1784830800
 Dariusz Wrobel|Kamil Klocek|under|1784333400
 Dawid Jadam|Krystian Kolodziej|under|1783535400
 Dawid Michna|Martin Olejnik|over|1783428900
@@ -137,6 +138,7 @@ Jakub Kosowski|Martin Olejnik|under|1784625600
 Jakub Lysek|Martin Sobota|over|1783750200
 Jakub Michalski|Robert Szymik|under|1783799700
 Jakub Michalski|Robert Szymik|under|1783821300
+Jakub Nowak|Wojciech Pytlas|under|1784831100
 Jakub Nowak|Wojciech Urban|under|1784826600
 Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
 Jakub Skorupa|Marian Brunner|over|1784694000
