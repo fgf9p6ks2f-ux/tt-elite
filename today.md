@@ -1,19 +1,17 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-23 03:21 UTC_
+_updated 2026-07-23 03:25 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-583 upcoming fixtures (all leagues) · 248,864 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
+581 upcoming fixtures (all leagues) · 248,864 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
 
-=== 9 ACTIONABLE BETS TODAY ===
+=== 7 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
-  Wed 9:00PM MT   Elite       Igor Dabrowski vs Kamil Rudomina             U96.5   91%   91%   33   79.7
-  Wed 9:10PM MT   Elite·SKIP(80-90u leak)Wojciech Urban vs Lukasz Oracz               U83.5   85%   85%   13   73.2
-  Thu 10:00AM MT  Setka·shadowDmytro Yurkov vs Serhii Ponomarenko         U≥71.5   81%   84%   95   62.0
-  Wed 9:05PM MT   Elite·SKIP(80-90u leak)Witold Stechly vs Zbigniew Nocun             U82.5   78%   78%   18   76.3
+  Wed 9:10PM MT   Elite·SKIP(80-90u leak)Wojciech Urban vs Lukasz Oracz               U82.5   85%   85%   13   73.2
+  Wed 9:05PM MT   Elite       Witold Stechly vs Zbigniew Nocun             O69.5   78%   78%   18   76.3
   Thu 4:15AM MT   TTCup·shadowJan Skvrna vs Jan Krupnik                   O≤77.5   74%   78%   51   84.5
   Thu 8:30PM MT   LigaPro·shadowJan Potensky vs Jiri Grohsgott              U≥73.5   74%   77%   48   67.7
   Thu 9:30AM MT   LigaPro·shadowRoman Hudeczek vs Michal Chalupa            O≤77.5   72%   77%   26   85.9
