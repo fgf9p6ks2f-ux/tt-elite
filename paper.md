@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T04:37:04 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T04:41:14 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 74-54  ·  **P&L:** +10.40u ($+1,040)  ·  **hit 57.8%** (break-even 52.4%)  ·  **Open:** 7
+- **FanDuel-line record:** 75-54  ·  **P&L:** +11.24u ($+1,124)  ·  **hit 58.1%** (break-even 52.4%)  ·  **Open:** 7
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T04:37:04 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 168 | 99-69 | 59% | +16.32 |
+| TT Elite Series | 169 | 100-69 | 59% | +17.16 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 99-69 · hit 59% · +16.32u (168 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 100-69 · hit 59% · +17.16u (169 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Adrian Burkacki vs Oliver Vincenec | over 56.5 | 71 | W | +0.83 |
 | 2026-07-23 | Jakub Kaczmarek vs Marian Lebek | over 55.5 | 52 | L | -1.00 |
 | 2026-07-23 | Henryk Tkaczyk vs Miroslaw Warzecha | under 86.5 | 72 | W | +0.87 |
 | 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 73.5 | 69 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Zbigniew Nocun vs Miroslaw Warzecha | under 91.5 | 90 | W | +0.71 |
 | 2026-07-23 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 95 | L | -1.00 |
 | 2026-07-23 | Jakub Skorupa vs Pawel Chojnacki | under 72.5 | 74 | L | -1.00 |
-| 2026-07-23 | Oliver Vincenec vs Adrian Burkacki | over 69.5 | 98 | W | +0.80 |
 
 </details>
 
