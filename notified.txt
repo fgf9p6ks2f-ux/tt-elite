@@ -44,6 +44,7 @@ Bartlomiej Wisniewski|Krzysztof Kotyl|over|1784145900
 Bartlomiej Wisniewski|Mikolaj Lukaszewski|over|1784748000
 Bartosz Sulkowski|Kamil Rudomina|over|1784177700
 Bartosz Sulkowski|Kamil Rudomina|over|1784186400
+Bartosz Sulkowski|Krzysztof Kotyl|over|1784777100
 Blazej Gola|Karol Guzy|under|1783620000
 Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
