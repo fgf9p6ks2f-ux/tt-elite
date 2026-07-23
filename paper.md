@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T14:35:49 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T14:39:51 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 89-63  ·  **P&L:** +14.46u ($+1,446)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 6
+- **FanDuel-line record:** 91-63  ·  **P&L:** +16.07u ($+1,607)  ·  **hit 59.1%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-76  ·  +22.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T14:35:49 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 66 | 35-31 | 53% | -1.83 |
-| TT Elite Series | 192 | 114-78 | 59% | +20.38 |
+| TT Elite Series | 194 | 116-78 | 60% | +21.99 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 114-78 · hit 59% · +20.38u (192 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 116-78 · hit 60% · +21.99u (194 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Mariusz Adamus vs Mariusz Baron | under 97.5 | 90 | W | +0.74 |
+| 2026-07-23 | Karol Sulkowski vs Kamil Rudomina | under 87.5 | 77 | W | +0.87 |
 | 2026-07-23 | Sebastian Juzek vs Waldemar Glanowski | under 78.5 | 75 | W | +0.85 |
 | 2026-07-23 | Grzegorz Felkel vs Grzegorz Adamiak | under 69.5 | 92 | L | -1.00 |
 | 2026-07-23 | Michal Minda vs Grzegorz Poliniewicz | over 64.5 | 64 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Piotr Gumulinski vs Mariusz Baron | under 99.5 | 97 | W | +0.80 |
 | 2026-07-23 | Jakub Kaczmarek vs Adrian Burkacki | under 94.5 | 82 | W | +0.87 |
 | 2026-07-23 | Aleksander Lilien vs Jakub Zochniak | under 91.5 | 92 | L | -1.00 |
-| 2026-07-23 | Wojciech Urban vs Adrian Burkacki | under 80.5 | 85 | L | -1.00 |
-| 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 71.5 | 84 | W | +0.87 |
 
 </details>
 
