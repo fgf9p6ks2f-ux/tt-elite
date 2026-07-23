@@ -226,6 +226,7 @@ Michal Skorski|Mikolaj Lukaszewski|under|1784235600
 Michal Skorski|Mikolaj Lukaszewski|under|1784244000
 Michal Vondrak|Tomas Vinter|over|1783850400
 Michal Wolny|Witold Stechly|over|1784764500
+Miroslaw Warzecha|Zbigniew Nocun|under|1784766000
 Myroslav Loboda|Viktor Slozka|over|1783564200
 Nadiia Harmash|Olga Melnik|over|1783701000
 Oleh Kurylenko|Serhii Miroshnychenko|under|1783492200
