@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T09:34:12 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T09:38:35 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 83-58  ·  **P&L:** +13.99u ($+1,399)  ·  **hit 58.9%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 83-59  ·  **P&L:** +12.99u ($+1,299)  ·  **hit 58.5%** (break-even 52.4%)  ·  **Open:** 7
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-74  ·  +23.50u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T09:34:12 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 63 | 34-29 | 54% | -0.67 |
-| TT Elite Series | 181 | 108-73 | 60% | +19.91 |
+| TT Elite Series | 182 | 108-74 | 59% | +18.91 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 108-73 · hit 60% · +19.91u (181 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 108-74 · hit 59% · +18.91u (182 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Wojciech Urban vs Marian Lebek | under 89.5 | 100 | L | -1.00 |
 | 2026-07-23 | Rafal Gajda vs Witold Buczynski | over 65.5 | 56 | L | -1.00 |
 | 2026-07-23 | Jakub Kaczmarek vs Oliver Vincenec | under 97.5 | 90 | W | +0.87 |
 | 2026-07-23 | Mariusz Adamus vs Mariusz Baron | under 97.5 | 97 | W | +0.74 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Wojciech Urban vs Lukasz Oracz | under 83.5 | 80 | W | +0.87 |
 | 2026-07-23 | Witold Stechly vs Zbigniew Nocun | under 82.5 | 86 | L | -1.00 |
 | 2026-07-23 | Igor Dabrowski vs Kamil Rudomina | under 96.5 | 97 | L | -1.00 |
-| 2026-07-23 | Oliver Vincenec vs Marian Lebek | over 55.5 | 54 | L | -1.00 |
 
 </details>
 
