@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T11:59:28 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T12:04:01 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 85-60  ·  **P&L:** +13.79u ($+1,379)  ·  **hit 58.6%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 85-61  ·  **P&L:** +12.79u ($+1,279)  ·  **hit 58.2%** (break-even 52.4%)  ·  **Open:** 7
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  118-74  ·  +24.33u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-23T11:59:28 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 64 | 35-29 | 55% | +0.17 |
-| TT Elite Series | 185 | 110-75 | 59% | +19.71 |
+| TT Elite Series | 186 | 110-76 | 59% | +18.71 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 110-75 · hit 59% · +19.71u (185 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 110-76 · hit 59% · +18.71u (186 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Piotr Gumulinski vs Mariusz Baron | under 99.5 | 130 | L | -1.00 |
 | 2026-07-23 | Grzegorz Poliniewicz vs Adrian Spychala | under 80.5 | 86 | L | -1.00 |
 | 2026-07-23 | Mariusz Adamus vs Piotr Gumulinski | under 91.5 | 91 | W | +1.00 |
 | 2026-07-23 | Michal Minda vs Jakub Zochniak | under 95.5 | 80 | W | +0.80 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Adrian Burkacki vs Oliver Vincenec | over 56.5 | 71 | W | +0.83 |
 | 2026-07-23 | Jakub Kaczmarek vs Marian Lebek | over 55.5 | 52 | L | -1.00 |
 | 2026-07-23 | Henryk Tkaczyk vs Miroslaw Warzecha | under 86.5 | 72 | W | +0.87 |
-| 2026-07-23 | Bartosz Sulkowski vs Krzysztof Kotyl | over 73.5 | 69 | L | -1.00 |
 
 </details>
 
