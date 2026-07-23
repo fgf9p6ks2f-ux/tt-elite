@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-23T02:04:26 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-23T02:08:17 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 70-46  ·  **P&L:** +14.89u ($+1,489)  ·  **hit 60.3%** (break-even 52.4%)  ·  **Open:** 8
+- **FanDuel-line record:** 71-47  ·  **P&L:** +14.80u ($+1,480)  ·  **hit 60.2%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  117-73  ·  +24.50u  ·  hit 62%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-23T02:04:26 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 52 | 36-16 | 69% | +14.00 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 62 | 34-28 | 55% | +0.33 |
-| TT Elite Series | 156 | 95-61 | 61% | +20.81 |
+| TT Elite Series | 158 | 96-62 | 61% | +20.71 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 95-61 · hit 61% · +20.81u (156 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 96-62 · hit 61% · +20.71u (158 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-23 | Marian Lebek vs Lukasz Oracz | under 91.5 | 92 | L | -1.00 |
+| 2026-07-23 | Adrian Fabis vs Kuba Golaszewski | under 93.5 | 84 | W | +0.91 |
 | 2026-07-23 | Miroslaw Warzecha vs Jacek Zelezik | over 51.5 | 48 | L | -1.00 |
 | 2026-07-23 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 89.5 | 63 | W | +0.91 |
 | 2026-07-23 | Adam Staniczek vs Jerzy Michalik | over 58.5 | 81 | W | +0.95 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-22 | Maciej Kolek vs Patryk Jendrzejewski | under 89.5 | 96 | L | -1.00 |
 | 2026-07-22 | Jerzy Pelka vs Marian Lebek | under 84.5 | 67 | W | +0.91 |
 | 2026-07-22 | Miroslaw Warzecha vs Henryk Tkaczyk | over 53.5 | 50 | L | -1.00 |
-| 2026-07-22 | Oliver Vincenec vs Lukasz Oracz | under 82.5 | 73 | W | +0.87 |
-| 2026-07-22 | Mateusz Rutkowski vs Maciej Kolek | over 63.5 | 56 | L | -1.00 |
 
 </details>
 
