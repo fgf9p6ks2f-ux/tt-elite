@@ -1,13 +1,13 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T09:43:57 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T09:47:57 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 112-69  ·  **P&L:** +28.25u ($+2,825)  ·  **hit 61.9%** (break-even 52.4%)  ·  **Open:** 9
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-79  ·  +22.67u  ·  hit 61%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-80  ·  +21.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 37 | 24-13 | 65% | +7.00 |
+| Czech Liga Pro | 38 | 24-14 | 63% | +6.00 |
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 24-13 · hit 65% · +7.00u (37 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 24-14 · hit 63% · +6.00u (38 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Michael Sedlacek vs Radovan Polasek | over 74.5 | 55 | L | -1.00 |
 | 2026-07-24 | Radovan Polasek vs Michael Sedlacek | over 74.5 | 94 | W | +0.83 |
 | 2026-07-24 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 65 | W | +0.83 |
 | 2026-07-23 | Roman Hudeczek vs Michal Chalupa | over 74.5 | 55 | L | -1.00 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-15 | Jan Steffan vs Tomas Regner | over 74.5 | 95 | W | +0.83 |
 | 2026-07-14 | Jan Pleskot vs Lubor Sulava | over 74.5 | 96 | W | +0.83 |
 | 2026-07-13 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 73 | W | +0.83 |
-| 2026-07-13 | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
 
 </details>
 
