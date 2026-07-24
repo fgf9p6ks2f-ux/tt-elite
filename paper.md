@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T08:59:09 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T09:03:25 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 111-68  ·  **P&L:** +28.38u ($+2,838)  ·  **hit 62.0%** (break-even 52.4%)  ·  **Open:** 10
+- **FanDuel-line record:** 112-69  ·  **P&L:** +28.25u ($+2,825)  ·  **hit 61.9%** (break-even 52.4%)  ·  **Open:** 8
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-79  ·  +22.67u  ·  hit 61%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,18 @@ _2026-07-24T08:59:09 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 219 | 136-83 | 62% | +34.30 |
+| TT Elite Series | 221 | 137-84 | 62% | +34.17 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 136-83 · hit 62% · +34.30u (219 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 137-84 · hit 62% · +34.17u (221 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Grzegorz Felkel vs Adrian Spychala | under 68.5 | 78 | L | -1.00 |
+| 2026-07-24 | Grzegorz Wichowski vs Grzegorz Jurowicz | over 56.5 | 67 | W | +0.87 |
 | 2026-07-24 | Piotr Cyrnek vs Marcin Jadczyk | over 80.5 | 58 | L | -1.00 |
 | 2026-07-24 | Pawel Kurek vs Jakub Kaczmarek | under 75.5 | 73 | W | +0.89 |
 | 2026-07-24 | Grzegorz Felkel vs Piotr Cyrnek | under 77.5 | 90 | L | -1.00 |
@@ -39,8 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Michal Machelski vs Zbigniew Nocun | over 58.5 | 75 | W | +0.95 |
 | 2026-07-23 | Kacper Adamus vs Jakub Nowak | over 74.5 | 92 | W | +0.83 |
 | 2026-07-23 | Jacek Przewlocki vs Jaroslaw Rolak | over 79.5 | 80 | W | +0.85 |
-| 2026-07-23 | Michal Machelski vs Jerzy Michalik | under 99.5 | 85 | W | +0.83 |
-| 2026-07-23 | Marcin Kowalczyk vs Dariusz Szlubowski | over 60.5 | 102 | W | +0.87 |
 
 </details>
 
