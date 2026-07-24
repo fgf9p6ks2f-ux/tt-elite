@@ -51,6 +51,7 @@ Bartosz Sulkowski|Kamil Rudomina|over|1784177700
 Bartosz Sulkowski|Kamil Rudomina|over|1784186400
 Bartosz Sulkowski|Krzysztof Kotyl|over|1784777100
 Bartosz Sulkowski|Krzysztof Kotyl|over|1784785200
+Bartosz Sulkowski|Krzysztof Kotyl|over|1784877600
 Blazej Gola|Karol Guzy|under|1783620000
 Boguslaw Madej|Maksymilian Rus|over|1784038800
 Bohdan Chaikovskyi|Ihor Sukovatyi|under|1783512300
