@@ -107,6 +107,7 @@ Grzegorz Poliniewicz|Krzysztof Wloczko|under|1784187600
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783915200
 Grzegorz Poliniewicz|Maciej Nowalinski|over|1783923900
 Grzegorz Poliniewicz|Michal Minda|over|1784811600
+Grzegorz Wichowski|Jerzy Pelka|under|1784885400
 Henryk Tkaczyk|Jacek Zelezik|over|1784763000
 Henryk Tkaczyk|Jacek Zelezik|under|1784747400
 Henryk Tkaczyk|Jakub Skorupa|under|1784399100
