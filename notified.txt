@@ -105,6 +105,7 @@ Grzegorz Poliniewicz|Michal Minda|over|1784811600
 Henryk Tkaczyk|Jacek Zelezik|over|1784763000
 Henryk Tkaczyk|Jacek Zelezik|under|1784747400
 Henryk Tkaczyk|Jakub Skorupa|under|1784399100
+Henryk Tkaczyk|Jerzy Michalik|under|1784855400
 Henryk Tkaczyk|Miroslaw Warzecha|over|1784755800
 Henryk Tkaczyk|Zbigniew Nocun|over|1784744400
 Henryk Tkaczyk|Zbigniew Nocun|over|1784773200
