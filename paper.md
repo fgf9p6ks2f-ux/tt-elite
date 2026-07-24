@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T11:55:58 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T11:57:36 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 119-69  ·  **P&L:** +34.40u ($+3,440)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 5
+- **FanDuel-line record:** 120-69  ·  **P&L:** +35.02u ($+3,502)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 4
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-80  ·  +21.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-24T11:55:58 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 228 | 144-84 | 63% | +40.31 |
+| TT Elite Series | 229 | 145-84 | 63% | +40.94 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 144-84 · hit 63% · +40.31u (228 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 145-84 · hit 63% · +40.94u (229 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Jakub Kaczmarek vs Sebastian Szostok | under 95.5 | 90 | W | +0.62 |
 | 2026-07-24 | Grzegorz Jurowicz vs Oskar Jadach | under 76.5 | 58 | W | +0.86 |
 | 2026-07-24 | Bartosz Sulkowski vs Krzysztof Kotyl | over 72.5 | 84 | W | +0.83 |
 | 2026-07-24 | Adam Staniczek vs Jerzy Michalik | under 88.5 | 47 | W | +0.87 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-24 | Jakub Kuzmicz vs Lukasz Pietraszko | over 52.5 | 76 | W | +0.80 |
 | 2026-07-24 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 97.5 | 53 | W | +0.91 |
 | 2026-07-24 | Jacek Oracz vs Jakub Skorupa | over 50.5 | 92 | W | +0.83 |
-| 2026-07-23 | Jakub Nowak vs Kacper Adamus | over 74.5 | 75 | W | +0.83 |
 
 </details>
 
