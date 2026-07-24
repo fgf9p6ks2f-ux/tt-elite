@@ -1,13 +1,13 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T03:02:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T03:06:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
 - **FanDuel-line record:** 109-66  ·  **P&L:** +28.58u ($+2,858)  ·  **hit 62.3%** (break-even 52.4%)  ·  **Open:** 6
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  120-79  ·  +21.00u  ·  hit 60%
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  121-79  ·  +21.83u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
-| Czech Liga Pro | 35 | 22-13 | 63% | +5.33 |
+| Czech Liga Pro | 36 | 23-13 | 64% | +6.17 |
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
@@ -71,10 +71,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>Czech Liga Pro</b> &mdash; 22-13 · hit 63% · +5.33u (35 settled)</summary>
+<details><summary><b>Czech Liga Pro</b> &mdash; 23-13 · hit 64% · +6.17u (36 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 65 | W | +0.83 |
 | 2026-07-23 | Roman Hudeczek vs Michal Chalupa | over 74.5 | 55 | L | -1.00 |
 | 2026-07-22 | Ondrej Paril vs Michal Vavrecka | over 74.5 | 75 | W | +0.83 |
 | 2026-07-22 | Adrian Walek vs Richard Skacelik | over 74.5 | 76 | W | +0.83 |
@@ -94,7 +95,6 @@ _click a league to expand its bets_
 | 2026-07-13 | Jan Potensky vs Jiri Grohsgott | under 74.5 | 73 | W | +0.83 |
 | 2026-07-13 | Tomas Regner vs Jan Steffan | over 74.5 | 75 | W | +0.83 |
 | 2026-07-12 | Tomas Dousek vs Jan Szotkowski | over 74.5 | 52 | L | -1.00 |
-| 2026-07-12 | Michal Vondrak vs Tomas Vinter | over 74.5 | 96 | W | +0.83 |
 
 </details>
 
