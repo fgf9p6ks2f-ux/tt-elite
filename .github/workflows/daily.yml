@@ -69,14 +69,16 @@ jobs:
             python player_view_shadow.py || echo "pv shadow skipped"  # player-view LIVE validation -> pv.md
             python tt_board.py || echo "tt board skipped"           # dashboard TT tab feed
             python push_tt_board.py || echo "tt push skipped"       # -> public dashboard repo
-            # NO immediate on-flag alert (user 2026-07-24: one 20-min pre-match ping only, no all-day
-            # spam). alert.txt is still written for today.md/board reference but never pushed to ntfy.
-            if [ -n "$NTFY_TOPIC" ] && [ -s reminders.txt ]; then
-              while IFS=$'\t' read -r at msg; do
-                [ -n "$at" ] && curl -s -H "Title: Pickz" -H "At: $at" -H "Priority: high" \
+            # IMMEDIATE ping the moment a bettable FanDuel line is flagged (user 2026-07-24: "as soon
+            # as you get a bettable line that's actually on FanDuel"). alert.txt holds one WNBA/MLB-
+            # format banner per new bet from write_alerts; notified.txt already dedups so a bet is
+            # never re-pushed on later poll cycles. One curl per line = one banner per bet.
+            if [ -n "$NTFY_TOPIC" ] && [ -s alert.txt ]; then
+              while IFS= read -r msg; do
+                [ -n "$msg" ] && curl -s -H "Title: Pickz" -H "Priority: high" \
                   -d "$msg" "https://ntfy.sh/$NTFY_TOPIC" >/dev/null
-              done < reminders.txt
-              echo "scheduled $(wc -l < reminders.txt) pre-match ping(s)"
+              done < alert.txt
+              echo "pushed $(wc -l < alert.txt) bet ping(s)"
             fi
             if [ -n "$(git status --porcelain)" ]; then
               git add -f tt.sqlite today.md notified.txt paper.md

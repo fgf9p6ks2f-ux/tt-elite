@@ -61,28 +61,16 @@ def write_alerts(bets, line):
         if key in seen:
             continue
         seen.add(key)
-        tag = TAG.get(b["league"], b["league"])
-        if b.get("deep"):
-            tag = "★" + tag                             # deep rivalry (>=40 H2H) — higher conviction
-        if b.get("tier") == "volume":
-            tag += "·VOL"                               # thin-margin volume tier — optional
-        w = round(b["raw"] * b["n"])                    # side record, e.g. 16-2 (89%)
-        dec = realline.american_to_dec(b["odds"]) if b.get("odds") else 1.9091
-        u = kelly_units(b["hit"], dec_odds=dec)         # sized off model prob @ the REAL odds
-        msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
-               f"{b['zone']} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) · {u:g}u")
-        new.append(msg)                                  # today.md / board reference only (NOT pushed)
-        # ONE pre-match ntfy ping per bet (user 2026-07-24: "20 min pre-match and that's it, no all-day
-        # spam"). WNBA/MLB banner format — side/line/odds only, no record/units. Delivered 20 min before
-        # tip via ntfy's At scheduling, or ASAP if the line posted inside 20 min. The immediate on-flag
-        # alert.txt push is removed in daily.yml, so this is the only TT ping.
+        # ONE ntfy ping per bet, fired IMMEDIATELY when a bettable FanDuel line appears (user
+        # 2026-07-24: "as soon as you get a bettable line that's actually on FanDuel"). The Elite flag
+        # exists ONLY once FanDuel has PRICED the match, so a fresh flag == a fresh bettable FD line.
+        # notified.txt dedup => exactly one ping per bet, never re-sent on later poll cycles. WNBA/MLB
+        # banner format — matchup + side/line/odds (★ = deep rivalry). daily.yml pushes alert.txt now.
         od = int(b["odds"]) if b.get("odds") else None
         am = f"{od:+d}" if od is not None else ""
         zlc = f"{'o' if b['side'] == 'over' else 'u'}{b['line']:g}"
-        ping = (f"🚨 🏓 {b['p1'].split()[-1]} v {b['p2'].split()[-1]} "
-                f"{zlc} {am}{' ★' if b.get('deep') else ''}").rstrip()
-        if b["ts"] > now + 60:                            # upcoming match only
-            reminders.append(f"{max(b['ts'] - 1200, now + 5)}\t{ping}")
+        star = " ★" if b.get("deep") else ""
+        new.append(f"🚨 🏓 {b['p1'].split()[-1]} v {b['p2'].split()[-1]} {zlc} {am}{star}".rstrip())
     (HERE / "alert.txt").write_text("\n".join(new))
     (HERE / "reminders.txt").write_text("\n".join(reminders))
     notif.write_text("\n".join(sorted(seen)[-3000:]))    # cap history
