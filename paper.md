@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T07:15:04 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T07:19:09 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 110-67  ·  **P&L:** +28.49u ($+2,849)  ·  **hit 62.1%** (break-even 52.4%)  ·  **Open:** 7
+- **FanDuel-line record:** 111-67  ·  **P&L:** +29.38u ($+2,938)  ·  **hit 62.4%** (break-even 52.4%)  ·  **Open:** 6
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  121-79  ·  +21.83u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-24T07:15:04 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 217 | 135-82 | 62% | +34.41 |
+| TT Elite Series | 218 | 136-82 | 62% | +35.30 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 135-82 · hit 62% · +34.41u (217 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 136-82 · hit 62% · +35.30u (218 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Pawel Kurek vs Jakub Kaczmarek | under 75.5 | 73 | W | +0.89 |
 | 2026-07-24 | Grzegorz Felkel vs Piotr Cyrnek | under 77.5 | 90 | L | -1.00 |
 | 2026-07-24 | Witold Stechly vs Jerzy Michalik | over 75.5 | 81 | W | +0.91 |
 | 2026-07-24 | Marek Tkocz vs Jakub Pruszkowski | over 56.5 | 72 | W | +0.87 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Michal Machelski vs Jerzy Michalik | under 99.5 | 85 | W | +0.83 |
 | 2026-07-23 | Marcin Kowalczyk vs Dariusz Szlubowski | over 60.5 | 102 | W | +0.87 |
 | 2026-07-23 | Zbigniew Nocun vs Adam Staniczek | over 55.5 | 60 | W | +0.91 |
-| 2026-07-23 | Dariusz Molenda vs Jerzy Michalik | over 66.5 | 75 | W | +0.83 |
 
 </details>
 
