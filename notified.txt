@@ -197,6 +197,7 @@ Kacper Adamus|Rafal Gajda|under|1784721300
 Kacper Adamus|Sebastian Juzek|over|1784705400
 Kamil Delikatny|Zbigniew Nocun|under|1783479900
 Kamil Klocek|Michal Skorski|over|1784247000
+Kamil Rudomina|Krzysztof Kotyl|under|1784885100
 Kamil Rudomina|Michal Minda|under|1784709000
 Kamil Smolka|Rafal Gajda|over|1784724300
 Kamil Smolka|Rafal Gajda|under|1784724300
