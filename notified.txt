@@ -146,6 +146,7 @@ Jakub Nowak|Kacper Adamus|over|1784844000
 Jakub Nowak|Wojciech Pytlas|under|1784831100
 Jakub Nowak|Wojciech Urban|under|1784826600
 Jakub Pruszkowski|Krzysztof Hetnar|over|1784184300
+Jakub Pruszkowski|Marek Tkocz|over|1784856900
 Jakub Skorupa|Marian Brunner|over|1784694000
 Jakub Skorupa|Pawel Chojnacki|under|1784476200
 Jakub Skorupa|Pawel Chojnacki|under|1784504700
