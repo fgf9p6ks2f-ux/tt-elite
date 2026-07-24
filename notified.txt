@@ -236,6 +236,7 @@ Maciej Nowalinski|Tibor Spanik|under|1784550600
 Maksymilian Rus|Rafal Gajda|over|1783426800
 Maksymilian Rus|Rafal Gajda|over|1784629200
 Maksymilian Rus|Rafal Gajda|over|1784637900
+Marcin Jadczyk|Martin Olejnik|over|1784893200
 Marcin Kowalczyk|Miroslaw Piecowski|under|1784564100
 Marcin Kowalczyk|Stanislaw Wnek|under|1784831400
 Marcin Marchlewski|Mateusz Rutkowski|over|1784411100
