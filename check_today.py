@@ -140,6 +140,15 @@ def _elite_bet(p1, p2, ts, mid, totals, board, con, tier):
         b["skip_bet"] = "thin_h2h"
     elif side == "under" and 80.0 <= line < 90.0:
         b["skip_bet"] = "u80_90"
+    elif side == "over" and line < 65.0:
+        # LOW-LINE OVER LEAK (real-line loss profile 2026-07-24): overs on a <65 line went 17-21 /
+        # 45% / -4.9u at real FanDuel lines (z=+2.6 vs the 69% rest). Same bimodal-totals family as
+        # the 80-90u leak — a low posted total means a heavy favorite/likely quick sweep, so betting
+        # the pair's usual OVER fights the market's sweep read and busts. Excluding it lifts the
+        # bettable book 62%->69% (+24->+29.5u) at lower volume. Logged+graded (forward-confirm the
+        # 38-bet sample), never bet. ⚠ CONVICTION FILTERS (raw>=80 / n>=25) do NOT help here — they
+        # looked great at the fixed-74.5 PROXY but went 13-16/-4.8u at real lines; don't add them.
+        b["skip_bet"] = "o_lowline"
     return b
 
 
