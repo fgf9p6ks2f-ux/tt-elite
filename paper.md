@@ -1,26 +1,27 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T12:28:29 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T12:32:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 120-69  ·  **P&L:** +35.02u ($+3,502)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 5
-- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-80  ·  +21.67u  ·  hit 60%
+- **FanDuel-line record:** 121-69  ·  **P&L:** +35.82u ($+3,582)  ·  **hit 63.7%** (break-even 52.4%)  ·  **Open:** 4
+- **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-81  ·  +20.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
 |---|---|---|---|---|
 | Czech Liga Pro | 38 | 24-14 | 63% | +6.00 |
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
-| TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 229 | 145-84 | 63% | +40.94 |
+| TT Cup | 70 | 36-34 | 51% | -4.00 |
+| TT Elite Series | 230 | 146-84 | 63% | +41.74 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 145-84 · hit 63% · +40.94u (229 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 146-84 · hit 63% · +41.74u (230 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Marcin Jadczyk vs Martin Olejnik | over 52.5 | 80 | W | +0.80 |
 | 2026-07-24 | Jakub Kaczmarek vs Sebastian Szostok | under 95.5 | 90 | W | +0.62 |
 | 2026-07-24 | Grzegorz Jurowicz vs Oskar Jadach | under 76.5 | 58 | W | +0.86 |
 | 2026-07-24 | Bartosz Sulkowski vs Krzysztof Kotyl | over 72.5 | 84 | W | +0.83 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-24 | Henryk Tkaczyk vs Jerzy Michalik | under 94.5 | 98 | L | -1.00 |
 | 2026-07-24 | Jakub Kuzmicz vs Lukasz Pietraszko | over 52.5 | 76 | W | +0.80 |
 | 2026-07-24 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 97.5 | 53 | W | +0.91 |
-| 2026-07-24 | Jacek Oracz vs Jakub Skorupa | over 50.5 | 92 | W | +0.83 |
 
 </details>
 
@@ -120,10 +120,11 @@ _click a league to expand its bets_
 
 </details>
 
-<details><summary><b>TT Cup</b> &mdash; 36-33 · hit 52% · -3.00u (69 settled)</summary>
+<details><summary><b>TT Cup</b> &mdash; 36-34 · hit 51% · -4.00u (70 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Michal Brozek vs Michal Prochazka | over 74.5 | 67 | L | -1.00 |
 | 2026-07-23 | Zbynek Vyskocil vs Ales Brandtl Jr | over 74.5 | 77 | W | +0.83 |
 | 2026-07-23 | Lukas Krupnik Jr vs Jiri Matus | over 74.5 | 66 | L | -1.00 |
 | 2026-07-23 | Ales Drozd vs Patrik Jokiel | over 74.5 | 57 | L | -1.00 |
@@ -143,7 +144,6 @@ _click a league to expand its bets_
 | 2026-07-21 | David Sykora vs Vaclav Hejda Jr | over 74.5 | 73 | L | -1.00 |
 | 2026-07-21 | Jan Vidourek vs Richard Vavricka | over 74.5 | 99 | W | +0.83 |
 | 2026-07-20 | Richard Vavricka vs Jan Vidourek | over 74.5 | 48 | L | -1.00 |
-| 2026-07-20 | Zbynek Vyskocil vs Christian Kratochvil | over 74.5 | 58 | L | -1.00 |
 
 </details>
 

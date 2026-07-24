@@ -1,14 +1,14 @@
 # Table tennis — actionable bets (TT Elite · Setka · Liga Pro · TT Cup)
 
-_updated 2026-07-24 12:27 UTC_
+_updated 2026-07-24 12:31 UTC_
 
 Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
 
 ```
 
-492 upcoming fixtures (all leagues) · 250,155 historical matches · line 74.5 · per-league validated rules · 1 new alert(s)
+476 upcoming fixtures (all leagues) · 250,175 historical matches · line 74.5 · per-league validated rules · 0 new alert(s)
 
-=== 11 ACTIONABLE BETS TODAY ===
+=== 9 ACTIONABLE BETS TODAY ===
   when            league      matchup                                       zone  conf   raw    n    avg
   Fri 6:40AM MT   Elite·SKIP(80-90u leak)Pawel Kurek vs Jakub Kaczmarek               U75.5   85%   85%   13   65.3
   Fri 8:10AM MT   Setka·shadowVladyslav Mishchenko vs Artem Yurkov        O≤77.5   77%  100%   11   85.1
@@ -17,9 +17,7 @@ Per-league shrunk-posterior rules (holdout-validated). Fewer, sharper bets.
   Fri 6:10AM MT   Elite·★DEEP Michal Minda vs Jakub Glanowski              U94.5   75%   75%   59   80.7
   Fri 12:55PM MT  TTCup·shadowChristian Kratochvil vs Jaroslav Dohnal     O≤77.5   75%   85%   20   86.8
   Fri 12:30PM MT  Setka·shadowJan Seeman vs Jakub Dufek Jnr               O≤75.5   74%   88%   16   87.6
-  Fri 6:10AM MT   Setka·shadowVladimir Voronenko vs Artem Yurkov          O≤77.5   73%   84%   19   84.8
   Fri 9:30AM MT   LigaPro·shadowLubor Sulava vs Jan Pleskot                 O≤74.5   73%   74%  137   83.7
-  Fri 5:55AM MT   TTCup·shadowMichal Brozek vs Michal Prochazka           O≤77.5   68%   82%   11   82.6
   Fri 9:35AM MT   SetkaW·shadowAnna Gorchakova vs Margarita Gordeets       U≥72.5   67%   70%   37   67.8
 
 'zone' = bettable line range: O≤X take the Over at any posted total up to X; U≥Y take the Under at any total from Y up; posted line outside the zone = skip. 'conf' = league rule confidence; 'raw' = H2H side rate at 74.5; 'avg' = average total.
