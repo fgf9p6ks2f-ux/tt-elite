@@ -134,6 +134,7 @@ Jachym Sebl|Jan Srnka|under|1783499100
 Jakub Chmielowski|Krystian Kolodziej|over|1784543400
 Jakub Dufek Jnr|Jan Seeman|over|1783692000
 Jakub Glanowski|Michal Minda|under|1784202600
+Jakub Glanowski|Michal Minda|under|1784895000
 Jakub Kaczmarek|Lukasz Oracz|under|1784185800
 Jakub Kaczmarek|Marek Tkocz|under|1783490400
 Jakub Kaczmarek|Marian Lebek|over|1784777700
