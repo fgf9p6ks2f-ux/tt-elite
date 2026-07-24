@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T11:05:10 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T11:09:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 115-69  ·  **P&L:** +31.00u ($+3,100)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 9
+- **FanDuel-line record:** 119-69  ·  **P&L:** +34.40u ($+3,440)  ·  **hit 63.3%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  122-80  ·  +21.67u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,20 @@ _2026-07-24T11:05:10 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 224 | 140-84 | 62% | +36.92 |
+| TT Elite Series | 228 | 144-84 | 63% | +40.31 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 140-84 · hit 62% · +36.92u (224 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 144-84 · hit 63% · +40.31u (228 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Grzegorz Jurowicz vs Oskar Jadach | under 76.5 | 58 | W | +0.86 |
+| 2026-07-24 | Bartosz Sulkowski vs Krzysztof Kotyl | over 72.5 | 84 | W | +0.83 |
+| 2026-07-24 | Adam Staniczek vs Jerzy Michalik | under 88.5 | 47 | W | +0.87 |
+| 2026-07-24 | Michal Machelski vs Jerzy Michalik | under 99.5 | 99 | W | +0.83 |
 | 2026-07-24 | Artur Daniel vs Adrian Spychala | under 76.5 | 70 | W | +0.83 |
 | 2026-07-24 | Grzegorz Wichowski vs Jerzy Pelka | under 99.5 | 99 | W | +1.00 |
 | 2026-07-24 | Krzysztof Kotyl vs Kamil Rudomina | under 99.5 | 95 | W | +0.91 |
@@ -37,10 +41,6 @@ _click a league to expand its bets_
 | 2026-07-24 | Mateusz Rutkowski vs Patryk Jendrzejewski | under 97.5 | 53 | W | +0.91 |
 | 2026-07-24 | Jacek Oracz vs Jakub Skorupa | over 50.5 | 92 | W | +0.83 |
 | 2026-07-23 | Jakub Nowak vs Kacper Adamus | over 74.5 | 75 | W | +0.83 |
-| 2026-07-23 | Adam Staniczek vs Jerzy Michalik | under 88.5 | 50 | W | +0.87 |
-| 2026-07-23 | Pawel Chojnacki vs Jakub Skorupa | under 89.5 | 74 | W | +0.83 |
-| 2026-07-23 | Pawel Chojnacki vs Jacek Oracz | under 90.5 | 86 | W | +0.91 |
-| 2026-07-23 | Henryk Tkaczyk vs Dariusz Molenda | under 85.5 | 73 | W | +0.83 |
 
 </details>
 
