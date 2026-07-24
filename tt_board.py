@@ -75,14 +75,18 @@ def tracker():
     con = sqlite3.connect(DB)
     # the 80-90-UNDER LEAK (loss profile 2026-07-21): SHADOWED — still graded, but excluded from the
     # headline/pending/recent (we don't bet it). Tracked separately in `filtered` to validate forward.
-    FILT = "AND NOT (side='under' AND line >= 80 AND line < 90) AND n >= 15"  # +thin-H2H(<15) leak
+    # excluded from the headline (still logged/graded, just not bet): 80-90u leak, thin-H2H(<15),
+    # and the LOW-LINE-OVER leak (2026-07-24: overs on a <65 line went 17-21/45% at real FD lines).
+    FILT = ("AND NOT (side='under' AND line >= 80 AND line < 90) "
+            "AND NOT (side='over' AND line < 65) AND n >= 15")
     rows = con.execute(
         "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') "
         f"AND league='TT Elite Series' AND odds IS NOT NULL {FILT} AND flagged_at >= ?",
         (ELITE_EPOCH,)).fetchall()
     shadow = con.execute(
         "SELECT result, pnl FROM paper_bets WHERE result IN ('W','L') AND league='TT Elite Series' "
-        "AND odds IS NOT NULL AND side='under' AND line >= 80 AND line < 90 AND flagged_at >= ?",
+        "AND odds IS NOT NULL AND ((side='under' AND line >= 80 AND line < 90) "
+        "OR (side='over' AND line < 65)) AND flagged_at >= ?",
         (ELITE_EPOCH,)).fetchall()
     ep = con.execute(
         "SELECT COUNT(*) FROM paper_bets WHERE league='TT Elite Series' "
@@ -113,7 +117,7 @@ def tracker():
     return {"w": w, "l": l, "u": u,
             "leagues": [{"league": "TT Elite Series", "w": w, "l": l, "u": u}],
             "elite_pending": ep, "recent": recent,
-            "filtered": {"w": sw, "l": sl, "u": su, "note": "80-90 unders (shadow, not bet)"}}
+            "filtered": {"w": sw, "l": sl, "u": su, "note": "80-90u + <65o leaks (shadow, not bet)"}}
 
 
 def bmbets_odds():
