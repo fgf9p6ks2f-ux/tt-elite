@@ -19,6 +19,7 @@ Adrian Fabis|Jaroslaw Rolak|over|1783624800
 Adrian Fabis|Jaroslaw Rolak|over|1783640700
 Adrian Fabis|Kuba Golaszewski|under|1784769900
 Adrian Fabis|Mikolaj Lukaszewski|under|1784743800
+Adrian Spychala|Grzegorz Felkel|under|1784881800
 Adrian Wiecek|Jakub Kosowski|under|1784612400
 Adrian Wiecek|Jakub Kosowski|under|1784628000
 Adrian Wiecek|Josef Braun|over|1784180400
