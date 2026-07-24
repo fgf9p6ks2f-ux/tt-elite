@@ -71,10 +71,18 @@ def write_alerts(bets, line):
         u = kelly_units(b["hit"], dec_odds=dec)         # sized off model prob @ the REAL odds
         msg = (f"[{tag}] {b['p1']} v {b['p2']} · {b['when']} · "
                f"{b['zone']} · {w}-{b['n']-w} ({b['raw']*100:.0f}%) · {u:g}u")
-        new.append(msg)
-        remind_at = b["ts"] - 300                        # 5 min before tip
-        if remind_at > now + 30:                         # only schedule future reminders
-            reminders.append(f"{remind_at}\t5MIN — {msg}")
+        new.append(msg)                                  # today.md / board reference only (NOT pushed)
+        # ONE pre-match ntfy ping per bet (user 2026-07-24: "20 min pre-match and that's it, no all-day
+        # spam"). WNBA/MLB banner format — side/line/odds only, no record/units. Delivered 20 min before
+        # tip via ntfy's At scheduling, or ASAP if the line posted inside 20 min. The immediate on-flag
+        # alert.txt push is removed in daily.yml, so this is the only TT ping.
+        od = int(b["odds"]) if b.get("odds") else None
+        am = f"{od:+d}" if od is not None else ""
+        zlc = f"{'o' if b['side'] == 'over' else 'u'}{b['line']:g}"
+        ping = (f"🚨 🏓 {b['p1'].split()[-1]} v {b['p2'].split()[-1]} "
+                f"{zlc} {am}{' ★' if b.get('deep') else ''}").rstrip()
+        if b["ts"] > now + 60:                            # upcoming match only
+            reminders.append(f"{max(b['ts'] - 1200, now + 5)}\t{ping}")
     (HERE / "alert.txt").write_text("\n".join(new))
     (HERE / "reminders.txt").write_text("\n".join(reminders))
     notif.write_text("\n".join(sorted(seen)[-3000:]))    # cap history
