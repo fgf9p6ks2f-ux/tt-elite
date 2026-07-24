@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T03:06:33 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T03:10:30 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 109-66  ·  **P&L:** +28.58u ($+2,858)  ·  **hit 62.3%** (break-even 52.4%)  ·  **Open:** 6
+- **FanDuel-line record:** 110-66  ·  **P&L:** +29.49u ($+2,949)  ·  **hit 62.5%** (break-even 52.4%)  ·  **Open:** 5
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  121-79  ·  +21.83u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-24T03:06:33 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 53 | 37-16 | 70% | +14.83 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 69 | 36-33 | 52% | -3.00 |
-| TT Elite Series | 215 | 134-81 | 62% | +34.50 |
+| TT Elite Series | 216 | 135-81 | 62% | +35.41 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 134-81 · hit 62% · +34.50u (215 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 135-81 · hit 62% · +35.41u (216 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Witold Stechly vs Jerzy Michalik | over 75.5 | 81 | W | +0.91 |
 | 2026-07-24 | Marek Tkocz vs Jakub Pruszkowski | over 56.5 | 72 | W | +0.87 |
 | 2026-07-24 | Zbigniew Nocun vs Adam Staniczek | over 55.5 | 58 | W | +0.91 |
 | 2026-07-24 | Henryk Tkaczyk vs Jerzy Michalik | under 94.5 | 98 | L | -1.00 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-23 | Zbigniew Nocun vs Adam Staniczek | over 55.5 | 60 | W | +0.91 |
 | 2026-07-23 | Dariusz Molenda vs Jerzy Michalik | over 66.5 | 75 | W | +0.83 |
 | 2026-07-23 | Jacek Oracz vs Pawel Chojnacki | under 90.5 | 96 | L | -1.00 |
-| 2026-07-23 | Wojciech Urban vs Jakub Nowak | under 95.5 | 117 | L | -1.00 |
 
 </details>
 
