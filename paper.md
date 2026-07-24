@@ -1,8 +1,8 @@
 # TT paper ledger — FanDuel-line track record
 
-_2026-07-24T13:21:57 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
+_2026-07-24T13:26:01 UTC · TT Elite Series flags graded at the REAL FanDuel line + odds · the live out-of-sample record (shadow leagues excluded — not FanDuel-priced)_
 
-- **FanDuel-line record:** 122-70  ·  **P&L:** +35.71u ($+3,571)  ·  **hit 63.5%** (break-even 52.4%)  ·  **Open:** 2
+- **FanDuel-line record:** 123-70  ·  **P&L:** +36.56u ($+3,656)  ·  **hit 63.7%** (break-even 52.4%)  ·  **Open:** 1
 - **Shadow proxy (not FanDuel-priced, not bet — fixed 74.5 flat):**  123-81  ·  +21.50u  ·  hit 60%
 
 | league | settled | W-L | hit | P&L (u) |
@@ -11,16 +11,17 @@ _2026-07-24T13:21:57 UTC · TT Elite Series flags graded at the REAL FanDuel lin
 | Setka Cup | 54 | 38-16 | 70% | +15.67 |
 | Setka Women | 15 | 7-8 | 47% | -2.17 |
 | TT Cup | 70 | 36-34 | 51% | -4.00 |
-| TT Elite Series | 232 | 147-85 | 63% | +41.63 |
+| TT Elite Series | 233 | 148-85 | 64% | +42.48 |
 
 ### recent settled — by league
 
 _click a league to expand its bets_
 
-<details><summary><b>TT Elite Series</b> &mdash; 147-85 · hit 63% · +41.63u (232 settled)</summary>
+<details><summary><b>TT Elite Series</b> &mdash; 148-85 · hit 64% · +42.48u (233 settled)</summary>
 
 | graded | matchup | bet | total | result | P&L |
 |---|---|---|---|---|---|
+| 2026-07-24 | Piotr Cyrnek vs Grzegorz Felkel | under 77.5 | 60 | W | +0.85 |
 | 2026-07-24 | Pawel Kurek vs Jakub Kaczmarek | under 75.5 | 57 | W | +0.89 |
 | 2026-07-24 | Michal Minda vs Jakub Glanowski | under 94.5 | 108 | L | -1.00 |
 | 2026-07-24 | Marcin Jadczyk vs Martin Olejnik | over 52.5 | 80 | W | +0.80 |
@@ -40,7 +41,6 @@ _click a league to expand its bets_
 | 2026-07-24 | Witold Stechly vs Jerzy Michalik | over 75.5 | 81 | W | +0.91 |
 | 2026-07-24 | Marek Tkocz vs Jakub Pruszkowski | over 56.5 | 72 | W | +0.87 |
 | 2026-07-24 | Zbigniew Nocun vs Adam Staniczek | over 55.5 | 58 | W | +0.91 |
-| 2026-07-24 | Henryk Tkaczyk vs Jerzy Michalik | under 94.5 | 98 | L | -1.00 |
 
 </details>
 
