@@ -94,6 +94,7 @@ Grzegorz Adamiak|Maciej Nowalinski|over|1784710800
 Grzegorz Felkel|Maciej Nowalinski|under|1783495200
 Grzegorz Felkel|Piotr Cyrnek|under|1784866200
 Grzegorz Felkel|Piotr Cyrnek|under|1784897700
+Grzegorz Jurowicz|Grzegorz Wichowski|over|1784881200
 Grzegorz Marud|Mariusz Baron|under|1784495100
 Grzegorz Marud|Oliver Vincenec|over|1783473000
 Grzegorz Marud|Oliver Vincenec|over|1784672700
